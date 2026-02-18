@@ -1,0 +1,27 @@
+# Knowledgebase - archivos pesados (usar Git LFS o excluir del repo)
+# Descomenta si quieres trackear con Git LFS:
+# knowledgebase/*.jsonl
+# knowledgebase/*.json
+
+# Por ahora: excluir archivos de KB > 50MB
+# Los JSON pequeños (blacklists) sí se trackean
+knowledgebase/elevenlabs_final.jsonl
+knowledgebase/elevenlabs_docs.json
+knowledgebase/elevenlabs_helper.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

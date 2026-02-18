@@ -1,0 +1,32 @@
+{
+    "language": "de",
+    "language_name": "German",
+    "version": "1.0",
+    "last_updated": "2024-12-24",
+    "sensitivity_level": "medium",
+    "notes": "German content has specific historical and media regulations",
+    "blocked_terms": [
+        {
+            "spanish": "nazi",
+            "german": "Nazi",
+            "reason": "Historical sensitivity - may be flagged",
+            "safe_alternative": "Use full historical context"
+        },
+        {
+            "spanish": "guerra",
+            "german": "Krieg",
+            "reason": "Violence filter in kids content",
+            "context": "OK in historical/educational context"
+        }
+    ],
+    "pronunciation_notes": [
+        "Umlauts (ä, ö, ü) must be properly encoded",
+        "ß (eszett) sometimes misread as 'ss'",
+        "Compound words may be split incorrectly"
+    ],
+    "formal_vs_informal": {
+        "Sie": "Formal you - use for corporate, adult content",
+        "du": "Informal you - use for casual, youth content",
+        "note": "Mixing formality levels is jarring"
+    }
+}

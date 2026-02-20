@@ -29,8 +29,18 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
                                     │
                                     ▼
                               Se publica TODO
-                              (cero QA en 26 idiomas)
+                              (solo EN con QA real)
 ```
+
+### Datos confirmados del pipeline de dubbing (Q8, DRAFT 70-80%)
+
+- **7 pasos:** Video ES → subir a ElevenLabs (web UI manual) → deteccion speakers → revision manual (solo EN) → correcciones manuales → exportacion por idioma → entrega
+- **Input:** Solo video completo — no reciben stems ni guion en texto
+- **Fernando exporta** 2 versiones: 16:9 (horizontal) y 9:16 (vertical)
+- **Error #1:** Speaker detection incorrecta (correcciones manuales masivas)
+- **Voice model** no persiste entre tabs de idioma en ElevenLabs — genera retrabajo
+- **Monday.com** tiene cero columnas para dubbing/traduccion — Area 09 opera en aislamiento total
+- **KPI-28 estimado:** 0.5-4h de correcciones manuales por episodio (sin baseline formal)
 
 ### Lo que sabemos vs lo que NO sabemos
 
@@ -104,16 +114,16 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 - En que formato? (WAV, MP3, MP4, proyecto After Effects?)
 - Fernando tiene acceso al guion original o solo al audio?
 
-**Fernando → Saul/Ivan:**
-- Fernando entrega un MP4 final o archivos separados (stems)?
-- Saul/Ivan reciben instrucciones especificas o solo el video?
+**Fernando → Saul/Ivan:** *(parcialmente respondido por Q8)*
+- ~~Fernando entrega un MP4 final o archivos separados (stems)?~~ **RESPONDIDO:** Solo video completo, no stems
+- ~~Saul/Ivan reciben instrucciones especificas o solo el video?~~ **RESPONDIDO:** Solo el video
 - Existe un checklist de "listo para dubbing"?
 
-**Saul/Ivan → ElevenLabs:**
-- Suben via Web UI manualmente o hay algun script?
+**Saul/Ivan → ElevenLabs:** *(parcialmente respondido por Q8)*
+- ~~Suben via Web UI manualmente o hay algun script?~~ **RESPONDIDO:** Web UI manual, no usan API
 - Como manejan los 27 idiomas? (uno por uno? batch?)
 - Cuanto tiempo toma procesar 1 episodio x 27 idiomas?
-- Revisan TODOS los idiomas o solo EN?
+- ~~Revisan TODOS los idiomas o solo EN?~~ **RESPONDIDO:** Solo EN
 
 **ElevenLabs → Publicacion:**
 - Quien descarga los 27 archivos doblados?
@@ -177,7 +187,7 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 5. Que pasa cuando Fernando detecta un error en el guion despues de animar?
 
 ### Sobre Saul/Ivan (Q8 — draft 70-80%)
-6. Cuantos idiomas revisan manualmente? (solo EN o alguno mas?)
+6. ~~Cuantos idiomas revisan manualmente? (solo EN o alguno mas?)~~ **RESPONDIDO:** Solo EN
 7. Cuanto tiempo toma dubbing de 1 episodio en ElevenLabs Studio?
 8. Han detectado errores graves de traduccion en algun idioma? Cuales?
 9. Usan algun criterio para decidir si un dubbing "esta bien" o lo regeneran?
@@ -186,6 +196,6 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 ### Sobre el proceso general
 11. Existe un "episodio tipo" documentado (duracion, # personajes, # escenas)?
 12. Cuantos episodios se producen por semana/mes?
-13. Hay algun cuello de botella que cause retrasos recurrentes?
+13. ~~Hay algun cuello de botella que cause retrasos recurrentes?~~ **PARCIAL:** Speaker detection incorrecta es error #1 (Q8)
 14. Quien toma la decision final de "esto se publica"?
 15. Existe algun proceso de rollback si se detecta un error post-publicacion?

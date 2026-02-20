@@ -35,12 +35,14 @@
 - Concepto de PCD (Positive Cultural Dictionary) definido en Gold Standard pero **no implementado**
 - Tabla de onomatopeyas y pronombres definida pero **no en formato JSON operativo**
 - Cero benchmarking contra canales kids exitosos (CoComelon, Like Nastya)
+- "Onomatopeyas mal traducidas" es error #4 en frecuencia reportada por Saul/Ivan (Q8)
 
 ### QA de contenido (Gio)
 
 - Checklist de 13 pistas de audio definido en Gold Standard Apendice A
-- Cero ejecucion de QA en idiomas que no sean EN
-- Sin criterios formales de aceptacion/rechazo por idioma
+- Solo EN recibe QA formal; Andrea revisa 2-3 idiomas intuitivamente (EN, JA) de las 13 pistas
+- Criterios de rechazo de audio existen (desincronizacion, ruido, distorsion, volumen, glitches) pero **no hay criterios para contenido linguistico/cultural**
+- Proceso actual de blacklists: **resuelven caso por caso** cuando detectan un problema (Gap G18)
 
 ---
 
@@ -142,7 +144,7 @@
 **S:** Implementar proceso de revision de calidad para al menos Tier 1
 **M:** Checklist ejecutado en 1 episodio real para 5 idiomas, con reporte de hallazgos
 **A:** Basado en checklist de 13 pistas (Gold Standard Apendice A), usando herramientas existentes
-**R:** Hoy cero QA en 26/27 idiomas
+**R:** Hoy solo EN tiene QA formal (15/16 idiomas activos sin revision linguistica)
 **T:** Semana 6
 
 #### Entregables micro
@@ -165,6 +167,8 @@
 | **Alan** | Acceso a episodios reales publicados en 27 idiomas para validacion | Semana 3 |
 | **Ramon** | Script de validacion automatica de blacklists contra contenido | Semana 8 |
 | **Saul/Ivan** | Feedback sobre problemas culturales que ya han detectado | Semana 2 |
+
+**Riesgo de proveedor:** ElevenLabs opera sin contrato ni SLA (suscripcion pagada). No existe Plan B. 27 idiomas dependen de un solo vendor. Monday.com no tiene tracking de dubbing (Area 09 aislada).
 
 ## 4. PREGUNTAS ABIERTAS
 

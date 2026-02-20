@@ -43,6 +43,7 @@
 - Regulaciones locales relevantes
 - Categorias A (prohibido), B (contextual), C (alternativa)
 - Cross-check con 2+ fuentes cuando sea posible
+- Nota: "Onomatopeyas mal traducidas" es error #4 en frecuencia (Q8) — considerar categoria dedicada ademas de A/B/C
 
 ---
 
@@ -50,7 +51,7 @@
 **S:** Investigar que regulaciones aplican especificamente a QPH y que acciones concretas requieren
 **M:** Documento de compliance con regulacion x idioma x accion, con fuentes verificadas
 **A:** Regulaciones son publicas; el reto es interpretarlas para contenido animado doblado con AI
-**R:** Andrea necesita esto para decidir nivel de strictness (D-006) y priorizar blacklists
+**R:** Andrea necesita esto para decidir nivel de strictness (D-006) y priorizar blacklists. Nota: canciones QPH son instrumentales (confirmado SESIONES) — no requiere research de licencias de letras
 **T:** Semana 3
 
 #### Entregables
@@ -76,7 +77,7 @@
 
 | # | Entregable | Deadline |
 |:--|:-----------|:---------|
-| D3.1 | Expansion tabla onomatopeyas: 15 conceptos x 10 idiomas | Semana 3 |
+| D3.1 | Expansion tabla onomatopeyas: 15 conceptos x 10 idiomas (nota: BPO Japon tiene 4,500 onomatopeyas criticas — 15 es MVP minimo) | Semana 3 |
 | D3.2 | Draft PCD Tier 1 JSON (7 categorias x 5 idiomas) | Semana 5 |
 | D3.3 | Draft PCD Tier 2 JSON (7 categorias x 5 idiomas mas) | Semana 8 |
 
@@ -113,7 +114,7 @@
 | # | Decision | Datos necesarios | Quien decide | Deadline |
 |:--|:---------|:-----------------|:-------------|:---------|
 | D-001 | Extender AI-Studio o rebuild? | Resultados de fixes R2 de Ramon | Daniel | Semana 3 |
-| D-002 | Cuantos idiomas en MVP? | ROI por idioma (D4), benchmarks | Andrea + Daniel | Semana 5 |
+| D-002 | Cuantos idiomas en MVP? | ROI por idioma (D4), benchmarks. Nota: 16 idiomas activos (Q8) vs 27 canales (Gold Standard) — baseline ROI es cero (G16: nunca se ha medido) | Andrea + Daniel | Semana 5 |
 | D-003 | CSV vs Resource API? | Spike de Ramon (R3.5) | Daniel | Semana 5 |
 | D-004 | Separacion audio (stems)? | Entrevista Fernando (Alan A1.2) | Daniel + Fernando | Semana 3 |
 | D-005 | Pausar idiomas bajo ROI? | Benchmarks D4, ROI de Gaps Pendientes | Andrea + Daniel | Semana 8 |
@@ -172,7 +173,9 @@ El archivo [`debate/prompts/gemini_deep_audit_prompt.md`](../debate/prompts/gemi
 | YouTube Analytics (AVD, revenue, ROI) | `docs/Gaps_Pendientes_Deep_Research.md` |
 | ElevenLabs API reference (158 docs) | `knowledgebase/elevenlabs_api/` |
 | Blacklists existentes (3 JSONs) | `knowledgebase/blacklists/` |
-| Levantamientos equipo (51 docs) | `docs/levantamientos/` |
+| Levantamientos equipo (52 docs) | `docs/levantamientos/` |
+| Destilado 04_EVIDENCE (datos operativos dubbing) | `docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md` |
+| KPIs dubbing (TBD) | KPI-27 (throughput), KPI-28 (correccion 0.5-4h/ep) — sin baseline |
 | Codigo existente AI-Studio | Repo AI-Studio (privado) |
 
 ### Modelos recomendados por tipo de research

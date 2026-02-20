@@ -18,6 +18,19 @@
 | Service-pipeline disconnect | **Confirmado** | `dubbing_pipeline.py` desconectado de `dubbing_service.py` |
 | Frontend | Solo modo Video | Audio/Text modes no implementados |
 | Tests | 130+ existentes | Cobertura del pipeline ERP, no integracion con API |
+| Input real dubbing | Solo video completo | Saul/Ivan no reciben stems ni guion texto — solo el video (Q8) |
+| ElevenLabs UI issue | Voice model no persiste | Al cambiar tab de idioma, se pierde seleccion de voz — retrabajo manual |
+
+### Errores frecuentes reportados por Saul/Ivan (Q8) — taxonomia de defectos
+
+1. **Speaker detection incorrecta** (error #1 — correcciones masivas)
+2. Texto de traduccion incorrecto
+3. Nombres propios mal traducidos
+4. Onomatopeyas mal traducidas
+5. Numeros leidos incorrectamente
+6. Pronombres incorrectos
+7. Tono/emocion no coincide
+8. Timing desincronizado
 
 ### Arquitectura actual (Gold Standard Seccion 4)
 
@@ -108,7 +121,7 @@ Repos:
 
 | # | Entregable | Esfuerzo | Criterio |
 |:--|:-----------|:---------|:---------|
-| R2.1 | Fix Bug P1: `WERResult.language` debe usar el idioma target, no defaultear a "ES" | 2h | Test unitario: WER calculado para EN retorna language="en" |
+| R2.1 | Fix Bug P1: `WERResult.language` debe usar el idioma target, no defaultear a "ES" (cierra Gap G9: no hay WER tracking por idioma) | 2h | Test unitario: WER calculado para EN retorna language="en" |
 | R2.2 | Integrar `dubbing_pipeline.py` ↔ `dubbing_service.py` (adaptador) | 8h | Test de integracion: servicio invoca pipeline y retorna resultado |
 | R2.3 | Verificar que 130+ tests existentes siguen pasando post-fix | 1h | CI green |
 
@@ -173,6 +186,7 @@ Repos:
 | Blacklists | `knowledgebase/blacklists/` | Formato JSON de blacklists |
 | Workflow | `docs/gold_standard_workflow.md` | Endpoints correctos |
 | Audit prompt | `debate/prompts/gemini_deep_audit_prompt.md` | Contexto completo del proyecto |
+| Destilado 04_EVIDENCE | `docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md` | Datos operativos de dubbing (pipeline, gaps, errores) |
 
 ### En AI-Studio (repo separado)
 

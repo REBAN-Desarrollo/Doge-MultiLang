@@ -1,0 +1,838 @@
+{
+  "wave": "WAVE 1 - EXPLORATION",
+  "timestamp": "2026-02-19T22:45:00Z",
+  "status": "EXPLORATION_COMPLETE",
+  "objective": "Curar contexto completo del pipeline de audio TTS + doblaje multiidioma para QPH",
+
+  "discovery_summary": {
+    "repos_analyzed": 3,
+    "files_indexed": 48,
+    "kb_entries": 735,
+    "docx_analyzed": 1,
+    "total_context_collected": "Yes"
+  },
+
+  "explorer_t1_doge_multilang": {
+    "explorer": "T1",
+    "label": "Doge-MultiLang Repo + SSOT Docx",
+    "status": "COMPLETE",
+
+    "file_inventory": {
+      "repo_root": "/c/Users/Daniel Garza/Documents/Github/Doge-MultiLang",
+      "size_mb": 44.3,
+      "structure": {
+        "scripts": {
+          "status": "EMPTY",
+          "files": 0,
+          "note": "Directory exists but no scripts present (15 issues backlog in README)"
+        },
+        "knowledgebase": {
+          "status": "POPULATED",
+          "files": 6,
+          "breakdown": {
+            "elevenlabs_final.jsonl": "2.8 MB, 735 entries (RAG primary source)",
+            "elevenlabs_docs.json": "970 KB",
+            "elevenlabs_helper.json": "471 KB",
+            "blacklists": "Directory with 3 files (global, AR, DE)",
+            "transform.py": "7.9 KB (pipeline generator)",
+            "README.md": "1.6 KB (metadata)"
+          }
+        },
+        "docs": {
+          "status": "EMPTY",
+          "files": 0,
+          "note": "Directory created but no technical docs"
+        },
+        "SSOT_docx": {
+          "filename": "Un guardaespaldas escolar.docx",
+          "size_mb": 44.3,
+          "status": "STRUCTURED_DATA",
+          "tables": 8,
+          "paragraphs": 36
+        }
+      }
+    },
+
+    "docx_format_analysis": {
+      "filename": "Un guardaespaldas escolar.docx",
+      "structure_type": "Guion con metadatos tabulares",
+      "components": {
+        "table_0_metadata": {
+          "name": "Title & Metadata",
+          "rows": 10,
+          "cols": 2,
+          "content": "Título: 'Un guardaespaldas escolar', propiedades del documento"
+        },
+        "table_1_publication": {
+          "name": "Publication Info",
+          "rows": 5,
+          "cols": 2,
+          "content": "Información de publicación (título, autor, fecha estimada)"
+        },
+        "table_2_personajes": {
+          "name": "Character Description",
+          "rows": 19,
+          "cols": 5,
+          "content": "19 personajes definidos (protagonistas, antagonistas, secundarios)"
+        },
+        "table_3_fondos": {
+          "name": "Backgrounds",
+          "rows": 72,
+          "cols": 3,
+          "content": "72 locales/fondos requeridos"
+        },
+        "table_4_guion": {
+          "name": "Script Development",
+          "rows": 13,
+          "cols": 8,
+          "content": "Estructura de guión: Escena, duración, dialogos, notas de timing"
+        },
+        "table_5_subtitulos": {
+          "name": "Subtitles",
+          "rows": 12,
+          "cols": 3,
+          "content": "Subtítulos traducidos o anotaciones"
+        },
+        "table_6_cambios_guion": {
+          "name": "Script Change Requests",
+          "rows": 20,
+          "cols": 3,
+          "content": "Solicitudes de modificación en guión"
+        },
+        "table_7_cambios_animacion": {
+          "name": "Animation Change Requests",
+          "rows": 20,
+          "cols": 3,
+          "content": "Solicitudes de modificación en animación"
+        }
+      },
+
+      "speaker_identification": {
+        "status": "NOT_EXPLICIT",
+        "finding": "Docx no tiene marcas explícitas de 'PERSONAJE:' al inicio de línea",
+        "implication": "Speaker identification requiere parse de diálogos desde tabla_4_guion (tabla de desarrollo)",
+        "workaround": "Extraer personajes de tabla_2 → mapear a diálogos en tabla_4 por contexto de escena"
+      },
+
+      "dialogue_boundaries": {
+        "definition": "No marcadas explícitamente",
+        "inference": "Cada fila en tabla_4 (Desarrollo de Guión) = 1 escena, múltiples diálogos por escena",
+        "encoding": "Tabla 8-columnas: Escena | Duración | Personaje | Diálogo | Acción | Notas | Timing | Estado"
+      },
+
+      "silences_metadata": {
+        "status": "NOT_EXPLICIT_IN_DOCX",
+        "note": "Docx no marca silencios, pausas o direcciones de escena",
+        "will_be_inferred": "De timestamps en post-producción (Fernando's MP4 audio)"
+      },
+
+      "metadata_extracted": {
+        "total_scenes": 13,
+        "unique_characters": 19,
+        "estimated_duration_minutes": "Not specified in SSOT docx",
+        "styles_and_encoding": "UTF-8 (encoding issue detected: é -> ?, but recoverable)"
+      }
+    },
+
+    "kb_catalog": {
+      "elevenlabs_final_jsonl": {
+        "format": "JSONL (JSON Lines)",
+        "entries": 735,
+        "schema": {
+          "content": "string (markdown text)",
+          "metadata": {
+            "source": "URL origin",
+            "title": "Article title",
+            "category": "API Reference | Help Center | Developer Guides"
+          }
+        },
+        "usage": "Primary RAG source for API knowledge when developing TTS/dubbing scripts"
+      },
+      "elevenlabs_docs_json": {
+        "format": "JSON array",
+        "size_kb": 970,
+        "content": "Technical documentation entries (subsetof JSONL)"
+      },
+      "elevenlabs_helper_json": {
+        "format": "JSON array",
+        "size_kb": 471,
+        "content": "Helper/FAQ entries for common API use cases"
+      },
+      "transform_py_pipeline": {
+        "input": "ElevenLabs Knowledgebase_RAW.json (from Apify)",
+        "operations": [
+          "Clean markdown (remove UI noise)",
+          "Deduplicate by URL",
+          "Categorize (API Reference vs Help Center)",
+          "Filter content < 50 chars",
+          "Inject technical content from Helper → Docs"
+        ],
+        "output": "elevenlabs_docs.json + elevenlabs_helper.json"
+      }
+    },
+
+    "pipeline_mapping": {
+      "planned_15_scripts": {
+        "#1": "STT Drift Detector (Open)",
+        "#2": "ES→EN Validator (Open)",
+        "#3": "Blacklist Checker (Open)",
+        "#4": "WER Pipeline (Open, P0)",
+        "#5": "Voice Manifest Generator (Open)",
+        "#6": "TTS Automation (Open, P1)",
+        "#7": "SFX Processor (Open, P2)",
+        "#8": "Guion Zombie Recovery (Open, P0)",
+        "#9": "Voice Casting Manager (Open)",
+        "#10": "QA Dashboard (Open)",
+        "#11": "Glossary Builder & Enforcer (Open)",
+        "#12": "Pre-flight Validator (Open, P0)",
+        "#13": "Audio Normalization (Open, P2)",
+        "#14": "COMETKiwi Integration (Open)",
+        "#15": "Content Moderation Scanner (Open)"
+      },
+      "currently_implemented": 0,
+      "blocking_status": "ALL SCRIPTS BLOCKED until repo setup complete"
+    },
+
+    "gaps_identified": {
+      "critical": [
+        "scripts/ directory is completely empty - no implementation of 15 planned scripts",
+        "docs/ directory is empty - no technical documentation of scripts",
+        "No docx parser script (referenced in README as step 1 of pipeline)",
+        "No voice mapper implementation",
+        "No TTS batch automation script"
+      ],
+      "blocking_issues": [
+        "BLOCKED: Cannot run pipeline without scripts/*",
+        "BLOCKED: Cannot parse docx without docx_parser.py",
+        "BLOCKED: Cannot validate without scripts running"
+      ],
+      "context_available": [
+        "✅ SSOT docx structure understood (8 tables, 19 characters, 13 scenes)",
+        "✅ KB sources loaded and ready for RAG",
+        "✅ Blacklist structure exists (global + AR + DE variants)"
+      ]
+    }
+  },
+
+  "explorer_t2_levantamientos_specs": {
+    "explorer": "T2",
+    "label": "Levantamientos video-qph CORE specs",
+    "status": "COMPLETE",
+
+    "core_specs_inventory": {
+      "directory": "/c/AI/AI-Studio/docs/product/projects/video-qph/00_CORE/",
+      "files_found": 12,
+      "files": [
+        "01_CORE_AUDIENCE_PROFILE.md",
+        "02_CORE_NARRATIVE_BIBLE.md",
+        "03_CORE_VISUAL_STYLE.md",
+        "04_CORE_TIMING_RULES.md",
+        "05_CORE_CONTENT_MODERATION.md",
+        "06_CORE_AUDIO_TTS.md",
+        "07_CORE_MULTI_LANGUAGE.md",
+        "08_CORE_LEAN_FRAMEWORK.md",
+        "09_CORE_GUIONISMO_BRIDGE.md",
+        "09_GLOSSARY_STRATEGY.md",
+        "10_QA_TIERING.md",
+        "11_ANDREA_GUION_CHECKLIST.md",
+        "12_SCRIPT_LOCK_WORKFLOW.md"
+      ]
+    },
+
+    "speaker_identification_rules": {
+      "source": "06_CORE_AUDIO_TTS.md §2",
+      "types_defined": 4,
+      "types": {
+        "protagonista": {
+          "definition": "Character central de la historia",
+          "max_per_episode": 2,
+          "voice_rules": "Única, alta expresividad, speed/pitch personalizados",
+          "consistency": "Se reutiliza si aparece en múltiples episodios",
+          "example": "Gabriel, Noha"
+        },
+        "antagonista": {
+          "definition": "Opositor o fuente de conflicto",
+          "voice_rules": "Contrastante al protagonista (más grave o agudo)",
+          "consistency": "Por episodio"
+        },
+        "narrador": {
+          "definition": "Voz en off que guía la historia",
+          "voice_rules": "Tono neutro, 'storytime', velocidad moderada",
+          "consistency": "FIJO en TODA la serie (no cambia entre episodios)",
+          "critical": "Single Voice ID across ALL episodes"
+        },
+        "secundario": {
+          "definition": "Personajes de soporte, apariciones breves",
+          "voice_rules": "Pool genérico",
+          "consistency": "No requiere consistencia salvo si es recurrente"
+        }
+      }
+    },
+
+    "dialogue_boundaries_definition": {
+      "source": "06_CORE_AUDIO_TTS.md §3.2",
+      "pipeline_step": "Paso 1: Extraer Dialogos",
+      "tool": "docx_parser.py / ExtraerDialogos.py",
+      "output_format": "JSON con diálogos por escena y personaje",
+      "key_rule": "MP4 final de Fernando (post-producción) = UNICA fuente de verdad para audio",
+      "protocol": {
+        "step_1": "Transcribir MP4 final con Whisper (texto real + timestamps)",
+        "step_2": "Usar manifest.json de Ramon SOLO para mapeo de voces",
+        "step_3": "Fuzzy match: alinear texto transcrito con personajes conocidos"
+      }
+    },
+
+    "silence_handling_process": {
+      "source": "07_CORE_MULTI_LANGUAGE.md §6 (Muda M2)",
+      "problem": "ElevenLabs comprime/estira silencios del audio original",
+      "fernando_workaround": "Corta waveforms a mano, visualmente - 'observar waveform y cortar a la mitad del silencio'",
+      "actual_evidence": "Quoted from Q7_FERNANDO_POSTPROD.md (questionnaire)",
+      "proposed_solution": "Manual Dub CSV con timestamps de After Effects (M2 Mitigation - D6/D9)",
+      "technical_approach": "Timestamps exactos de silencios → CSV format → API submission con Fixed Duration + buffer"
+    },
+
+    "speaker_mapping_workarounds": {
+      "source": "07_CORE_MULTI_LANGUAGE.md §6 (Muda M1)",
+      "problem": "Saul asigna voces 'de memoria' y re-mapea en cada idioma (~5-10 min/proyecto × N idiomas)",
+      "saul_ivan_current": "Memorizar orden de personajes manualmente",
+      "proposed_solution": "Persistencia de Voice IDs via manifest.json",
+      "technical_implementation": "manifest.json exportado por Ramon (Voice Lead) hereda automáticamente en dubbing",
+      "blockedby_rule": "Saul/Ivan NO deben re-asignar voces manualmente - el sistema hereda el casting"
+    },
+
+    "mudas_mapping": {
+      "total_mudas": 7,
+      "definition": "Problemas recurrentes de ElevenLabs identificados en entrevistas con Saul/Alan",
+      "mudas": {
+        "M1_remapping": {
+          "description": "Re-Mapping de Personajes",
+          "impact": "5-10 min/proyecto × N idiomas",
+          "workaround": "Memorizar orden de personajes",
+          "mitigation": "Persistencia Voice IDs via manifest.json"
+        },
+        "M2_silencios": {
+          "description": "Cosecha Manual de Silencios",
+          "impact": "Saul corta waveforms a mano",
+          "workaround": "Observar waveform y cortar 'a la mitad del silencio'",
+          "mitigation": "Manual Dub CSV con timestamps de AE"
+        },
+        "M3_mezcla": {
+          "description": "Mezcla de Dialogos en Pista Única",
+          "impact": "Múltiples personajes detectados como uno solo",
+          "workaround": "Separación manual y reasignación de pistas",
+          "mitigation": "Voice Segments v3: etiquetado por orador"
+        },
+        "M4_punto": {
+          "description": "Bug 'no.' → 'number'",
+          "impact": "Audio incorrecto que requiere edición",
+          "workaround": "Edición manual del texto",
+          "mitigation": "Sanitizador regex pre-envio"
+        },
+        "M5_filtros": {
+          "description": "Filtros de Seguridad por Idioma",
+          "impact": "Palabras como 'muerte', 'sexy' bloqueadas en idiomas específicos",
+          "workaround": "Cambiar manualmente el texto fuente",
+          "mitigation": "Pre-scanner LLM + diccionario de blacklist"
+        },
+        "M6_clipping": {
+          "description": "Audio 'Comido' (Clipping)",
+          "impact": "Sílabas perdidas al final de frases",
+          "workaround": "Recorrer manualmente el audio",
+          "mitigation": "Fixed Duration + buffer de respiro"
+        },
+        "M7_autoscroll": {
+          "description": "Falta de Auto-Scroll",
+          "impact": "Scroll manual constante durante revisión",
+          "workaround": "Scroll manual",
+          "mitigation": "Limitación de UX de ElevenLabs (sin solución backend)"
+        }
+      },
+      "critically_unsolved": ["M2_silencios - partially resolved", "M3_mezcla - pending"]
+    },
+
+    "qa_tiering_system": {
+      "source": "10_QA_TIERING.md",
+      "principle": "calidad > costo",
+      "tiers": {
+        "tier_1": {
+          "name": "Validación Máxima",
+          "languages": ["EN", "PT-BR", "FR", "DE"],
+          "method": "100% revisión humana",
+          "checkpoint_count": 6,
+          "responsible": "Saul/Ivan"
+        },
+        "tier_2": {
+          "name": "Validación Media",
+          "languages": ["AR", "KO", "JA", "HI", "ZH"],
+          "method": "Muestreo inteligente (~30%)",
+          "checkpoint_count": 5,
+          "automated_metrics": ["COMET", "BERTScore"]
+        },
+        "tier_3": {
+          "name": "Validación Mínima",
+          "languages": ["FIL", "ID", "IT", "RU", "TR", "TA", "MS"],
+          "method": "Solo automático",
+          "checkpoint_count": 3,
+          "escalation": "Solo si metricas < umbral"
+        }
+      },
+      "cost_estimate": "~$1-2 por video de validación (Tier 1-3 combined)"
+    },
+
+    "glossary_strategy": {
+      "source": "09_GLOSSARY_STRATEGY.md",
+      "problem": "Nombres propios se traducen erróneamente sin glosario centralizado",
+      "examples_of_failure": [
+        "Minecraft Master → 'Maestro de la Minería' (FATAL - branding)",
+        "Lesslie → 'Leslie' / 'Lesli' (inconsistencia)",
+        "Que Perro Hilo → 'What a Dog Thread' (literal sin adaptación)",
+        "Marketplace → 'Mercado' (pérdida de contexto)"
+      ],
+      "mechanisms": {
+        "mechanism_1_regex_protect": "Tokens <dnt>Minecraft Master</dnt> pre-envío",
+        "mechanism_2_prompt_injection": "System prompt LLM con lista de términos protegidos",
+        "mechanism_3_pronunciation_dict": "Endpoint /v1/pronunciation-dictionaries de ElevenLabs"
+      },
+      "implementation": "glossary_global.json + glosarios por idioma"
+    },
+
+    "evidence_found": {
+      "fernando_questionnaire": "Q7_FERNANDO_POSTPROD.md (draft answers not filled)",
+      "saul_ivan_questionnaire": "Q8_SAUL_IVAN_DUBBING.md (draft answers not filled)",
+      "note": "Questionnaires son templates vacíos, datos no recogidos aún"
+    },
+
+    "gaps_identified": {
+      "critical": [
+        "Q7 (Fernando) - no filled responses on silence handling process",
+        "Q8 (Saul/Ivan) - no filled responses on speaker mapping actual workflows",
+        "M2_silencios - only workaround documented, no system implementation",
+        "M3_mezcla - labeled 'Pending', no workaround code visible"
+      ],
+      "blocking_issues": [
+        "BLOCKED: Cannot validate silence handling without Fernando's actual MP4 workflow",
+        "BLOCKED: Cannot automate Saul's workarounds without understanding actual re-mapping steps",
+        "BLOCKED: Cannot implement M3 (voice segments) - pending API support from ElevenLabs"
+      ],
+      "context_available": [
+        "✅ All CORE specs documented (13 files)",
+        "✅ 7 Mudas explicitly mapped to solutions",
+        "✅ QA tiering system fully defined",
+        "✅ Glossary strategy with 3 mechanisms documented"
+      ]
+    }
+  },
+
+  "explorer_t3_doge_animator_local": {
+    "explorer": "T3",
+    "label": "Doge-Animator Local Clone",
+    "status": "COMPLETE",
+
+    "repo_inventory": {
+      "directory": "/c/Users/Daniel Garza/Documents/Github/Doge-Animator",
+      "total_files": 2359,
+      "primary_components": {
+        "CSXS": "CEP manifest.xml (Adobe After Effects CEP integration)",
+        "jsx": "ExtendScript lib.jsx (v3.6.2) - core animation rig control",
+        "src": "ES6 source modules (UI logic, bridge)",
+        "dist": "Bundled JavaScript (doge-animator.iife.js)",
+        "knowledge_base": "Subdirectory with audio-related documentation"
+      }
+    },
+
+    "cep_panel_architecture": {
+      "type": "Adobe CEP Panel (After Effects extension)",
+      "ae_versions_supported": ["2021 (CSXS.11)", "2022-2024 (CSXS.12+)"],
+      "primary_users": "7 animadores (Helmut, Sebastián, Francisco, Dulce, Annie, Sindi, Amayrany)",
+      "frequency": "Diario, 4-6h/usuario durante producción",
+      "ui_components": [
+        "Joystick de pupilas (55+ FPS target)",
+        "Presets de animación rápida",
+        "Expresiones y poses",
+        "Panel Extras (props biblioteca)"
+      ]
+    },
+
+    "audio_integration_points": {
+      "tts_capability": {
+        "status": "POTENTIAL",
+        "evidence": "config/telemetry.json can call ElevenLabs (directo o vía proxy)",
+        "implementation": "Directa o vía proxy según config"
+      },
+      "lip_sync_requirements": {
+        "source": "knowledge_base/rhubarb-lipsync/ (6 docs)",
+        "audio_format_expected": "MP3 (standard format for Rhubarb)",
+        "integration_point": "NOT YET CONNECTED to CEP panel"
+      },
+      "ffmpeg_audio_support": {
+        "source": "knowledge_base/ffmpeg-audio/ (9 docs)",
+        "capabilities": "Audio processing, format conversion, mixing",
+        "status": "Documented but NOT integrated in panel"
+      },
+      "stt_processor": {
+        "source": ".claude/agents/stt-processor.md",
+        "current_use": "Speech-to-Text for transcription",
+        "repurposing_potential": "Could adapt for speaker identification (experimental)"
+      }
+    },
+
+    "kb_structure": {
+      "rhubarb_lipsync": {
+        "files": 6,
+        "content": "Lip-sync automation for character animation",
+        "audio_format": "MP3 primary"
+      },
+      "elevenlabs": {
+        "files": 3,
+        "content": "TTS/STT integration documentation"
+      },
+      "ffmpeg_audio": {
+        "files": 9,
+        "content": "Audio processing, format conversion, advanced mixing"
+      }
+    },
+
+    "capability_matrix_today": {
+      "animation_control": "✅ Full rig control (Rig Doge 2.3/2.4)",
+      "expression_management": "✅ Presets and rapid animations",
+      "pupil_tracking": "✅ Joystick-based (55+ FPS)",
+      "audio_import": "❌ No audio file input in CEP panel",
+      "audio_sync": "❌ Manual timing only",
+      "tts_generation": "⚠️ Potential (config exists, not integrated)",
+      "speaker_identification": "❌ Not implemented",
+      "lip_sync_export": "⚠️ Rhubarb docs exist, not connected to panel"
+    },
+
+    "dependencies_with_doge_multilang": {
+      "speaker_identification": {
+        "needed_from": "Doge-MultiLang",
+        "current_status": "Not available",
+        "blocker": "YES - Cannot validate audio sync without speaker data"
+      },
+      "manifest_json_import": {
+        "needed_from": "Voice TTS script (to be built in Doge-MultiLang)",
+        "current_status": "Not available",
+        "purpose": "Character-to-voice mapping"
+      },
+      "timing_exports": {
+        "needed_from": "Doge-Animator must export keyframes",
+        "current_status": "Not in JSON format yet",
+        "planned_for": "Fase 2 roadmap"
+      }
+    },
+
+    "gaps_identified": {
+      "critical": [
+        "No audio file receiver in CEP panel",
+        "No direct audio playback sync",
+        "No speaker identification integration",
+        "STT processor exists but not repurposed for speaker ID"
+      ],
+      "integration_blockers": [
+        "BLOCKED: Cannot sync animation with TTS without audio import capability",
+        "BLOCKED: Cannot validate speaker consistency without speaker ID module",
+        "BLOCKED: Lip-sync docs exist but no active integration to panel"
+      ],
+      "context_available": [
+        "✅ CEP panel architecture solid (55+ FPS baseline)",
+        "✅ KB for audio processing complete (rhubarb, ffmpeg, ElevenLabs)",
+        "✅ 7 primary animadores ready for production",
+        "✅ Roadmap clearly defines Fase 1 (performance) and Fase 2 (exports + webhooks)"
+      ]
+    }
+  },
+
+  "explorer_t4_elevenlabs_kb": {
+    "explorer": "T4",
+    "label": "ElevenLabs KB Outputs + Workflows",
+    "status": "COMPLETE",
+
+    "kb_analysis": {
+      "elevenlabs_final_jsonl": {
+        "file_path": "/c/Users/Daniel Garza/Documents/Github/Doge-MultiLang/knowledgebase/elevenlabs_final.jsonl",
+        "size_mb": 2.8,
+        "entries": 735,
+        "schema": {
+          "content": "string (markdown documentation)",
+          "metadata": {
+            "source": "URL where article was crawled",
+            "title": "Article title",
+            "category": "Category assigned during transform"
+          }
+        },
+        "coverage": "Complete API documentation + Help Center articles"
+      },
+
+      "elevenlabs_docs_json": {
+        "file_path": "/c/Users/Daniel Garza/Documents/Github/Doge-MultiLang/knowledgebase/elevenlabs_docs.json",
+        "size_kb": 970,
+        "type": "Subset of JSONL",
+        "content": "Technical documentation + injected technical articles from Helper"
+      },
+
+      "elevenlabs_helper_json": {
+        "file_path": "/c/Users/Daniel Garza/Documents/Github/Doge-MultiLang/knowledgebase/elevenlabs_helper.json",
+        "size_kb": 471,
+        "type": "Support articles",
+        "content": "Help Center FAQs and support articles"
+      }
+    },
+
+    "transform_py_pipeline": {
+      "input": "ElevenLabs Knowledgebase_RAW.json (from Apify crawler)",
+      "output": ["ElevenLabs Docs.json", "ElevenLabs Helper.json"],
+      "operations": [
+        "Clean markdown (remove UI noise from Fern/Zendesk)",
+        "Deduplicate by URL",
+        "Categorize (API Reference vs Help Center vs Changelog)",
+        "Filter content < 50 chars (quality audit)",
+        "Inject technical content from Helper → Docs (RAG optimization)"
+      ],
+      "code_evidence": "Lines 87-102 in transform.py: categorize_url(), is_technical_content()",
+      "deduplication_rate": "Estimated 20-30% duplicate URLs removed"
+    },
+
+    "api_capability_matrix": {
+      "apis_available": {
+        "text_to_speech": {
+          "endpoint": "POST /v1/text-to-speech/{voice_id}",
+          "usage": "Generación de dialogos individuales",
+          "status": "Implemented",
+          "relevance_to_qph": "CRITICAL"
+        },
+        "studio_projects": {
+          "endpoint": "POST /v1/studio/projects",
+          "feature": "from_content_json parameter",
+          "usage": "Proyectos estructurados con manifest",
+          "status": "Available",
+          "relevance_to_qph": "HIGH - for persistent voice IDs"
+        },
+        "dubbing": {
+          "endpoint": "POST /v1/dubbing",
+          "usage": "Doblaje multi-idioma de video",
+          "status": "Implemented",
+          "relevance_to_qph": "CRITICAL"
+        },
+        "speech_to_text": {
+          "endpoint": "POST /v1/speech-to-text",
+          "usage": "Transcripción para validación",
+          "status": "Available",
+          "relevance_to_qph": "HIGH - for WER validation"
+        },
+        "forced_alignment": {
+          "endpoint": "POST /v1/forced-alignment",
+          "usage": "Verificación timestamps texto-audio",
+          "status": "Available",
+          "relevance_to_qph": "MEDIUM - for silence handling"
+        },
+        "voice_segments_v3": {
+          "endpoint": "Text to Dialogue with speaker tags",
+          "usage": "Etiquetado por orador para mezcla",
+          "status": "Pending",
+          "relevance_to_qph": "HIGH - for M3 Muda resolution"
+        }
+      }
+    },
+
+    "knowledgebase_gaps_vs_needs": {
+      "found_in_kb": [
+        "Standard API endpoints (TTS, Dubbing, STT)",
+        "Authentication and API keys",
+        "Basic parameter documentation",
+        "Voice profiles and voice design"
+      ],
+      "missing_from_kb": [
+        "Manual Dub CSV format specification",
+        "Voice Segments v3 implementation details",
+        "Fixed Duration + buffer configuration",
+        "Pronunciation dictionary advanced usage",
+        "Edge cases for safety filters by language"
+      ],
+      "workaround_needed": "Extract implementation patterns from ElevenLabs API examples + trial-and-error in QPH production"
+    },
+
+    "fernando_silence_handling_actual": {
+      "source": "Q7_FERNANDO_POSTPROD.md (TEMPLATE - not filled)",
+      "stated_process": "Observar waveform y cortar 'a la mitad del silencio'",
+      "tools_used": "Adobe Audition / DaVinci Fairlight (assumed from questionnaire options)",
+      "manual_overhead": "Cortar silencios a mano en waveform visual",
+      "proposed_automation": "Manual Dub CSV con timestamps exactos de After Effects",
+      "technical_blocker": "API documentation for CSV format NOT FOUND IN KB"
+    },
+
+    "saul_ivan_speaker_mapping_actual": {
+      "source": "Q8_SAUL_IVAN_DUBBING.md (TEMPLATE - not filled)",
+      "current_workaround": "Memorizar orden de personajes",
+      "time_cost": "~5-10 min/proyecto × N idiomas",
+      "re-mapping_frequency": "Una vez por idioma (16 idiomas = 16 reasignaciones)",
+      "proposed_solution": "Heredar manifest.json de Ramon (Voice Lead) automáticamente",
+      "technical_blocker": "Manifest inheritance pattern NOT DOCUMENTED in ElevenLabs KB"
+    },
+
+    "gaps_identified": {
+      "critical": [
+        "QUESTIONNAIRE DATA MISSING: Q7 y Q8 son templates vacíos (no filled responses)",
+        "KB lacks Manual Dub CSV specification",
+        "KB lacks Voice Segments v3 advanced usage",
+        "KB lacks Fixed Duration configuration patterns"
+      ],
+      "blocking_issues": [
+        "BLOCKED: Cannot implement M2 (silencios) without CSV format spec",
+        "BLOCKED: Cannot implement M3 (mezcla) without Voice Segments v3 docs",
+        "BLOCKED: Cannot build manifest inheritance without implementation examples"
+      ],
+      "context_available": [
+        "✅ 735 KB entries covering standard APIs",
+        "✅ transform.py pipeline working (deduplication + injection)",
+        "✅ Blacklist structure for 3 languages (global + AR + DE)",
+        "✅ ElevenLabs APIs documented for basic use cases"
+      ]
+    }
+  },
+
+  "consolidated_findings": {
+    "overall_status": "DISCOVERY_COMPLETE - Ready for PHASE 1 PLANNING",
+
+    "what_exists": {
+      "repos": [
+        "✅ Doge-MultiLang (SSOT for pipeline spec + KB sources)",
+        "✅ Doge-Animator (CEP panel for animation sync)",
+        "✅ video-qph (CORE specs + questionnaires)"
+      ],
+      "specifications": [
+        "✅ 13 CORE spec documents (06_AUDIO, 07_MULTILANG, 09_GLOSSARY, 10_QA, etc.)",
+        "✅ 7 Mudas explicitly mapped to mitigations",
+        "✅ QA tiering system fully defined",
+        "✅ Character system documented (4 types)"
+      ],
+      "knowledgebases": [
+        "✅ 735 ElevenLabs KB entries (JSONL format)",
+        "✅ Blacklist system for 3 languages",
+        "✅ Rhubarb + FFmpeg docs in Doge-Animator KB"
+      ],
+      "guion_master": [
+        "✅ Un guardaespaldas escolar.docx (SSOT - 8 tables, 19 characters, 13 scenes)"
+      ]
+    },
+
+    "what_doesnt_exist": {
+      "critical_scripts": [
+        "❌ 15 planned scripts from Doge-MultiLang backlog (all Open)",
+        "❌ docx_parser.py (step 1 of pipeline)",
+        "❌ voice_mapper.py (step 2)",
+        "❌ tts_batch.py (step 3)"
+      ],
+      "implementations": [
+        "❌ M2 Muda solution (Silencios) - only workaround documented",
+        "❌ M3 Muda solution (Mezcla de dialogos) - labeled 'Pending'",
+        "❌ Manifest inheritance system - not coded",
+        "❌ Glossary enforcer - structure exists, not integrated"
+      ],
+      "filled_questionnaires": [
+        "❌ Q7_FERNANDO_POSTPROD.md (template only, no filled data)",
+        "❌ Q8_SAUL_IVAN_DUBBING.md (template only, no filled data)",
+        "❌ Cannot validate actual workflows without filled responses"
+      ]
+    },
+
+    "blocking_dependencies": {
+      "phase_1_blocker_1": "docx_parser must be built first (parses SSOT into JSON)",
+      "phase_1_blocker_2": "Voice Manifest Generator must work (Ramon's input)",
+      "phase_1_blocker_3": "TTS Batch automation must be built (calls ElevenLabs)",
+      "phase_1_blocker_4": "Fernando's actual silence handling process must be documented (Q7 filled)",
+      "phase_1_blocker_5": "Saul/Ivan's actual speaker mapping steps must be documented (Q8 filled)"
+    },
+
+    "critical_path_to_automation": {
+      "step_1_docx_parse": "Parse SSOT docx → Extract dialogues, speakers, timing",
+      "step_2_speaker_map": "Map speakers to characters (from table_2) via fuzzy matching",
+      "step_3_voice_assign": "Call Ramon's manifest.json OR create new voice assignments",
+      "step_4_tts_generate": "Call ElevenLabs TTS API batch (ES)",
+      "step_5_fernando_sync": "Export timing markers for Fernando's audio sync (M2 workaround)",
+      "step_6_dubbing": "Call ElevenLabs Dubbing API (EN + 16 idiomas)",
+      "step_7_saul_inherit": "Inherit speaker mapping to all idiomas (M1 solution)",
+      "step_8_qa_validate": "Run WER + COMET + safety checks (Tier 1-3 per language)",
+      "step_9_normalization": "Audio normalization (step #13 in pipeline)",
+      "step_10_delivery": "Export final assets per language"
+    },
+
+    "risk_assessment": {
+      "highest_risk": "M2 Silencios - Fernando's manual process not yet automated, only workaround documented",
+      "second_highest": "M3 Mezcla - Voice Segments v3 pending from ElevenLabs, NO WORKAROUND YET",
+      "third": "Questionnaire data - Q7 and Q8 are empty templates, actual workflows unknown",
+      "mitigation_strategy": "Fill Q7 + Q8 FIRST before implementing M2/M3 solutions"
+    },
+
+    "readiness_for_next_phase": {
+      "phase_1_planning": "✅ READY",
+      "preconditions": [
+        "Complete Q7_FERNANDO_POSTPROD.md (get actual silence handling steps)",
+        "Complete Q8_SAUL_IVAN_DUBBING.md (get actual speaker mapping steps)",
+        "Confirm Doge-Animator performance baseline (55+ FPS)"
+      ],
+      "deliverables_phase_1": [
+        "Scripts #1-6 (Parser, Validator, TTS Batch, Voice Manifest, Glossary, etc.)",
+        "Episodio piloto end-to-end (using automated pipeline)",
+        "Training deck for 7 animadores"
+      ]
+    }
+  },
+
+  "recommendations": {
+    "immediate_actions": [
+      {
+        "action": "PRIORITY 1: Fill questionnaires Q7 + Q8",
+        "reason": "Get actual workflows from Fernando + Saul/Ivan before implementing M2/M3 solutions",
+        "owner": "Daniel/Iris (operations)",
+        "timeline": "Next 2 days"
+      },
+      {
+        "action": "PRIORITY 2: Validate Doge-Animator performance baseline",
+        "reason": "Confirm 55+ FPS and 0 crashes during 4h session (Fase 1 blocker)",
+        "owner": "Alex (architecture) + Helmut (primary animator)",
+        "timeline": "Before Phase 1 kickoff"
+      },
+      {
+        "action": "PRIORITY 3: Start docx_parser.py (script #12 or #1 dependency)",
+        "reason": "Foundation for all other scripts",
+        "owner": "Backend team",
+        "timeline": "Phase 1 start"
+      }
+    ],
+
+    "knowledge_transfers_needed": [
+      {
+        "transfer": "Doge-MultiLang KB structure + RAG best practices",
+        "from": "Document authors (video-qph specs)",
+        "to": "Backend engineers (script developers)",
+        "medium": "1h workshop + README"
+      },
+      {
+        "transfer": "Doge-Animator integration points for audio",
+        "from": "Alex (CEP developer)",
+        "to": "Backend team (TTS batch + manifest builder)",
+        "medium": "Technical walkthrough of jsx/lib.jsx + audio KB"
+      },
+      {
+        "transfer": "ElevenLabs API edge cases (Mudas M1-M7)",
+        "from": "Saul/Ivan (experienced operators)",
+        "to": "Script developers + QA team",
+        "medium": "Documented Q7 + Q8 responses + implementation guide"
+      }
+    ],
+
+    "next_exploration_sessions": [
+      {
+        "session": "WAVE 2 - PLANNING",
+        "goal": "Define success criteria, approval gates, task breakdowns",
+        "input": "This discovery report + filled Q7/Q8",
+        "output": "Detailed task list with dependencies, risk mitigation"
+      },
+      {
+        "session": "WAVE 3+ - IMPLEMENTATION",
+        "goal": "Scripts, testing, validation",
+        "parallelization": "N workers per script (max 5 in parallel per wave)"
+      }
+    ]
+  }
+}

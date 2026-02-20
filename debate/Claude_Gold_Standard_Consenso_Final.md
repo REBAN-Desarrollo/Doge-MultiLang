@@ -977,9 +977,9 @@ ROI Dashboard, Tropicalizacion automatica, Analisis de audio avanzado (UTMOS, em
 | `debate/Codex_2026-02-20_Gold_Standard_Unificado.md` | Codex (GPT-5) | 2026-02-20 | ABSORBIDO -- GS-01 a GS-05 y matriz endpoints en Secciones 4-5 |
 | `debate/Gemini_3.1_PRO_Deep_Audit_QPH.md` | Gemini 3.1 PRO | 2026-02-20 | ABSORBIDO -- traduccion directa y STT por excepcion en Secciones 6-7 |
 | `debate/Gemini_Deep_Thinking_Deep_Audit_QPH.md` | Gemini Deep Thinking | 2026-02-20 | ABSORBIDO -- DTR, expansion, model tiering en Secciones 6-7 |
-| `debate/Sonnet_Devil_Advocate_Critique.md` | Sonnet | 2026-02-19 | ABSORBIDO -- advertencias como riesgos en Seccion 11 |
-| `debate/Gaps_Pendientes_Deep_Research.md` | Claude | 2026-02-19 | ABSORBIDO -- datos YouTube Analytics en Secciones 1, 6, 10 |
-| `debate/MEGA_BARRIDO_MULTIAGENTE_10_AGENTES.md` | 10 agentes | 2026-02-20 | ABSORBIDO -- inventario y contradicciones en Secciones 3, 5 |
+| `debate/Sonnet_Devil_Advocate_Critique.md` | Sonnet | 2026-02-19 | VIGENTE -- actualizado con resultados Phase 0 (Seccion 0). Advertencias en Seccion 11 |
+| `docs/Gaps_Pendientes_Deep_Research.md` | Claude | 2026-02-19 | MOVIDO a `docs/` -- datos primarios YouTube Analytics referenciados en Secciones 1, 6, 10 |
+| `debate/MEGA_BARRIDO_MULTIAGENTE_10_AGENTES.md` | 10 agentes | 2026-02-20 | **ELIMINADO** -- inventario y contradicciones en Secciones 3, 5 |
 | `docs/gold_standard_workflow.md` | Equipo | 2026-02-18 | ABSORBIDO -- endpoints corregidos en Seccion 5 |
 | `docs/gold_standard_sections_*.md` (5 archivos) | Equipo | 2026-02-19 | ABSORBIDOS -- contenido expandido y corregido en Secciones 3-13 |
 
@@ -988,7 +988,10 @@ ROI Dashboard, Tropicalizacion automatica, Analisis de audio avanzado (UTMOS, em
 | Documento | Razon |
 |:----------|:------|
 | `debate/prompts/` (directorio) | Prompts operativos, no contenido de debate |
-| `analysis/prd_final.md` | Cerrado como SUPERSEDED por ADR (Seccion 10.8), pero conservado como referencia historica |
+| `debate/Sonnet_Devil_Advocate_Critique.md` | Critica independiente con verificacion Phase 0 (documento vivo de accountability) |
+| `debate/Propuesta_Equipo_No_Tecnica.md` | Documento de comunicacion para equipo no-tecnico (RACI, FAQ, glosario, contingencia) |
+| `docs/Gaps_Pendientes_Deep_Research.md` | Datos primarios YouTube Analytics 2025 (fuente de datos, no opinion) |
+| `analysis/prd_final.md` | Cerrado como SUPERSEDED por ADR (Seccion 10.9), pero conservado como referencia historica |
 | `docs/levantamientos/*.md` | Registros operativos de levantamientos con stakeholders |
 | `README.md` | Documento de navegacion del repo |
 | `MASTER_INDEX.md` | Indice SSOT del repo |

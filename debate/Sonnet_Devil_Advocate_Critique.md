@@ -20,6 +20,59 @@ El `claude_debate.md` v2 (el documento a criticar) esta bien razonado pero desca
 
 ---
 
+## SECCION 0: RESULTADOS DE VERIFICACION PHASE 0 (2026-02-20)
+
+> **Actualizacion:** El 2026-02-20 se ejecuto una verificacion Phase 0 del codigo real de AI-Studio con 5 agentes exploradores en paralelo. Los resultados invalidan, confirman o matizan varias de las preocupaciones de este documento. A continuacion el estado de cada claim critico.
+
+### Claims REFUTADOS (la preocupacion resulto infundada)
+
+| # | Claim original | Resultado Phase 0 | Evidencia |
+|:--|:---------------|:-------------------|:----------|
+| R1 | "PR #71 puede llevar 14 meses sin merge" (§1.1) | **REFUTADO** — PR #71 fue cerrado el mismo dia que se abrio (2025-12-26). No estuvo stale. | `gh pr view 71` en AI-Studio |
+| R2 | "Bug P0: prescanner crash si retorna None" (§1.1) | **REFUTADO** — `prescan_script()` siempre retorna `PreScanResult`. No hay path que retorne None. | Lectura de `prescanner.py` linea por linea |
+| R3 | "30 tests unitarios" (citado del Pipeline Debate) | **INCORRECTO** — Son ~130 tests relacionados con dubbing (32 solo en pipeline). | Conteo en `test_dubbing_pipeline.py` + archivos de test asociados |
+| R4 | "14 componentes frontend" | **INCORRECTO** — Son 13 archivos. Solo el modo Video tiene backend conectado. | Glob de `apps/studio/src/features/dubbing/` |
+
+### Claims CONFIRMADOS (la preocupacion era valida)
+
+| # | Claim original | Resultado Phase 0 | Impacto |
+|:--|:---------------|:-------------------|:--------|
+| C1 | "Bug P1: WER default ES" (§1.3) | **CONFIRMADO** — `compute_wer()` tiene `language` param pero ningun caller lo pasa. Siempre default a ES. | Metricas por idioma inservibles hasta fix |
+| C2 | "Pipeline desconectado de Service" (§implícito) | **CONFIRMADO** — `dubbing_service.py` y `dubbing_pipeline.py` comparten zero imports/estado. Son dos sistemas paralelos. | ~15-21h para conectar |
+| C3 | "Costo $1.20 no verificado" (§1.3) | **CONFIRMADO** — Gold Standard adopto $46-63/episodio. $1.20 formalmente descartado. | 40-50x subestimado |
+| C4 | "ElevenLabs API cambio en 14 meses" (§2.1) | **CONFIRMADO** — Scribe usa v1 hardcoded (no v2). elevenlabs.py movido a model_gateway/providers/ (~830L, no 880L). Faltan 4 endpoints criticos. | Requiere actualizacion significativa |
+| C5 | "Levantamientos no validados" (§1.4) | **PARCIALMENTE CONFIRMADO** — Datos numericos del Pipeline Debate tenian errores (lineas, tests, componentes). Levantamientos humanos pendientes de validacion. | Entrevistas Dia 3 siguen siendo necesarias |
+
+### Claims ABIERTOS (aun sin verificar)
+
+| # | Claim original | Estado | Accion pendiente |
+|:--|:---------------|:-------|:-----------------|
+| O1 | "Saul/Ivan pueden rechazar AI-Studio" (§2.2) | **ABIERTO** — No se ha hecho demo ni entrevista. | Entrevista + demo Dia 3 |
+| O2 | "Fernando no puede exportar stems" (§2.3) | **ABIERTO** — No se ha preguntado a Fernando. | Entrevista Dia 3 |
+| O3 | "Fuzzy match falla en ad-libs" (§5.5) | **ABIERTO** — No se ha testeado con episodio real. | Test E2E con episodio con ad-libs |
+| O4 | "Whisper precision baja en Tier 3" (§2.4 impl.) | **ABIERTO** — No se ha benchmarkeado TA/MS/FIL. | Benchmark 1 dia |
+| O5 | "ElevenLabs es el proveedor correcto?" (§5.4) | **ABIERTO** — Benchmark anual programado Q2 2026. | No urgente |
+
+### Hallazgos NUEVOS (no anticipados por este documento)
+
+| # | Hallazgo | Impacto |
+|:--|:---------|:--------|
+| N1 | `dubbing_routes.py` tiene TODO #173 como BLOCKER — los endpoints REST no estan creados aun | Critico: no hay API REST para dubbing |
+| N2 | `docx_parser.py` tiene 558 lineas (no 435 como se reportaba) | Menor: mas codigo del esperado |
+| N3 | Solo modo Video tiene backend wired; Script/Manual/Smart son UI-only | Reduce funcionalidad real del frontend |
+| N4 | E2E NO es feasible hoy — minimo ~11h de fixes necesarios | Confirma la tesis central de este documento |
+
+### Veredicto Post-Phase 0
+
+**La tesis central de este documento se mantiene:** "Verificar antes de planear" fue el consejo correcto. La verificacion Phase 0 encontro que la realidad es **mejor** en algunos aspectos (PR no stale, mas tests, bug P0 no existe) pero **peor** en otros (endpoints REST no creados, solo 1 de 4 modos funcional, pipeline totalmente desconectado). El hallazgo neto es que **E2E no es feasible hoy** con minimo ~11h de fixes, lo cual valida la postura prudente de este documento.
+
+**Las 3 recomendaciones mas valiosas de este documento que siguen vigentes:**
+1. Entrevistar a Saul/Ivan y Fernando antes de codigo (§2.2, §2.3) — **NO SE HA HECHO**
+2. Plan de rollback a Web UI (§3.3) — **NO EXISTE**
+3. Datos de ROI por idioma antes de escalar (§5.1) — **PARCIAL** (Gaps_Pendientes tiene datos, pero no se ha tomado Decision D-005)
+
+---
+
 ## SECCION 1: ASUNCIONES NO VERIFICADAS
 
 ### 1.1 "Phase 1 + Phase 2 estan implementadas" — No verificado desde dentro del repo

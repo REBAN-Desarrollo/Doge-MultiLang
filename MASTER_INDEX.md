@@ -12,8 +12,8 @@
 |:-----------|:---------|:------|:----------|
 | `/` (root) | 4 | .md, .py, .pptx, .gitignore | Proyecto raiz |
 | `analysis/` | 10 | .md, .json | Deep research: 4 waves de analisis |
-| `debate/` | 11 | .md | Debate multi-AI, propuestas, auditorias |
-| `docs/` | 1 | .md | Workflow gold standard |
+| `debate/` | 7 | .md | Gold Standard canonico + debate multi-AI + auditorias |
+| `docs/` | 2 | .md | Workflow gold standard + Gaps (YouTube Analytics) |
 | `docs/levantamientos/` | 51 | .md, .txt, .docx | Entrevistas, specs, cuestionarios |
 | `knowledgebase/` | 6 | .jsonl, .json, .py, .md | RAG sources, transform script |
 | `knowledgebase/elevenlabs_api/` | 158 | .md | API reference ElevenLabs (Feb 2026) |
@@ -21,7 +21,7 @@
 | `knowledgebase/theories/` | 3 | .md | Sintesis teoricas |
 | `knowledgebase/_metadata/` | 6 | .md, .txt | Trazabilidad y proveniencia |
 | `scripts/` | 2 | .py | Scripts de produccion |
-| `prompts/` | 1 | .md | Prompts para auditorias AI |
+| `debate/prompts/` | 1 | .md | Prompts para auditorias AI |
 
 ---
 
@@ -70,22 +70,22 @@ Si necesitas detalle, lee los reportes individuales T6-T10.
 
 ---
 
-## 3. DEBATE/ — Multi-AI Debate y Propuestas (11 archivos)
+## 3. DEBATE/ — Gold Standard + Debate Multi-AI (7 archivos)
 
-Perspectivas de multiples modelos AI sobre el pipeline. Incluye consenso, criticas, y propuestas.
+El Gold Standard v1.0 es el documento canonico que consolida 10+ perspectivas AI. Los demas archivos son auditorias independientes y documentos complementarios.
 
-| # | Archivo | Titulo | Autor | Fecha |
-|:--|:--------|:-------|:------|:------|
-| 1 | [`Claude_Mega_Propuesta_Final.md`](debate/Claude_Mega_Propuesta_Final.md) | MEGA PROPUESTA FINAL | Claude Opus 4.6 (15 agentes) | 2026-02-20 |
-| 2 | [`Claude_Pipeline_Debate.md`](debate/Claude_Pipeline_Debate.md) | Claude Debate v3 FINAL | Claude Opus 4.6 (6 agentes) | 2026-02-19 |
-| 3 | [`Claude_Addendum_Deep_Research.md`](debate/Claude_Addendum_Deep_Research.md) | Addendum: Deep Research | Claude Opus 4.6 (4 agentes) | 2026-02-20 |
-| 4 | [`Codex_Gold_Standard.md`](debate/Codex_Gold_Standard.md) | Gold Standard v2 | Codex (GPT-5) | 2026-02-20 |
-| 5 | [`Gemini_Swarm_Multi_Opinion.md`](debate/Gemini_Swarm_Multi_Opinion.md) | Mega Swarm Analysis & Theories | Gemini (multi-swarm) | — |
-| 6 | [`Gemini_3.1_PRO_Deep_Audit_QPH.md`](debate/Gemini_3.1_PRO_Deep_Audit_QPH.md) | Deep Audit QPH (Exhaustive) | Gemini 2.5 Pro | 2026-02-20 |
-| 7 | [`Gemini_Deep_Thinking_Deep_Audit_QPH.md`](debate/Gemini_Deep_Thinking_Deep_Audit_QPH.md) | Step-Back / Zoom-Out Analysis | Gemini (Deep Thinking) | — |
-| 8 | [`Sonnet_Devil_Advocate_Critique.md`](debate/Sonnet_Devil_Advocate_Critique.md) | Abogado del Diablo | Claude Sonnet 4.6 | 2026-02-19 |
-| 9 | [`Propuesta_Equipo_No_Tecnica.md`](debate/Propuesta_Equipo_No_Tecnica.md) | Propuesta para Equipo (no tecnica) | Equipo | 2026-02-20 |
-| 10 | [`Gaps_Pendientes_Deep_Research.md`](debate/Gaps_Pendientes_Deep_Research.md) | Gaps Pendientes: AVD x Calidad | — | 2026-02-20 |
+| # | Archivo | Titulo | Autor | Status |
+|:--|:--------|:-------|:------|:-------|
+| 1 | [`Claude_Gold_Standard_Consenso_Final.md`](debate/Claude_Gold_Standard_Consenso_Final.md) | **Gold Standard v1.0** (~1,400 lineas) | Claude Opus 4.6 | **CANONICO (SSOT)** |
+| 2 | [`Codex_2026-02-20_Gold_Standard_Unificado.md`](debate/Codex_2026-02-20_Gold_Standard_Unificado.md) | Gold Standard Unificado | Codex (GPT-5) | Vigente |
+| 3 | [`Sonnet_Devil_Advocate_Critique.md`](debate/Sonnet_Devil_Advocate_Critique.md) | Devil's Advocate + Phase 0 | Claude Sonnet 4.6 | Actualizado |
+| 4 | [`Gemini_3.1_PRO_Deep_Audit_QPH.md`](debate/Gemini_3.1_PRO_Deep_Audit_QPH.md) | Deep Audit QPH (Exhaustive) | Gemini 2.5 Pro | Vigente |
+| 5 | [`Gemini_Deep_Thinking_Deep_Audit_QPH.md`](debate/Gemini_Deep_Thinking_Deep_Audit_QPH.md) | Step-Back / Zoom-Out Analysis | Gemini (Deep Thinking) | Vigente |
+| 6 | [`Propuesta_Equipo_No_Tecnica.md`](debate/Propuesta_Equipo_No_Tecnica.md) | Propuesta para Equipo (no tecnica) | Equipo | Vigente |
+
+**Archivos eliminados (absorbidos en Gold Standard):** Claude_Mega_Propuesta_Final, Claude_Pipeline_Debate, Claude_Addendum_Deep_Research, Codex_Gold_Standard, Gemini_Swarm_Multi_Opinion, MEGA_BARRIDO_MULTIAGENTE_10_AGENTES.
+
+**Archivo movido:** `Gaps_Pendientes_Deep_Research.md` → `docs/` (datos de YouTube Analytics).
 
 **Subfolder `debate/prompts/`:**
 
@@ -93,26 +93,30 @@ Perspectivas de multiples modelos AI sobre el pipeline. Incluye consenso, critic
 |:--------|:----------|
 | [`gemini_deep_audit_prompt.md`](debate/prompts/gemini_deep_audit_prompt.md) | Prompt template para generar Gemini_3.1_PRO_Deep_Audit_QPH.md |
 
-### Mapa de consenso
+### Mapa de consolidacion
 
 ```
-Claude (HECHOS: codigo verificado)
-    + Sonnet (PRUDENCIA: riesgos)
-    + Codex (ESTRUCTURA: contratos)
-    + Gemini (TACTICAS: SSML, patches)
+Claude Pipeline Debate (hechos verificados)
+    + Claude Addendum (deep research, tools, costs)
+    + Claude Mega Propuesta (plan optimo, 15 agentes)
+    + Sonnet Devil's Advocate (riesgos, prudencia)
+    + Codex Gold Standard (contratos formales)
+    + Gemini Swarm (tacticas, SSML, patches)
+    + MEGA BARRIDO (10 agentes, audit repo)
     ───────────────────────────────
-    = Mega Propuesta Final (consenso 6 puntos)
+    = Gold Standard v1.0 (documento canonico consolidado)
 ```
 
 ---
 
 ## 4. DOCS/ — Workflow y Levantamientos
 
-### 4.1 Workflow
+### 4.1 Documentos directos
 
 | Archivo | Titulo | Version |
 |:--------|:-------|:--------|
 | [`gold_standard_workflow.md`](docs/gold_standard_workflow.md) | Gold Standard: Doge-MultiLang Workflow | v1.1 |
+| [`Gaps_Pendientes_Deep_Research.md`](docs/Gaps_Pendientes_Deep_Research.md) | Gaps Pendientes: AVD x Calidad (YouTube Analytics) | — |
 
 ### 4.2 Levantamientos (51 archivos)
 
@@ -273,12 +277,6 @@ Documentacion directa de ElevenLabs API (Feb 2026). Ver [`knowledgebase/elevenla
 
 ---
 
-## 7. PROMPTS/ (1 archivo, untracked)
-
-| Archivo | Proposito |
-|:--------|:----------|
-| `gemini_deep_audit_prompt.md` | Prompt template para Gemini 2.5 Pro deep audit |
-
 ---
 
 ## Navegacion rapida por necesidad
@@ -291,8 +289,8 @@ Documentacion directa de ElevenLabs API (Feb 2026). Ver [`knowledgebase/elevenla
 
 ### Quiero ver el plan tecnico
 
-1. [`analysis/prd_final.md`](analysis/prd_final.md) — 18 scripts, roadmap, costos
-2. [`debate/Claude_Mega_Propuesta_Final.md`](debate/Claude_Mega_Propuesta_Final.md) — Plan optimo sintetizado
+1. [`debate/Claude_Gold_Standard_Consenso_Final.md`](debate/Claude_Gold_Standard_Consenso_Final.md) — Gold Standard v1.0 (SSOT canonico)
+2. [`analysis/prd_final.md`](analysis/prd_final.md) — 18 scripts, roadmap, costos
 3. [`docs/gold_standard_workflow.md`](docs/gold_standard_workflow.md) — Workflow con endpoints
 
 ### Quiero datos de ElevenLabs
@@ -318,10 +316,9 @@ Documentacion directa de ElevenLabs API (Feb 2026). Ver [`knowledgebase/elevenla
 
 | Modelo | Documento | Angulo |
 |:-------|:----------|:-------|
-| Claude Opus | `Claude_Mega_Propuesta_Final.md` | Hechos verificados, plan optimo |
-| Claude Sonnet | `Sonnet_Devil_Advocate_Critique.md` | Riesgos, prudencia |
-| GPT-5 / Codex | `Codex_Gold_Standard.md` | Contratos formales, SSOT |
-| Gemini Swarm | `Gemini_Swarm_Multi_Opinion.md` | Tacticas, SSML, patches |
+| **Consolidado** | `Claude_Gold_Standard_Consenso_Final.md` | **Gold Standard v1.0 — SSOT canonico** |
+| Claude Sonnet | `Sonnet_Devil_Advocate_Critique.md` | Riesgos, prudencia + Phase 0 verificacion |
+| GPT-5 / Codex | `Codex_2026-02-20_Gold_Standard_Unificado.md` | Contratos formales, SSOT |
 | Gemini Pro | `Gemini_3.1_PRO_Deep_Audit_QPH.md` | Audit exhaustivo |
 | Gemini Deep | `Gemini_Deep_Thinking_Deep_Audit_QPH.md` | Macro-arquitectura |
 

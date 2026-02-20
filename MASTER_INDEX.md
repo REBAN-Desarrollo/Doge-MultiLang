@@ -14,12 +14,13 @@
 | `analysis/` | 10 | .md, .json | Deep research: 4 waves de analisis |
 | `debate/` | 7 | .md | Gold Standard canonico + debate multi-AI + auditorias |
 | `docs/` | 2 | .md | Workflow gold standard + Gaps (YouTube Analytics) |
-| `docs/levantamientos/` | 51 | .md, .txt, .docx | Entrevistas, specs, cuestionarios |
+| `docs/levantamientos/` | 52 | .md, .txt, .docx | Entrevistas, specs, cuestionarios, destilados |
 | `knowledgebase/` | 6 | .jsonl, .json, .py, .md | RAG sources, transform script |
 | `knowledgebase/elevenlabs_api/` | 158 | .md | API reference ElevenLabs (Feb 2026) |
 | `knowledgebase/blacklists/` | 3 | .json | Blacklists por idioma |
 | `knowledgebase/theories/` | 3 | .md | Sintesis teoricas |
 | `knowledgebase/_metadata/` | 6 | .md, .txt | Trazabilidad y proveniencia |
+| `SMART/` | 5 | .md | Objetivos SMART por stakeholder |
 | `scripts/` | 2 | .py | Scripts de produccion |
 | `debate/prompts/` | 1 | .md | Prompts para auditorias AI |
 
@@ -195,6 +196,12 @@ Ver [`docs/levantamientos/README.md`](docs/levantamientos/README.md) para el ind
 | [`26_02_19_phase3_qa_implementation_plan.md`](docs/levantamientos/26_02_19_phase3_qa_implementation_plan.md) | Plan implementacion Phase 3 |
 | [`26_01_15_entrevista_qph_andrea_iris_daniel.md`](docs/levantamientos/26_01_15_entrevista_qph_andrea_iris_daniel.md) | Transcripcion entrevista |
 
+**Destilados (1):**
+
+| Archivo | Tema |
+|:--------|:-----|
+| [`04_EVIDENCE_destilado_multiidioma.md`](docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md) | Destilado multi-idioma de 15 archivos 04_EVIDENCE (AI-Studio) |
+
 **Otros (10):**
 
 | Archivo | Tema |
@@ -277,6 +284,18 @@ Documentacion directa de ElevenLabs API (Feb 2026). Ver [`knowledgebase/elevenla
 
 ---
 
+## 7. SMART/ — Objetivos por Stakeholder (5 archivos)
+
+Objetivos SMART (Specific, Measurable, Achievable, Relevant, Time-bound) derivados del Gold Standard y Phase 0.
+
+| Archivo | Stakeholder | Enfoque |
+|:--------|:------------|:--------|
+| [`README.md`](SMART/README.md) | Todos | Indice y referencia cruzada |
+| [`ANDREA_GIO_producto_blacklists_cultura.md`](SMART/ANDREA_GIO_producto_blacklists_cultura.md) | Andrea + Gio | Blacklists, PCD, compliance, QA contenido |
+| [`ALAN_postproduccion_multiidioma.md`](SMART/ALAN_postproduccion_multiidioma.md) | Alan | Mapa de procesos, gaps handoff, tiempos, publicacion |
+| [`RAMON_desarrollo_onboarding.md`](SMART/RAMON_desarrollo_onboarding.md) | Ramon | Onboarding repo, fix bugs, endpoints API, spike DTR |
+| [`DANIEL_deep_research.md`](SMART/DANIEL_deep_research.md) | Daniel | Deep research, benchmarks, decisiones, soporte tecnico |
+
 ---
 
 ## Navegacion rapida por necesidad
@@ -311,6 +330,12 @@ Documentacion directa de ElevenLabs API (Feb 2026). Ver [`knowledgebase/elevenla
 | Sonorizacion | `sonorizacion_plan.md`, `26_02_12_sonorizacion_workflow.md`, `25_12_xx_sonorizacion_checklist.md` |
 | Glosario | `25_12_24_glossary_strategy_idiomas.md`, blacklists en `knowledgebase/blacklists/` |
 | Audiencia | `25_12_24_persona_kids_6_12.md`, `25_12_24_guide_es_latam.md`, `25_12_24_target_audience_gaps.md` |
+
+### Quiero ver objetivos y asignaciones
+
+1. [`SMART/README.md`](SMART/README.md) — Indice de objetivos por stakeholder
+2. [`SMART/DANIEL_deep_research.md`](SMART/DANIEL_deep_research.md) — Calendario consolidado y dependencias
+3. [`docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md`](docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md) — Datos operativos de dubbing (destilado)
 
 ### Quiero ver que opina cada AI
 

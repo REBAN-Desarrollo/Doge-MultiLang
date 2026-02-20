@@ -127,7 +127,7 @@ Doge-MultiLang/
 ├── 💬 debate/                   # Debate multi-AI y propuestas (10 documentos)
 │   ├── Claude_Mega_Propuesta_Final.md   # Sintesis de 4 perspectivas AI
 │   ├── Propuesta_Equipo_No_Tecnica.md   # Version accesible para todo el equipo
-│   ├── Codex_Gold_Standard.md           # Contratos de datos formales
+│   ├── Codex_2026-02-20_Gold_Standard_Unificado.md  # Canon Codex (latest)
 │   ├── Gemini_Swarm_Multi_Opinion.md    # Tacticas: SSML, patches, voices
 │   ├── Sonnet_Devil_Advocate_Critique.md # Prudencia: riesgos + mitigaciones
 │   └── (5 mas — debate historico)

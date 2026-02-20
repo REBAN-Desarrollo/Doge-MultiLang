@@ -43,7 +43,7 @@ AI-Studio ya tiene **Phase 1 + Phase 2 implementadas** (~3,000 lineas de codigo 
 |:------------|:----------------------|
 | **Claude Opus** (claude_debate.md) | Los HECHOS: codigo verificado, bugs encontrados, lineas contadas |
 | **Devil's Advocate** (devil_advocate_critique.md) | La PRUDENCIA: asunciones cuestionadas, riesgos no vistos |
-| **Codex / GPT-5** (codex_gold_standard.md) | La ESTRUCTURA: contratos de datos formales, reglas de integridad |
+| **Codex / GPT-5** (`Codex_2026-02-20_Gold_Standard_Unificado.md`) | La ESTRUCTURA: contratos de datos formales, reglas de integridad |
 | **Gemini Multi** (Gemini_Multi_opinion.md) | Las TACTICAS: SSML, patches granulares, auto_assign_voices |
 
 ### El plan optimo

@@ -1,0 +1,286 @@
+00:00:00 DanielG
+No de generales, que vamos a ver, que sigue, que traen, que.
+00:00:30 Ramon QPH
+De acá de corte de animación no tenemos mucho, nada más hemos estado probando, hemos estado validando los cambios, pero así como retro de qué estaría bien que le metiéramos o lo que es lo que se busca en esta sesión.
+00:00:46 DanielG
+Pues si dejábamos en cero el día de hoy, qué haríamos, qué sigue, qué necesidades hay, qué detectamos. Miren, les cuento así un poco. Vamos a hacer una mega aplicación, ya es una decisión, bueno, es lo más probable, al menos con ustedes, en la que les ayude en todo su flujo de trabajo y creo que parte de lo que tenían ustedes o tienen, más bien que creo que puede evolucionar bastante.
+00:01:16 DanielG
+Hay una oportunidad tremenda ahorita en desarrollo y se va a seguir mejorando. Van a dar un. Un cambio brutal los próximos 6 a 12 MS es una cosa así de por sí ya es ya es muy significativo y lo están viendo a lo largo de pues la generación de contenido de todos estos modelos es un impacto inmediato. Lo van a ver en este. Me gustó mucho lo que mandaron esta semana de por ejemplo de Clink 2.61 1.6162.6, pero por ejemplo eso era algo que anunciaba.
+00:01:54 DanielG
+Adobe hace como año y medio hace dos con los Poppets o ¿Cómo se llama.
+00:02:02 Ana Flores
+La de Motion dos punto seis.
+00:02:04 DanielG
+No, la de Adobe. Adobe tenía una función que están apuntando así.
+00:02:10 Pedro Diseño
+Puppets pues este es en After Effects la herramienta de Poppet pero. Para movimiento. Sí la de movimiento pero no sé si sea esa herramienta o si te lo quieras a esa.
+00:02:22 DanielG
+Para manipulación de personajes y cosas.
+00:02:24 Pedro Diseño
+Ah este sí que también y sacaron la otra aplicación que era para hacer el rigeo automático a base de reconocimiento facial, ¿no.
+00:02:33 DanielG
+Pues habían marionetas no que creo que no hemos explorado al momento aquí pero el potencial es tremendo o se han explorado.
+00:02:48 Pedro Diseño
+Pues no en la herramienta de Character Animator, pero si se realiza con Duik y con Joystick and Inliders, que es como exactamente el mismo término, pero la diferencia es de que en uno es manual y aquí es más, pero son herramientas externas, no es de Adobe, no, esas no son de Adobe, de manera directa.
+00:03:11 DanielG
+Local para y es a lo que voy. Por ejemplo, esta la anunciaron a 5 de agosto. Hace un año, 5 meses, octubre, octubre, noviembre, este casi 1 año, 6 meses.
+00:03:24 Ramon QPH
+¿Cómo.
+00:03:25 DanielG
+Ahí está el problema, ese es el problema, que ese todos sabemos de qué es y está pasando mucho con el software que tenemos.
+00:03:37 Ramon QPH
+No, pero o sea, el Carver Tranimeter y el sistema de Poppets, ese ya se viene a ver, o sea, se sabe, se sabe la existencia de. ¿Así se sabe. Animación, o sea, lo hacíamos en incluso en anima guía donde hacíamos uso de ese tipo de herramientas, del que le mueves el bracito y todo esto, así, bueno, discúlpeme, ahí no estaba enterado. Pero yo creí que era como una especie de, o que le habían metido o que habían actualizado, refrescado todo ese sistema o algo. No sé a qué te refieres.
+00:04:07 DanielG
+Tienen información de eso.
+00:04:09 Pedro Diseño
+Pues es que la última actualización que hicieron fue lo que te menciono del reconocimiento facial y del reconocimiento de motions prácticos de manera de cámara, que era de que ya tranquilamente genera el rigeo y ya el personaje que tú tienes hace el reconocimiento de los movimientos que hagas en la vida real y ya se hace de manera directa. Pero si te soy sincero, le perdí el rastro ya después de esa actualización y fue como hace medio año, o sea, fue hace mucho, no sé si la hayan actualizado.
+00:04:36 DanielG
+Y no tienen necesidad muy específica, no hemos detectado una necesidad específica, pero si van a unas aplicaciones tremendas. Indirect en qué perro hilo, no sé, no creo. En este momento no se me viene a mí a la mente, pero tienen un nuevo proyecto en postproducción de animación que probablemente sí, que es el de Laura, que ya se tiene que arrancar de sí o sí. Eso lo vamos a hacer con Laura. Entonces, probablemente ahí si hay un uso no muy básico, no sé, es un decir.
+00:05:06 DanielG
+Yo no estoy seguro, yo no conozco estas cosas, pero volviendo este, pues volvemos a lo que estamos platicando. No hay una evolución absurda en el sentido positivo de herramientas, servicios que se les están abriendo, ¿no? Pero absurdo, el abanico de posibilidades es enorme, así lo que está pasando y aquí sí se va a hacer algo y en gran parte es una iniciativa de ustedes, que está excelentemente bien, todavía no está plasmado, ya más o menos está plasmado el qué, que se lo quiero platicar con todas las áreas, pero tenemos que acelerar, no sé qué.
+00:05:58 DanielG
+¿Este y ustedes ven volviendo, no? Por ejemplo, acá les decía en fondos para mí fondos, si tienen bien definido su flujo de trabajo, ya podríamos en algún momento si funciona esto. Y discúlpenme que ha sido tanto error, pero lo que está detrás ya se reconstruyó como 3 veces en 2 semanas para sentar bases, algo mucho más escalable. Y que no genere muchos problemas en un futuro cuando esté más robusto.
+00:06:31 DanielG
+O sea, está mejor destruir este y que se haga caótico en este momento, pero tiene una razón, uno también por mi habilidad detrás y la persona que está apoyando, pues no está dando mucho servicio. De esto no tengo una habilidad muy desarrollada, pero las ideas que ustedes están trabajando, pues ya trae una habilitación tremenda para hacer desarrollos. Yo pensaba a nivel de buen nivel. Y ahorita ya se refactorizó 3 veces, este bueno, ustedes hicieron la demanda que se me hizo muy bien, ¿no?
+00:07:04 DanielG
+Pues necesitamos en una, necesitamos todos un monitorizado, se cambia, no cambia un poquito y fue un cambio en el backend y luego se hizo uno de para procesar más herramientas, no otras cositas. Y ahora lo que se va a hacer es ya que se va a se suba a la nube, por eso fue el desastre del día de hoy, este tener una API también para desarrollo luego por departamento. Pues la verdad es que va a ser un caos y se da acceso interno y temas de seguridad, este hacer homólogo a cierta API ahí adentro para luego dar servicio.
+00:07:35 DanielG
+Bueno, que tenga API con la aplicación y se haga desarrollo como sandbox, que ustedes digan nosotros como departamento, pues podemos hacer una aplicacioncita para la aplicación, un RP. Pensemos, una RP es así, no sé si alguien lo conoce, se los dejo de este sí de tarea. este. Pero un aquí se piensa más como que para la operación, no tanto la administración ni todo, pero conectar departamentos, digamos, de conectar el departamento en su caso, de que perro hilo con postproducción, que probablemente hay ciertos quiebres en postproducción, este con diseño, no sé, o puede ser con producción.
+00:08:21 DanielG
+todo. Todo el ciclo de no sé cómo se llama del producto, de cómo se va transformando de la vida, incluso hasta el análisis no de la data, ese sería el objetivo. este porque ahí va a ver, les digo todo esto, pues porque hay una razón de que se esté quemando tantas cosas, no ese entar bases y está interesante. este Entonces ahorita van a ver un cabro, no, ya ven, ahorita por ejemplo hay uno de memes que va a hacer una pruebita, este lo que están ustedes están haciendo, que está muy bien y pues empezaron ustedes de.
+00:08:54 DanielG
+Bueno, empezaron con memes que hemos visto para mí el día de hoy, ya podríamos en algún momento, no a ver si sale algo, a ver que no sale, ya podríamos hacer. Platicábamos con ustedes, no sobre todo, bueno, ustedes conocen lo de fondos, no, que decíamos, pues ya estamos bien en fondos, yo les digo sí y no, el ETA sigue siendo. Ese ha sido un dolor de cabeza, pero bueno, para mí, por ejemplo, en fondos, si en todo todavía hay un aire de mejora tremenda, ¿no?
+00:09:35 DanielG
+Puede ser que en algún momento llegamos a que la aplicación de personajes la tengan en su mismo rig, lo que decíamos de como un modulito de la de que yo le pido nada más el trajecito de Napoleón y pues le saca el trajecito ya en Alfa, ¿no? A su biblioteca o comernos ese, si tienen ahorita un flujo de, pues es que yo deposito y luego lo limpio y no sé qué más, pues ya es solo una aplicación aquí. una herramienta y luego tengo otro y ustedes han visto como hemos en equipo evolucionado.
+00:10:05 DanielG
+Entonces, por ejemplo, en fondos, en mi punto de vista ahorita un brinco que estaría muy interesante es si ya tenemos esto útil con una y aquí se pueden activar también. Va a haber una evaluación de modelos cual nos produce este mínimo viable, costeamos, cosas así. Ya podrán hacer, por ejemplo, por lote. Es decir, estos no requieren. Pues sí, mucho esfuerzo a mi lado y yo nomás necesito variaciones de un fondo de una sala de juntas y pueden ser iguales.
+00:10:42 DanielG
+O puedo yo luego desarrollar una lógica de dame variaciones de que una es informal, formal, no sé qué más, optimizando sus flujos de trabajo y en lo que sí requiera más calidad o su creatividad fuerte. pues sí le dedicaron cierto tiempo y luego desarrollamos herramientas. Por ejemplo, aquí para mí ya se podría pasar un paso 2 y hacer una generación entre individual y por lote. Por lote estos que les digo de oye, pues ya tengo una lista de que viene de mi orden de trabajo de guionismo en la que dice mis personajes son tal cosa.
+00:11:22 DanielG
+Mis fondos son tal cosa y mis assets son tal cosa, y lo que tengo que generar ya lo puedo mandar una cola a algunos que no requieren cierto tratamiento, no 20 fondos, 30 fondos, 10 assets, una cosa así. O vemos otra forma de yo extraigo de bato, creo que ahí me comentan que hay una conexión, vemos otros proveedores también si hay una necesidad y se va haciendo un sistema muy robusto de herramientas que sigue su flujo de trabajo. de repente nos vamos a comer un vínculo.
+00:11:54 DanielG
+Lo más interesante sería que hicieran cierta innovación. En de hacer de una manera nueva las cosas o el producto. Un producto nuevo. Lo platiqué con Pepe. Yo acaba con usted en su entrevista. Un tipo de innovación. Esto es mejora abrupta, continua. Hay unos que sí es innovación, otros mejora continua. Entonces para mí entre tanto rebote en muy poco tiempo pueden, poner herramientas muy padres y a ustedes les gusta este profundizar en la animación, no este le meten detalles, en algún momento lo negativo ha sido que van sobreprocesados, siendo muy sincero, pero hay que descubrir, descubríamos que le da satisfacción también un poquito de ustedes, pero les da más tiempo para meterle ese objetivo, no tenemos que sobreprocesar, pero pueden decir, oye, pues es toda la audiencia.
+00:12:51 DanielG
+Al gran parte, sí vale la pena meterle esto, ¿no? Y ya me estoy quitando muchas chambitas que pues no aportan valor, realmente no tenemos que disminuirlas, pues que sí tienen que aventar ahora sí, pues toda su lluvia de ideas. Para mí ya podrían empezar a hacer una conexión y lo diseñamos en conjunto porque es un parte aguas esto para distintos departamentos, no en el que bueno, yo como me imagino ahorita y ahí quiero que ustedes le echen con los próximos días. Es un módulo de guionismo en el que bajan sus especificaciones, se les facilita así como aquí y pues al final de cuentas esa es la fuente de verdad, no lo hemos hablado muchas veces SSOT, Single Source Obtood.
+00:13:39 DanielG
+No podemos tener el guion replicado en tres lugares, veía con este. Ahorita les digo, por ejemplo, Andrea les entrega una orden de trabajo, ustedes hacen un planchado en el que hay acuerdo, se cambia esto, se modifica esto. Si hay modificaciones post planchado, siempre tienen, no, si no, pues que cambio el texto, la voz, alguna cosa así, no se ajusta.
+00:14:14 DanielG
+No, ustedes se arrancan, por ejemplo, hay diseño en este caso de personajes. Que han ido mejorando mucho, diseño de fondos, diseño de assets, de ahí a lo que entiendo pasa animadores, animadores ensamblan, bueno, diseño de voces también que puedan como que están trabajando ustedes, este ya no tiene errores, ¿verdad? Ahorita no, pero sí tienen muchas áreas de mejor abajo que tienen que ir tachando, esto sí, esto no me sirve, esto sí me sirve, esto no me sirve, este ensamblan, se lo pasan al animador, ensambla a lo que entiendo.
+00:14:49 DanielG
+anima, recorta, hace modificaciones o transformaciones de diálogos o personajes, yo que sé, hay un acuerdo con Andrea. Debería de permanecer en ese mismo orden, trabajo estas modificaciones que no sé si se está registrando porque lo vamos a descubrir como lo vamos mejorando. Se entrega lo que entiendo a Fernando, Fernando ensamble allá todo el proyecto. ahí me van corrigiendo, ahorita me interrumpen a ver que se está pasando como a nivel macro.
+00:15:21 DanielG
+Fernando ensambla el proyecto, hace sonorización, le entrega doblaje, o sea pensando que ese sería terminado antes de entrar en doblaje, antes era la entrega final para corrección.
+00:15:37 Ramon QPH
+Cuando se manda revisión el video ya ha terminado con esa flexión música se le pasa al que va a hacer el doblaje la pista.
+00:15:43 DanielG
+Pero previo. previo ese era ya la entrega Andrea para revisión para la revisión de calidad de Andrea. Previo multidioma cuando era español. O sea pensemos que no había inglés o chino o lo que sea. Ahí terminaba el proceso para entrega al cliente que es Andrea para una revisión de calidad. Una revisión de calidad cumple las especificaciones no cumple estos ajustes que lo ideal pues es que no hubiera.
+00:16:14 DanielG
+Este cambios no o revisión de calidad, son procesos extra, lo que entiendo nos meten costos, nos meten no sé retrabajo. Lo ideal es reducir todo este retrabajo y lo abrimos lo que es multidioma este y ahí lleva cierta complejidad, no este el otro día me lo explicaban, no este multidioma uno es el speech to text otra vez que ahí tenemos que ver si. Si podemos emular 2 en uno, este corrección de que lo que no me detecta bien, porque si hay un hay un tema ahí de ya ve que es por pues bueno, la viabilidad, no, perdón, lo que me detecta tiene una probabilidad que tenga muchos errores.
+00:17:01 DanielG
+Creo que en el labs, este, o sea, digo lo que me detecta, no como Daniel, sino como aplicación, así como perdón, como audio, creo que es el. 92% de seguridad de que esté bien la cosa, no tienen cierto rango de errores. Este mencionaba Saúl que pues sabes, pone el mismo personaje, no pone 2 personas como el mismo, decía, vi, suben el mismo audio y les va a pasar distintos. Yo me la quebré y dije, no, pues por qué no salí, pues de güey no captaba, no decía, ay, híjole, por qué de repente me lo cambio.
+00:17:36 DanielG
+Sí, cada subida es como lo de las imágenes, no te entrega una detección distinta. Entonces ahí no captaba, ese va a ser. Tenemos que ver cómo lo reducimos. Este. Me encanta, esto va a ser la idea de un proyecto nuevo.
+00:17:55 Pedro Diseño
+Antes de olvidarte el video me gustaría invitar a que te suscribieras al canal. Y si ya lo estás, no olvides. Ah, son de los que replican, ¿verdad? Este. Está medio grosero. Pero está muy padre. Hace 14 años estas producciones para algo como es un mega, pero bueno, este me estoy saliendo un poquito. Entonces ustedes hacen luego el speech to text para hacer su traducción.
+00:18:38 Pedro Diseño
+Híjole, ya valió. Bueno, aquí hay un problemilla. No debe estar pasando, te lo reportamos. ¿Qué más seguía ahí en el proceso? ¿Qué nos contaba? ¿Qué seguía? Yo meto mi audio de Fernando y luego. Cuando Fernando entrega a Saúl, ¿qué procesos llevaba.
+00:19:04 Alan
+Cuando tuvimos el MP4 para Level Labs. hacia su transcripción, si teníamos que hacer como una revisión a la transcripción para posibles errores, algunas palabras que no detectaba bien, este se hacían algunos ajustes de diálogos muy largos para este reducir este a cómo se llamaba, si este que no se comiera palabras, no se comiera.
+00:19:38 Alan
+Que sí, Abby, que sí, yo no solucioné, sí, ahorita les digo cómo o K este, bueno, hacíamos cortes, pero ¿cuál era la problemática ahí, por ejemplo, que se enfrenta? Es que me acuerdo de término, pero el drift. Que no este se vinculaba bien, no este al momento de pasarlo al otro idioma, este se quedaban totalmente desfasados.
+00:20:10 Alan
+Entonces lo que hicimos es meter muchos recortes para que los diálogos quedaran no tan largos, correcto, y este pudiera empatarlo bien con el habla del personaje. Una vez hechos esos ajustes, nos pasábamos a. Al inglés.
+00:20:31 DanielG
+Ah, pues aquí vamos a poder ver más o menos, vea. Porque aquí dice speech to text, hijo de su madre. Bueno, ya llegué con los tres. O no sé si está bien ese video.
+00:20:43 Alan
+Y luego, perdón. Sí, lo pasamos al inglés y en inglés hacíamos una segunda revisión. Este. Para ver que no haya hecho algunas malas traducciones. Este. A veces los pronombres, este, los manda mal también. este y también corregíamos eso, tiene algunas palabras que las detecta como otras, como por ejemplo el "no" a veces lo. El "no punto" no. El "no punto" lo pasaba. Number, es una variación del nombre. Sí, entonces teníamos que estar corrigiendo eso, este igual ajustamos que los waveforms del inglés empataran totalmente con los waveforms del español.
+00:21:27 DanielG
+Y ya, los silencios. ¿O es ese? ¿El de los silencios.
+00:21:31 Alan
+Sí, pues son de audio. Que empatean totalmente este inglés con español, que tengan la misma duración y ya una vez terminado el inglés pues ya este los mandamos a los otros idiomas que ya pues ahí ya este.
+00:21:48 DanielG
+Lo estamos confiando juntos.
+00:21:49 Alan
+Confiamos totalmente. No hay una revisión de calidad sobre esos. Ya con las colecciones hechas en inglés, pues sí, este reducía mucho, mucho los errores que podía también otro accidente.
+00:22:04 DanielG
+Y mencionándoles, no estamos tropicalizando este regiones, o sea, confiamos, no confiamos en esta traducción, probablemente no sé, en Japón pues el chiste pues debe ser otro, o mencionan ustedes estas palabras también este como groserías o culturales o regionales. Sí, pues tiene que trabajar ese probablemente, bueno, ese sí viene de diseño de producto y ustedes colaboran de diseño de igual sitio y con Andrea, ¿no?
+00:22:34 DanielG
+Entonces hay muchísimas áreas de oportunidad y muchas van bajo criterios. Bueno, ¿y cómo termina.
+00:22:41 Alan
+Perdón, discúlpeme, sí, este, pues con Andrea desde el principio se trabajó mucho eso de.
+00:22:46 DanielG
+Pero por ejemplo, haces haces la traducción. Hay ciertas áreas de mejora ahí que ya detectadas, o bueno, algunas no, algunas que vamos a tener que hacer eso, que salen que ya tienen claras y que tenemos que traducir para atacar, como que áreas de mejoras, que lo más seguro es que si podemos solventar un 70% rápido, este yo estoy seguro que sí. ¿Y qué pasaba.
+00:23:09 Alan
+Por ejemplo, las traducciones nosotros íbamos y luego cómo. que sigue de ahí? A veces nos encontramos con el problema de que no quería traducir eh algunos audios porque incluía palabras como muerte o sexo que en otros este en otras culturas o otros idiomas son como eh pues como prohibidas ¿No? Censuradas entonces teníamos que cambiar esas esas palabras entonces eh pues lo que iba a trabajar con Saúl es que ahí me eh fuera pasando con una lista de palabras que le fueran arrojando esos errores para podérselos pasar a Andrea y y las evite eh las evite en.
+00:23:40 DanielG
+Por importancia del idioma. Este, ¿Qué más? ¿Y si entrega los archivos de salida y luego.
+00:23:46 Alan
+Este, pues ya, de eso lo descargábamos y ya regresaban con Fernando y ya Fernando se encargaba de volvernos a exportar ya con los SRX integrantes.
+00:23:57 DanielG
+Ok.
+00:24:00 Alan
+Fernando. A ver, le regresa a Fernando ahí si lo capté y luego. Fernando se encarga de volverlos a meter a Premier. y exporta uno uno por bueno idioma por idioma pero ya con los SFX y la música que.
+00:24:14 DanielG
+Pues nada más mete pista ¿No? O sea recibe pista mete y él exporta y rendarea ¿No? O bueno exporta no tiene ninguna manipulación de lado de él.
+00:24:24 Alan
+Es muy rara la ocasión que mete alguna manipulación. El chiste es que o transformación o es muy raro? Okay. Y luego revisión. Hace una revisión Andrea de ingles, ¿no? Un intermedio inglés, pero es lo único que se me hace.
+00:24:42 DanielG
+Ya está en manos de ellos, pues que hacen, ¿no? La publicación.
+00:24:47 Ramon QPH
+¿Cómo? La publicación. La asignación de los sickers. Si en Youtube, que le ponen las pistas una por una.
+00:24:57 DanielG
+Entonces creo que, bueno, en el mundo ideal, si lo vamos a lograr, si lo vamos a hacer. van a tener su flujo a nivel macro, lo más probable, todavía no está bien conceptualizado y ahí no tienen que ayudar o vamos a hacer un rebote. Ahí entre todo esto de los RPs y está muy padre, pero es un tema y tiene que ser en casa, no hay una solución así como que batallaremos mucho, no es estar especializado nosotros, yo no conozco, si conocen a alguien un RP para medios digitales o creación de contenido, cosas así, debe haber, pero no sé, pero pues si se imaginan.
+00:25:34 DanielG
+Van ciertos como macros en los que ahí va siguiendo la línea y pues ahí la fuente de verdad, pues es la orden de trabajo que empieza de cero, este con digamos que es Andrea la única persona o este bueno, no sé, Andrea empieza a diseñar, hace sus especificaciones, se los paso a ustedes, hay ciertas transformaciones, todas las que pero hay una cantidad abrupta, este digo enorme, perdón, de. De áreas de oportunidad y de plasmar dolores en un sistema y hacia ahí es a donde podríamos ir, en la que pues van mejorando y va todo conectado.
+00:26:16 DanielG
+Ahorita estaría caótico, no caótico, pero aquí sería un set de herramientas y la idea es que esas herramientas estén conectadas entre sí y entre ese flujo de trabajo, ya sea departamental o como un todo. Bueno, es como un todo. Lo va en base a ese orden de trabajo, creo que es bueno para eso, muy bueno y en base a que va y lo va pasando ciertas etapas y hay herramientas, ahí están sus procesos y todo.
+00:26:48 DanielG
+Entonces ya podríamos interconectar. Yo quisiera en menos de 3 meses que estuviéramos o menos listo, un producto mínimo viable, no de su. El flujo en el que están ustedes dando servicio, pero son parte de está retador, pero si se logra, entonces tienen una oportunidad tremenda ahorita de arrojaron pues su wish list y esto hubiera estado padre, esto está bien donde sales, este es un problema, esto es bien tedioso, esto es bien nefasto y este y ahí es donde brinca bien rápido, ¿no?
+00:27:27 DanielG
+Y al principio pues es donde hay brincos muy fuertes y luego pues ya cada mejora es decreciente, ¿no? Pero está bien, pero al principio es donde brincan cosas, ahí sí es abrupto, o sea muy brincos porque pues son pues se identifican lo más, lo que está más claro, ¿no? A veces se brinca una que otra cosa y van armando su wishlist, este esta la trabajaba Alan y Ramón, ¿Son lluvia de ideas también, no? Ahí no tenemos un momento para quitarle esa cosa, este bueno, ahí abajo creo que ya lo vieron, tienen una lista y pues es una lluvia de ideas que se puede ir a otro lado, nada más se quedó ahí por nomás y dice uno, pues algunas pues sí están absurdas, están de más en desarrollo no globales, son nuestros costos o por diseño tienen que utilizarlos muchas personas este módulo y es lo que entramos, no a veces no se puede rentar todo porque pues es un módulo común y no sale, sale más caro que las albóndigas.
+00:28:25 DanielG
+un desarrollo tan específico que meterle cierto trabajo por fuera. Son muchas variables, pero hacia allá iría, o sea, es una pre de lo que creemos que se pueda lograr. O sea, si se puede lograr y en poco tiempo en la que ustedes ya le tienen que echar. Por ejemplo, en fondos yo estoy seguro que hasta se puede hacer mucho, mucho, mucho trabajo. Este procesamiento en lotes, ese para reducir como que, la carga operativa no y ya en la de calidad es muy interesante no quedan diciendo pues es que para que nos salga mejor ese fondo ya estamos tal cosa o esta otra herramienta tenemos que seguir trabajando a la parte los otros proyectos que traen o los que se supone que vamos haciendo aquí como que pruebas de ciertos modelos que eso definitivamente los próximos dos, tres, cuatro, cinco años van a haber una locura de de oferta o un portafolio muy amplio lo están viendo ahorita que les decía Ana abando uno de.
+00:29:24 DanielG
+de Kling que pues es lo mismo ¿Sí no? Es es es una marioneta ¿No? ¿O qué? ¿Cómo lo definen.
+00:29:31 Ana Flores
+Pues es emula los movimientos de un video puedes meter animación o cualquier cosa.
+00:29:40 DanielG
+¿Ya lo vieron todos o no.
+00:29:43 Ana Flores
+¿Lo pasaste a líderes? Este el grupo que dice.
+00:29:48 DanielG
+Ahí lo checan después pero pues es lo.
+00:29:52 Ana Flores
+Mismo que el otro.
+00:29:53 DanielG
+Para mi es lo mismo que el otro, donde esta no es nuevo, que es 2 puntos.
+00:30:00 Ana Flores
+2.
+00:30:01 DanielG
+¿A qué voy? Híjole, cada semana o cada mes no pasa más de un mes que ven una cosa, no sé cuál es el original, este es el original. Entonces yo, Alex, hoy me puedo poner a Bilar y pongo a Keanu Reeves y sí te ponen los mejores que están saliendo. Pero bueno, yo ya hicieron pruebas aquí los de postproducción, yo vi casos de uso de gente ordinaria y la verdad es que ya está muy bien por producción, o sea, y se va a poner mejor en 6 meses.
+00:30:44 DanielG
+Entonces tiene una oferta de productos muy acelerada que venimos repitiendo, un catálogo impresionante y va a seguir así, que acoplamos, que no vamos a seguir probando. este. Y hay creadores que están el otro día. A mí personalmente el chavo no me gusta su contenido personalmente, es muy personal, pero admiro mucho su trayectoria como ha evolucionado. No me gusta porque pues es un personaje al final de cuentas que en peligro.
+00:31:15 DanielG
+Alguien me dice no, yo lo veo, pues está bien. Hay muchas cosas ahí detrás, en el árbol que trae este chavo, pero es admirable lo que va haciendo. Y por ejemplo, él ya empezó a meter, la otra vez me llamó la atención, este, no sé si Runway, bueno, va hacen en otras cosas, no, si ven sus obviamente es su estilo, no, pero ya empieza a.
+00:31:49 DanielG
+caray mete varias de no sé si es ron güey o o cuál.
+00:31:59 Ana Flores
+Habla del frío. Que comience este aprenderemos del estilo de vida de los noruegos.
+00:32:19 DanielG
+Pues mete animaciones el chavo, ¿no? Y que van muy ad hoc, obviamente a su contenido porque siempre el avienta como chistes. No sé si alguien si lo sigue muy de fondo, que sea pan o follower. Nunca me ha gustado, pero por ejemplo el chavo ya algo que le pasa es que pues que avienta muchos o sus jiribillas, ¿no? hacia su audiencia y a veces decía como que locuras. Pues su chistecillo de que allá y no sé qué más.
+00:32:51 DanielG
+Y ya empieza a acompañar el chavo. Entonces ya empieza a acompañar su narrativa con cosas que antes, pues cuánto le había costado a este chavo hacer. No sé, yo la verdad no sé, pero supongo que más de un día una técnica hace de 2, 3 años para un usuario promedio, ¿no? Este y ahora supongo que. No sé si es runway o qué sería, pero pues es la creatividad, no sé qué modelo será, pero pues obviamente es un modelo, ahí tiene otro de cómo hace frío y ese me gustó mucho, cómo lo metió, de que se iba a congelar el chavo en la calle, no sé qué fregados.
+00:33:34 DanielG
+este y Me gustó mucho, mucho ese efecto, este en el que se ve cómo se ve nieve ahí en la ciudad, o sea, se empieza a llenar de nieve en una transición de 5 segundos, una cosa así. Y después voy complementando mi producto con esto, ¿no? Y que probablemente el usuario, el que sí es mi cliente, mi audiencia, pues sí le da satisfacción. Quién sabe, son pruebas, pruebas y errores, ¿no? Este, ahí luego vemos como lo que a veces los comentarios, este parece súper fan, etcétera.
+00:34:08 DanielG
+Entonces, que va mi mensaje este de tanto revrujadero o de tanta brincadera. que ahorita hay unas oportunidades tremendas y que sí, las vamos a meter. Aquí ya no hay para atrás. Pero está muy interesante. Creo que lo podemos hacer muy rápido. Creo que se le tienen que echar ahí como que mucho. Necesitamos esto, esto, esto. Que ya lo han hecho.
+00:34:43 DanielG
+Y luego lo vamos a platicar con Alan, con Alan, con Ramón Balineo, también a ciertas cosas con ustedes, con sus perfiles de diferenciaciones. Eso sí se va a tardar un poquito, eso es un proyecto, es que eso es más complejo, este lo veo mucho más sencillo, si les soy sinceros, pero pues tienen muchas este esto fue fue principal por. Bueno, entre lo de ustedes y documentación también esto va a servir mucho para extraer, para hacer muchas bases de conocimiento.
+00:35:19 DanielG
+Un ejemplo, no si habla de calidad de los ganchos, pues sí podemos hacer el transcript, no, pero nos tardamos un poquito, hay que detectar los piques y luego renombrarlos. Ya tenemos el read AI, no está tan bueno el modelo y pues ya vamos ajustando los modelos que nos satisfagan mejor adentro. Este se intentó con el de OpenAI, pero está carísimo, por aquí está deshabilitado, pero pues luego podemos decir, oye, pues está el modelo, lo podemos adaptar a nuestras necesidades, ese es el que nos da, pero hay una, hay una necesidad específica que vale la pena hacer y cuando ustedes creen, pues este es el que parte para, no el dedo, este para hacer cierta conexión que le da herramientas de cuando esté trabajando ahí, este pues no ahorita.
+00:36:08 DanielG
+Ahí hay ciertas ideas atrás. Que es lo de los sonidos, que. Ah perdón porque les iba a mostrar esto. ¿Qué potenciales salen? Por ejemplo JSON es el que está en crudo. Creo que con ustedes, aquí está la probabilidad de lenguage probability. Pero lo padre con ustedes es que les va sacando, que está pesadísimo, es lo malo.
+00:36:41 DanielG
+Esto para una base de conocimiento no está bien, pero para un procesamiento OYM está finished y yo puedo poner ya criterios que aquí se estableció en algunos, porque si no era un chorizote era esto casi corrido. Entonces yo puedo establecer criterios aparte del que habla, porque a veces el que habla se puede ir a un chorizote está acá. ¿Cuántas palabras, cuánto tiempo entre palabras, qué es lo que estaba contando Saúl? No, yo tengo que terminar mi silencio entre tanto y tanto tiempo, no con un rango de error, no, este a veces no me sale bien, pero esos criterios que ya traen, los podemos aterrizar y les va a solventar, pues no me imagino el aburrimiento de Saúl ahí cortando y pegando, ajustando y se me va a ir este.
+00:37:28 DanielG
+Tengo muchos errores también, así de una pasada, pero por ejemplo, este se me hizo muy interesante cuando ya vi la salida. Ahí, perdón, me van corrigiendo ahí de que traes, bueno, ahí tenemos que juntarlo entre palabras. O sea, esto ya da una posibilidad tremenda, nada más que te vaya partiendo las palabras de cuando cuando este salió. Esto yo no lo había visto y me pareció que le solventa esa problema enigmática que traen un doblaje, un 70% los problemas 80.
+00:38:05 DanielG
+rapidísimo. Entonces me imagino que si van a salir áreas de mejora que les digo en un principio son las tremendas. Ya van a ser luego marginal este se llaman decrecientes que sigo mejorando pero ya no es decreciente pero siempre sigo mejora continua. A menos de que salga alguna innovación este pues ahí ya cambiaste el proceso y todo.
+00:38:35 DanielG
+Entonces, ahí disculpen que los que me están por todos lados, pero aquí va el mensaje, pues este que hay una gran oportunidad, que lo vamos a hacer y que ahorita échenlo ustedes en cada una de sus partes. A ver, así está mi flujo, están mis procesos, esto está nefasto, esto es muy mecánico, esto es muy tedioso, este y vamos viendo, pero ya hay muchas posibilidades, por ejemplo, en los en los personajes yo me imagino que lo pueden hacer al rig. este. Este a lo que tienen o puede ser que el riesgo va a evolucionar ya directamente ahí en un futuro no.
+00:39:08 DanielG
+Bueno, fueron puliendo su tienen el de creo que ese está bueno, el de seguir, el de si es el de los perritos, el de encontrar el prompt o definir de que un modelo ahorita no nos solvente ese y nos esperamos el próximo y seguimos haciendo ese sí sea solvente el de que yo nada más quiero el trajecito, si es que se me forma, es el pues ya lo vieron, no con el Yemini con el Pro, no. pues que ya les da mejor resultado que el pasado. El 3.5 no me quiero imaginar en unos tres meses, seis meses a lo mucho lo van a estar sacando y va a ser otro brinco.
+00:39:45 DanielG
+O los otros modelos. O sea, ahorita hay un pleito tremendo entre laboratorios y mega empresas y les van a estar faltando. Entonces pues entró a un trabajo mucho de estarle pensando y me reduce mucho el trabajo como que nefasto, aburrido. Aquí pues va a estar interesante la lógica, que no creo que sea tan compleja. ¿Qué consideras tú que lo has hecho?
+00:40:19 DanielG
+Los criterios detrás para solventar ahí muchas de las problemáticas que tiene el doblaje. Está fácil, es nada más que traduzcan que empiezan a traducir lo que traen así como de manera muy natural. Es que aquí le corto por tal razón, pero lo hago de manera muy natural y lo traduzco "oye pero pues es que los decibeles ahí ya no hay decibeles" o no sé cómo se le llama. No hay decibeles y desde que no hay y dura más de medio segundo ya lo tengo que cortar.
+00:40:56 DanielG
+Pero lo hago de manera intuitiva. Por eso también, Y no lo tomen a malo, voy a ir ganando varias porque las conversaciones no es que me voy a aguantar otra vez yo, este, pero con el texto vamos a rebotar áreas de mejora que me vayan detectando o estructurar las sesiones, compromisos, este que se platicó, que algunos han visto, no este Gio, Diana y yo creo que diez antes ganábamos algunas videollamadas para eso.
+00:41:29 DanielG
+el software que estaba, el que está, todavía está, la verdad es que el modelo como que agarra un modelo más chafita por economizar, ¿entiendes? Y lo que te digiere se puede hacer mucho mejor ahorita ya con otros modelos que tenemos exceso. Como que el procesamiento ahí te da un resumen, los participantes o los jugadores, a qué se comprometieron y, preguntas claves, los temas mágicos que ven.
+00:42:10 DanielG
+Esta interesante, esta aburrido, esta preocupante.
+00:42:22 Ramon QPH
+No, yo estuve muy interesante, como dices es una mega herramienta. Desde Ion hasta su sensación de doblaje.
+00:42:35 DanielG
+Una estasonorización de doblaje, pues yo me imaginaré el ciclo completo, incluso hasta el análisis de resultados y otra vez mis decisiones de cambio y volvemos a, yo nomás conozco este, la verdad, el de Plan Duce Card, y pues es infinito, ¿no? Y esto es en todo, en toda industria competitiva. Hay quien no revisa, no actúa.
+00:43:05 DanielG
+Este y nada más está y ni planea, hay quien nomás hace y no toma decisiones de cambio, este y pues en algún momento pues desaparece, ¿no? Hay quien este sí planea y hace. ¿Qué ven, qué oportunidades ven o a quién quedamos.
+00:43:29 Pedro Diseño
+Bueno, sabes qué es lo que ahorita me yo como ya que estamos haciendo ahora César y yo, que creo que no sé si también te llega a pasar, ahora que Mbato hizo la actualización de su página que fue pésimo, o sea de verdad es pésima, en cuestión de los objetos estamos batallando mucho, o sea porque ya no te da las accesibilidad de lo del 3D, antes era más fácil de manipularlo, pero ahora ya para encontrar un objeto que fue que sea 3D. Es muy difícil, o sea, si hay una manera de que nos podamos integrar, a lo mejor sería hipotético, un caso hipotético hipotético que sea increíble, que se integrar a lo mejor una biblioteca interna, este conexión con Envato para que te puedas filtrar como que de una manera los objetos, o bien agregar como que ya sí, tal cual como lo que tenemos con Gemini, ya empezar a hacer la separación de lo que te comentaba de a lo mejor ya.
+00:44:23 Pedro Diseño
+Ya tenemos lo de fondos un poquito ya establecidos, todavía faltaba lo del listado, pero ya empezar también en tanto en objetos como en personajes, porque uno de los mayores problemas que a mí se me presenta ahorita es de que en Google tengo tanta, o sea, como estoy trabajando en el mismo guión, llega un punto en el que tengo tantas ventanas que es frustrante de o K, estoy aquí ya ahorita en el servidor. este. Luego tengo que irme a personajes, tengo que irme a Gemini, luego tengo que irme a Google Studio, o sea más bien ya buscar la manera de la integración para que ya directamente esté a un clic de distancia y ya sea como que más factible.
+00:44:59 Pedro Diseño
+Pero digo, siento que ahorita lo de lo de urgencia por la actualización que hizo Ambato sí vendría siendo buscar la manera ya más inmediata de poder conseguir los objetos, porque de verdad sí está medio complicado.
+00:45:11 DanielG
+Bueno, ese sería el que les traerá más impacto este sobre. Y también ahí tocamos otra vez el que ya hemos platicado con ellos, no el de el Value Street Mapping, no el mapeo de flujo de valor. No sé cómo se llama y disculpen mi escuchada, no es que son estándares ahí que lees siempre en inglés. Entonces, pues sí, la y la repito en inglés porque pues la está viendo todo el mundo digo en inglés o es donde está el 90% de la teoría de la lectura y lo practico siempre ya.
+00:45:42 DanielG
+Lamentablemente en español, pues sí encuentras buena documentación, pero tienes un corpus absurdo también del otro, pero ahí sí hay, por ejemplo, BCM, eso ya lo hizo Ana y postproducción en algún momento, no en el que, bueno, este es el súper técnico, que es los que son fregones, pues sí son este en postproducción hice uno así, pero básico, este no tan a detalle. Sí, lo hicieron así, pero híjole, eso es un tema ese, es en el que les, pero al final de cuentas es más peor mi flujo, este ver los tiempos y hay un chorro de cosas así ultra avanzadas, pero para nosotros es pues dado producto, proceso, es el que les tendrá más prioridad por impacto que tengan en ahorro en tiempo, en yo creo.
+00:46:37 Ramon QPH
+O sea si si lo si embargo al actualizar quito la funcionalidad esta de su biblioteca de 3D eh activarlo para como que encontrar el ángulo perfecto en el que tú quieres el objeto y descargar ese ángulo. Ya no tiene esa funcionalidad. Lo que te descargas son los archivos de 3D.
+00:46:55 Alan
+De 3D. Ah como se puede aplicar un filtro para que te entregue los modelos como antes eh.
+00:47:02 Pedro Diseño
+Pero es que haz de cuenta que lo que me está pasando es de que es literalmente uno entre cien. O sea, para poder encontrarlo debes de meterte literalmente ¿Quién lo subió.
+00:47:10 Alan
+Pero o sea tiene así como una herramienta de para filtrar que te de puros modelos así. Ayer también este estaba batallando yo con eso porque mhm. Que dio un objeto y y le estuve moviendo un poquito los filtros y y me arrojó puros resultados.
+00:47:23 Pedro Diseño
+Pero cuando lo descargas y te bueno o sea si te deja señalar la, Perspectiva, porque a mí no me permite ya, o sea, literalmente es descargar y me descargue el punto OG, punto punto Bj.
+00:47:34 Alan
+Sí, ayer descargué varios así, pero digo, estuve aplicando así varios filtros, bueno, un filtro que ofrece ahí mismo en vato y ya todo, todos los resultados eran así de que como antes de que okay para que lo rebotaran ahorita, no es como lo que le decías a Saúl el otro día y es parte de la capacitación de las mejores prácticas que tenemos que documentar.
+00:47:57 DanielG
+El lunes quiero ver, bueno, con ustedes lo son ustedes, está esta capacitación de algo documentada esta vez, este a ver, pero bueno, ahí les va también otra, van a tienen una herramientón ahorita, uno para descubrimiento, este y eso los puedo hacer ahora digo porque si lo uso diario, que no va a ser su solución, no, pero es al menos 1 una lluvia de ideas. inicial ante una necesidad hoy pues en Batu ya no nos entrega no sé qué es pero pues creo que son los objetos o sea quieren un objeto y que se los de 3D ¿Verdad?
+00:48:36 DanielG
+Sí. Y para ustedes tomarlo de este ángulo a este por este ¿No? Sí.
+00:48:42 Pedro Diseño
+Sí es que has de cuenta que antes era de que no sé te aparecía este control y cuando tenía la función de que el control te aparecía así pero tiene como que una herramienta para que tú puedas girarlo y digamos ya sabes quién es aquí, Te hacen descargar y ya te descarga el PNG de este control en esta en esta perspectiva, pero ahora con la herramienta que hizo, hicieron la actualización de la página y está, no entendí ni por qué la hicieron, se quisieron, me imagino modernizar, pero hicieron un desastre, o sea, y si es como si me imagino que yo también tuve el problema y ya Lando tuvo, me imagino que miles de usuarios deben estar teniendo el mismo conflicto, ¿no?
+00:49:17 Pedro Diseño
+Pero sí está medio difícil de encontrar la manera de filtrarlo y ya analizamos. ¿Soluciones alternas. Yo estaba probando como solución alterna, este estuve haciendo uso de Gemini para poder hacer los resultados, pero tenemos el mismo conflicto de que las CIAS no están ahorita avanzadas para poderte dar el PNG, pero algún alguno.
+00:49:38 DanielG
+Similar que sí les de en 3D. Turbo Squid, si es Turbo Squid, no como Turbo Squid. Es que ahí tendrán que para mí, para mí ese es mi flujo y si aprendo uno mejor que mejor. Para mí, yo ahí tiene un documento que les mande el de Anatomía de un buen prompt, dice trae, yo les puedo dar una. sesión micro, en la que interactuamos y también ustedes se documenta, me serviría mucho, en la que ustedes establecen y vamos otra vez.
+00:50:11 DanielG
+Hay un objetivo con una salida, con restricciones, con necesidad, con un alcance, con criterios también restrictivos. Y les da un chorizo totototo. Hay uno muy bueno. Con Gemini la verdad es que ahorran mucho los tokens de salida. Con Claude sí me entrega algo muy bueno, de más de más de cómo diré, si yo estoy buscando esto, me va a entregar si quiero 50 opciones, 50 opciones y con cierta especificaciones no muy claras, y es una cosa que pues a veces da flojera leer o gran parte de las veces da flojera leer, pero yo puedo condensar después.
+00:50:51 DanielG
+Si mi objetivo es ver sobre este soluciones con tales criterios, puedo correr hasta ese 5 veces o cuatro veces, yo ingesto. En ahí sí podrá ser en Gemini o en Moon Cloud y le digo, oye, a ver qué soluciones hay. Si leo, no, o sea, no confío para nada en todo lo que me está dando. Si reviso, tengo que referir a referencias, pero el de Deep es la función de Deep Research y la de Deep Research pues está para eso, lo que buscas entre cientos de páginas. A veces chat GPT es muy buena calidad, pero pocas páginas.
+00:51:22 DanielG
+Yemini, mucha, muchas páginas, pero te entrego una cositita así. Y voy complementando, son estrategias. Y ese ya me dice, pues es que yo tenía esta solución, pero tengo que ser estricto de cuál era mi solución y qué busco otra solución o una mejor solución. ¿Quién la oferta? O en caso que no haya una oferta, ¿cómo le hago? Y puedo empezar desde algo muy básico en una pregunta de este, yo partiré de ahí, no de porque ese sería mi punto. Yo, Daniel, yo, Daniel, aclaro, si me dicen mejor, pues es que mejor.
+00:51:57 DanielG
+Este de Poso Blender, una cosa así, pero mi objetivo es, no sé si es bueno, ustedes son los que lo tienen que plasmar, no, a lo que entiendo es necesito objetos en 3 dy la foto, la J en PNG, no, o una foto o la imagen de alta resolución. No tiene que ser PNG, pero una imagen de alta resolución para utilizarla en el proyecto, pero pues es una imagen, mi salida es una imagen, ¿no?
+00:52:27 DanielG
+necesito una imagen, bueno una cosa en 3D en la que yo pueda rotar y obtener una imagen. No sé, ustedes son los que tienen que definir.
+00:52:35 Pedro Diseño
+Es básicamente eso, buscar un modelo 3D para poder renderizarlo en una imagen PNG para la salida.
+00:52:44 DanielG
+Es el viernes si lo piensan más o menos así a nivel muy básico en diez minutos sale un prompt que ese tiene otro procesamiento, ese se va a libre search. research corre, da muchas opciones, yo estructuro que espero de la salida y sobre ese ya me entregué muchas soluciones que tengo que analizar, obviamente. Unas son soluciones que ya existen y otras son las que yo puedo hacer desarrollo. Yo digo yo persona, yo desarrollador o cualquier persona.
+00:53:19 DanielG
+Yo me puedo buscar como hacer eso. Yo Alex, yo me puedo buscar como solvente. Nada más ahí sería como definir qué objetivo es una solución ya de al mercado, una que se puede hacer en casa, porque yo no me he metido mucho, pero pues vi el de Blender ese que decían este que acá ya se los hace con Claude, no sé a qué niveles, no me he metido, ese no, la verdad es que no me he metido, no sé si alguien lo vio, eso sí, alguien lo viste.
+00:53:54 Pedro Diseño
+No, es el de policía doméstica. O sea, ya genera espacios 3D.
+00:54:14 DanielG
+Que de hecho se les puede servir cuando dices yo quiero esta vista. Entonces esto está interesante también. Este va con Claudio, pero si se puede con Claudio, la verdad es que se va a poder con Codex. Con Gemini, la verdad es que a mí no me están dando resultados buenos, este no sé qué han usado.
+00:54:44 DanielG
+Yo la verdad es que yo lo vi por Twitter, no, pero no sé si les solventa algo, eso también algo que les va a ayudar esta esta la deep research que puede ser que se integre acá en la aplicación. Sería útil para ustedes algo así a primera, o sea, sí es tan sencillo como un pro básico que luego vamos refinando.
+00:55:23 DanielG
+Pero lo que veo es que con técnicas avanzadas debe ser muy sencillo esto, que de por sí ya te lo muestro sencillo. Y usuarios comunes, no el que está promocionando la aplicación. Ese sí lo vi como con usuarios, por comunes digo, no tienen un conflicto de interés de demostrarte algo que va a estar cañón o es uno de cien. Deséchenle cuál es su necesidad, cuál es su problemática que están enfrentando.
+00:55:56 DanielG
+Y esto que está surgiendo pues es en base a una problemática, ¿no? Yo personalmente no conozco un sistema de gestión para sí hay un nodo, no, pero un nodo requiere muchísimo desarrollo en base a odo y es un tema, este es un tema, este tienes muchos módulos, no de contabilidad, de el que nos interesa es el de procesos, no el que esté. En este momento de procesos, alinearlo con IAS, con o bueno, con APIs, los que se puedan, otros desarrollo interno, este entonces aviéntenle.
+00:56:36 DanielG
+¿Cuál es su wishlist? Esto se va a hacer, o k, ya no vamos para atrás, pero es algo positivo, no lo vean como qué más. Bueno, dejamos ese nada más que el que plasmen en palabras. La necesidad de pues uno que tenían, que quieren o porque yo buscaría una alternativa que ya exista o que es el ideal. Si dices, oye, en una aplicación solo estaría muy padre que tengamos bajo palabras o bajo imágenes, porque pues mi input sería palabras a lo que imagino, video o imágenes, no creo, no sé cómo conceptualizaría hoy día un cabello azul.
+00:57:22 DanielG
+un mono azul y lo quiero en 3D o una imagen rotada porque lo ideal es que quisiera el otro lado y pues a veces no se lo imagina pero ahorita una solución que ustedes encuentran es bajo un modelo 3D que he roto y me saca una imagen.
+00:57:37 Pedro Diseño
+Me saca la imagen, es justo lo inmediato por así decirlo con más control.
+00:57:43 DanielG
+Yo creo que está fácil, nada más plan de su especificación. y y yo les digo como lo pueden atentar con para que vean como que que les aumenten alternativas y tenga un catálogo si está bien definido de alternativas ¿No? Este servicios o la otra podrá ser otro prompt como lo hago. Okay. Y me das ideas muy rápidas. Porque la otra cosa es meter. O sea es una fuente.
+00:58:14 DanielG
+No, no, no la definitiva pero de inspiración o de, La obtención de esa de esa información, si está muy bien específica, si soy muy específico, me ahorras en Google este en cientos de páginas y meterme y todo me ahorra, porque luego si tengo que hacer mi este análisis, no puedo depender de el chiste ni el chiste de lo que me arroja ahí, este hay alucinaciones, hay tal cosa, hay técnicas que lo reducen, no lo proviene el 100%.
+00:58:49 DanielG
+¿Algo más que les surge ahorita? Pues ustedes, ustedes, estos son los que van a tener que gritar.
+00:58:55 Alan
+No, pues yo, pues ahorita que con la salida de Saúl pues voy a dar la oportunidad de adentrarme un poquito más a lo que es el doblaje e identificar pues este las problemáticas que hay ahí y de alguna manera, o sea, identificada ya está, no, pero de cierta manera como encontrar la lógica o la manera correcta de plasmarlo en palabras, para que sea más fácil al momento de desarrollarlo.
+00:59:18 DanielG
+O platicado, eh. Ustedes tienen acceso al repositorio. Ahí ya está documentado varias áreas de mejora. Hay detección que son lluvia de ideas como las de las funciones y lo que ustedes hacen. O yo traigo esta, yo traigo esta y esta si me soluciona y no está detectando. Pero sí, esto es malo. Va a salir mucho platicado y otro que lo que tenía bien documentado, bien bien identificado, pues ese es el mejor, que le echan más joven.
+00:59:55 DanielG
+Eso es parte del baje, sí. Hay muchas, hay muchas. Les comento para, bueno ustedes pueden tener eso, luego lo de cultivo, de doblaje, creo que les vamos a hacer una. No, les comento sobre estos.
+01:00:26 DanielG
+Bueno, gracias.

@@ -1,0 +1,2024 @@
+00:00:00,560 --> 00:00:03,520 [Iris]
+Eh, ustedes hacen el doblaje, ¿verdad? Por lo que entiendo.
+
+00:00:03,520 --> 00:00:04,260 [Ivan]
+Sí.
+
+00:00:04,260 --> 00:00:09,900 [Iris]
+Okey. Miren, por ejemplo, ¿cuántos idiomas manejan actualmente o si, o llevan en este proceso?
+
+00:00:09,900 --> 00:00:16,480 [Daniel Garza]
+Si, si quieren empezamos con que nos cuenten el, el, el proceso actual.
+
+00:00:16,480 --> 00:00:16,510 [Ivan]
+Dieciséis.
+
+00:00:16,510 --> 00:00:17,419 [Iris]
+¿Dieciséis idiomas?
+
+00:00:17,420 --> 00:00:17,960 [Daniel Garza]
+Bueno, bueno.
+
+00:00:17,960 --> 00:00:18,960 [Ivan]
+Creo que es.
+
+00:00:18,960 --> 00:00:22,940 [Iris]
+Okey.
+
+00:00:22,940 --> 00:00:30,600 [Daniel Garza]
+¿Qué tal, Iris? ¿Qué tal, chicos, Saúl? Oigan, si quieren empezamos, cuéntenos su proceso y que no vayan leyendo las preguntas, yo les diría.
+
+00:00:30,600 --> 00:00:31,660 [Iris]
+Ah, okey.
+
+00:00:31,660 --> 00:00:46,300 [Daniel Garza]
+Este, cuéntenos sus proce-- su proceso de la A a la Z, cómo reciben, qué reciben y qué sale, y que nos cuenten paso a paso qué hacen.
+
+00:00:46,300 --> 00:00:54,020 [Iris]
+Mmm, uno es cuando desde el paso uno, yo recibo, este, no sé, el audio, ¿verdad? Del video, ¿y luego?
+
+00:00:54,020 --> 00:00:59,360 [Ivan]
+Se recibe el, el video sin-- con el pu, con las puras voces, sin los sonidos.
+
+00:00:59,660 --> 00:00:59,700 [Iris]
+Ajá.
+
+00:00:59,700 --> 00:01:02,560 [Ivan]
+Y eso ya se mete a Eleven Labs
+
+00:01:02,560 --> 00:01:06,480 [Ivan]
+y ya no más se...
+
+00:01:06,480 --> 00:01:09,480 [Ivan]
+se dobla de español a inglés.
+
+00:01:09,480 --> 00:01:09,600 [Iris]
+Ajá.
+
+00:01:09,600 --> 00:01:12,940 [Ivan]
+Luego ya es el proceso de doblarlo
+
+00:01:12,940 --> 00:01:17,260 [Ivan]
+y luego ya cuando ya está listo, se empiezan a,
+
+00:01:17,260 --> 00:01:20,000 [Ivan]
+a recortar los audios para que
+
+00:01:20,000 --> 00:01:26,560 [Ivan]
+más o menos cuando se acabe una, reciba un barroco, ahí más o menos, no tan largo-
+
+00:01:26,560 --> 00:01:26,580 [Iris]
+Ajá.
+
+00:01:26,580 --> 00:01:33,280 [Ivan]
+Se corta y así. Luego se van moviendo voces, porque a veces no quedan donde deben estar.
+
+00:01:33,280 --> 00:01:34,600 [Iris]
+Okey.
+
+00:01:34,600 --> 00:01:38,340 [Ivan]
+Y, y ya cuando queda eso,
+
+00:01:38,340 --> 00:01:53,320 [Ivan]
+ya se pasa al inglés y luego se checa en inglés que, pues que no estén mal algunas palabras o de que no se hayan movido los audios, porque a veces se, se acortan o se mueven y no quedan conforme a las palabras.
+
+00:01:53,320 --> 00:01:54,080 [Iris]
+Okey.
+
+00:01:54,080 --> 00:02:02,360 [Ivan]
+Luego, ya, ya de que está todo eso listo, ya nomás se seleccionan las voces para cada personaje y ya,
+
+00:02:02,360 --> 00:02:03,660 [Ivan]
+se exporta.
+
+00:02:03,660 --> 00:02:04,280 [Iris]
+Okey.
+
+00:02:04,280 --> 00:02:09,139 [Ivan]
+Y ya con, en base a ese de inglés, ya van saliendo los demás.
+
+00:02:09,139 --> 00:02:14,780 [Iris]
+Mhm, ¿le sigue el mismo proceso a los demás audios como el de inglés, eso ya dice?
+
+00:02:14,780 --> 00:02:18,040 [Ivan]
+Sí, así como, como el de inglés ya está bien-
+
+00:02:18,040 --> 00:02:18,060 [Iris]
+Ajá.
+
+00:02:18,060 --> 00:02:20,580 [Ivan]
+Los tiempos, y los demás ya salen bien en tiempo.
+
+00:02:20,580 --> 00:02:22,520 [Iris]
+Ah, okey, ya no necesitas hacer ese-
+
+00:02:22,520 --> 00:02:22,780 [Ivan]
+Sí.
+
+00:02:22,780 --> 00:02:24,020 [Iris]
+Ok.
+
+00:02:24,020 --> 00:02:25,980 [Ivan]
+Y de hecho, para lo común, pues como no sabes-
+
+00:02:25,980 --> 00:02:27,940 [Iris]
+No se va a saber, porque no sabemos todos los-
+
+00:02:27,940 --> 00:02:30,040 [Ivan]
+Pero de tiempo sí sabes, en general, todo.
+
+00:02:30,040 --> 00:02:33,260 [Iris]
+Ajá, okey. Este, eh-
+
+00:02:33,260 --> 00:02:37,080 [Daniel Garza]
+Si fuera-
+
+00:02:37,080 --> 00:02:39,140 [Iris]
+Ah. Y si, ¿de parte de ustedes?
+
+00:02:39,140 --> 00:03:05,360 [Daniel Garza]
+Si fuera más micro... A ver, cuéntenos. Ese, ese sería el proceso macro, ¿no? Pero si yo lo viera, si me entrenaran el día de hoy, a mí o a Iris, ¿cuál sería paso por paso? Hasta yo abro, este, voy a tal sección, ¿qué recuerdan de su paso a paso, no? Yo recibo, veo la-- en la carpeta tal, en el NAS.
+
+00:03:05,360 --> 00:03:11,940 [Daniel Garza]
+¿Có-cómo sería su paso a paso, si, si hoy en entre- e- entrenaran a Iris para que lo hiciera?
+
+00:03:11,940 --> 00:03:19,530 [Iris]
+No tendría de cómo va, [risas] entonces me tendrían que decir. ¿Cómo me lo explicarían?
+
+00:03:19,530 --> 00:03:22,600 [Ivan]
+Mmm, bueno, pues dentro de la interfaz de Eleven Labs-
+
+00:03:22,600 --> 00:03:23,100 [Iris]
+Mhm.
+
+00:03:23,100 --> 00:03:23,820 [Ivan]
+Viene un-
+
+00:03:23,820 --> 00:03:26,790 [Daniel Garza]
+Pero, pero desde cómo recibe, cómo recibe?
+
+00:03:26,790 --> 00:03:26,820 [Iris]
+Ah, okey.
+
+00:03:26,820 --> 00:03:34,220 [Daniel Garza]
+Co, co-- si sientan a Iris el día de hoy en la computadora, ¿qué abriría? ¿Qué archivo tiene que tomar?
+
+00:03:34,220 --> 00:03:34,470 [Iris]
+Sí.
+
+00:03:34,470 --> 00:03:38,590 [Daniel Garza]
+¿Qué reciben ustedes? ¿Quién les avisa de esto?
+
+00:03:38,590 --> 00:03:47,000 [Ivan]
+Bueno, eh... todo empieza desde que nuestro compañero Fernando, quien se, se ocupa de la sonorización-
+
+00:03:47,000 --> 00:03:47,780 [Iris]
+Mhm
+
+00:03:47,780 --> 00:03:51,140 [Ivan]
+de lo que es el video, nos pasa el video completo-
+
+00:03:51,140 --> 00:03:51,579 [Iris]
+Okey
+
+00:03:51,580 --> 00:03:59,930 [Ivan]
+más-- sin los efectos de sonido. Nos pasa más bien lo que sería el video completo, ya con todas las voces integradas.
+
+00:03:59,930 --> 00:04:00,299 [Iris]
+Mhm.
+
+00:04:00,300 --> 00:04:08,360 [Ivan]
+Entonces, este, se descarga ese archivo, este, es MP4, archivo de video normal,
+
+00:04:08,420 --> 00:04:12,200 [Ivan]
+[sonido de teclado] este, y se sube a, ahora sí, al portal de Eleven Labs.
+
+00:04:12,200 --> 00:04:14,520 [Iris]
+¿Y de dónde, dónde encuentro ese archivo yo?
+
+00:04:14,520 --> 00:04:18,529 [Ivan]
+Ese archivo se lo, se lo manda por medio de una liga-
+
+00:04:18,529 --> 00:04:18,680 [Iris]
+Ajá
+
+00:04:18,680 --> 00:04:23,220 [Ivan]
+que está anclada al, a lo que sería, pues el, el almacenamiento en servidor.
+
+00:04:23,220 --> 00:04:23,640 [Iris]
+Okey.
+
+00:04:23,640 --> 00:04:28,010 [Ivan]
+Le pasa una, una pequeña liga que se pega en el, en el explorador de archivos.
+
+00:04:28,010 --> 00:04:28,140 [Iris]
+Ajá.
+
+00:04:28,140 --> 00:04:30,660 [Ivan]
+En la parte de arriba, como si fuera una página web.
+
+00:04:30,660 --> 00:04:31,280 [Iris]
+Okey.
+
+00:04:31,280 --> 00:04:35,790 [Ivan]
+Se pega ahí y ahí viene un, el, el archivo de, de video.
+
+00:04:35,790 --> 00:04:35,940 [Iris]
+Ya, okey.
+
+00:04:35,940 --> 00:04:39,280 [Ivan]
+Ese se, se des, se, se toma-
+
+00:04:39,280 --> 00:04:39,390 [Iris]
+Ajá
+
+00:04:39,390 --> 00:04:41,680 [Ivan]
+de ahí y se arrastra hacia el Eleven Labs.
+
+00:04:41,680 --> 00:04:42,040 [Iris]
+Ajá.
+
+00:04:42,040 --> 00:04:43,740 [Ivan]
+En el apartado de doblajes.
+
+00:04:43,740 --> 00:04:44,440 [Iris]
+Mhm.
+
+00:04:44,440 --> 00:04:52,620 [Ivan]
+Entonces, ya dentro del apartado de doblajes, este, primero, mmm, como explica mi compañero Iván-
+
+00:04:52,620 --> 00:04:53,080 [Iris]
+Sí
+
+00:04:53,080 --> 00:05:05,940 [Ivan]
+este, se, se... primero se acomoda lo que sería el audio, [sonido de notificación] porque muchas veces es de que habla un personaje y lo pone en la línea del otro, entonces hay que acomodarlo un poco.
+
+00:05:05,940 --> 00:05:06,500 [Iris]
+Mhm.
+
+00:05:06,500 --> 00:05:12,760 [Ivan]
+También cuidar espacios que estén como sin sonido, sin voz.
+
+00:05:12,760 --> 00:05:12,980 [Iris]
+Mhm.
+
+00:05:12,980 --> 00:05:17,500 [Ivan]
+Porque muchas veces, este, eso como que desfasa un poco los audios.
+
+00:05:17,500 --> 00:05:17,940 [Iris]
+Mhm.
+
+00:05:17,940 --> 00:05:38,159 [Ivan]
+Entonces, este, se acomodan, se elige, eh, se crean las capas de cada personaje. Digamos, en un video son siete personajes, entonces hay que hacer siete capas de, de las voces y acomodarlas dependiendo de quién está hablando en ese momento.
+
+00:05:38,160 --> 00:05:39,300 [Iris]
+Okey, mhm.
+
+00:05:39,300 --> 00:05:42,020 [Ivan]
+Este, luego se--
+
+00:05:42,020 --> 00:05:49,360 [Ivan]
+ya sería la, la traducción al inglés. En la traducción al inglés, pues básicamente es, este, chequear
+
+00:05:49,360 --> 00:06:26,056 [Ivan]
+que, que esté bien escrito, porque muchas veces es de que dice de, eh, no se está diciendo de él y lo pone de ella. Entonces, hay que leer un poquito y decir: "No, pues aquí más bien se está refiriendo a ella". Entonces, hay que cambiar de él-... eh, de mi pronombre de él a ella. Entonces, así es, estar revisando, revisar que los tiempos de habla [ruido] coincidan con el original. Eh, que coincida también, no sé, al momento de traducirlo, [ruido] este, se pase a otra línea de voz que no es.
+
+00:06:26,116 --> 00:06:37,306 [Ivan]
+Y general, realmente, el, eh, debe de importar para que el doblaje salga bien, es generalizar el inglés. El inglés es más universal, se puede decir.
+
+00:06:37,306 --> 00:06:37,316 [Iris]
+Okey.
+
+00:06:37,316 --> 00:06:44,196 [Ivan]
+Entonces, ya teniendo bien inglés, salen los demás. Ya no, no hay
+
+00:06:44,196 --> 00:06:48,056 [Ivan]
+problema ya, así de que se desacomoda o así.
+
+00:06:48,056 --> 00:07:03,676 [Iris]
+Okey, para yo poder, este, [ruido] doblarlo al inglés, ¿cómooo en, en la interfaz? ¿Qué tengo que hacer? O sea, como dicen ustedes, subo el audio, ¿verdad?, en español, ¿y qué me aparece? ¿Qué opciones tengo de idioma? Este-
+
+00:07:03,676 --> 00:07:03,686 [Ivan]
+Sí.
+
+00:07:03,686 --> 00:07:05,496 [Iris]
+¿Qué más? Nada más idioma-
+
+00:07:05,496 --> 00:07:05,516 [Ivan]
+Sí.
+
+00:07:05,516 --> 00:07:07,416 [Iris]
+Nada más selecciono el idioma y listo?
+
+00:07:07,416 --> 00:07:11,056 [Ivan]
+Sí, de cuál es el idioma en el que está el video.
+
+00:07:11,056 --> 00:07:11,896 [Iris]
+Ajá, ajá.
+
+00:07:11,896 --> 00:07:13,576 [Ivan]
+Y, y a qué lo quieres cambiar.
+
+00:07:13,576 --> 00:07:22,036 [Iris]
+Okey. ¿Hay algún otro parámetro que tenga que usted tener, que usted le seleccione? Ah, no sé, no sé. ¿No?
+
+00:07:22,036 --> 00:07:26,926 [Ivan]
+No, solo lo de la-- poner la marca de agua, nomás, para que no se gaste tantos créditos.
+
+00:07:26,926 --> 00:07:28,695 [Iris]
+Poner la marca de agua, okey.
+
+00:07:28,696 --> 00:07:32,136 [Ivan]
+Dos cositas que tengo, pero la otra no me acuerdo que, que no es eso.
+
+00:07:32,136 --> 00:07:32,996 [Iris]
+Okey.
+
+00:07:32,996 --> 00:07:34,776 [Ivan]
+Sí, ¿no?
+
+00:07:34,776 --> 00:07:47,816 [Iris]
+Y, este, como dicen, ya una vez revisado, eh, y trabajado, pues sí, que no hay errores en la traducción, y que no haya silencios y que no tenga desfases-
+
+00:07:47,816 --> 00:07:48,456 [Ivan]
+Mhm.
+
+00:07:48,456 --> 00:07:57,196 [Iris]
+Este, ¿qué hacen? ¿Qué hacen de ahí? ¿Lo exportan a...? O, o se llama de otra forma el proceso como de-
+
+00:07:57,196 --> 00:07:59,076 [Ivan]
+Para los otros idiomas?
+
+00:07:59,076 --> 00:07:59,146 [Iris]
+Ajá.
+
+00:07:59,146 --> 00:08:05,356 [Ivan]
+Ahí como... abo, abajito te aparecen como pestañas, como español, inglés-
+
+00:08:05,356 --> 00:08:05,636 [Iris]
+Mhm.
+
+00:08:05,636 --> 00:08:09,136 [Ivan]
+Y luego hay un más, y le das más y te aparecen los demás idiomas.
+
+00:08:09,136 --> 00:08:09,676 [Iris]
+Ah, okey.
+
+00:08:09,676 --> 00:08:12,156 [Ivan]
+Es más, chino, coreano.
+
+00:08:12,156 --> 00:08:12,296 [Iris]
+Mhm.
+
+00:08:12,296 --> 00:08:18,396 [Ivan]
+Otra vez, el proceso de seleccionar las voces para el otro, y luego otras más y otro idioma.
+
+00:08:18,396 --> 00:08:23,296 [Iris]
+Otro idioma. ¿Pero seleccionan todos al mismo tiempo o uno por uno?
+
+00:08:23,296 --> 00:08:23,926 [Ivan]
+Uno por uno.
+
+00:08:23,926 --> 00:08:33,616 [Iris]
+Uno por uno. Okey, okey. Ajá. Y, este, ¿cuánto se tarda más o menos en hacer un idioma, así, mmm, o varía?
+
+00:08:33,616 --> 00:08:34,296 [Ivan]
+Varía.
+
+00:08:34,296 --> 00:08:39,836 [Iris]
+Okey, ¿a qué se debe la variación? Eh, por ejemplo, por la duración del audio.
+
+00:08:39,836 --> 00:08:39,856 [Ivan]
+Mhm.
+
+00:08:39,856 --> 00:08:40,276 [Iris]
+Ah, okey.
+
+00:08:40,276 --> 00:08:42,296 [Ivan]
+La duración.
+
+00:08:42,296 --> 00:08:43,696 [Iris]
+Okey.
+
+00:08:43,696 --> 00:08:46,216 [Ivan]
+También la plataforma se, se traba.
+
+00:08:46,216 --> 00:08:50,516 [Iris]
+Se traba también. ¿Qué más puede pasar que haga que
+
+00:08:50,516 --> 00:08:53,336 [Iris]
+dure más o menos? ¿Fuera de eso, nada más?
+
+00:08:53,336 --> 00:08:53,956 [Ivan]
+Mhm.
+
+00:08:53,956 --> 00:09:02,535 [Iris]
+Okey. Ah, y una vez que ustedes tienen los dieciséis idiomas, ¿qué hacen con esos? O sea, bueno, supongo que genera archivos. ¿A dónde se van esos archivos?
+
+00:09:02,536 --> 00:09:05,315 [Ivan]
+Sí, no, le das como, creo que es exportar.
+
+00:09:05,316 --> 00:09:06,035 [Iris]
+Ajá.
+
+00:09:06,036 --> 00:09:14,856 [Ivan]
+Y ya ahí te, te genera otra ventana, y ahí puedes seleccionar a qué lo quieres exportar, o sea, más precisamente atrás.
+
+00:09:14,856 --> 00:09:15,556 [Iris]
+Mhm.
+
+00:09:15,556 --> 00:09:17,496 [Ivan]
+Y vas seleccionando cada audio-
+
+00:09:17,496 --> 00:09:17,516 [Iris]
+Okey.
+
+00:09:17,516 --> 00:09:22,556 [Ivan]
+Y ya te lo va descargando, ya nomás. L-- te lo pone como en fila-
+
+00:09:22,556 --> 00:09:22,595 [Iris]
+Okey.
+
+00:09:22,596 --> 00:09:25,065 [Ivan]
+Y ahí le das descargar y ya.
+
+00:09:25,065 --> 00:09:25,076 [Iris]
+Sí.
+
+00:09:25,076 --> 00:09:30,176 [Ivan]
+Y ya después se lo da a la carpeta, otra vez ahí, donde se pasó el, el video.
+
+00:09:30,176 --> 00:09:30,296 [Iris]
+Okey.
+
+00:09:30,296 --> 00:09:33,416 [Ivan]
+Es la carpeta de idiomas de cada-
+
+00:09:33,416 --> 00:09:33,616 [Iris]
+Mhm
+
+00:09:33,616 --> 00:09:34,956 [Ivan]
+... de cada video.
+
+00:09:34,956 --> 00:09:38,656 [Iris]
+¿Y cómo, cómo le hacen para identificar
+
+00:09:38,656 --> 00:09:47,106 [Iris]
+el idioma? O sea, ¿no nombran el archivo de cierta forma o lo meten a la carpeta de cierto idioma con un nombre?
+
+00:09:47,106 --> 00:09:50,976 [Ivan]
+No, se le nombra el, el archivo con el idioma.
+
+00:09:50,976 --> 00:09:54,976 [Iris]
+Ah, okey. Entonces, le ponen, no sé, el nombre de, el-
+
+00:09:54,976 --> 00:09:56,776 [Ivan]
+El nombre clave para el video.
+
+00:09:56,776 --> 00:09:59,396 [Iris]
+Ajá, y luego inglés, español, ruso.
+
+00:09:59,396 --> 00:10:06,596 [Ivan]
+Nombre clave. O bueno, yo, la, la-- lo que he hecho, pues es nombre clave, y luego bajo y-
+
+00:10:06,656 --> 00:10:07,256 [Iris]
+El idioma.
+
+00:10:07,256 --> 00:10:09,656 [Ivan]
+Chino, ruso, coreano.
+
+00:10:09,656 --> 00:10:17,086 [Iris]
+Okey, okey. Este, y luego, bueno, ustedes lo suben como al proyecto, ¿verdad? Si bien entendí, del, del video.
+
+00:10:17,086 --> 00:10:18,676 [Ivan]
+Sí, a una carpeta, a una carpeta.
+
+00:10:18,676 --> 00:10:23,086 [Iris]
+Ajá, ¿y ya de ahí lo toma alguien más o ustedes?
+
+00:10:23,086 --> 00:10:25,896 [Ivan]
+Sí, ya luego lo mete al...
+
+00:10:25,896 --> 00:10:26,495 [Iris]
+Al video.
+
+00:10:26,496 --> 00:10:27,035 [Ivan]
+Al video.
+
+00:10:27,035 --> 00:10:27,846 [Iris]
+Okey.
+
+00:10:27,846 --> 00:10:30,676 [Ivan]
+Y lo exporta cada-
+
+00:10:30,676 --> 00:10:30,896 [Iris]
+Cada-
+
+00:10:30,896 --> 00:10:33,636 [Ivan]
+Sí, ya con los sonidos.
+
+00:10:33,636 --> 00:10:36,485 [Iris]
+Mhm. Okey.
+
+00:10:36,485 --> 00:10:36,485 [Ivan]
+Sí.
+
+00:10:36,485 --> 00:10:49,935 [Iris]
+Okey, ¿algo que se nos pueda haber pasado? Así de: "Ah, esto, hacemos esto". Yo sé que puede ser muy sencillo, muy micro, pero no importaría, ¿verdad? Nosotros como queremos saber cualquier cosa.
+
+00:10:49,936 --> 00:10:56,616 [Ivan]
+Mmm, pues sí, es importante. Tenemos una lista específica para voces.
+
+00:10:56,616 --> 00:10:56,896 [Iris]
+Ajá.
+
+00:10:56,896 --> 00:10:59,526 [Ivan]
+No podemos usar cualquier tipo de voz.
+
+00:10:59,526 --> 00:10:59,556 [Iris]
+Ajá.
+
+00:10:59,556 --> 00:11:01,996 [Ivan]
+Son unas ya como ya preseleccionadas.
+
+00:11:01,996 --> 00:11:02,636 [Iris]
+Okey.
+
+00:11:02,636 --> 00:11:07,896 [Ivan]
+Ah, son voces que, que ya están como aprobadas-
+
+00:11:07,896 --> 00:11:08,356 [Iris]
+Okey
+
+00:11:08,356 --> 00:11:10,256 [Ivan]
+... de que: "Ah, esta puede funcionar".
+
+00:11:10,256 --> 00:11:10,496 [Iris]
+Sí.
+
+00:11:10,496 --> 00:11:16,866 [Ivan]
+Y tenemos una lista de, este, voces de hombre, voces de mujer o voces extras.
+
+00:11:16,866 --> 00:11:17,466 [Iris]
+Ah, mhm.
+
+00:11:17,466 --> 00:11:25,736 [Ivan]
+Entonces, pues es nada más cuidar eso. No podemos usar cualquier, mmm, cualquier...
+
+00:11:25,736 --> 00:11:26,876 [Iris]
+Voz.
+
+00:11:26,876 --> 00:11:30,326 [Ivan]
+No me acuerdo cómo se le dice. ¡Modelo!
+
+00:11:30,326 --> 00:11:30,336 [Iris]
+Modelo.
+
+00:11:30,336 --> 00:11:31,596 [Ivan]
+Cualquier modelo de voz.
+
+00:11:31,596 --> 00:11:51,896 [Iris]
+Okey, entonces, a ver si entendí bien. Por ejemplo, ustedes reciben el audio en español. Yo suponía, ¿eh? Ese es, ese es mi error. Yo suponía que Llevelands lo que hacía era con las mismas voces que traían en ese audio, eh, hacer traducciones, pero ustedes seleccionan voces para la traducción.
+
+00:11:51,896 --> 00:11:55,796 [Ivan]
+Es que, por ejemplo, hay modelos que están hechos específicamente para español.
+
+00:11:55,796 --> 00:11:56,456 [Iris]
+Mhm.
+
+00:11:56,456 --> 00:11:58,156 [Ivan]
+Entonces, este-
+
+00:11:58,156 --> 00:11:58,276 [Iris]
+Ah
+
+00:11:58,276 --> 00:12:00,376 [Ivan]
+... al momento de pasarlo a inglés-
+
+00:12:00,376 --> 00:12:00,556 [Iris]
+Mhm
+
+00:12:00,556 --> 00:12:04,636 [Ivan]
+... este, va a sonar así como si lo estuviera leyendo literalmente la palabra.
+
+00:12:04,636 --> 00:12:05,636 [Iris]
+Ah, okey. Ajá.
+
+00:12:05,636 --> 00:12:07,976 [Ivan]
+Entonces, no suena muyyy, mmm-
+
+00:12:09,016 --> 00:12:10,236 [Iris]
+... pues natural.
+
+00:12:10,236 --> 00:12:12,096 [Sebastian]
+Natural.
+
+00:12:12,096 --> 00:12:19,915 [Iris]
+Ajá. Entonces, sí hay veces en las que ustedes dicen: "Bueno, le voy a cambiar la voz, porque este modelo de voz es para inglés", ¿verdad? O, o suena mejor-
+
+00:12:19,915 --> 00:12:20,406 [Sebastian]
+Sí.
+
+00:12:20,406 --> 00:12:27,956 [Iris]
+-para inglés. Ajá. Y solo, solo hacen selección de voces para inglés, ¿verdad? Ya los otros idiomas, no.
+
+00:12:27,956 --> 00:12:28,466 [Sebastian]
+No.
+
+00:12:28,466 --> 00:12:36,236 [Iris]
+Okey, ajá. ¿Qué más podría ser? Mmm,
+
+00:12:36,236 --> 00:12:38,976 [Iris]
+bueno, ¿qué, qué
+
+00:12:38,976 --> 00:12:40,776 [Iris]
+ibas a hablar, Daniel?
+
+00:12:40,776 --> 00:12:52,415 [Daniel Garza]
+No, en general, eso, y a ver, con-- comentaban ustedes, ¿no? Hay, hay una tasa de error, no sé si es del ochenta y cinco, noventa por ciento, entre palabras y que a veces no,
+
+00:12:52,415 --> 00:13:01,616 [Daniel Garza]
+no diferencia bien entre el que habla, ¿no? Me puede decir que la persona uno, este, se vuelve la uno, la tres y la siete, por decir así.
+
+00:13:01,616 --> 00:13:01,625 [Iris]
+Mhm.
+
+00:13:01,625 --> 00:13:11,216 [Daniel Garza]
+Y a veces tengo que unificarlos, que ese tiene que ser un trabajo manual, es complejo, supongo, por guion, identificar desde
+
+00:13:11,216 --> 00:13:50,996 [Daniel Garza]
+cómo habla el, el speaker, ese tiene que ser manual, a menos que... No sé si ustedes han teorizado o no, de que el speaker uno tiene ci-cierto tipo de... O sea, nada más por marcar, ¿no? Y es una teoría. ¿Se podría identificar si tuviera otro tipo de redacción o no sé cómo llamarlo, no? No sé si han hablado de eso con el equipo, ¿se podría, si se automatizara? ¿Se identifica? Si, si a mí me dieran un guion, ¿yo podría saber, si nada más tengo la información inicial de cómo habla el uno y el dos, o casi siempre hablan igual? O sea, las palabras, los enunciados.
+
+00:13:50,996 --> 00:13:53,356 [Sebastian]
+Eh, no, casi siempre hablan igual.
+
+00:13:53,356 --> 00:14:06,256 [Daniel Garza]
+Okey, okey. Y luego, tienen el tema de los silencios, tienen que partir a veces los silencios, ¿no? Ahí nu-nunca entendí el porqué.
+
+00:14:06,256 --> 00:14:29,356 [Sebastian]
+Realmente es porqueee a veces con los silencios, la misma IA se confunde y lo toma como si estuviera hablando. Entonces, como que se, se puede llegar a despasar ooo poner, este, alargar más las palabras, porque como lo toma como una pista de audio, entonces abarca ese cacho que está solo.
+
+00:14:29,356 --> 00:14:36,696 [Daniel Garza]
+Okey, okey. ¿Qué más ven ustedes?
+
+00:14:36,696 --> 00:14:48,185 [Iris]
+¿Qué, qué errores pueden...? Bueno, aparte, más bien, ¿qué errores o qué necesidades que ustedes como decimos, corrigan? Aparte de silencios. [sonido de teclado] Bueno, ya decíamos que se traba la aplicación también, ¿verdad?
+
+00:14:48,185 --> 00:14:48,956 [Sebastian]
+Mhm.
+
+00:14:48,956 --> 00:14:54,376 [Iris]
+Eh, o se pone lenta. Este, ¿qué otras, eh,
+
+00:14:54,376 --> 00:15:01,175 [Iris]
+como dificultades tienen durante...? [ruido] Es que nada más, así. Más, más que nada.
+
+00:15:01,175 --> 00:15:11,175 [Ivan]
+A veces no agarra bien con... ¿cómo se dice? Como la expresión que quiere decir en el video-
+
+00:15:11,175 --> 00:15:11,526 [Iris]
+Mhm.
+
+00:15:11,526 --> 00:15:12,936 [Ivan]
+-como el sentimiento, pues.
+
+00:15:12,936 --> 00:15:14,776 [Iris]
+Okey, la intención.
+
+00:15:14,776 --> 00:15:14,886 [Ivan]
+La intención.
+
+00:15:14,886 --> 00:15:17,376 [Iris]
+La intención del... Ah, okey.
+
+00:15:17,376 --> 00:15:20,896 [Ivan]
+Entonces, sí se ponen como signos de admiración
+
+00:15:20,896 --> 00:15:24,736 [Ivan]
+o, o los vídeos como que antes os, eh, los consigue o así.
+
+00:15:24,736 --> 00:15:30,196 [Iris]
+Sí, o sea, en vez de una pregunta, hacerle una afirmación, ¿sí? ¿Y ustedes lo corrigen?
+
+00:15:30,196 --> 00:15:30,546 [Ivan]
+Sí.
+
+00:15:30,546 --> 00:15:35,196 [Iris]
+¿Sí? Okey, ajá. Ah...
+
+00:15:35,196 --> 00:15:38,396 [Daniel Garza]
+Muy bien, con eso, si quieres, arrancamos ahora sí.
+
+00:15:38,396 --> 00:15:38,976 [Iris]
+Okey.
+
+00:15:38,976 --> 00:15:46,675 [Daniel Garza]
+Te voy a ir interrumpiendo en algunos que la realidad es que no valen la pena, ¿no? Y me van interrumpiendo ustedes. Yo voy a subsidiarlos para agilizar, ¿no?
+
+00:15:46,675 --> 00:15:46,756 [Iris]
+Sí.
+
+00:15:46,756 --> 00:15:54,876 [Daniel Garza]
+Este, manejan, digamos, alrededor de diecisiete idiomas, con un potencial a veintidós, ¿no? Creo que ahorita no es tan relevante
+
+00:15:54,876 --> 00:15:55,156 [Daniel Garza]
+los que-
+
+00:15:55,156 --> 00:15:55,185 [Iris]
+Claro.
+
+00:15:55,185 --> 00:16:03,076 [Daniel Garza]
+se traducen de manera automática, pero su idioma principal es español y traducen al inglés, ¿no?
+
+00:16:03,076 --> 00:16:03,896 [Iris]
+Mhm.
+
+00:16:03,896 --> 00:16:12,376 [Daniel Garza]
+Este, perdón, me tuve que salir ahorita. En la traducción al inglés, ¿cómo, eh...?
+
+00:16:12,376 --> 00:16:14,685 [Iris]
+Daniel, una duda, ¿estás grabando el audio?
+
+00:16:14,685 --> 00:16:15,616 [Daniel Garza]
+¿Perdón?
+
+00:16:15,616 --> 00:16:16,715 [Iris]
+¿Estás grabando el audio?
+
+00:16:16,716 --> 00:16:17,656 [Daniel Garza]
+Sí.
+
+00:16:17,656 --> 00:16:18,776 [Iris]
+Ah, ok.
+
+00:16:18,776 --> 00:16:22,425 [Daniel Garza]
+Este, si quieres bajar, Iris.
+
+00:16:22,425 --> 00:16:23,236 [Iris]
+¿Ah?
+
+00:16:23,236 --> 00:16:28,156 [Daniel Garza]
+Eeeh, ya nos explicaron el proceso, eeeh-
+
+00:16:28,195 --> 00:16:31,195 [Iris]
+Bueno, el proceso ya lo compa, ya lo compartieron.
+
+00:16:31,195 --> 00:16:31,966 [Daniel Garza]
+El input-
+
+00:16:31,966 --> 00:16:40,096 [Iris]
+¿Qué reciben como input para empezar el doblaje? Y ya vimos que reciben ustedes una liga, ¿verdad? Pero que tiene el video completo, ¿verdad?
+
+00:16:40,096 --> 00:16:40,576 [Daniel Garza]
+Mhm.
+
+00:16:40,576 --> 00:16:48,876 [Iris]
+Con el audio en español. ¿Usan la interfaz web de Dilevlas o la API? Esa duda, eso no sé si...
+
+00:16:48,876 --> 00:16:51,515 [Daniel Garza]
+Es la web, ¿no? ¿Con la API han trabajado?
+
+00:16:51,516 --> 00:16:51,586 [Ivan]
+La interfaz web.
+
+00:16:51,586 --> 00:16:59,376 [Iris]
+La interfaz web, okey. Y luego, eh, no sé si saben cuál es el plan de Dilevlas, que están usando actualmente.
+
+00:16:59,376 --> 00:17:01,256 [Daniel Garza]
+No sería relevante ahorita.
+
+00:17:01,256 --> 00:17:02,175 [Iris]
+No, okey.
+
+00:17:02,175 --> 00:17:04,316 [Daniel Garza]
+Eh, nada más una du-- bueno, a ver.
+
+00:17:04,316 --> 00:17:04,695 [Iris]
+Dime.
+
+00:17:04,695 --> 00:17:09,395 [Daniel Garza]
+Sí, sí quieres decirla. Si, si quieren, yo voy aventando el, el cuestionario, nada más un-
+
+00:17:09,396 --> 00:17:09,445 [Iris]
+Muy bien.
+
+00:17:09,445 --> 00:17:11,036 [Daniel Garza]
+Un segundo.
+
+00:17:11,036 --> 00:17:11,096 [Iris]
+Ajá.
+
+00:17:11,096 --> 00:17:20,935 [Daniel Garza]
+Este, denme un minuto, nada más lo abro. ¿Me pueden contar un poco su proceso de validación de calidad de español a inglés?
+
+00:17:20,935 --> 00:17:24,476 [Iris]
+Que revisan, por qué lo revisan.
+
+00:17:24,476 --> 00:17:26,695 [Daniel Garza]
+¿Ya cubrieron eso, Iris? No, ¿verdad?
+
+00:17:26,755 --> 00:17:36,316 [Iris]
+Más o menos, o sea, ya nos platicaron, pero repítanmelo. Este, que ellos re-- sobre todo, nos, nos hablaron de los, eh, errores que encuentran.
+
+00:17:36,316 --> 00:17:36,516 [Daniel Garza]
+Ajá.
+
+00:17:36,516 --> 00:17:41,116 [Iris]
+¿Verdad? O sea, me, mencionaron que hacen una lectura
+
+00:17:41,116 --> 00:17:47,556 [Iris]
+y luego, a partir de esa lectura, encuentran, por ejemplo, errores en pronombres. En vez de para él, dice para ella, por decir algo, ¿no?
+
+00:17:47,556 --> 00:17:48,335 [Daniel Garza]
+Sí.
+
+00:17:48,336 --> 00:17:50,146 [Iris]
+Este...
+
+00:17:50,146 --> 00:18:02,255 [Daniel Garza]
+¿Cómo lo encuentran? ¿Có-cómo se dan cuenta de todo esto? ¿Saben hablar muy bien inglés? ¿Usan traductores? ¿Cuál es su proceso?
+
+00:18:02,255 --> 00:18:05,356 [Iris]
+De qué echan mano.
+
+00:18:05,356 --> 00:18:09,996 [Ivan]
+Mmm, primero que todo, es así como de que, pues en el mismo contexto del video.
+
+00:18:09,996 --> 00:18:10,235 [Iris]
+Ajá.
+
+00:18:10,235 --> 00:18:13,235 [Ivan]
+Por ejemplo, no sé, le está hablando Pedrito a Marianita.
+
+00:18:13,235 --> 00:18:13,755 [Iris]
+Okey.
+
+00:18:13,755 --> 00:18:15,796 [Ivan]
+Entonces, este, en la parte, bueno-
+
+00:18:16,144 --> 00:18:25,843 [Ivan]
+... Explicando un poquito ya la interfaz de este, en la parte inferior de, de la pantalla, como sale la li-, como la línea de tiempo en donde acomodamos, eh, los audios.
+
+00:18:25,843 --> 00:18:26,363 [Iris]
+Okey.
+
+00:18:26,363 --> 00:18:35,724 [Ivan]
+Y en la parte de arriba de la línea de tiempo hay dos pantallas. Del lado, del lado izquierdo, viendo la pantalla, es que le aparece las traducciones escritas.
+
+00:18:35,724 --> 00:18:36,363 [Iris]
+Ah, okey.
+
+00:18:36,363 --> 00:18:58,363 [Ivan]
+Lo que hace Eleven Labs es, este, eh, como que detectar el mismo audio y el audio lo transcribe a texto. Entonces, en una parte le sale el audio de, por ejemplo, ya cuando estamos doblando a inglés, en la parte de la izquierda sale el texto en español y en la parte derecha le sale en inglés.
+
+00:18:58,363 --> 00:18:58,863 [Iris]
+Okey.
+
+00:18:58,863 --> 00:19:16,504 [Ivan]
+Entonces, hay que dar una pequeña lectura siempre en lo que se va viendo el video, se va leyendo y se va escuchando el audio, y este, no sé, se puede dar cuenta que en un ratito, pues sí, se está refiriendo a, a-- se le está hablando a, a, a ella, pero le sale con el pronombre de él.
+
+00:19:16,504 --> 00:19:16,884 [Iris]
+Ah.
+
+00:19:16,884 --> 00:19:21,683 [Ivan]
+Entonces, entonces hay que, este, bueno, en el mismo texto es editable.
+
+00:19:21,684 --> 00:19:22,204 [Iris]
+Mhm.
+
+00:19:22,204 --> 00:19:27,704 [Ivan]
+Entonces, usted, no sé, borra el, el, el de él, el de él, perdón, y le pone de ella.
+
+00:19:27,704 --> 00:19:28,583 [Iris]
+Okey.
+
+00:19:28,583 --> 00:19:42,623 [Ivan]
+Y abajito le sale un botón que dice: Generar, eh, Generar audio. Ahí le pica y se, se vuelve a convertir el audio, pero ya cambiando, ah, aplicando los cambios que usted, este, cambió.
+
+00:19:42,623 --> 00:19:54,583 [Iris]
+Y en, en donde detectas que es, dice de él, para él o para ella, ¿está en inglés o está en español? O sea, donde, donde tú visualizas el, el para él, por decirte algo.
+
+00:19:54,583 --> 00:19:59,884 [Ivan]
+Eh, por ejemplo, este, en español está bien escrito-
+
+00:19:59,884 --> 00:19:59,902 [Iris]
+Ajá.
+
+00:19:59,904 --> 00:20:02,343 [Ivan]
+Pero el momento de traducirlo, lo traduce mal.
+
+00:20:02,343 --> 00:20:04,174 [Iris]
+Okey, ahí dice para ella, en español.
+
+00:20:04,174 --> 00:20:05,823 [Ivan]
+Para él. Ahí dice para él.
+
+00:20:05,823 --> 00:20:09,902 [Iris]
+Okey, entonces ustedes saben de cuál, eh, en este caso, ustedes saben inglés-
+
+00:20:09,904 --> 00:20:10,244 [Ivan]
+Claro.
+
+00:20:10,244 --> 00:20:12,593 [Iris]
+Por eso detectan este tipo de errores.
+
+00:20:12,593 --> 00:20:12,704 [Ivan]
+Sí.
+
+00:20:12,704 --> 00:20:31,154 [Iris]
+Okey, okey, okey. De alguna forma, fuera de hacer una lectura, este, ¿mueven algún texto, algún traductor, como para asegurarse de algo que no le..., que a lo mejor no le entienden, ah? Porque puede ser que digas: "De repente, no entendí qué quiso decir aquí".
+
+00:20:31,154 --> 00:20:31,154 [Ivan]
+Sí.
+
+00:20:31,154 --> 00:20:33,004 [Iris]
+¿Y han llegado a usar algún traductor?
+
+00:20:33,004 --> 00:20:35,083 [Ivan]
+Por lo menos yo una vez la-
+
+00:20:35,083 --> 00:20:43,204 [Iris]
+Una vez, okey. Mhm. Este, ¿qué otras inconsistencias buscan, aparte de pronombres?
+
+00:20:43,904 --> 00:20:47,264 [Ivan]
+Es que realmente, pues sí, pues nomás se equivocan en los pronombres.
+
+00:20:47,264 --> 00:20:49,843 [Iris]
+Okey. Mmm.
+
+00:20:49,843 --> 00:20:56,684 [Daniel Garza]
+Eh, puntuaciones, me comentaba Saúl antes de que saliera, que a veces el punto-
+
+00:20:56,684 --> 00:20:58,004 [Ivan]
+Ah, sí.
+
+00:20:58,004 --> 00:20:58,194 [Daniel Garza]
+El punto-
+
+00:20:58,194 --> 00:21:03,984 [Ivan]
+Pero eso nomás me ha tocado con el no. Cuando es no punto, lo pone nombre.
+
+00:21:03,984 --> 00:21:08,404 [Daniel Garza]
+Nombre. Okey, ¿qué sería eso? ¿Abreviaciones?
+
+00:21:08,404 --> 00:21:13,184 [Ivan]
+Sí, abreviación. Pero se quita el punto y ya lo, lo pone entero como-
+
+00:21:13,184 --> 00:21:13,832 [Daniel Garza]
+Okey.
+
+00:21:13,832 --> 00:21:14,634 [Iris]
+Mhm.
+
+00:21:14,634 --> 00:21:19,803 [Daniel Garza]
+¿Hacen uso de alguna IA para la revisión completa?
+
+00:21:19,803 --> 00:21:21,123 [Ivan]
+No.
+
+00:21:21,123 --> 00:21:33,082 [Daniel Garza]
+Okey, ¿les funcionaría poner guion en español contra uno en inglés? ¿Se, se puede de entrada copiar todo el del inglés, toda la salida del inglés?
+
+00:21:33,083 --> 00:21:34,862 [Ivan]
+No sé, la verdad.
+
+00:21:34,924 --> 00:21:46,083 [Daniel Garza]
+Okey, okey, entonces ustedes van haciendo revisión. Este, todo lo que nos digan, mmm, no quieres-- o sea, ustedes vayan agregándonos todo, ¿no? No, no hay ninguna respuesta mala aquí, ¿no?
+
+00:21:46,083 --> 00:21:46,704 [Ivan]
+Eso sí.
+
+00:21:46,704 --> 00:21:52,504 [Daniel Garza]
+Este, es para entender un poco el proceso, ¿no? Y qué les podemos facilitar, que ese es el objetivo final, ¿no?
+
+00:21:52,504 --> 00:21:52,664 [Ivan]
+Sí.
+
+00:21:52,664 --> 00:22:00,964 [Daniel Garza]
+Este, por ejemplo, yo puedo seleccionar todo el guion ya traducido en inglés, ¿no?
+
+00:22:00,964 --> 00:22:02,853 [Ivan]
+Eh, no.
+
+00:22:02,853 --> 00:22:04,353 [Daniel Garza]
+¿No?
+
+00:22:04,353 --> 00:22:05,323 [Ivan]
+Creo que no.
+
+00:22:05,323 --> 00:22:07,204 [Iris]
+Se puede descargar como punto txt.
+
+00:22:07,204 --> 00:22:10,904 [Ivan]
+Creo que sí, pero nunca lo he hecho.
+
+00:22:10,904 --> 00:22:14,884 [Daniel Garza]
+Se puede exportar el, el, la salida, ¿no?
+
+00:22:14,884 --> 00:22:19,643 [Ivan]
+Es que cuando descarga, ya cuando se exporta, lo que sería la traducción-
+
+00:22:19,643 --> 00:22:19,944 [Daniel Garza]
+Ajá.
+
+00:22:19,944 --> 00:22:32,384 [Ivan]
+Le da varias opciones. Entonces, puede descargar en MP.4, ya que sería en, con el video incluido, en MP3 para solo el audio y vienen otras opciones.
+
+00:22:32,384 --> 00:22:52,543 [Daniel Garza]
+Okey. Okey, ¿qué, qué más detectan ustedes que...? Si, eh, creo que esto es crucial, ¿no? Ese, este tema por, al menos en inglés, ¿no? Si les pudiéramos facilitar algo que les hiciera más fácil ese trabajo, ehm,
+
+00:22:52,543 --> 00:23:03,484 [Daniel Garza]
+¿qué podría ser? ¿Han, han pensado? Si fuera una función mágica que le pidieran a Eleven Labs, obviamente que te lo entregara al cien por ciento bien, ¿no? Y partido, pero ¿qué más se les podría facilitar?
+
+00:23:03,484 --> 00:23:17,323 [Ivan]
+Mmm...
+
+00:23:17,323 --> 00:23:41,303 [Iris]
+Incluso un paso, como decir, este: "Si eliminamos este paso y que fuera de, de aquí, se moviera claro, fácilmente, ¿no? O no tuviera que, este, [risas] transformar algo, cargar algo, así como muy mágico, como de: ¡ah! Con un clic. [risas] ¿Qué podría ser, no?
+
+00:23:41,303 --> 00:23:45,384 [Ivan]
+Que lo exportes, ¿no? Que se deban exportar todos.
+
+00:23:45,384 --> 00:23:49,643 [Iris]
+Que se pudieran exportar todos en un tiempo. Okey,
+
+00:23:49,704 --> 00:23:51,723 [Iris]
+sí, porque ahorita es uno por uno, ¿no?
+
+00:23:51,724 --> 00:23:54,384 [Ivan]
+Que picarle uno por uno, exportar, exportar, exportar.
+
+00:23:54,384 --> 00:23:54,904 [Iris]
+Mhm.
+
+00:23:54,904 --> 00:23:55,464 [Daniel Garza]
+Okey.
+
+00:23:55,464 --> 00:24:01,704 [Iris]
+Y la, la traducción, no sé, lo que hace, perdón, el doblaje es uno por uno, ¿verdad?
+
+00:24:01,704 --> 00:24:02,164 [Ivan]
+Sí.
+
+00:24:02,164 --> 00:24:09,583 [Iris]
+En Eleven Labs. ¿Si no? Si entendí bien, no pueden seleccionar ruso, inglés, francés, español y luego decir: "Pónte la-
+
+00:24:09,583 --> 00:24:12,803 [Ivan]
+Es como seleccionar ruso y luego generar-
+
+00:24:12,803 --> 00:24:12,994 [Iris]
+Okey.
+
+00:24:12,994 --> 00:24:18,303 [Ivan]
+Y luego esperar a que se genere todo el audio y luego ya, este, darle una checadita así y decir:
+
+00:24:18,820 --> 00:24:20,480 [Iris]
+... de desfase, por decir algo.
+
+00:24:20,480 --> 00:24:22,620 [Ivan]
+Bueno, raramente se llegan a desfasar.
+
+00:24:22,620 --> 00:24:23,580 [Iris]
+Okey.
+
+00:24:23,580 --> 00:24:25,840 [Ivan]
+Una checadita de desfase en el video-
+
+00:24:25,840 --> 00:24:26,119 [Iris]
+Mhm.
+
+00:24:26,120 --> 00:24:27,760 [Ivan]
+Y, y exportar.
+
+00:24:27,760 --> 00:24:30,960 [Iris]
+Okey, okey.
+
+00:24:30,960 --> 00:24:35,000 [Daniel Garza]
+Okey, si quieres continuar con, con lo que ibamos.
+
+00:24:35,000 --> 00:24:39,520 [Iris]
+Sí. Ah...
+
+00:24:40,380 --> 00:24:54,920 [Iris]
+déjame ver. Aquí, mapeo de voces. Ya vimos lo de mapeo de voces, ¿cómo se asignan las voces a los personajes? Me decían ellos que buscan un modelo de local en un video. Bueno, en el caso de inglés, ¿verdad?
+
+00:24:54,920 --> 00:24:55,300 [Iris]
+[carraspeo]
+
+00:24:55,300 --> 00:24:59,530 [Daniel Garza]
+¿Qué, qué significa eso? Para mí, que no conozco de manera técnica.
+
+00:24:59,530 --> 00:25:06,480 [Iris]
+[carraspeo] Si quieres explicarlo otra
+
+00:25:06,480 --> 00:25:06,560 [Iris]
+vez.
+
+00:25:06,560 --> 00:25:14,630 [Ivan]
+El, ah... es que muchas veces, o sea, ya ten-- ya se tiene una voz específica para los personajes en español.
+
+00:25:14,630 --> 00:25:17,420 [Daniel Garza]
+¿Y cómo lo saben esto?
+
+00:25:17,420 --> 00:25:18,220 [Ivan]
+Mmm.
+
+00:25:18,220 --> 00:25:28,880 [Daniel Garza]
+Si, si le enseñaran a Iris hoy, ¿cómo sabe ella que es esa voz específica? ¿Dónde está plasmado? ¿Có-cómo les explican ahora que los entrenaron a ustedes?
+
+00:25:28,880 --> 00:25:31,760 [Daniel Garza]
+¿Có-cómo sabría Iris si la entrenaran?
+
+00:25:31,760 --> 00:25:52,050 [Iris]
+Sí, mencionaban que tienen una lista, ¿verdad? Detrás. Es una lista de voces. ¿En esa lista viene de alguna forma identificado, eh: esta voz es para este idioma o esta voz es prefieren para-- bueno, yo sé que viene por lo menos si es de hombre o de mujer, ¿no?
+
+00:25:52,050 --> 00:25:52,050 [Ivan]
+Mhm.
+
+00:25:52,050 --> 00:25:57,360 [Iris]
+¿O ustedes tienen que escucharla para tener identificación de hombres, de mujeres, de niños?
+
+00:25:57,360 --> 00:26:02,060 [Ivan]
+Por lo menos yo, va y vienen para reproducir un ejemplo de la voz.
+
+00:26:02,060 --> 00:26:02,800 [Iris]
+De la voz.
+
+00:26:02,800 --> 00:26:06,480 [Ivan]
+Entonces, ya depende, ya dependería de quién está hablando.
+
+00:26:06,480 --> 00:26:13,100 [Iris]
+Okey, o sea, en realidad ustedes entran a ese catálogo de voces y luego empiezan a reproducir hasta encontrar una-
+
+00:26:13,100 --> 00:26:13,380 [Ivan]
+Mhm.
+
+00:26:13,380 --> 00:26:15,880 [Iris]
+que sea para el género que busquen.
+
+00:26:15,880 --> 00:26:15,940 [Ivan]
+Mhm.
+
+00:26:15,940 --> 00:26:33,900 [Iris]
+Y... ¿cómo saben que una de esas voces es la adecuada para inglés, por decir algo? Para un hombre en inglés, este, ya de un edad mayor. ¿Es meramente por sentido común? O sea, ustedes la oyen y dicen: es, esta suena.
+
+00:26:33,900 --> 00:26:39,160 [Ivan]
+Sí, más que nada es como por, este, cómo se comporta en el video.
+
+00:26:39,160 --> 00:26:39,360 [Iris]
+Ah.
+
+00:26:39,360 --> 00:26:42,749 [Ivan]
+Como la personalidad del personaje-
+
+00:26:42,749 --> 00:26:42,749 [Iris]
+Okey
+
+00:26:42,749 --> 00:26:44,260 [Ivan]
+en ese video en específico.
+
+00:26:44,260 --> 00:26:44,680 [Iris]
+Okey.
+
+00:26:44,680 --> 00:26:53,380 [Ivan]
+Entonces, por ejemplo, la voz de... mmm, pues sí, de un a-- de un abuelito gruñón, digamos.
+
+00:26:53,380 --> 00:26:53,400 [Iris]
+Mhm.
+
+00:26:53,400 --> 00:26:55,280 [Ivan]
+Entonces, nos ponemos a oír, a ver-
+
+00:26:55,280 --> 00:26:55,480 [Iris]
+Sí
+
+00:26:55,480 --> 00:27:01,260 [Ivan]
+Una que suena acá medio rasposa, más como con un tono más fuerte.
+
+00:27:01,260 --> 00:27:01,680 [Iris]
+Ajá.
+
+00:27:01,680 --> 00:27:02,020 [Ivan]
+Por decir.
+
+00:27:02,020 --> 00:27:03,820 [Iris]
+Sí, más grave, ¿verdad?
+
+00:27:03,820 --> 00:27:04,740 [Ivan]
+Sí.
+
+00:27:04,740 --> 00:27:07,980 [Iris]
+Y, este, mmm-
+
+00:27:07,980 --> 00:27:10,700 [Daniel Garza]
+¿Quién les da retroalimentación de esto?
+
+00:27:10,700 --> 00:27:10,730 [Iris]
+¿Mmm?
+
+00:27:10,730 --> 00:27:14,320 [Daniel Garza]
+O us- ustedes eligen, les van dando...
+
+00:27:14,320 --> 00:27:23,240 [Daniel Garza]
+¿Cómo es la capacitación? Y luego hay una libertad con una retroalimentación ?... De la voz.
+
+00:27:23,240 --> 00:27:30,320 [Daniel Garza]
+Le revisa Alan, le revisa Ramón, le revisa, este, no sé, Fernando, ¿cómo hacen
+
+00:27:30,320 --> 00:27:32,100 [Daniel Garza]
+esta decisión?
+
+00:27:32,100 --> 00:27:36,360 [Iris]
+O ustedes deciden y no han tenido una revisión particular.
+
+00:27:36,360 --> 00:27:37,100 [Ivan]
+Entre nosotros.
+
+00:27:37,100 --> 00:27:38,940 [Iris]
+Ustedes deciden y no hay una revisión, ¿verdad?
+
+00:27:38,940 --> 00:27:40,100 [Ivan]
+Una revisión.
+
+00:27:40,100 --> 00:27:55,720 [Iris]
+¿Ha pasado o ha ocurrido en alguna ocasión, no, no sabemos que sea frecuente, ni mucho menos, ¿verdad? Este, que les hagan, les den retroalimentación de: "Ay, esa voz no", o les pidan incluso cambiar, ¿verdad? La voz de algún personaje.
+
+00:27:55,720 --> 00:27:57,100 [Ivan]
+Sí, pero ya hace mucho.
+
+00:27:57,100 --> 00:28:05,740 [Iris]
+Ya hace mucho. Y en ese sentido, ¿qué, qué se tuvo que hacer? ¿Volver a doblar alguna voz?
+
+00:28:05,740 --> 00:28:05,880 [Ivan]
+Mhm.
+
+00:28:05,880 --> 00:28:07,560 [Iris]
+Algún audio.
+
+00:28:09,800 --> 00:28:11,480 [Iris]
+ Sí.
+
+00:28:11,480 --> 00:28:14,460 [Iris]
+¿Supiste quién fue el que
+
+00:28:14,460 --> 00:28:23,700 [Iris]
+dio retro? ¿Fue desde Andrea o su guionista? Bueno, el de acá, ¿o fue directamente alguien de animación?
+
+00:28:23,700 --> 00:28:25,370 [Ivan]
+Creo que fue de animación.
+
+00:28:25,370 --> 00:28:29,900 [Iris]
+¿Fue de animación? Eh, ¿no, no recuerdas quién?
+
+00:28:29,900 --> 00:28:29,969 [Ivan]
+No.
+
+00:28:29,969 --> 00:28:32,500 [Iris]
+Okey.
+
+00:28:32,500 --> 00:28:55,119 [Iris]
+Este, ¿qué más? Es para identificar qué tipo de retrabajos están en causa, ¿verdad? El hecho de a lo mejor no tener todavía un, un, un proceso como de: "Ah, pues ya sé que cuando va a ser un anciano, pues, o, o una persona mayor, pues puede ser, pueden ser de estas treinta, estas cinco, ¿no?, voces."
+
+00:28:55,120 --> 00:28:56,900 [Ivan]
+Mhm.
+
+00:28:56,900 --> 00:29:06,460 [Iris]
+¿Qué más, qué más? Déjame ver. Ah, ¿de cuántas voces estamos hablando en ese catálogo?
+
+00:29:06,460 --> 00:29:08,480 [Ivan]
+Depende del video.
+
+00:29:08,480 --> 00:29:09,800 [Iris]
+Mhm.
+
+00:29:09,860 --> 00:29:12,980 [Ivan]
+Pueden ser tres, pueden ser hasta doce.
+
+00:29:12,980 --> 00:29:28,400 [Iris]
+Okey, pero bueno, más que del episodio, eh, o del video, mmm, l-la pregunta es: ¿cuántas-- ese catálogo, esa lista de voces, ¿cuántas voces les ofrece? ¿Cuántas tiene y le ven las ahí?
+
+00:29:28,400 --> 00:29:29,100 [Ivan]
+Muchas.
+
+00:29:29,100 --> 00:29:30,280 [Iris]
+Muchísimas.
+
+00:29:30,280 --> 00:29:30,300 [Ivan]
+Sí.
+
+00:29:30,300 --> 00:29:36,940 [Iris]
+Okey, entonces seguramente nunca hemos escuchado la mayoría, ¿verdad? Hemos escuchado unas que ya tenemos detectadas-
+
+00:29:36,940 --> 00:29:37,100 [Ivan]
+Sí
+
+00:29:37,100 --> 00:29:59,160 [Iris]
+que nos funcionan, pero hay otras que ni siquiera hemos escuchado. Okey. Eh, ¿de alguna forma está documentado, por ejemplo? O sea, que ustedes digan: "Ah, yo ya tengo una listita mía, personal, individual, incluso a nivel de departamento, en donde digo: esta zona de ahí, hombres, ¿no?
+
+00:29:59,900 --> 00:30:02,059 [Ivan]
+Mmm, yo sí.
+
+00:30:02,060 --> 00:30:03,799 [Iris]
+Entonces, sería una listita personal.
+
+00:30:03,800 --> 00:30:05,340 [Ivan]
+Que es casi que funciona.
+
+00:30:05,340 --> 00:30:11,140 [Iris]
+Okey, ajá. Y por lo general, lo saben de memoria, ¿no?
+
+00:30:11,140 --> 00:30:11,200 [Ivan]
+Sí.
+
+00:30:11,200 --> 00:30:16,920 [Iris]
+Okey, ¿hay personajes que te dan problema con las voces TTS?
+
+00:30:16,920 --> 00:30:19,080 [Ivan]
+Sí, hay, pero los uso a veces.
+
+00:30:19,080 --> 00:30:23,844 [Iris]
+Okey.... ¿Y qué tipo de problemas dan?
+
+00:30:23,844 --> 00:30:30,544 [Sebastian]
+Eh, cambiaba el volumen dependiendo de diferentes idiomas.
+
+00:30:30,544 --> 00:30:30,954 [Iris]
+Ajá.
+
+00:30:30,954 --> 00:30:33,764 [Sebastian]
+O sea, sonaba más bajito o más alto.
+
+00:30:33,764 --> 00:30:34,904 [Iris]
+Ajá.
+
+00:30:34,904 --> 00:30:38,104 [Sebastian]
+Ah,
+
+00:30:38,104 --> 00:30:41,804 [Sebastian]
+o, o a veces no sonaba limpio,
+
+00:30:41,804 --> 00:30:43,644 [Sebastian]
+digamos.
+
+00:30:43,644 --> 00:30:46,084 [Iris]
+Okey.
+
+00:30:46,084 --> 00:30:57,744 [Iris]
+Veamos aquí, evaluación de calidad y se revisa manualmente cada idioma. Bueno, ya nos mencionaron que manualmente se podría decir el inglés, solo el inglés, ¿verdad? Y los demás se, eh, confía.
+
+00:30:57,744 --> 00:30:58,704 [Sebastian]
+Mhm.
+
+00:30:58,704 --> 00:31:14,884 [Iris]
+Tema de confiar en lo demás. Dice: ¿cómo validan idiomas que no hablan? Pues es lo mismo, nada más validan, no validan la traducción, ¿verdad? ¿Qué validan? Nada más la, eh, que no se desfasen, ¿no?
+
+00:31:14,884 --> 00:31:16,384 [Sebastian]
+Sí.
+
+00:31:16,384 --> 00:31:22,084 [Iris]
+Ajá. Mmm.
+
+00:31:22,084 --> 00:31:34,724 [Daniel Garza]
+¿Hay alguna lista que les hayan aportado de guionismo para palabras que no, no se deben de utilizar? Ah, bueno, perdón, bien en la sección E, disculpen. No, no, continúa ahí, perdón.
+
+00:31:34,724 --> 00:31:38,684 [Iris]
+Ah, okey, muy bien. Mmm
+
+00:31:38,684 --> 00:31:40,804 [Iris]
+.
+
+00:31:40,804 --> 00:31:53,824 [Iris]
+En realidad, eso haría esto, ¿verdad? Solo verifican, no, bueno, timing. Verifican timing, ¿verdad? [tos] Perdón. ¿Qué tipos de errores se encuentran más frecuentemente?
+
+00:31:55,444 --> 00:31:58,984 [Iris]
+ Los pronombres incorrectos.
+
+00:31:58,984 --> 00:32:00,444 [Iris]
+Mhm.
+
+00:32:00,444 --> 00:32:02,464 [Sebastian]
+Tono y emoción.
+
+00:32:02,464 --> 00:32:09,184 [Iris]
+Tono y emoción, es lo que ya nos dijeron, tiempo en pasado.
+
+00:32:09,184 --> 00:32:16,584 [Iris]
+Nombres propios, ¿nombres propios o bueno, casi no hay?
+
+00:32:16,644 --> 00:32:26,864 [Iris]
+Nombres propios, por ejemplo, que obviamente se dirijan a los personajes como Pedrito, Marianita, y a la hora de hacer una traducción, pues les cambien el nombre.
+
+00:32:26,864 --> 00:32:29,283 [Sebastian]
+Ah, no, eso sí lo respetan.
+
+00:32:29,283 --> 00:32:29,924 [Iris]
+Okey.
+
+00:32:29,924 --> 00:32:34,864 [Sebastian]
+Se queda.
+
+00:32:34,864 --> 00:32:53,964 [Iris]
+Y luego, acá Center Filter dice: ¿Han tenido problemas con filtros de seguridad de ElevenLabs? Como que algo no se los quiera doblar, o sea, que la misma aplicación restrinja algo, ¿no? Okey, ¿qué tipo de contenido activa los filtros? Bueno, ya dijimos que no hay filtros.
+
+00:32:53,964 --> 00:32:59,664 [Daniel Garza]
+Pero sí hay filtros, ¿no? O, o ya los conocen, porque me, me comentaba...
+
+00:32:59,664 --> 00:33:07,584 [Daniel Garza]
+No me acuerdo cómo se-- sí, era Saúl, ¿no? Me comentaba que de repente sí tenía que modificar palabras.
+
+00:33:07,584 --> 00:33:09,204 [Iris]
+Por cuestión de qué, ¿de violencia?
+
+00:33:09,204 --> 00:33:12,304 [Daniel Garza]
+No sé, muerte, cosas así, ¿no?
+
+00:33:12,304 --> 00:33:13,274 [Iris]
+Okey.
+
+00:33:13,274 --> 00:33:16,524 [Daniel Garza]
+¿Les han especificado qué cosas no, no deben de ir?
+
+00:33:16,524 --> 00:33:28,163 [Sebastian]
+Pero eso más bien para, para la censura del video, ¿no? No tanto en el ElevenLabs, porque en el ElevenLabs no, no creo que lo haría, sino por otro lado.
+
+00:33:28,164 --> 00:33:41,314 [Iris]
+Ah, entonces esas palabras más bien son para, de entrada, para la, la generación de audios en España, y el, el censurar esas palabras, pero ya la traducción no te hace ningún tipo de censura-
+
+00:33:41,314 --> 00:33:41,364 [Sebastian]
+Sí.
+
+00:33:41,364 --> 00:33:57,044 [Iris]
+Ni de restricción. Si en, eh, por ejemplo, vamos a dar un ejemplo de un error, sería que hayan, mmm, pues sin traducir, doblado. ¿No es un ejemplo? No sé, no me acuerdo.
+
+00:33:57,044 --> 00:34:00,044 [Sebastian]
+Pero, mmm
+
+00:34:00,044 --> 00:34:06,904 [Sebastian]
+, que decía un ejemplo, el doblaje cambia, pues, no se llama de acuerdo, pero existe.
+
+00:34:06,904 --> 00:34:08,663 [Iris]
+Ah, entonces sí la, sí la dobla.
+
+00:34:08,664 --> 00:34:11,524 [Sebastian]
+Sí, sí, sí, te decía.
+
+00:34:11,524 --> 00:34:15,844 [Iris]
+Okey, mhm. Mmm,
+
+00:34:19,424 --> 00:34:34,444 [Iris]
+¿ustedes manejan alguna lista? O sea, ustedes, yo sé que vienen desde guion a lo mejor con cierta censura y luego lo que es la animación, pero ustedes, ustedes ya cuando llegan, bueno, ¿ustedes hay alguna lista de palabras que digan: "Ah, esas nos pidieron que no las usaran"?
+
+00:34:34,444 --> 00:34:36,924 [Sebastian]
+No, pues que esa censura, pues ya-
+
+00:34:36,924 --> 00:34:37,264 [Iris]
+Okey.
+
+00:34:37,264 --> 00:34:39,204 [Sebastian]
+Ya nosotros estamos haciendo lo mismo.
+
+00:34:39,204 --> 00:34:41,254 [Iris]
+Okey, ustedes ya no censuran.
+
+00:34:41,254 --> 00:34:41,254 [Sebastian]
+Mhm.
+
+00:34:41,254 --> 00:34:44,624 [Iris]
+¿Han tenido que modificar? Bueno, eso no.
+
+00:34:46,724 --> 00:34:58,644 [Iris]
+ Ver y métricas de calidad, bien... Bueno, ¿de alguna forma miran qué tanto ustedes se equivocan? Eh, ¿tienen algún registro de si se equivocan una vez, se equivocó dos veces, no? Okey.
+
+00:34:58,644 --> 00:35:03,234 [Sebastian]
+No, no, casi siempre se equivoca.
+
+00:35:03,234 --> 00:35:12,063 [Iris]
+Casi siempre se equivoca. Okey, dice: ¿cuánto tiempo se invierte en correcciones manuales? Ese tipo de correcciones como la que mencionan, ¿verdad? Más o menos por edición.
+
+00:35:12,064 --> 00:35:15,704 [Sebastian]
+Depende de, de cuánto dure.
+
+00:35:15,704 --> 00:35:18,764 [Iris]
+Por ejemplo, uno de doce, que es el más largo, ¿verdad?
+
+00:35:18,764 --> 00:35:22,844 [Sebastian]
+Se trata solo de una, dos horas.
+
+00:35:22,844 --> 00:35:23,774 [Iris]
+Una hora.
+
+00:35:23,774 --> 00:35:27,104 [Sebastian]
+Eso de la repetición, al menos dos veces.
+
+00:35:27,104 --> 00:35:38,984 [Iris]
+Mmm, una hora, dos horas. Mmm, ¿qué porcentaje del tiempo total de dubbing, de ElevenLabs, se va a correcciones
+
+00:35:38,984 --> 00:35:43,404 [Iris]
+versus procesamiento automático? O sea, aquí habla de
+
+00:35:43,404 --> 00:35:46,704 [Iris]
+si, si nos está tomando una hora, un video de doce minutos, ¿verdad?
+
+00:35:46,704 --> 00:35:47,024 [Sebastian]
+Mhm.
+
+00:35:47,024 --> 00:35:59,284 [Iris]
+En cuanto a correcciones, ¿cuánto se tarda ese video, el Eleven, el Eleven, en tra-- en, en doblarlo? Este, ese mismo video de doce minutos, ¿cuánto se tarda?
+
+00:35:59,284 --> 00:36:01,844 [Sebastian]
+Mmm, media hora.
+
+00:36:01,844 --> 00:36:10,404 [Iris]
+Media hora en doblarlo, y ustedes trabajan correcciones y, y les toma una hora, ¿verdad? Okey
+
+00:36:10,404 --> 00:36:11,784 [Iris]
+. ¿Y entonces qué pasa?
+
+00:36:11,784 --> 00:36:15,344 [Sebastian]
+Se media hora en doblarlo, no sale inglés.
+
+00:36:15,344 --> 00:36:23,124 [Iris]
+Sí, mhm. Y luego ya ustedes toman una hora en el peor de los casos, para poder hacer correcciones, ¿no? De-
+
+00:36:23,124 --> 00:36:24,364 [Sebastian]
+De que lo cambie de...
+
+00:36:25,548 --> 00:36:26,448 [Ivan]
+... dos minutos.
+
+00:36:26,448 --> 00:36:31,328 [Iris]
+Dos minutos. Pero ya sobre esos ya no hay una corrección, por decir-
+
+00:36:31,328 --> 00:36:34,028 [Ivan]
+Sí, ya no hay.
+
+00:36:34,028 --> 00:36:49,248 [Iris]
+Okey. Tiempos y capacidad. Dice: ¿Cuánto tiempo toma el doblaje completo de un episodio? [carraspeo] Ya dijimos que, por ejemplo, hacia los demás idiomas, que no llevan una revisión, pues dos minutos. Y el primero, el de inglés, media hora, ¿no?
+
+00:36:49,248 --> 00:36:52,488 [Ivan]
+Mhm.
+
+00:36:52,488 --> 00:37:02,107 [Iris]
+Bueno, esto sabemos que no es cuántos pueden procesar, sino cuántos estamos procesando, pues solo dos. Ajá. Ah,
+
+00:37:02,107 --> 00:37:17,928 [Iris]
+¿el doblaje creen que eso puede botellar en la publicación? ¿Alguno de vosotros han tenido que esperar para publicar? Okey. [ruido] ¿Hay alguna diferenciación entre idiomas, como que haya un idioma que se tarde más?
+
+00:37:17,928 --> 00:37:18,448 [Ivan]
+No.
+
+00:37:18,448 --> 00:37:18,908 [Iris]
+No, ¿verdad?
+
+00:37:18,908 --> 00:37:23,966 [Ivan]
+La plataforma de veces, que no sea un minuto o un minuto.
+
+00:37:23,968 --> 00:37:24,948 [Iris]
+Okey.
+
+00:37:24,948 --> 00:37:26,268 [Ivan]
+O así.
+
+00:37:26,268 --> 00:37:32,687 [Iris]
+Dice por aquí: ¿Cómo organizan el trabajo? ¿Cada uno se encarga de idiomas específicos?
+
+00:37:32,687 --> 00:37:34,308 [Ivan]
+No, por episodio.
+
+00:37:34,308 --> 00:37:37,107 [Iris]
+Por episodio, un episodio cada uno. Okey.
+
+00:37:37,107 --> 00:37:38,127 [Ivan]
+Sí.
+
+00:37:38,127 --> 00:37:48,268 [Iris]
+Okey. Ajá. ¿Cómo logran y organizan los archivos? Bueno, me, me vuelven a este... ¿Como contienen alguna convención de nombre? Y me dan un ejemplo.
+
+00:37:48,268 --> 00:37:53,488 [Ivan]
+Mmm, pues un nombre clave del video, digamos, el video se llama:
+
+00:37:53,488 --> 00:37:57,288 [Ivan]
+mmm, Perdí mi mochila, entonces se le pone mochila perdida.
+
+00:37:57,288 --> 00:37:57,768 [Iris]
+Ajá.
+
+00:37:57,768 --> 00:38:06,328 [Ivan]
+Eh, bueno, por lo menos yo agrego el bajo para que no se confunda. Y, eh, mochila perdida, guion bajo, inglés.
+
+00:38:06,328 --> 00:38:13,828 [Iris]
+Inglés. Más o menos, ¿es parecido el estándar, el, la nomenclatura o tú manejas otra nomenclatura?
+
+00:38:13,828 --> 00:38:15,687 [Ivan]
+Lo mismo, pongo el inglés.
+
+00:38:15,687 --> 00:38:22,728 [Iris]
+Nada más el idioma. Okey. ¿Dónde se almacena?
+
+00:38:22,728 --> 00:38:24,868 [Ivan]
+En el, en el NAS.
+
+00:38:24,868 --> 00:38:25,647 [Iris]
+En el NAS.
+
+00:38:25,647 --> 00:38:28,788 [Ivan]
+Sí, en la, la carpeta de videos de-
+
+00:38:28,788 --> 00:38:29,328 [Iris]
+Okey
+
+00:38:29,328 --> 00:38:30,368 [Ivan]
+... de cada video.
+
+00:38:30,368 --> 00:38:36,028 [Iris]
+Y ese, el NAS está organizado por proyecto. Hay una carpeta de cada video.
+
+00:38:36,028 --> 00:38:36,567 [Ivan]
+Mhm.
+
+00:38:36,567 --> 00:38:48,448 [Iris]
+Okey. Y dentro de, ¿hay una carpeta por idioma o es meramente ahí, en la carpeta como raíz del episodio? Ahí van todos los, los audios.
+
+00:38:48,448 --> 00:38:51,388 [Ivan]
+Viene en cada, en cada proyecto-
+
+00:38:51,388 --> 00:38:51,768 [Iris]
+Ajá
+
+00:38:51,768 --> 00:38:54,067 [Ivan]
+... su carpeta de idioma, idiomas más bien.
+
+00:38:54,067 --> 00:38:54,317 [Iris]
+Okey.
+
+00:38:54,317 --> 00:38:55,758 [Ivan]
+Y ahí se deposita todo.
+
+00:38:55,758 --> 00:38:56,868 [Iris]
+Ah, muy bien.
+
+00:38:58,968 --> 00:39:07,408 [Iris]
+ Mhm. ¿Y quién decide cuándo un episodio doblado está listo para publicar? [carraspeo] Andrea, ¿no? Su grupo.
+
+00:39:08,768 --> 00:39:23,268 [Iris]
+ Okey. Mmm, ¿hay idiomas donde el TT se suena robótico o poco natural? No sé si les ha llamado la atención algún idioma, porque igual y no sabemos exactamente la cadencia de cada idioma.
+
+00:39:23,268 --> 00:39:23,277 [Ivan]
+No.
+
+00:39:23,277 --> 00:39:27,388 [Iris]
+¿Pero hay alguno que ustedes detecten que se oye muy extraño?
+
+00:39:27,388 --> 00:39:32,667 [Ivan]
+Mmm, no, pues depende de los voces, pero no son unos voces que, que nos vamos-
+
+00:39:32,667 --> 00:39:51,917 [Iris]
+Que son... Okey. ¿Han tenido quejas, más que de la audiencia, porque sabemos que, pues, sí ha habido como, bueno, en el, no, no en el hecho del doblaje, sino en el cambio de voces, [risas] este, sobre la calidad del doblaje? Que ustedes hayan-- que a ustedes haya llegado información, obviamente, ¿no?
+
+00:39:51,917 --> 00:39:52,688 [Ivan]
+No.
+
+00:39:52,688 --> 00:40:06,788 [Iris]
+Okey. ¿Qué pasa cuando un idioma específico falla completamente? Bueno, ese no. Canciones y contenido. Bueno, ustedes no trabajan canciones, ¿verdad?
+
+00:40:06,788 --> 00:40:07,897 [Ivan]
+Mmm.
+
+00:40:07,897 --> 00:40:13,368 [Iris]
+Mmm, que no se pueden doblar. SFX tampoco, ¿verdad?
+
+00:40:13,368 --> 00:40:19,688 [Ivan]
+Lo de las canciones más bien, pues, ah, más bien se han dialogado los planchados.
+
+00:40:19,688 --> 00:40:20,667 [Iris]
+Okey.
+
+00:40:20,667 --> 00:40:29,587 [Ivan]
+Ah, mmm, no sé, ponen... me parece que para el video de campamentos de terror-
+
+00:40:29,587 --> 00:40:29,598 [Iris]
+Ajá
+
+00:40:29,598 --> 00:40:31,607 [Ivan]
+... estaban de que
+
+00:40:31,607 --> 00:40:34,247 [Ivan]
+la gente de que hacer, de hecho.
+
+00:40:34,248 --> 00:40:35,087 [Iris]
+Ah, sí.
+
+00:40:35,087 --> 00:40:38,508 [Ivan]
+Pues como de, mmm: "Es que quién sabe si-
+
+00:40:38,508 --> 00:40:40,647 [Iris]
+Tiene el derecho de autor o algo así.
+
+00:40:40,647 --> 00:40:44,738 [Ivan]
+O más bien, una canción, eh, parecida-
+
+00:40:44,738 --> 00:40:44,738 [Iris]
+Ajá
+
+00:40:44,738 --> 00:40:52,268 [Ivan]
+... entonces, como que hay que dialogar o así, que: "No, es que canción puede quedar así.
+
+00:40:52,268 --> 00:40:52,707 [Iris]
+Mhm.
+
+00:40:52,707 --> 00:41:00,928 [Ivan]
+No, pues puede quedar, no sé, este, creo que pusieron de, este, sugirieron la de los Pitufos.
+
+00:41:00,928 --> 00:41:03,388 [Iris]
+Ah, okey, algo más americano. [risas]
+
+00:41:03,388 --> 00:41:06,567 [Ivan]
+Algo más que pueda conocer.
+
+00:41:06,567 --> 00:41:06,578 [Iris]
+Más, más-
+
+00:41:06,578 --> 00:41:07,147 [Ivan]
+Más que-
+
+00:41:07,147 --> 00:41:09,028 [Iris]
+Alrededor del mundo. Okey.
+
+00:41:10,348 --> 00:41:24,888 [Iris]
+ Ah, bueno, me- mejoras y edición, y se ordena en un tiempo, ¿qué es lo que más te frustra? Y aquí no se preocupen por decir: "Ay, esto de verdad me frustra", porque la idea es que ustedes nos digan de verdad si esto
+
+00:41:24,888 --> 00:41:48,187 [Iris]
+no, no me... Sí, ¿verdad? Correcciones manuales, que toma mucho tiempo, filtros de seguridad, bueno, ahí nos quema mucho. [carraspeo] Que no se puede validar idiomas que no hablen, el timing este, desafazo entre idioma y animación, o falta de automatización en algunos procesos, como dice esta parte de que no lo pueden hacer todos en un mismo tiempo, ¿no?
+
+00:41:48,248 --> 00:41:48,258 [Ivan]
+Mhm.
+
+00:41:48,258 --> 00:41:50,488 [Iris]
+¿Cuál sería el que más le frustra?
+
+00:41:50,488 --> 00:41:52,528 [Ivan]
+Eh, las correcciones manuales.
+
+00:41:52,528 --> 00:41:56,448 [Iris]
+Okey. ¿Y en segundo lugar?
+
+00:41:56,448 --> 00:41:59,087 [Ivan]
+Eh, la parte de automatización del proceso.
+
+00:41:59,087 --> 00:42:03,308 [Iris]
+La parte de automatización. ¿En tercero?
+
+00:42:03,308 --> 00:42:04,268 [Ivan]
+El timing.
+
+00:42:04,268 --> 00:42:07,688 [Iris]
+El timing necesario. ¿Y cuarto? No poder validar los idiomas.
+
+00:42:07,688 --> 00:42:08,278 [Ivan]
+Sí.
+
+00:42:08,278 --> 00:42:15,808 [Iris]
+¿Alguna otra opinión que ahí, que debiera estar en estas frustraciones?
+
+00:42:15,808 --> 00:42:17,788 [Iris]
+¿Nada?
+
+00:42:17,788 --> 00:42:20,408 [Daniel Garza]
+Mencionaba la descarga automática, ¿no?
+
+00:42:20,408 --> 00:42:20,926 [Iris]
+Sí.
+
+00:42:20,928 --> 00:42:21,428 [Ivan]
+Mhm.
+
+00:42:21,428 --> 00:42:34,691 [Iris]
+Que, que ellos no están viendo aquí, ¿verdad? Pues la falta de automatización, como una posible descarga automática. Ajá.... y mencionaban, por ejemplo, problemas con la aplicación que se bloquea, que se paraliza.
+
+00:42:34,692 --> 00:42:36,852 [Sebastian]
+Problemas con el lento de-
+
+00:42:36,852 --> 00:42:39,562 [Iris]
+Ajá, eso también es frustrante, supongo, ¿no?
+
+00:42:39,562 --> 00:42:40,932 [Sebastian]
+Y te traba.
+
+00:42:40,932 --> 00:42:50,192 [Iris]
+Mmm, ¿en qué parte de, del proceso te, te gustaría que se automatizara? Ya dijimos que la descarga. No sé si hay alguna otra que-
+
+00:42:50,192 --> 00:42:54,531 [Sebastian]
+También cuando se cambia de idioma, se tiene que volver a poner todas las voces.
+
+00:42:54,531 --> 00:42:57,412 [Iris]
+Se tienen que volver a cargar, digo, a seleccionar-
+
+00:42:57,412 --> 00:42:57,612 [Sebastian]
+Sí.
+
+00:42:57,612 --> 00:43:00,192 [Iris]
+Las voces. Ah, okey.
+
+00:43:00,192 --> 00:43:02,232 [Sebastian]
+Que hubiera algunos que, que-
+
+00:43:02,232 --> 00:43:02,692 [Iris]
+Ajá.
+
+00:43:02,692 --> 00:43:04,092 [Sebastian]
+Porque ya están seleccionados.
+
+00:43:04,092 --> 00:43:09,511 [Daniel Garza]
+A ver, cué- cuéntenos un poco eso, yo no entendí. ¿Qué pasa?
+
+00:43:09,511 --> 00:43:11,232 [Iris]
+Que quizás tiene un problema.
+
+00:43:11,232 --> 00:43:19,672 [Sebastian]
+De... cada vez que se pone un nuevo idioma, se tienen que volver a seleccionar las, las voces que se, que ya se habían escogido.
+
+00:43:19,672 --> 00:43:21,471 [Daniel Garza]
+Ah, las del personaje.
+
+00:43:21,471 --> 00:43:22,471 [Sebastian]
+Sí, sí.
+
+00:43:22,471 --> 00:43:22,542 [Iris]
+Ajá.
+
+00:43:22,542 --> 00:43:24,511 [Daniel Garza]
+Okey.
+
+00:43:24,511 --> 00:43:31,092 [Iris]
+Entonces, ¿sería la idea sería que ustedes cargaran una plantilla, bueno, más bien una plantilla, una selección de voces-
+
+00:43:31,092 --> 00:43:31,752 [Sebastian]
+Mhm.
+
+00:43:31,752 --> 00:43:35,602 [Iris]
+Y esa no se perdiera y ustedes pudieran seguir cambiando el idioma?
+
+00:43:35,602 --> 00:43:35,672 [Sebastian]
+Sí.
+
+00:43:35,672 --> 00:43:59,332 [Iris]
+Ajá. Mhm. Este, si pudieras cambiar una cosa del proceso, del proceso se refiere más allá del, de la herramienta o del software, ¿verdad? También del hecho de cómo me pasan la información o cómo yo la tengo que, este, regresar o entregar. Si hubiera algo que ustedes pudieran cambiar, ¿qué cambiarían?
+
+00:43:59,332 --> 00:44:01,051 [Sebastian]
+Mmm, bueno.
+
+00:44:01,051 --> 00:44:21,132 [Iris]
+Okey. ¿Y qué información creen que-- ah, sorry. ¿Qué información creen ustedes que ahorita necesitarían y que no tienen? Algún tipo de información, no sé, me gustaría más retro sobre si, si las voces que seleccionaron están bien o si quieren, este,
+
+00:44:21,132 --> 00:44:41,852 [Iris]
+otro tipo de, de, no sé, de voces, de... ¿Qué, qué información les gustaría tener como para-- o, o necesitarían ustedes para hacer cambios que mejoren, verdad, su trabajo, no?
+
+00:44:41,852 --> 00:44:44,591 [Sebastian]
+Pues igual, lo de las voces están bien.
+
+00:44:44,591 --> 00:44:45,132 [Iris]
+Okey.
+
+00:44:45,132 --> 00:44:47,721 [Sebastian]
+Pero no he dicho nada.
+
+00:44:47,721 --> 00:45:24,011 [Iris]
+Si el guion original viniera con anotaciones especiales para doblaje, por ejemplo, esta frase es un juego de palabras a adaptar, por ejemplo, ¿verdad? Si en el guion, como dicen ustedes ahorita, la canción, ¿no? Que, que en esa parte sí se rebota y dices tú: "Ay, esa canción de Ashley De Lecho no va a funcionar para todos los idiomas". Entonces, si, por ejemplo, en el guion hubiera algunas indicaciones de que algo es: esta frase seguramente no va para todos los idiomas, habría que adaptarla, ¿creen ustedes que les ayudaría en algo?
+
+00:45:24,011 --> 00:45:24,612 [Sebastian]
+No.
+
+00:45:24,612 --> 00:45:32,531 [Iris]
+¿No? Ustedes nada más, este, buscan que haya una traducción literal de palabras, ¿verdad?
+
+00:45:32,531 --> 00:45:32,632 [Sebastian]
+Sí.
+
+00:45:32,632 --> 00:45:38,952 [Iris]
+Okey. Ah, y sería todo. ¿Tienes alguna pregunta, Daniel?
+
+00:45:38,952 --> 00:45:40,192 [Daniel Garza]
+Varias.
+
+00:45:40,192 --> 00:45:40,661 [Iris]
+Ajá.
+
+00:45:40,661 --> 00:45:43,152 [Daniel Garza]
+Este,
+
+00:45:43,152 --> 00:46:03,672 [Daniel Garza]
+¿qué revisión de calidad reciben de-- o revisión entre procesos y calidad de Alan y de Andrea o de los guionistas? ¿Qué les revisan, qué les retroalimentan? Si, si gustan, primero por su equipo, y luego por guionistas, y luego por Andrea.
+
+00:46:03,672 --> 00:46:06,491 [Sebastian]
+Eh, bueno.
+
+00:46:06,491 --> 00:46:10,752 [Iris]
+Mencionan que no, que no hay retro-- no hay retroalimentación realmente.
+
+00:46:10,752 --> 00:46:11,872 [Daniel Garza]
+Okey.
+
+00:46:11,872 --> 00:46:18,712 [Sebastian]
+O sea, sí, en la que checamos nosotros para, pero es para animación, ¿no? Pero checar ya todo el video-
+
+00:46:18,712 --> 00:46:18,932 [Iris]
+Mhm.
+
+00:46:18,932 --> 00:46:23,752 [Sebastian]
+Ya para que salga. Ahí sí, igual, ahí sí puede haber como
+
+00:46:23,752 --> 00:46:26,971 [Sebastian]
+de que tal vez esta voz no suena bien.
+
+00:46:26,971 --> 00:46:28,531 [Iris]
+Una voz, por decir algo.
+
+00:46:28,531 --> 00:46:31,672 [Sebastian]
+Pero casi no pasa.
+
+00:46:31,672 --> 00:46:32,352 [Iris]
+Okey.
+
+00:46:32,352 --> 00:46:33,352 [Sebastian]
+Por eso no hay retroalimentación.
+
+00:46:33,352 --> 00:46:39,452 [Iris]
+Pero, bueno, es lo más que les pueden señalar o dar retro de: "Ah, esta voz como-
+
+00:46:39,452 --> 00:46:40,441 [Sebastian]
+Suena raro.
+
+00:46:40,441 --> 00:46:44,292 [Iris]
+Suena raro, vamos viendo otra voz". Okey,
+
+00:46:44,292 --> 00:46:48,551 [Iris]
+ajá. Okey. ¿Y qué más, Daniel?
+
+00:46:48,551 --> 00:46:51,132 [Daniel Garza]
+Mmm,
+
+00:46:51,132 --> 00:47:04,812 [Daniel Garza]
+entonces, eh, a ver, ¿qué más? No hay una validación en este momento de... o retroalimentación tampoco de árabe, ¿no? Por decir así.
+
+00:47:04,812 --> 00:47:06,531 [Sebastian]
+No.
+
+00:47:06,531 --> 00:47:18,312 [Daniel Garza]
+¿Cómo se les ocurre que lo podríamos hacer? Que se-- en un mundo ideal, eh, un, un traductor oficial de árabe a español.
+
+00:47:20,491 --> 00:47:20,502 [Sebastian]
+Pues...
+
+00:47:20,502 --> 00:47:28,591 [Daniel Garza]
+¿Han platicado de, de, de mejoras, por ejemplo, para la calidad o la retroalimentación como equipo?
+
+00:47:29,392 --> 00:47:36,372 [Sebastian]
+Pues realmente, pues ya sería eso, alguien que realmente hable el idioma, sí.
+
+00:47:36,372 --> 00:47:51,172 [Daniel Garza]
+Okey, okey. En un mundo ideal, ¿qué les gustaría tener? Si, si puedan pedir, ya nos mencionaron algunas, ¿no? ¿Se les ocurren más cosas así como mágicas, que les pudiéramos ayudar?
+
+00:47:51,172 --> 00:48:01,051 [Daniel Garza]
+Fijan, esto es ultra tedioso, de cosas que no han mencionado.
+
+00:48:02,072 --> 00:48:02,772 [Daniel Garza]
+ Mmm.
+
+00:48:02,772 --> 00:48:04,832 [Iris]
+[carraspeo]
+
+00:48:04,832 --> 00:48:07,971 [Daniel Garza]
+Ustedes échenle, el, el límite es el cielo.
+
+00:48:07,971 --> 00:48:09,281 [Sebastian]
+Mhm.
+
+00:48:09,281 --> 00:48:16,732 [Daniel Garza]
+¿Qué les gustaría tener?
+
+00:48:16,732 --> 00:48:22,091 [Sebastian]
+Mmm, no, no creo que haya más.
+
+00:48:22,152 --> 00:48:29,031 [Iris]
+Eso creo yo.
+
+00:48:29,031 --> 00:48:32,591 [Daniel Garza]
+Muy bien, de mi lado, todo bien.
+
+00:48:32,591 --> 00:48:33,192 [Iris]
+Okey,
+
+00:48:34,632 --> 00:48:39,152 [Iris]
+ muy bien. Bueno, pues sería todo entonces. Muchas gracias, ¿sale?
+
+00:48:39,152 --> 00:48:39,462 [Sebastian]
+Gracias.
+
+00:48:39,462 --> 00:48:39,462 [Iris]
+Okey.
+
+00:48:39,462 --> 00:48:41,051 [Sebastian]
+Gracias.
+
+00:48:41,051 --> 00:48:43,912 [Sebastian]
+[ruido]

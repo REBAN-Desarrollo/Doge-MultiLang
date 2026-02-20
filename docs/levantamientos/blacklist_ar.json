@@ -1,0 +1,51 @@
+{
+    "language": "ar",
+    "language_name": "Arabic",
+    "version": "1.0",
+    "last_updated": "2024-12-24",
+    "sensitivity_level": "high",
+    "notes": "Arabic content has stricter religious and cultural filters",
+    "blocked_terms": [
+        {
+            "spanish": "cerdo",
+            "arabic": "خنزير",
+            "english": "pig",
+            "reason": "Haram animal reference",
+            "safe_alternative": "animal"
+        },
+        {
+            "spanish": "alcohol",
+            "arabic": "كحول",
+            "english": "alcohol",
+            "reason": "Prohibited substance",
+            "safe_alternative": "bebida"
+        },
+        {
+            "spanish": "dios",
+            "arabic": "إله",
+            "english": "god",
+            "reason": "Religious reference requires careful context",
+            "safe_alternative": "destino, providencia"
+        },
+        {
+            "spanish": "iglesia",
+            "arabic": "كنيسة",
+            "english": "church",
+            "reason": "Christian religious term",
+            "safe_alternative": "lugar sagrado"
+        },
+        {
+            "spanish": "beso",
+            "arabic": "قبلة",
+            "english": "kiss",
+            "reason": "Romantic content filtered",
+            "safe_alternative": "gesto de cariño"
+        }
+    ],
+    "cultural_notes": [
+        "Avoid romantic scenes with physical contact",
+        "Religious references need cultural adaptation",
+        "Family honor themes may need softening",
+        "Gender dynamics may require review"
+    ]
+}

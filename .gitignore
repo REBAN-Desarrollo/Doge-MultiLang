@@ -6,6 +6,8 @@ knowledgebase/elevenlabs_helper.json
 
 # Episodios pesados (docx de guion ~43MB)
 *.docx
+# Excepcion: ejemplo SSOT de guion .docx
+!docs/levantamientos/un_guardaespaldas_escolar.docx
 
 # Python
 __pycache__/

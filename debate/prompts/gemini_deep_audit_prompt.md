@@ -1,15 +1,15 @@
 # DR-AUDIT: Como Mejorar el Pipeline Multi-Idioma QPH — Traduccion, Cultura, Automatizacion y Eficiencia (Exhaustive)
 
-**Modelo objetivo:** Gemini 2.5 Pro (Deep Think / Deep Research)
+**Modelo objetivo:** Cualquier LLM con capacidad de deep research (Gemini, Claude, GPT, etc.)
 **Proyecto:** Doge-MultiLang — Pipeline de doblaje automatizado para QuePerroHilo (QPH)
-**Fecha:** 2026-02-20 (v1)
+**Fecha:** 2026-02-20 (v2 — actualizado post-consolidacion Gold Standard)
 **Repo publico:** https://github.com/REBAN-Desarrollo/Doge-MultiLang
 
 ---
 
 **Framework:** 6 pilares (4+2) | **Tecnicas PE:** Step-Back, S2A, CoVe-ligera, Self-Refine, Debate
 **Esfuerzo:** VERY HIGH (5000-8000 palabras esperadas)
-**Output:** Un solo documento Markdown estructurado (`Gemini_Deep_Audit_QPH.md`)
+**Output:** Un solo documento Markdown estructurado (`[Modelo]_Deep_Audit_QPH.md`)
 
 ---
 
@@ -25,7 +25,7 @@ QuePerroHilo (QPH) es un canal de animacion infantil (8-15 anos) en espanol mexi
 - **Ingreso concentrado**: ES = 58%, EN = 24%, PT = 6%. Top 3 = 88%. Los otros 14 idiomas doblados = ~5%.
 - **El multiplicador RPM de DE es x7.2 vs ES** — cada view en aleman vale 7.2x mas que una en espanol.
 
-Un equipo de 4 modelos AI (Claude Opus, Claude Sonnet, Codex/GPT-5, Gemini Swarm) ya debatio estas problematicas y produjo 8 documentos de analisis que estan en el repo. Tu trabajo es auditarlos todos, encontrar lo que se les paso, y **proponer como mejorar cada una de estas areas**: mejor traduccion (AI + humano), blacklists robustas, adaptacion cultural, eficiencia del equipo con ElevenLabs API, custom scripts, y automatizaciones que eleven la calidad de los 27 idiomas.
+Un equipo de 6+ modelos AI (Claude Opus, Claude Sonnet, Codex/GPT-5, Gemini Pro, Gemini Deep Thinking, Gemini Swarm) ya debatio estas problematicas. Sus hallazgos fueron consolidados en un **Gold Standard v1.0** (~1,400 lineas) que es el documento canonico (SSOT). Ademas, una verificacion Phase 0 del codebase AI-Studio valido/refuto claims especificos. Tu trabajo es auditar el Gold Standard y los documentos complementarios, encontrar lo que se les paso, y **proponer como mejorar cada una de estas areas**: mejor traduccion (AI + humano), blacklists robustas, adaptacion cultural, eficiencia del equipo con ElevenLabs API, custom scripts, y automatizaciones que eleven la calidad de los 27 idiomas.
 
 ---
 
@@ -69,20 +69,27 @@ Realizar una **auditoria critica exhaustiva** del repositorio Doge-MultiLang y s
 Repo: https://github.com/REBAN-Desarrollo/Doge-MultiLang
 Branch: main (unico)
 Estructura:
-├── analysis/          # PRD, Wave reports, auditorias
-├── debate/            # 8 documentos de debate multi-AI (FOCO PRINCIPAL)
-│   ├── Claude_Pipeline_Debate.md        (25KB) — Analisis tecnico primario
-│   ├── Claude_Mega_Propuesta_Final.md   (32KB) — Sintesis de 4 opiniones AI
-│   ├── Claude_Addendum_Deep_Research.md (43KB) — Gaps, data contracts, tropicalizacion
-│   ├── Codex_2026-02-20_Gold_Standard_Unificado.md (latest) — Reglas SSOT + barrido multi-agente
-│   ├── Gemini_Swarm_Multi_Opinion.md    (3KB) — SSML injection, PATCH granular
-│   ├── Sonnet_Devil_Advocate_Critique.md(32KB) — Critica esceptica, supuestos no verificados
+├── analysis/          # PRD, Wave reports, auditorias (10 archivos)
+├── debate/            # Gold Standard + debate multi-AI (7 archivos)
+│   ├── Claude_Gold_Standard_Consenso_Final.md (71KB) — ⭐ DOCUMENTO CANONICO (SSOT)
+│   ├── Codex_2026-02-20_Gold_Standard_Unificado.md — Reglas SSOT formales
+│   ├── Sonnet_Devil_Advocate_Critique.md (37KB) — Critica + resultados Phase 0
+│   ├── Gemini_3.1_PRO_Deep_Audit_QPH.md (19KB) — Audit exhaustivo Gemini Pro
+│   ├── Gemini_Deep_Thinking_Deep_Audit_QPH.md (60KB) — Macro-arquitectura
 │   ├── Propuesta_Equipo_No_Tecnica.md   (60KB) — Plan para equipo no-tecnico
-│   └── Gaps_Pendientes_Deep_Research.md (14KB) — Datos reales YouTube Analytics
-├── docs/              # Levantamientos, guias, checklists
-├── knowledgebase/     # Blacklists JSON, ElevenLabs API reference (159 archivos)
-├── scripts/           # prescanner.py, generate_pptx_equipo.py, planchado.py
+│   └── prompts/                         — Prompts para auditorias (este archivo)
+├── docs/              # Workflow, YouTube Analytics, levantamientos
+│   ├── gold_standard_workflow.md        — Workflow de referencia
+│   ├── Gaps_Pendientes_Deep_Research.md — YouTube Analytics (AVD, revenue, ROI)
+│   └── levantamientos/                  — 51 documentos de entrevistas y specs
+├── knowledgebase/     # Blacklists JSON, ElevenLabs API reference (158 archivos)
+├── scripts/           # planchado.py, generate_pptx_equipo.py
 └── README.md
+
+Archivos eliminados (absorbidos en Gold Standard):
+  Claude_Mega_Propuesta_Final.md, Claude_Pipeline_Debate.md,
+  Claude_Addendum_Deep_Research.md, Codex_Gold_Standard.md,
+  Gemini_Swarm_Multi_Opinion.md, MEGA_BARRIDO_MULTIAGENTE_10_AGENTES.md
 ```
 
 ### Datos clave del negocio ###
@@ -113,58 +120,55 @@ Blacklists actuales:
   blacklist_de.json: 2 palabras
   Total: 13 palabras para 27 idiomas. 24 idiomas con cero blacklist.
 
-Bugs confirmados:
-  P0: prescanner.py crash cuando prescan_script() retorna None
-  P1: WERResult.language siempre defaultea a "ES"
-  Structural: dubbing_pipeline.py desconectado de dubbing_service.py
+Resultados Phase 0 (verificacion del codebase AI-Studio, 2026-02-20):
+  REFUTADO: Bug P0 (prescanner crash) — no existe en el codebase actual
+  CONFIRMADO: Bug P1 — WERResult.language siempre defaultea a "ES"
+  CONFIRMADO: dubbing_pipeline.py desconectado de dubbing_service.py
+  CONFIRMADO: E2E pipeline NO FACTIBLE hoy — ~11h de fixes minimos
+  CONFIRMADO: Solo 1/16 endpoints de ElevenLabs implementados
+  CONFIRMADO: Costo QA real ~$46-63/ep (no $1.20 como se estimo)
+  NUEVO: Solo modo Video funciona en frontend (Audio/Text no implementados)
+  NUEVO: 130+ tests existentes (no 30 como se reporto)
+  NUEVO: PR #71 cerrado el mismo dia (no 14 meses stale)
 ```
 
-### Lo que cada modelo AI aporto al debate ###
+### Estado actual del debate (consolidado) ###
 ```
-Claude Opus (Pipeline Debate v3):
-  - Descubrio que Phase 1+2 ya existen en AI-Studio (~3,000 lineas)
-  - Identifico bugs P0/P1 y la desconexion API/ERP
-  - Confirmo que solo Phase 3 (QA Automation) falta
+GOLD STANDARD v1.0 (debate/Claude_Gold_Standard_Consenso_Final.md):
+  Documento canonico que consolida 10+ perspectivas AI en ~1,400 lineas.
+  Contiene: arquitectura pipeline, 4 SSOT JSONs (dialogue_objects, voice_manifest,
+  timing_objects, qa_report), 4 Gates QA, tiering (T1/T2/T3), roadmap 5 fases,
+  Dynamic Translation Routing, costos, Apendices A-E (audio pipeline, tool stack,
+  gate alternatives, Kaizen/Mem0, cost breakdown).
 
-Claude Opus (Mega Propuesta):
-  - Sintetizo 4 opiniones en un roadmap de 5 fases (175-224h)
-  - Definio arquitectura de 4 Gates
-  - Registro de 21 assumptions con niveles de confianza
+  Fuentes absorbidas: Claude Pipeline Debate, Claude Addendum Deep Research,
+  Claude Mega Propuesta Final, Codex Gold Standard, Gemini Swarm, MEGA BARRIDO.
 
-Claude Opus (Addendum):
-  - Diseno data contracts (4 JSONs SSOT)
-  - Multi-LLM translation audit (3 jueces + COMET)
-  - Tropicalizacion: diccionario cultural positivo
-  - Pipeline de verificacion de audio
-  - Modulo Kaizen (Mem0 + PDCA)
+Sonnet Devil's Advocate (debate/Sonnet_Devil_Advocate_Critique.md):
+  Critica independiente + SECCION 0 con resultados verificados Phase 0.
+  Claims refutados, confirmados, abiertos, y hallazgos nuevos.
 
-Codex/GPT-5 (Gold Standard):
-  - 5 reglas GS inmutables (SSOT 4 capas, API-first)
-  - Prohibicion de re-mapping manual
-  - Trazabilidad obligatoria
+Codex Unificado (debate/Codex_2026-02-20_Gold_Standard_Unificado.md):
+  Reglas SSOT formales, trazabilidad obligatoria.
 
-Gemini Swarm:
-  - SSML injection para silencios (<break time="X.Xs"/>)
-  - PATCH granular por segmento (no regenerar todo)
-  - Sugiere auto_assign_voices (NOTE: no existe en la API real)
+Gemini Pro (debate/Gemini_3.1_PRO_Deep_Audit_QPH.md):
+  Auditoria exhaustiva: traduccion, API, blacklists, cultura, scripts.
 
-Sonnet (Devil's Advocate):
-  - PR #71 tiene 14 meses sin merge — premise "Phase 1+2 done" no verificada
-  - Costo real ~$46-63/ep, no $1.20 como se estimo
-  - 4 supuestos criticos no verificados
-  - Levantamientos son interpretaciones de Daniel, no validados por las personas reales
+Gemini Deep Thinking (debate/Gemini_Deep_Thinking_Deep_Audit_QPH.md):
+  Step-Back / Zoom-Out: macro-arquitectura, posicionamiento industria.
 ```
 
 ### Stack tecnico ###
 ```
 Backend: FastAPI + PostgreSQL (AI-Studio, repo separado)
-Frontend: React + 14 componentes de dubbing (AI-Studio)
+Frontend: React + 13 componentes de dubbing (AI-Studio) — solo modo Video funciona
 TTS/Dubbing: ElevenLabs API (Pro plan)
   - Modelos: Flash v2.5 (32 langs, 40K chars), Eleven v3 (70+ langs, 5K chars)
-  - APIs usadas: POST /v1/dubbing, GET transcript
-  - APIs NO usadas: Dubbing Resource API, Forced Alignment, Scribe v2, PVC
+  - APIs implementadas: 1 de 16 endpoints necesarios (POST /v1/dubbing)
+  - APIs NO implementadas: Dubbing Resource API, Forced Alignment, Scribe v2, PVC, y 11 mas
 STT: Whisper large-v3 (propuesto, no implementado)
 LLM: Gemini Flash (prescanner.py)
+Tests: 130+ tests existentes en AI-Studio
 Repo Doge-MultiLang: documentacion, blacklists, scripts de analisis
 Repo AI-Studio: codigo real del pipeline (separado, no publico)
 ```
@@ -239,7 +243,7 @@ Minimo 15 filas cubriendo: traduccion, TTS, blacklists, cultura, scripts, API, g
 Verificar al menos 10 claims clave de los documentos contra la realidad actual.
 
 ### 11. Limitations & Low-Confidence Areas (300+ palabras)
-- Que no pudo verificar Gemini
+- Que no pudo verificar el modelo auditor
 - Donde la confianza es baja
 - Que requiere investigacion adicional
 
@@ -256,11 +260,11 @@ Verificar al menos 10 claims clave de los documentos contra la realidad actual.
 - **NO** enfoques en reducir idiomas — el objetivo es MEJORAR la calidad y eficiencia de todos. Si un idioma tiene problemas, la pregunta es "como lo mejoramos", no "lo eliminamos".
 - **NO** ignores la realidad financiera: el canal NO esta en break-even. Las recomendaciones deben ser cost-effective.
 - **NO** propongas herramientas sin verificar que existan y sean viables en febrero 2026.
-- **NO** asumas que PR #71 de AI-Studio funciona — el Devil's Advocate ya lo cuestiono.
+- **NO** asumas que el pipeline E2E funciona — Phase 0 verifico que NO es factible hoy (~11h fixes).
 - **SI** cita fuentes especificas (papers, docs de API, casos reales de la industria).
 - **SI** cruza los datos del repo (blacklists JSONs, KB de ElevenLabs API, levantamientos) con tu conocimiento externo.
-- **SI** desafia los supuestos del debate — eres Gemini, una voz independiente, no un rubber stamp.
-- **SI** revisa los 159 archivos de `knowledgebase/elevenlabs_api/` para encontrar APIs que el debate no considero.
+- **SI** desafia los supuestos del Gold Standard — eres un auditor independiente, no un rubber stamp.
+- **SI** revisa los 158 archivos de `knowledgebase/elevenlabs_api/` para encontrar APIs que el Gold Standard no considero.
 - **SI** lee los levantamientos en `docs/levantamientos/` para entender los pain points reales del equipo.
 - **SI** piensa en como cada miembro del equipo se beneficia de cada mejora propuesta.
 - **SI** propone scripts concretos (nombre, funcion, inputs, outputs) que deberian existir.
@@ -413,21 +417,25 @@ Antes de entregar, verifica que tu output cumple con estos 12 criterios. Si algu
 
 ## INSTRUCCIONES DE EJECUCION
 
-| Run | Modelo | Enfasis | Variacion |
-|:-----|:--------|:---------|:-----------|
-| Gemini 1 | Gemini 2.5 Pro Deep Think | Mejora integral: traduccion + cultura + API + scripts + equipo | Enfocarse en COMO MEJORAR cada area. ElevenLabs API features no explorados. Scripts que el equipo necesita. Workflow de guionismo. Blacklists robustas. Eficiencia operativa. |
+Este prompt es reutilizable con cualquier modelo. Ajusta la tabla segun el modelo auditor.
+
+| Run | Modelo | Enfasis |
+|:-----|:--------|:---------|
+| 1 | [Modelo auditor] | Mejora integral: traduccion + cultura + API + scripts + equipo. Enfocarse en COMO MEJORAR cada area. ElevenLabs API features no explorados. Scripts que el equipo necesita. Workflow de guionismo. Blacklists robustas. Eficiencia operativa. |
 
 ### Contexto adicional para copy-paste (datos compactos)
 ```
 QPH = canal animacion infantil mexicano, 353M views/yr, $330K rev, 27 langs via ElevenLabs
 Chain: .docx → prescanner → ElevenLabs (ES→EN→26 langs) → [no QA] → publish
+DOCUMENTO CANONICO: debate/Claude_Gold_Standard_Consenso_Final.md (Gold Standard v1.0)
 OBJETIVO: Mejorar calidad, automatizacion y eficiencia de los 27 idiomas
 EN AVD: 3:04 (-35% vs ES 4:41) | CJK AVD: 2:24 (-49%) | Tamil: 1:58 (-58%)
 Blacklists: 13 total words in 3 JSON files. 24 langs = 0 blacklist.
 RPM: DE x7.2, EN x2.4, IT x2.9, FR x1.8 (all vs ES baseline)
 Revenue: ES 58%, EN 24%, PT 6%, DE 4%, IT 3%, rest ~5%
-Bugs: P0 prescanner crash, P1 WER language always ES, structural API/ERP disconnect
-Phase 1+2: ~3000 lines in AI-Studio (unverified, PR #71 14mo old). Phase 3: 0%.
+Phase 0 verified: Bug P0 REFUTED, Bug P1 CONFIRMED, E2E NOT FEASIBLE (~11h fixes), 1/16 APIs implemented
+Phase 1+2: ~3000 lines in AI-Studio, 130+ tests. Phase 3: 0%.
+QA cost: $46-63/ep (not $1.20 as originally estimated)
 Team: Daniel (arch+tech), Andrea (guionismo), Alan (biz), Ramon (audio), Saul/Ivan (dubbing), Gio (QA), Fernando (post-prod)
 PREGUNTA CLAVE: Como mejoramos traduccion (AI+humano), blacklists, cultura, TTS, guionismo, y eficiencia del equipo usando ElevenLabs API + custom scripts?
 Repo: https://github.com/REBAN-Desarrollo/Doge-MultiLang

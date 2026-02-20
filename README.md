@@ -4,6 +4,8 @@
 
 **Org:** REBAN-Desarrollo | **Status:** Pre-implementacion (specs completas, codigo pendiente) | **Actualizado:** 2026-02-20
 
+> **Indice maestro:** [`MASTER_INDEX.md`](MASTER_INDEX.md) — catalogo completo de los 254 archivos del repo con links y metadata.
+
 ## Tabla de Contenidos
 
 1. [El problema](#el-problema)
@@ -132,7 +134,7 @@ Doge-MultiLang/
 │
 ├── 📚 docs/
 │   ├── gold_standard_workflow.md    # Workflow de referencia (endpoints correctos, estándares)
-│   └── levantamientos/              # 49 documentos de entrevistas y especificaciones
+│   └── levantamientos/              # 51 documentos de entrevistas y especificaciones
 │       ├── README.md                # Indice de levantamientos por fase/tema
 │       ├── *_january_quest.md       # Levantamientos Enero (por area)
 │       ├── 25_12_24_*.md            # Specs de Diciembre 2025
@@ -143,7 +145,7 @@ Doge-MultiLang/
 │   ├── elevenlabs_final.jsonl       # 735 entries, 2.8 MB — RAG principal
 │   ├── elevenlabs_helper.json       # 471 KB — endpoints frecuentes
 │   ├── elevenlabs_docs.json         # 969 KB — referencia general API
-│   ├── elevenlabs_api/              # 157 .mdx docs suplementarios (Feb 2026)
+│   ├── elevenlabs_api/              # 158 .md docs suplementarios (Feb 2026)
 │   ├── blacklists/                  # Blacklists por idioma (global, AR, DE)
 │   │   └── ⚠️ 24 idiomas aun no tienen blacklist
 │   ├── theories/                    # Sintesis: audio pipeline, benchmarks, translation workflows
@@ -181,7 +183,7 @@ Doge-MultiLang/
 
 **Agentes IA / Backend (para RAG):**
 - [`knowledgebase/README.md`](knowledgebase/README.md) — Guia de uso del KB para agentes IA
-- [`knowledgebase/elevenlabs_api/README.md`](knowledgebase/elevenlabs_api/README.md) — Indice de 157 docs suplementarios (Feb 2026)
+- [`knowledgebase/elevenlabs_api/README.md`](knowledgebase/elevenlabs_api/README.md) — Indice de 158 docs suplementarios (Feb 2026)
 
 ## Estado actual
 
@@ -190,8 +192,8 @@ Doge-MultiLang/
 | Componente | Cantidad | Status |
 |:-----------|:---------|:-------|
 | Especificaciones CORE (video-qph) | 13 documentos | Completo |
-| Levantamientos de equipo | 49 documentos | Completo |
-| ElevenLabs KB | 735 entries + 157 docs suplementarios | Completo |
+| Levantamientos de equipo | 51 documentos (46 .md, 4 .txt, 1 .docx) | Completo |
+| ElevenLabs KB | 735 entries + 158 docs suplementarios | Completo |
 | PRD final + Roadmap | 18 scripts, grafo de dependencias | Completo |
 | Debate multi-AI | 4 perspectivas, 6 puntos consenso | Sintetizado |
 | Pipeline (AI-Studio) | Phase 1 + Phase 2 | ~3,000 lineas implementadas |
@@ -281,7 +283,7 @@ python transform.py
 ### Soy agente IA — voy a desarrollar en este repo
 
 1. **Usa el KB:** [`knowledgebase/elevenlabs_final.jsonl`](knowledgebase/elevenlabs_final.jsonl) para RAG sobre ElevenLabs API
-2. **Reference:** [`knowledgebase/elevenlabs_api/README.md`](knowledgebase/elevenlabs_api/README.md) para indice de 157 docs suplementarios
+2. **Reference:** [`knowledgebase/elevenlabs_api/README.md`](knowledgebase/elevenlabs_api/README.md) para indice de 158 docs suplementarios
 3. **Blacklists:** [`knowledgebase/blacklists/`](knowledgebase/blacklists/) — datos de produccion
 4. **Gold standard:** [`docs/gold_standard_workflow.md`](docs/gold_standard_workflow.md) — asegurate de seguir estándares
 

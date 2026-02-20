@@ -1,6 +1,6 @@
 # Levantamientos QPH — Documentacion de Entrevistas y Especificaciones
 
-> Recopilacion centralizada de 49 documentos de entrevistas, especificaciones tecnicas, cuestionarios y lecciones aprendidas del proyecto Doge-MultiLang.
+> Recopilacion centralizada de 51 documentos de entrevistas, especificaciones tecnicas, cuestionarios y lecciones aprendidas del proyecto Doge-MultiLang.
 
 **Ultima actualizacion:** 2026-02-20
 **Mantainer:** Daniel Garza (Architect), Iris (PMO)
@@ -19,7 +19,7 @@
 
 ## Que es esto?
 
-Este directorio contiene **49 documentos** generados entre Enero y Febrero 2026 durante el proceso de analisis y especificacion del pipeline de doblaje multi-idioma de QuePerroHilo (QPH).
+Este directorio contiene **51 documentos** generados entre Enero y Febrero 2026 durante el proceso de analisis y especificacion del pipeline de doblaje multi-idioma de QuePerroHilo (QPH).
 
 Los documentos son de 4 tipos:
 

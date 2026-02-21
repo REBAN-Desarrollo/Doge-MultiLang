@@ -2,7 +2,7 @@
 
 > Ramon apoyara en desarrollo bajo liderazgo de Daniel. Paso 1: entender el repo y la arquitectura. Paso 2: planear desarrollo con la API de ElevenLabs y ajustes UI/API para mejorar translation.
 
-**Fecha:** 2026-02-20 | **Referencia:** Gold Standard Secciones 3-5, 10; Phase 0 Results
+**Fecha:** 2026-02-21 | **Referencia:** Gold Standard Secciones 3-5, 7, 10; Phase 0 Results; REBAN Destilado
 
 ---
 
@@ -31,6 +31,13 @@
 6. Pronombres incorrectos
 7. Tono/emocion no coincide
 8. Timing desincronizado
+
+### Delta REBAN para desarrollo (nuevo baseline QA)
+
+- Gate 1 debe detectar anti-patrones narrativos y vocabulario prohibido global
+- Gate 3 debe soportar score narrativo (checklist 12 puntos) con umbral >=10/12
+- Gate 4 debe validar umbrales tecnicos: noise <= -40 dB, peaks -6/-3 dB, 48 kHz, 140-160 wpm, cero clipping
+- Score vocal ponderado (rubrica 5D) debe quedar >=4.0 para aprobar Tier 1
 
 ### Arquitectura actual (Gold Standard Seccion 4)
 
@@ -162,6 +169,23 @@ Repos:
 | R4.3 | Comparar COMET/WER de ambos outputs | 2h |
 | R4.4 | Repetir para FR e IT si PT-BR funciona | 4h |
 | R4.5 | Documento de resultados + recomendacion | 1h |
+
+---
+
+### Objetivo R5: Instrumentar umbrales REBAN en el pipeline QA
+**S:** Implementar validadores de narrativa y audio para que los Gates usen criterios REBAN como PASS/FAIL
+**M:** Validaciones automatizadas en pipeline con tests (unit + integracion) para 1 episodio real Tier 1
+**A:** Se apalanca en Phase 1 (`audit_service.py`, `timing_checker.py`, `wer_calculator.py`) y utilidades ya previstas
+**R:** Sin estos validadores, los nuevos criterios de calidad quedan solo en documentos y no en ejecucion real
+**T:** Semana 7
+
+#### Entregables micro
+
+| # | Entregable | Esfuerzo |
+|:--|:-----------|:---------|
+| R5.1 | Validador de audio tecnico REBAN (noise, peaks, sample rate, wpm, clipping) | 4h |
+| R5.2 | Validador narrativo (anti-patrones + checklist 12 puntos con score) | 5h |
+| R5.3 | Integracion en Gate 1/3/4 + tests de regresion | 4h |
 
 ---
 

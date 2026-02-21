@@ -2,7 +2,7 @@
 
 > Alan coordina post-produccion con los equipos de multi-idioma. Su rol es asegurar que el proceso de input (guion) a output (27 idiomas publicados) este mapeado, documentado y optimizado.
 
-**Fecha:** 2026-02-20 | **Referencia:** Gold Standard Secciones 3, 10; Levantamientos; Propuesta No Tecnica
+**Fecha:** 2026-02-21 | **Referencia:** Gold Standard Secciones 3, 10; Levantamientos; Propuesta No Tecnica; REBAN Destilado
 
 ---
 
@@ -41,6 +41,7 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 - **Voice model** no persiste entre tabs de idioma en ElevenLabs — genera retrabajo
 - **Monday.com** tiene cero columnas para dubbing/traduccion — Area 09 opera en aislamiento total
 - **KPI-28 estimado:** 0.5-4h de correcciones manuales por episodio (sin baseline formal)
+- **No existe protocolo go/no-go operativo** con Gate 0/1/2, Morbo PG-13, FMEA ni score QA por idioma
 
 ### Lo que sabemos vs lo que NO sabemos
 
@@ -51,7 +52,7 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 | Post-produccion (Fernando) | **INCOMPLETO** — Q7 sin llenar, 11_fernando_daily_ops parcial | Silencios, timing creativo, stems, export format |
 | Dubbing (Saul/Ivan) | **INCOMPLETO** — Q8 draft (70-80%), 09_dubbing_workflow | Flujo real en ElevenLabs Studio, speaker merge, revision |
 | QA | Casi nulo — 26_02_18_checklist_audio_qa | Cero proceso definido, cero metricas |
-| Publicacion | No documentado | Quien publica, criterios de go/no-go, distribucion |
+| Publicacion | Parcial — REBAN define Gate 0/1/2 + FMEA | Aun no existe flujo operativo ni evidencia por idioma |
 
 ### Levantamientos pendientes (BLOCKERS)
 
@@ -149,21 +150,22 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 
 ---
 
-### Objetivo A4: Protocolo de publicacion multi-idioma
-**S:** Definir criterios de go/no-go para publicar cada idioma
-**M:** Checklist de publicacion con criterios minimos por tier
-**A:** Basado en Gold Standard tiering (T1: humano+auto, T2: sampling 30%, T3: auto)
+### Objetivo A4: Protocolo de publicacion multi-idioma (Gates + QA REBAN)
+**S:** Definir y operar criterios de go/no-go por idioma usando Gate 0/1/2, Morbo PG-13 y scorecards de QA
+**M:** Checklist operativo por idioma que exige: audio tecnico REBAN, rubrica vocal 5D >= 4.0, checklist narrativo >= 10/12, cero violaciones Cat A/Gate 1 y triage Gate 2 ejecutado
+**A:** Basado en Gold Standard tiering (T1: humano+auto, T2: sampling 30%, T3: auto) + REBAN Destilado
 **R:** Hoy se publica todo sin criterio — esto es insostenible para contenido infantil
-**T:** Semana 8
+**T:** Semana 9
 
 #### Entregables micro
 
 | # | Entregable | Responsable | Deadline |
 |:--|:-----------|:------------|:---------|
-| A4.1 | Definir criterios minimos para publicar Tier 1 (con Andrea) | Alan + Andrea | Semana 5 |
-| A4.2 | Definir criterios para Tier 2 y Tier 3 | Alan + Gio | Semana 6 |
-| A4.3 | Checklist de publicacion (documento operativo) | Alan | Semana 7 |
-| A4.4 | Piloto: aplicar checklist a 1 episodio real | Alan + Gio | Semana 8 |
+| A4.1 | Mapear Gate 0/1/2 a pasos del pipeline real (owner, evidencia, SLA) | Alan + Andrea | Semana 6 |
+| A4.2 | Definir PASS/FAIL por tier con umbrales (audio >=4.0, narrativa >=10/12, detonador 20-40s, 0 anti-patrones criticos) | Alan + Gio | Semana 7 |
+| A4.3 | Disenar matriz de triage post-publicacion (claims, copyright, lenguaje sensible) | Alan + Gio | Semana 8 |
+| A4.4 | Checklist operativo + template de evidencia por idioma | Alan | Semana 8 |
+| A4.5 | Piloto: aplicar checklist en 1 episodio real (5 idiomas Tier 1) y documentar go/no-go | Alan + Gio | Semana 9 |
 
 ---
 

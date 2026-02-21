@@ -2,7 +2,7 @@
 
 > Andrea lidera producto: blacklists, adaptacion cultural, compliance y contenido. Gio la apoya en QA y auditoria de calidad.
 
-**Fecha:** 2026-02-20 | **Referencia:** Gold Standard Secciones 8, 9, 13
+**Fecha:** 2026-02-21 | **Referencia:** Gold Standard Secciones 8, 9, 13 + REBAN Destilado (Secciones 1, 3, 4, 5)
 
 ---
 
@@ -35,12 +35,24 @@
 - Concepto de PCD (Positive Cultural Dictionary) definido en Gold Standard pero **no implementado**
 - Tabla de onomatopeyas y pronombres definida pero **no en formato JSON operativo**
 - Cero benchmarking contra canales kids exitosos (CoComelon, Like Nastya)
+- "Onomatopeyas mal traducidas" es error #4 en frecuencia reportada por Saul/Ivan (Q8)
 
 ### QA de contenido (Gio)
 
 - Checklist de 13 pistas de audio definido en Gold Standard Apendice A
-- Cero ejecucion de QA en idiomas que no sean EN
-- Sin criterios formales de aceptacion/rechazo por idioma
+- Solo EN recibe QA formal; Andrea revisa 2-3 idiomas intuitivamente (EN, JA) de las 13 pistas
+- Criterios de rechazo de audio existen (desincronizacion, ruido, distorsion, volumen, glitches) pero **no hay criterios para contenido linguistico/cultural**
+- Proceso actual de blacklists: **resuelven caso por caso** cuando detectan un problema (Gap G18)
+
+### Delta REBAN (nuevo baseline operativo)
+
+- QA debe preservar ADN QPH en 27 idiomas: voz confesional, frases cortas y ritmo rapido
+- 7 anti-patrones invalidan traduccion (literaturizacion, moralizacion, tecnicismos, etc.)
+- Vocabulario prohibido global (ej: autoestima, trauma, disonancia) debe reemplazarse por lenguaje concreto
+- Timing narrativo obligatorio: detonador cada 20-40 segundos
+- Baseline audio para dubbing/TTS: noise <-40 dB, peaks -6/-3 dB, 48 kHz, 140-160 wpm, cero clipping
+- Umbrales minimos por idioma: rubrica vocal 5D >= 4.0 y checklist narrativo >= 10/12
+- Safety operativo: framework Morbo PG-13 + sistema Gate 0/1/2 pre-publicacion
 
 ---
 
@@ -61,7 +73,7 @@
 
 | # | Entregable | Responsable | Deadline | Criterio de aceptacion |
 |:--|:-----------|:------------|:---------|:-----------------------|
-| S1.1 | Definir taxonomia de categorias (A: prohibido siempre, B: prohibido en contexto, C: preferir alternativa) | Andrea | Semana 1 | Documento con definiciones + 3 ejemplos por categoria |
+| S1.1 | Definir taxonomia de categorias (A: prohibido siempre, B: prohibido en contexto, C: preferir alternativa) | Andrea | Semana 1 | Documento con definiciones + 3 ejemplos por categoria + seed list global REBAN |
 | S1.2 | Draft de blacklists Tier 1 (ES, EN, PT-BR, DE, FR) via LLM | Daniel (research) | Semana 2 | 5 JSONs con minimo 30 terminos cada uno, clasificados A/B/C |
 | S1.3 | Validacion de blacklists Tier 1 con hablantes nativos | Andrea + Gio | Semana 4 | Revision por al menos 1 hablante nativo por idioma. Falsos positivos < 10% |
 | S1.4 | Draft de blacklists Tier 2 (AR, KO, JA, HI, ZH, IT, RU, TR) | Daniel (research) | Semana 4 | 8 JSONs con minimo 20 terminos cada uno |
@@ -138,22 +150,24 @@
 
 ---
 
-### Objetivo S4 (Gio): QA de contenido operativo
-**S:** Implementar proceso de revision de calidad para al menos Tier 1
-**M:** Checklist ejecutado en 1 episodio real para 5 idiomas, con reporte de hallazgos
-**A:** Basado en checklist de 13 pistas (Gold Standard Apendice A), usando herramientas existentes
-**R:** Hoy cero QA en 26/27 idiomas
-**T:** Semana 6
+### Objetivo S4 (Gio): QA de contenido + narrativa operativo
+**S:** Implementar proceso de revision para Tier 1 integrando audio, narrativa y safety editorial por idioma
+**M:** 1 episodio real evaluado en 5 idiomas con scorecard por idioma: audio tecnico REBAN, rubrica vocal 5D >= 4.0, checklist narrativo >= 10/12, y cero violaciones Cat A/Gate 1
+**A:** Basado en checklist de 13 pistas (Gold Standard Apendice A) + baseline REBAN (ADN narrativo, audio specs, Morbo PG-13 y gates)
+**R:** Hoy solo EN tiene QA formal (15/16 idiomas activos sin revision linguistica)
+**T:** Semana 7
 
 #### Entregables micro
 
 | # | Entregable | Responsable | Deadline |
 |:--|:-----------|:------------|:---------|
-| S4.1 | Adaptar checklist 13 pistas a formato ejecutable (Google Sheet o similar) | Gio | Semana 2 |
-| S4.2 | Definir criterios de PASS/FAIL por pista y por tier | Gio + Andrea | Semana 3 |
-| S4.3 | Ejecutar checklist en 1 episodio real, idioma EN | Gio | Semana 4 |
-| S4.4 | Expandir a Tier 1 completo (ES, EN, PT, DE, FR) en 1 episodio | Gio | Semana 5 |
-| S4.5 | Reporte de hallazgos + recomendaciones | Gio | Semana 6 |
+| S4.1 | Unificar checklist audio (13 pistas) + checklist narrativo (12 puntos) en scorecard ejecutable | Gio | Semana 2 |
+| S4.2 | Definir PASS/FAIL por pista con umbrales REBAN (noise, peaks, wpm, rubrica 5D >= 4.0, narrativa >=10/12) | Gio + Andrea | Semana 3 |
+| S4.3 | Agregar validaciones editoriales: 7 anti-patrones, vocabulario prohibido global y Morbo PG-13 | Andrea + Gio | Semana 3 |
+| S4.4 | Ejecutar scorecard en 1 episodio real, idioma EN | Gio | Semana 4 |
+| S4.5 | Expandir a Tier 1 completo (ES, EN, PT, DE, FR) en 1 episodio | Gio | Semana 5 |
+| S4.6 | Piloto Gate 2: publicacion no listada 2-6h + triage de claims | Alan + Gio | Semana 6 |
+| S4.7 | Reporte final de hallazgos + backlog de correcciones por idioma | Gio | Semana 7 |
 
 ---
 
@@ -165,6 +179,8 @@
 | **Alan** | Acceso a episodios reales publicados en 27 idiomas para validacion | Semana 3 |
 | **Ramon** | Script de validacion automatica de blacklists contra contenido | Semana 8 |
 | **Saul/Ivan** | Feedback sobre problemas culturales que ya han detectado | Semana 2 |
+
+**Riesgo de proveedor:** ElevenLabs opera sin contrato ni SLA (suscripcion pagada). No existe Plan B. 27 idiomas dependen de un solo vendor. Monday.com no tiene tracking de dubbing (Area 09 aislada).
 
 ## 4. PREGUNTAS ABIERTAS
 

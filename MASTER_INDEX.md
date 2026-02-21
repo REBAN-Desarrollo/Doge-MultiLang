@@ -14,7 +14,7 @@
 | `analysis/` | 10 | .md, .json | Deep research: 4 waves de analisis |
 | `debate/` | 7 | .md | Gold Standard canonico + debate multi-AI + auditorias |
 | `docs/` | 2 | .md | Workflow gold standard + Gaps (YouTube Analytics) |
-| `docs/levantamientos/` | 52 | .md, .txt, .docx | Entrevistas, specs, cuestionarios, destilados |
+| `docs/levantamientos/` | 53 | .md, .txt, .docx | Entrevistas, specs, cuestionarios, destilados |
 | `knowledgebase/` | 6 | .jsonl, .json, .py, .md | RAG sources, transform script |
 | `knowledgebase/elevenlabs_api/` | 158 | .md | API reference ElevenLabs (Feb 2026) |
 | `knowledgebase/blacklists/` | 3 | .json | Blacklists por idioma |
@@ -196,11 +196,12 @@ Ver [`docs/levantamientos/README.md`](docs/levantamientos/README.md) para el ind
 | [`26_02_19_phase3_qa_implementation_plan.md`](docs/levantamientos/26_02_19_phase3_qa_implementation_plan.md) | Plan implementacion Phase 3 |
 | [`26_01_15_entrevista_qph_andrea_iris_daniel.md`](docs/levantamientos/26_01_15_entrevista_qph_andrea_iris_daniel.md) | Transcripcion entrevista |
 
-**Destilados (1):**
+**Destilados (2):**
 
 | Archivo | Tema |
 |:--------|:-----|
 | [`04_EVIDENCE_destilado_multiidioma.md`](docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md) | Destilado multi-idioma de 15 archivos 04_EVIDENCE (AI-Studio) |
+| [`REBAN_destilado_multiidioma.md`](docs/levantamientos/REBAN_destilado_multiidioma.md) | Destilado multi-idioma de 10 archivos REBAN (Guionismo): ADN QPH, specs audio, safety |
 
 **Otros (10):**
 

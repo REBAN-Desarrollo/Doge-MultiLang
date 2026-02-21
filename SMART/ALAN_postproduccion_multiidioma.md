@@ -2,7 +2,7 @@
 
 > Alan coordina post-produccion con los equipos de multi-idioma. Su rol es asegurar que el proceso de input (guion) a output (27 idiomas publicados) este mapeado, documentado y optimizado.
 
-**Fecha:** 2026-02-20 | **Referencia:** Gold Standard Secciones 3, 10; Levantamientos; Propuesta No Tecnica
+**Fecha:** 2026-02-21 | **Referencia:** Gold Standard Secciones 3, 10; Levantamientos; Propuesta No Tecnica; REBAN Destilado
 
 ---
 
@@ -29,8 +29,19 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
                                     │
                                     ▼
                               Se publica TODO
-                              (cero QA en 26 idiomas)
+                              (solo EN con QA real)
 ```
+
+### Datos confirmados del pipeline de dubbing (Q8, DRAFT 70-80%)
+
+- **7 pasos:** Video ES → subir a ElevenLabs (web UI manual) → deteccion speakers → revision manual (solo EN) → correcciones manuales → exportacion por idioma → entrega
+- **Input:** Solo video completo — no reciben stems ni guion en texto
+- **Fernando exporta** 2 versiones: 16:9 (horizontal) y 9:16 (vertical)
+- **Error #1:** Speaker detection incorrecta (correcciones manuales masivas)
+- **Voice model** no persiste entre tabs de idioma en ElevenLabs — genera retrabajo
+- **Monday.com** tiene cero columnas para dubbing/traduccion — Area 09 opera en aislamiento total
+- **KPI-28 estimado:** 0.5-4h de correcciones manuales por episodio (sin baseline formal)
+- **No existe protocolo go/no-go operativo** con Gate 0/1/2, Morbo PG-13, FMEA ni score QA por idioma
 
 ### Lo que sabemos vs lo que NO sabemos
 
@@ -41,7 +52,7 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 | Post-produccion (Fernando) | **INCOMPLETO** — Q7 sin llenar, 11_fernando_daily_ops parcial | Silencios, timing creativo, stems, export format |
 | Dubbing (Saul/Ivan) | **INCOMPLETO** — Q8 draft (70-80%), 09_dubbing_workflow | Flujo real en ElevenLabs Studio, speaker merge, revision |
 | QA | Casi nulo — 26_02_18_checklist_audio_qa | Cero proceso definido, cero metricas |
-| Publicacion | No documentado | Quien publica, criterios de go/no-go, distribucion |
+| Publicacion | Parcial — REBAN define Gate 0/1/2 + FMEA | Aun no existe flujo operativo ni evidencia por idioma |
 
 ### Levantamientos pendientes (BLOCKERS)
 
@@ -104,16 +115,16 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 - En que formato? (WAV, MP3, MP4, proyecto After Effects?)
 - Fernando tiene acceso al guion original o solo al audio?
 
-**Fernando → Saul/Ivan:**
-- Fernando entrega un MP4 final o archivos separados (stems)?
-- Saul/Ivan reciben instrucciones especificas o solo el video?
+**Fernando → Saul/Ivan:** *(parcialmente respondido por Q8)*
+- ~~Fernando entrega un MP4 final o archivos separados (stems)?~~ **RESPONDIDO:** Solo video completo, no stems
+- ~~Saul/Ivan reciben instrucciones especificas o solo el video?~~ **RESPONDIDO:** Solo el video
 - Existe un checklist de "listo para dubbing"?
 
-**Saul/Ivan → ElevenLabs:**
-- Suben via Web UI manualmente o hay algun script?
+**Saul/Ivan → ElevenLabs:** *(parcialmente respondido por Q8)*
+- ~~Suben via Web UI manualmente o hay algun script?~~ **RESPONDIDO:** Web UI manual, no usan API
 - Como manejan los 27 idiomas? (uno por uno? batch?)
 - Cuanto tiempo toma procesar 1 episodio x 27 idiomas?
-- Revisan TODOS los idiomas o solo EN?
+- ~~Revisan TODOS los idiomas o solo EN?~~ **RESPONDIDO:** Solo EN
 
 **ElevenLabs → Publicacion:**
 - Quien descarga los 27 archivos doblados?
@@ -139,21 +150,22 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 
 ---
 
-### Objetivo A4: Protocolo de publicacion multi-idioma
-**S:** Definir criterios de go/no-go para publicar cada idioma
-**M:** Checklist de publicacion con criterios minimos por tier
-**A:** Basado en Gold Standard tiering (T1: humano+auto, T2: sampling 30%, T3: auto)
+### Objetivo A4: Protocolo de publicacion multi-idioma (Gates + QA REBAN)
+**S:** Definir y operar criterios de go/no-go por idioma usando Gate 0/1/2, Morbo PG-13 y scorecards de QA
+**M:** Checklist operativo por idioma que exige: audio tecnico REBAN, rubrica vocal 5D >= 4.0, checklist narrativo >= 10/12, cero violaciones Cat A/Gate 1 y triage Gate 2 ejecutado
+**A:** Basado en Gold Standard tiering (T1: humano+auto, T2: sampling 30%, T3: auto) + REBAN Destilado
 **R:** Hoy se publica todo sin criterio — esto es insostenible para contenido infantil
-**T:** Semana 8
+**T:** Semana 9
 
 #### Entregables micro
 
 | # | Entregable | Responsable | Deadline |
 |:--|:-----------|:------------|:---------|
-| A4.1 | Definir criterios minimos para publicar Tier 1 (con Andrea) | Alan + Andrea | Semana 5 |
-| A4.2 | Definir criterios para Tier 2 y Tier 3 | Alan + Gio | Semana 6 |
-| A4.3 | Checklist de publicacion (documento operativo) | Alan | Semana 7 |
-| A4.4 | Piloto: aplicar checklist a 1 episodio real | Alan + Gio | Semana 8 |
+| A4.1 | Mapear Gate 0/1/2 a pasos del pipeline real (owner, evidencia, SLA) | Alan + Andrea | Semana 6 |
+| A4.2 | Definir PASS/FAIL por tier con umbrales (audio >=4.0, narrativa >=10/12, detonador 20-40s, 0 anti-patrones criticos) | Alan + Gio | Semana 7 |
+| A4.3 | Disenar matriz de triage post-publicacion (claims, copyright, lenguaje sensible) | Alan + Gio | Semana 8 |
+| A4.4 | Checklist operativo + template de evidencia por idioma | Alan | Semana 8 |
+| A4.5 | Piloto: aplicar checklist en 1 episodio real (5 idiomas Tier 1) y documentar go/no-go | Alan + Gio | Semana 9 |
 
 ---
 
@@ -177,7 +189,7 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 5. Que pasa cuando Fernando detecta un error en el guion despues de animar?
 
 ### Sobre Saul/Ivan (Q8 — draft 70-80%)
-6. Cuantos idiomas revisan manualmente? (solo EN o alguno mas?)
+6. ~~Cuantos idiomas revisan manualmente? (solo EN o alguno mas?)~~ **RESPONDIDO:** Solo EN
 7. Cuanto tiempo toma dubbing de 1 episodio en ElevenLabs Studio?
 8. Han detectado errores graves de traduccion en algun idioma? Cuales?
 9. Usan algun criterio para decidir si un dubbing "esta bien" o lo regeneran?
@@ -186,6 +198,6 @@ Andrea escribe guion (.docx)   Fernando arma audio/video     27 idiomas publicad
 ### Sobre el proceso general
 11. Existe un "episodio tipo" documentado (duracion, # personajes, # escenas)?
 12. Cuantos episodios se producen por semana/mes?
-13. Hay algun cuello de botella que cause retrasos recurrentes?
+13. ~~Hay algun cuello de botella que cause retrasos recurrentes?~~ **PARCIAL:** Speaker detection incorrecta es error #1 (Q8)
 14. Quien toma la decision final de "esto se publica"?
 15. Existe algun proceso de rollback si se detecta un error post-publicacion?

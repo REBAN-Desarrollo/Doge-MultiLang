@@ -2,7 +2,7 @@
 
 > Ramon apoyara en desarrollo bajo liderazgo de Daniel. Paso 1: entender el repo y la arquitectura. Paso 2: planear desarrollo con la API de ElevenLabs y ajustes UI/API para mejorar translation.
 
-**Fecha:** 2026-02-20 | **Referencia:** Gold Standard Secciones 3-5, 10; Phase 0 Results
+**Fecha:** 2026-02-21 | **Referencia:** Gold Standard Secciones 3-5, 7, 10; Phase 0 Results; REBAN Destilado
 
 ---
 
@@ -18,6 +18,26 @@
 | Service-pipeline disconnect | **Confirmado** | `dubbing_pipeline.py` desconectado de `dubbing_service.py` |
 | Frontend | Solo modo Video | Audio/Text modes no implementados |
 | Tests | 130+ existentes | Cobertura del pipeline ERP, no integracion con API |
+| Input real dubbing | Solo video completo | Saul/Ivan no reciben stems ni guion texto — solo el video (Q8) |
+| ElevenLabs UI issue | Voice model no persiste | Al cambiar tab de idioma, se pierde seleccion de voz — retrabajo manual |
+
+### Errores frecuentes reportados por Saul/Ivan (Q8) — taxonomia de defectos
+
+1. **Speaker detection incorrecta** (error #1 — correcciones masivas)
+2. Texto de traduccion incorrecto
+3. Nombres propios mal traducidos
+4. Onomatopeyas mal traducidas
+5. Numeros leidos incorrectamente
+6. Pronombres incorrectos
+7. Tono/emocion no coincide
+8. Timing desincronizado
+
+### Delta REBAN para desarrollo (nuevo baseline QA)
+
+- Gate 1 debe detectar anti-patrones narrativos y vocabulario prohibido global
+- Gate 3 debe soportar score narrativo (checklist 12 puntos) con umbral >=10/12
+- Gate 4 debe validar umbrales tecnicos: noise <= -40 dB, peaks -6/-3 dB, 48 kHz, 140-160 wpm, cero clipping
+- Score vocal ponderado (rubrica 5D) debe quedar >=4.0 para aprobar Tier 1
 
 ### Arquitectura actual (Gold Standard Seccion 4)
 
@@ -108,7 +128,7 @@ Repos:
 
 | # | Entregable | Esfuerzo | Criterio |
 |:--|:-----------|:---------|:---------|
-| R2.1 | Fix Bug P1: `WERResult.language` debe usar el idioma target, no defaultear a "ES" | 2h | Test unitario: WER calculado para EN retorna language="en" |
+| R2.1 | Fix Bug P1: `WERResult.language` debe usar el idioma target, no defaultear a "ES" (cierra Gap G9: no hay WER tracking por idioma) | 2h | Test unitario: WER calculado para EN retorna language="en" |
 | R2.2 | Integrar `dubbing_pipeline.py` ↔ `dubbing_service.py` (adaptador) | 8h | Test de integracion: servicio invoca pipeline y retorna resultado |
 | R2.3 | Verificar que 130+ tests existentes siguen pasando post-fix | 1h | CI green |
 
@@ -152,6 +172,23 @@ Repos:
 
 ---
 
+### Objetivo R5: Instrumentar umbrales REBAN en el pipeline QA
+**S:** Implementar validadores de narrativa y audio para que los Gates usen criterios REBAN como PASS/FAIL
+**M:** Validaciones automatizadas en pipeline con tests (unit + integracion) para 1 episodio real Tier 1
+**A:** Se apalanca en Phase 1 (`audit_service.py`, `timing_checker.py`, `wer_calculator.py`) y utilidades ya previstas
+**R:** Sin estos validadores, los nuevos criterios de calidad quedan solo en documentos y no en ejecucion real
+**T:** Semana 7
+
+#### Entregables micro
+
+| # | Entregable | Esfuerzo |
+|:--|:-----------|:---------|
+| R5.1 | Validador de audio tecnico REBAN (noise, peaks, sample rate, wpm, clipping) | 4h |
+| R5.2 | Validador narrativo (anti-patrones + checklist 12 puntos con score) | 5h |
+| R5.3 | Integracion en Gate 1/3/4 + tests de regresion | 4h |
+
+---
+
 ## 3. DEPENDENCIAS
 
 | Ramon necesita de... | Que | Para cuando |
@@ -173,6 +210,7 @@ Repos:
 | Blacklists | `knowledgebase/blacklists/` | Formato JSON de blacklists |
 | Workflow | `docs/gold_standard_workflow.md` | Endpoints correctos |
 | Audit prompt | `debate/prompts/gemini_deep_audit_prompt.md` | Contexto completo del proyecto |
+| Destilado 04_EVIDENCE | `docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md` | Datos operativos de dubbing (pipeline, gaps, errores) |
 
 ### En AI-Studio (repo separado)
 

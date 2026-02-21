@@ -1,8 +1,8 @@
 # SMART — Objetivos por Stakeholder
 
-> Objetivos SMART (Specific, Measurable, Achievable, Relevant, Time-bound) asignados por stakeholder, derivados del [Gold Standard v1.0](../debate/Claude_Gold_Standard_Consenso_Final.md) y la verificacion Phase 0.
+> Objetivos SMART (Specific, Measurable, Achievable, Relevant, Time-bound) asignados por stakeholder, derivados del [Gold Standard v1.0](../debate/Claude_Gold_Standard_Consenso_Final.md), la verificacion Phase 0 y el destilado REBAN multi-idioma.
 
-**Fecha:** 2026-02-20 | **Baseline:** Gold Standard Seccion 13 + Phase 0 Results
+**Fecha:** 2026-02-21 | **Baseline:** Gold Standard Seccion 13 + Phase 0 Results + REBAN Destilado Multi-Idioma
 
 ---
 
@@ -35,4 +35,5 @@ Cada documento sigue la estructura:
 | YouTube Analytics | `docs/Gaps_Pendientes_Deep_Research.md` |
 | Devil's Advocate + Phase 0 | `debate/Sonnet_Devil_Advocate_Critique.md` |
 | Propuesta No Tecnica (RACI) | `debate/Propuesta_Equipo_No_Tecnica.md` |
+| REBAN Destilado Multi-Idioma | `docs/levantamientos/REBAN_destilado_multiidioma.md` |
 | Levantamientos | `docs/levantamientos/` |

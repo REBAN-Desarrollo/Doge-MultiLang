@@ -42,12 +42,12 @@ Video ES completo
 | Idiomas activos (Gold Standard) | **27** (incluye todos los canales) | FRAMEWORK |
 | Core languages hoy | **~5** | Q10 Daniel |
 | ElevenLabs plan | Suscripcion pagada, **sin contrato ni SLA** | SESIONES |
-| ElevenLabs budget | **$600-900 USD/mes** | SESIONES |
+| ElevenLabs budget | Suscripcion pagada (ver datos internos) | SESIONES |
 | ElevenLabs interface | **Solo web UI** — no usan API | QX_ANEXO |
 | Plan B si ElevenLabs cae | **No existe** | QX_ANEXO |
 | Canciones | **Instrumentales** (no requieren traduccion) | SESIONES |
 | Pistas de audio por episodio | **13** (Andrea verifica 2-3 intuitivamente) | QX_ANEXO |
-| Revenue target | **$700K-$1M MXN/mes** (triplicar) | Q10 |
+| Revenue target | Objetivo de crecimiento significativo (ver datos internos) | Q10 |
 
 ---
 
@@ -124,8 +124,8 @@ Checklist validado por Fernando + Saul/Ivan. Cubre:
 > Multi-idioma (al menos el tracking) no se sacrifica bajo ninguna circunstancia.
 
 - Vision 12 meses: de ~5 core languages a experiencia multiidioma global
-- Revenue: triplicar de actual a $700K-$1M MXN/mes
-- Equipo: mismo tamano (~20), mas eficiente
+- Revenue: objetivo de crecimiento significativo
+- Equipo: mismo tamano, mas eficiente
 
 ### Decisiones tomadas (SESIONES)
 

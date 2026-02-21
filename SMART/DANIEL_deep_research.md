@@ -2,7 +2,7 @@
 
 > Daniel provee investigacion profunda (deep research) para desbloquear a Andrea, Alan, Ramon y el proyecto en general. Tambien lidera arquitectura y toma decisiones tecnicas.
 
-**Fecha:** 2026-02-20 | **Referencia:** Gold Standard Secciones 11-12; Gaps Pendientes; Audit Prompt v2
+**Fecha:** 2026-02-21 | **Referencia:** Gold Standard Secciones 11-12; Gaps Pendientes; Audit Prompt v2; REBAN Destilado
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Stakeholder | Necesidad de research | Urgencia | Ref SMART |
 |:------------|:---------------------|:---------|:----------|
-| **Andrea + Gio** | Drafts de blacklists (LLM), research regulaciones (COPPA/AVMSD/KCSC), PCD drafts | Semanas 2-6 | S1, S2, S3 |
+| **Andrea + Gio** | Drafts de blacklists (LLM), research regulaciones (COPPA/AVMSD/KCSC), PCD drafts, scorecards QA REBAN | Semanas 2-7 | S1, S2, S3, S4 |
 | **Alan** | Contexto tecnico del pipeline para que entienda handoffs | Semana 1 | A1 |
 | **Ramon** | Acceso a AI-Studio, API key, code review, guia tecnica | Semanas 1-5 | R1-R4 |
 | **Proyecto** | Benchmarks (MOS, COMET, Whisper), spikes tecnicos, decisiones pendientes | Semanas 2-8 | D-001 a D-008 |
@@ -42,15 +42,18 @@
 - Contexto: contenido infantil animado 8-15 anos
 - Regulaciones locales relevantes
 - Categorias A (prohibido), B (contextual), C (alternativa)
+- Seed obligatorio: vocabulario prohibido REBAN + equivalentes locales por idioma
+- Mapear 7 anti-patrones narrativos a reglas detectables para QA
 - Cross-check con 2+ fuentes cuando sea posible
+- Nota: "Onomatopeyas mal traducidas" es error #4 en frecuencia (Q8) — considerar categoria dedicada ademas de A/B/C
 
 ---
 
 ### Objetivo D2: Research regulatorio (COPPA, AVMSD, CJK)
 **S:** Investigar que regulaciones aplican especificamente a QPH y que acciones concretas requieren
-**M:** Documento de compliance con regulacion x idioma x accion, con fuentes verificadas
+**M:** Documento de compliance con regulacion x idioma x accion, mapeado a Gate 0/1/2 y Morbo PG-13, con fuentes verificadas
 **A:** Regulaciones son publicas; el reto es interpretarlas para contenido animado doblado con AI
-**R:** Andrea necesita esto para decidir nivel de strictness (D-006) y priorizar blacklists
+**R:** Andrea necesita esto para decidir nivel de strictness (D-006) y priorizar blacklists. Nota: canciones QPH son instrumentales (confirmado SESIONES) — no requiere research de licencias de letras
 **T:** Semana 3
 
 #### Entregables
@@ -61,7 +64,7 @@
 | D2.2 | AVMSD Art. 28b: requerimientos para contenido infantil en EU | Semana 2 |
 | D2.3 | CJK: NRTA (China), KCSC (Corea), BPO (Japon) — requerimientos especificos | Semana 3 |
 | D2.4 | Medio Oriente: sensibilidades islamicas para contenido infantil | Semana 3 |
-| D2.5 | Documento consolidado de compliance | Semana 3 |
+| D2.5 | Documento consolidado de compliance + mapeo operativo a Gate 0/1/2 | Semana 3 |
 
 ---
 
@@ -76,15 +79,15 @@
 
 | # | Entregable | Deadline |
 |:--|:-----------|:---------|
-| D3.1 | Expansion tabla onomatopeyas: 15 conceptos x 10 idiomas | Semana 3 |
+| D3.1 | Expansion tabla onomatopeyas: 15 conceptos x 10 idiomas (nota: BPO Japon tiene 4,500 onomatopeyas criticas — 15 es MVP minimo) | Semana 3 |
 | D3.2 | Draft PCD Tier 1 JSON (7 categorias x 5 idiomas) | Semana 5 |
 | D3.3 | Draft PCD Tier 2 JSON (7 categorias x 5 idiomas mas) | Semana 8 |
 
 ---
 
 ### Objetivo D4: Benchmarks tecnicos
-**S:** Ejecutar benchmarks de calidad TTS, STT, y traduccion para fundamentar decisiones con datos
-**M:** Resultados cuantitativos: MOS por idioma, WER por STT engine, COMET por cadena de traduccion
+**S:** Ejecutar benchmarks de calidad TTS, STT y traduccion para fundamentar decisiones con datos y contrastar contra baseline REBAN
+**M:** Resultados cuantitativos: MOS por idioma, WER por STT engine, COMET por cadena de traduccion, y scorecard tecnico REBAN (noise, peaks, sample rate, wpm, clipping, rubrica 5D)
 **A:** Herramientas open source disponibles (UTMOS, jiwer, COMET); requiere 1 episodio de prueba
 **R:** Sin benchmarks, decisiones D-005 (pausar idiomas) y D-007 (upgrade plan) no tienen fundamento
 **T:** Semana 6
@@ -98,6 +101,7 @@
 | D4.3 | Flash v2.5 vs v3 en CJK | ElevenLabs API | Semana 5 | Cual modelo suena mejor en idiomas problematicos |
 | D4.4 | COMET: ES→PT directo vs ES→EN→PT | COMET/xCOMET | Semana 6 | Score de calidad de traduccion por ruta |
 | D4.5 | Documento consolidado de benchmarks | — | Semana 6 | Input para decisiones D-005, D-007 |
+| D4.6 | Template de scorecard QA REBAN para Tier 1 (5 idiomas) | Sheet/JSON | Semana 6 | Base operativa para S4 (Andrea/Gio) y A4 (Alan) |
 
 ---
 
@@ -113,7 +117,7 @@
 | # | Decision | Datos necesarios | Quien decide | Deadline |
 |:--|:---------|:-----------------|:-------------|:---------|
 | D-001 | Extender AI-Studio o rebuild? | Resultados de fixes R2 de Ramon | Daniel | Semana 3 |
-| D-002 | Cuantos idiomas en MVP? | ROI por idioma (D4), benchmarks | Andrea + Daniel | Semana 5 |
+| D-002 | Cuantos idiomas en MVP? | ROI por idioma (D4), benchmarks. Nota: 16 idiomas activos (Q8) vs 27 canales (Gold Standard) — baseline ROI es cero (G16: nunca se ha medido) | Andrea + Daniel | Semana 5 |
 | D-003 | CSV vs Resource API? | Spike de Ramon (R3.5) | Daniel | Semana 5 |
 | D-004 | Separacion audio (stems)? | Entrevista Fernando (Alan A1.2) | Daniel + Fernando | Semana 3 |
 | D-005 | Pausar idiomas bajo ROI? | Benchmarks D4, ROI de Gaps Pendientes | Andrea + Daniel | Semana 8 |
@@ -149,7 +153,7 @@ Semana 2: Blacklists T1 draft (D1.1) + COPPA/AVMSD (D2.1-D2.2) + Fix bugs con Ra
 Semana 3: CJK regulations (D2.3) + Onomatopeyas (D3.1) + Decision D-001, D-004
 Semana 4: Blacklists T2 draft (D1.2) + Benchmarks MOS/WER (D4.1-D4.2)
 Semana 5: PCD T1 draft (D3.2) + Flash vs v3 (D4.3) + Decisiones D-002, D-003, D-006
-Semana 6: Blacklists T3 draft (D1.3) + COMET benchmark (D4.4) + Decision D-007
+Semana 6: Blacklists T3 draft (D1.3) + COMET benchmark (D4.4) + Scorecard REBAN (D4.6) + Decision D-007
 Semana 7-8: PCD T2 draft (D3.3) + Decision D-005
 Semana 9+: Soporte continuo, Kaizen loop, research avanzado
 ```
@@ -172,7 +176,10 @@ El archivo [`debate/prompts/gemini_deep_audit_prompt.md`](../debate/prompts/gemi
 | YouTube Analytics (AVD, revenue, ROI) | `docs/Gaps_Pendientes_Deep_Research.md` |
 | ElevenLabs API reference (158 docs) | `knowledgebase/elevenlabs_api/` |
 | Blacklists existentes (3 JSONs) | `knowledgebase/blacklists/` |
-| Levantamientos equipo (51 docs) | `docs/levantamientos/` |
+| Levantamientos equipo (52 docs) | `docs/levantamientos/` |
+| Destilado 04_EVIDENCE (datos operativos dubbing) | `docs/levantamientos/04_EVIDENCE_destilado_multiidioma.md` |
+| Destilado REBAN (ADN narrativo, audio specs, gates, checklist 12 puntos) | `docs/levantamientos/REBAN_destilado_multiidioma.md` |
+| KPIs dubbing (TBD) | KPI-27 (throughput), KPI-28 (correccion 0.5-4h/ep) — sin baseline |
 | Codigo existente AI-Studio | Repo AI-Studio (privado) |
 
 ### Modelos recomendados por tipo de research

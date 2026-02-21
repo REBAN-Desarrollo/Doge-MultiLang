@@ -1,13 +1,13 @@
-# Claude Gold Standard - Consenso Final (2026-02-20)
+# Claude Gold Standard - Consenso Final (2026-02-21)
 
 | Campo | Valor |
 |:------|:------|
-| Fecha | 2026-02-20 |
+| Fecha | 2026-02-21 |
 | Autor | Claude Opus 4.6 (4 agentes especializados) |
 | Estado | **CANONICO** (latest) |
-| Metodo | 4 agentes paralelos (Consensus Arbiter, Architecture Synthesizer, Operations & Safety, Roadmap & Risk) sintetizando 10 documentos de debate + gold_standard_workflow + 5 docs de gold_standard_sections |
+| Metodo | 4 agentes paralelos (Consensus Arbiter, Architecture Synthesizer, Operations & Safety, Roadmap & Risk) sintetizando 10 documentos de debate + gold_standard_workflow + 5 docs de gold_standard_sections + destilado REBAN |
 | Reemplaza | Todos los documentos previos de debate (ver Seccion 14: Linaje Documental) |
-| Fuentes primarias | Claude Pipeline Debate, Mega Propuesta Final, Codex Gold Standard Unificado, Gemini 3.1 PRO Deep Audit, Gemini Deep Thinking Deep Audit, Sonnet Devil's Advocate Critique, Claude Addendum Deep Research, Gaps Pendientes Deep Research, MEGA BARRIDO Multi-Agente 10 Agentes, Propuesta Equipo No Tecnica |
+| Fuentes primarias | Claude Pipeline Debate, Mega Propuesta Final, Codex Gold Standard Unificado, Gemini 3.1 PRO Deep Audit, Gemini Deep Thinking Deep Audit, Sonnet Devil's Advocate Critique, Claude Addendum Deep Research, Gaps Pendientes Deep Research, MEGA BARRIDO Multi-Agente 10 Agentes, Propuesta Equipo No Tecnica, REBAN Destilado Multi-Idioma |
 
 ---
 
@@ -664,6 +664,26 @@ Gates 1-2 son **BLOCKING** (critical path). Gates 3-4 operan **ASYNC** por idiom
 
 Costo anual estimado (52 episodios): ~$2,392-3,276.
 
+### 7.5 Delta REBAN (ADN narrativo + audio tecnico)
+
+REBAN agrega criterios de calidad que pasan de "nice to have" a **PASS/FAIL operativo**:
+
+| Gate | Criterio REBAN | Regla operativa |
+|:-----|:---------------|:----------------|
+| **Gate 1** | ADN QPH + anti-patrones | Bloquear si detecta literaturizacion, moralizacion, tecnicismos, solemnidad, psicologia abstracta o vocabulario adulto prohibido |
+| **Gate 2** | Ritmo narrativo | EN master debe preservar detonador cada 20-40s en escenas de conflicto |
+| **Gate 3** | Checklist narrativo (12 puntos) | Minimo **10/12** por idioma en Tier 1; <8/12 = rechazo |
+| **Gate 4** | Rubrica vocal 5D | Score ponderado minimo **>= 4.0** por idioma; 3.5-3.9 condicional; <3.5 rechazo |
+
+**Baseline tecnico minimo REBAN (audio fuente de dubbing/TTS):**
+- Noise floor <= -40 dB
+- Peaks entre -6 dB y -3 dB
+- Sample rate 48 kHz
+- Velocidad objetivo 140-160 wpm (rango aceptable 120-180)
+- Clipping: cero picos en 0 dBFS
+
+Nota de compatibilidad: el target de mezcla final (-14 LUFS en postproduccion) se mantiene; REBAN agrega control de calidad a nivel de voz fuente para reducir defectos antes de mezcla final.
+
 ---
 
 <a id="seccion-8"></a>
@@ -708,6 +728,21 @@ Costo anual estimado (52 episodios): ~$2,392-3,276.
 | Medio Oriente | Estandares islamicos | Cero cerdo/khanzir. Cero romantico. Validacion nativa obligatoria |
 | India | CBFC | Multi-religioso. Vaca = sagrada. No asumir dieta carnivora |
 
+### 8.5 Morbo PG-13 y blacklist editorial (REBAN)
+
+**Permitido (PG-13 controlado):**
+- Tension incomoda y conflicto interpersonal sin explicitar sexualidad ni violencia grafica
+- Adultos actuando mal (tono narrativo), sin glorificacion de abuso
+- Situaciones vergonzosas o de injusticia aptas para 8-13 anos
+
+**Prohibido (bloqueo inmediato):**
+- Sexual explicito, abuso infantil, secuestro o sexualizacion de menores
+- Violencia grafica, autolesion/suicidio, drogas/tabaco/alcohol
+- Discurso discriminatorio por raza/religion/minorias
+- Difamacion, manipulacion politica, fake news deliberada
+
+**Regla de publicacion:** si Gate 1 detecta contenido prohibido o Cat. A, el idioma queda en NO-GO aunque los demas gates pasen.
+
 ---
 
 <a id="seccion-9"></a>
@@ -721,6 +756,16 @@ Traduccion < Localizacion < Transcreacion < TROPICALIZACION
 ```
 
 QPH necesita: **Localizacion + Tropicalizacion selectiva.**
+
+### 9.1.1 ADN narrativo QPH (REBAN)
+
+Avatar de referencia: **Noha, 10 anos**. Regla de comprension: si un nino de 10 anos no entiende una palabra, el guion falla.
+
+Requisitos minimos por idioma:
+- Voz confesional (no literaria), frases cortas, ritmo rapido
+- Tension en cada bloque, sin estiramiento artificial
+- Adultos: autoritarios/manipuladores; ninos: directos/impulsivos
+- Reemplazar terminos abstractos ("trauma", "disonancia", etc.) por consecuencias concretas visibles
 
 ### 9.2 Diccionario Cultural Positivo (PCD)
 
@@ -932,6 +977,9 @@ ROI Dashboard, Tropicalizacion automatica, Analisis de audio avanzado (UTMOS, em
 | Blacklists activas | 3/27 | 3/27 | 10/27 | **27/27** |
 | FTR (First Time Right) | Desconocido | Medido | > 40% | **> 60%** |
 | Cat. A publicado (Tier 1) | Desconocido | 0 | 0 | **0** |
+| Rubrica vocal 5D (Tier 1) | Desconocido | Baseline medido | >= 3.8 | **>= 4.0** |
+| Checklist narrativo 12 pts (Tier 1) | Desconocido | Baseline medido | >= 9/12 | **>= 10/12** |
+| Cumplimiento Gate 2 (soft launch 2-6h) | 0% | Piloto 1 episodio | 60% episodios Tier 1 | **>= 90%** |
 | ROI por idioma calculado | 0 | 0 | 5 idiomas | **27 idiomas** |
 
 ### 13.2 Los 7 Objetivos SMART
@@ -945,6 +993,14 @@ ROI Dashboard, Tropicalizacion automatica, Analisis de audio avanzado (UTMOS, em
 | O5 | FTR > 60% | Semana 12 |
 | O6 | ROI por idioma calculado | Semana 12 |
 | O7 | Kaizen loop activo | Semana 16 |
+
+### 13.2.1 Objetivos operativos REBAN (complementarios)
+
+| # | Objetivo | Deadline |
+|:--|:---------|:---------|
+| R1 | Integrar scanner de 7 anti-patrones y vocabulario prohibido en Gate 1 | Semana 6 |
+| R2 | Exigir score narrativo minimo 10/12 en Tier 1 antes de publicar | Semana 7 |
+| R3 | Exigir score vocal REBAN >= 4.0 por idioma Tier 1 | Semana 7 |
 
 ### 13.3 KPIs de Mejora Continua (Kaizen)
 
@@ -979,6 +1035,7 @@ ROI Dashboard, Tropicalizacion automatica, Analisis de audio avanzado (UTMOS, em
 | `debate/Gemini_Deep_Thinking_Deep_Audit_QPH.md` | Gemini Deep Thinking | 2026-02-20 | ABSORBIDO -- DTR, expansion, model tiering en Secciones 6-7 |
 | `debate/Sonnet_Devil_Advocate_Critique.md` | Sonnet | 2026-02-19 | VIGENTE -- actualizado con resultados Phase 0 (Seccion 0). Advertencias en Seccion 11 |
 | `docs/Gaps_Pendientes_Deep_Research.md` | Claude | 2026-02-19 | MOVIDO a `docs/` -- datos primarios YouTube Analytics referenciados en Secciones 1, 6, 10 |
+| `docs/levantamientos/REBAN_destilado_multiidioma.md` | REBAN (destilado) | 2026-02-20 | ABSORBIDO -- ADN narrativo, umbrales de audio, Morbo PG-13 y checklist 12 puntos en Secciones 7-9, 13 y Apendice A |
 | `debate/MEGA_BARRIDO_MULTIAGENTE_10_AGENTES.md` | 10 agentes | 2026-02-20 | **ELIMINADO** -- inventario y contradicciones en Secciones 3, 5 |
 | `docs/gold_standard_workflow.md` | Equipo | 2026-02-18 | ABSORBIDO -- endpoints corregidos en Seccion 5 |
 | `docs/gold_standard_sections_*.md` (5 archivos) | Equipo | 2026-02-19 | ABSORBIDOS -- contenido expandido y corregido en Secciones 3-13 |
@@ -1010,13 +1067,13 @@ Estos archivos fueron generados por los 4 agentes durante la construccion de est
 
 ### 14.4 Documento Canonico Vigente
 
-**El presente archivo (`debate/Claude_Gold_Standard_Consenso_Final.md`) es el documento canonico vigente del proyecto Doge-MultiLang a partir del 2026-02-20.**
+**El presente archivo (`debate/Claude_Gold_Standard_Consenso_Final.md`) es el documento canonico vigente del proyecto Doge-MultiLang a partir del 2026-02-21.**
 
 Cualquier contradiccion entre este documento y documentos previos se resuelve a favor de este archivo. Los documentos absorbidos conservan valor historico pero no deben usarse como fuente de decisiones sin verificar contra este consenso.
 
 ---
 
-*Documento generado por 4 agentes Claude Opus 4.6 (Consensus Arbiter + Architecture Synthesizer + Operations & Safety + Roadmap & Risk) sintetizando 10 documentos de debate + 6 documentos tecnicos del repositorio Doge-MultiLang. Fecha: 2026-02-20.*
+*Documento generado por 4 agentes Claude Opus 4.6 (Consensus Arbiter + Architecture Synthesizer + Operations & Safety + Roadmap & Risk) sintetizando 10 documentos de debate + 6 documentos tecnicos del repositorio Doge-MultiLang y el destilado REBAN. Fecha: 2026-02-21.*
 
 ---
 
@@ -1124,6 +1181,20 @@ AUDIO DOBLADO (ElevenLabs output, por idioma)
 | 13 | Overall quality | Evaluacion integral | NO (humano) |
 
 **Pistas 1-3, 5-11 son automatizables** por audit_service.py. Pistas 4, 12-13 requieren intervencion humana.
+
+### A.4.1 Umbrales tecnicos REBAN (voz fuente)
+
+Aplicar adicionalmente a la pista de voz antes de mezcla final:
+
+| Parametro | Umbral |
+|:----------|:-------|
+| Noise floor | <= -40 dB |
+| Peaks | -6 dB a -3 dB |
+| Sample rate | 48 kHz |
+| Velocidad | 140-160 wpm (aceptable 120-180) |
+| Clipping | 0 picos a 0 dBFS |
+
+Estos umbrales complementan (no reemplazan) el control de mezcla final por LUFS.
 
 ### A.5 Lo que ElevenLabs SI y NO Verifica
 

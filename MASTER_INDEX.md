@@ -21,6 +21,7 @@
 | `knowledgebase/theories/` | 3 | .md | Sintesis teoricas |
 | `knowledgebase/_metadata/` | 6 | .md, .txt | Trazabilidad y proveniencia |
 | `SMART/` | 5 | .md | Objetivos SMART por stakeholder |
+| `suite/` | 10 | .md | PRD + Arquitectura de DOGE Creative Suite v1.0 |
 | `scripts/` | 2 | .py | Scripts de produccion |
 | `debate/prompts/` | 1 | .md | Prompts para auditorias AI |
 
@@ -299,6 +300,38 @@ Objetivos SMART (Specific, Measurable, Achievable, Relevant, Time-bound) derivad
 
 ---
 
+## 8. SUITE/ — DOGE Creative Suite PRD (10 archivos)
+
+Documentacion completa de la DOGE Creative Suite v1.0: PRD, arquitectura (ADRs), specs de modulos, providers y evaluaciones.
+
+| # | Archivo | Titulo | Contenido |
+|:--|:--------|:-------|:----------|
+| 1 | [`README.md`](suite/README.md) | **PRD Completo** | Resumen, stakeholders, DB schema, API, fases, riesgos |
+| 2 | [`architecture.md`](suite/architecture.md) | Arquitectura + ADRs | 6 ADRs, stack tecnologico, costos |
+| 3 | [`modules/01_guion.md`](suite/modules/01_guion.md) | Modulo: Guion Pipeline | Parser, blacklists, contratos JSON, workflow |
+| 4 | [`modules/02_assets.md`](suite/modules/02_assets.md) | Modulo: Asset Factory | Kanban, bifurcacion bulk/hero/manual, fal.ai |
+| 5 | [`modules/03_audio.md`](suite/modules/03_audio.md) | Modulo: Audio Hub | TTS batch, Auto-QA (WER), reproductor, pronunciacion |
+| 6 | [`modules/04_localization.md`](suite/modules/04_localization.md) | Modulo: Localization | Traduccion, dubbing, patching, forced alignment, QA tiers |
+| 7 | [`modules/05_future.md`](suite/modules/05_future.md) | Modulos Futuros | Video, subtitulos, analytics, calendario (no MVP) |
+| 8 | [`providers/elevenlabs.md`](suite/providers/elevenlabs.md) | Provider: ElevenLabs | Endpoints, patron SSOT, costos |
+| 9 | [`providers/fal_ai.md`](suite/providers/fal_ai.md) | Provider: fal.ai | Modelos, bifurcacion, costos |
+| 10 | [`providers/openrouter.md`](suite/providers/openrouter.md) | Provider: OpenRouter | Modelos por caso de uso, routing |
+| 11 | [`evaluations/gemini_proposal_review.md`](suite/evaluations/gemini_proposal_review.md) | Evaluacion: Propuesta Gemini | 7 errores, lecciones aprendidas |
+
+### Flujo de lectura recomendado
+
+```
+suite/README.md (PRD completo — empieza aqui)
+    |
+    +-> suite/architecture.md (decisiones tecnicas)
+    |
+    +-> suite/modules/01-04 (specs por modulo)
+    |
+    +-> suite/providers/* (detalles de integracion)
+```
+
+---
+
 ## Navegacion rapida por necesidad
 
 ### Quiero entender el proyecto
@@ -309,9 +342,11 @@ Objetivos SMART (Specific, Measurable, Achievable, Relevant, Time-bound) derivad
 
 ### Quiero ver el plan tecnico
 
-1. [`debate/Claude_Gold_Standard_Consenso_Final.md`](debate/Claude_Gold_Standard_Consenso_Final.md) — Gold Standard v1.0 (SSOT canonico)
-2. [`analysis/prd_final.md`](analysis/prd_final.md) — 18 scripts, roadmap, costos
-3. [`docs/gold_standard_workflow.md`](docs/gold_standard_workflow.md) — Workflow con endpoints
+1. [`suite/README.md`](suite/README.md) — **DOGE Creative Suite PRD v1.0** (plan de la nueva app)
+2. [`suite/architecture.md`](suite/architecture.md) — ADRs y stack tecnologico
+3. [`debate/Claude_Gold_Standard_Consenso_Final.md`](debate/Claude_Gold_Standard_Consenso_Final.md) — Gold Standard v1.0 (SSOT canonico)
+4. [`analysis/prd_final.md`](analysis/prd_final.md) — 18 scripts, roadmap, costos
+5. [`docs/gold_standard_workflow.md`](docs/gold_standard_workflow.md) — Workflow con endpoints
 
 ### Quiero datos de ElevenLabs
 

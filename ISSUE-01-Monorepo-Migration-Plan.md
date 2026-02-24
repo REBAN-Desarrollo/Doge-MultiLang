@@ -38,6 +38,7 @@ Doge-MultiLang/
 - Mover `knowledgebase/` a `docs/api-reference/`
 - Mover `debate/` a `docs/research/`
 - Eliminar carpetas vacías originales.
+- **Limpieza de Root:** Se movieron archivos sueltos (`MASTER_INDEX.md`, `analysis_calc.py`, `QPH_Problematicas...pptx`) a sus directorios definitivos en `docs/` y `scripts/`.
 
 ### Fase 2: Inicialización del Monorepo (✅ COMPLETADA)
 - Crear la estructura de carpetas `apps/web/`, `apps/api/`, `packages/`.
@@ -48,6 +49,6 @@ Doge-MultiLang/
 - Inicializar esqueleto de FastAPI en `apps/api/`.
 
 ---
-**@Ramon:** El esqueleto del monorepo está completamente inicializado y funcional. Ya puedes empezar a integrar lógica dentro de `apps/web/` o `apps/api/`. Las dependencias base y los gestores de paquetes (`pnpm` para web, `uv`/estándar para api) están listos.
+**@Ramon:** El esqueleto del monorepo está completamente inicializado, funcional y **mergeado en `main`**. Ya puedes empezar a integrar lógica dentro de `apps/web/` o `apps/api/`. Las dependencias base y los gestores de paquetes (`pnpm` para web, `uv`/estándar para api) están listos.
 
 **Nota para el resto del equipo:** Si tienes un PR abierto que modifica archivos en `docs/`, `knowledgebase/`, `SMART/` o `suite/`, prepárate para resolver conflictos de rutas o cambiar el destino de tus archivos hacia la nueva carpeta `docs/`.

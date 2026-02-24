@@ -1,0 +1,13 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "DOGE Creative Suite API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "arq",
+    "redis"
+]

@@ -1,28 +1,22 @@
-# Knowledgebase - archivos pesados (usar Git LFS o excluir del repo)
-# Los JSON pequenos (blacklists) si se trackean
-knowledgebase/elevenlabs_final.jsonl
-knowledgebase/elevenlabs_docs.json
-knowledgebase/elevenlabs_helper.json
+# dependencies
+node_modules/
 
-# Episodios pesados (docx de guion ~43MB)
-*.docx
-# Excepcion: ejemplo SSOT de guion .docx
-!docs/levantamientos/un_guardaespaldas_escolar.docx
+# Next.js
+.next/
+out/
+
+# Turbo
+.turbo/
 
 # Python
 __pycache__/
 *.py[cod]
-*.egg-info/
+*$py.class
 .venv/
+env/
 venv/
 .env
 
-# OS
+# misc
+*.log
 .DS_Store
-Thumbs.db
-~$*
-
-# IDE
-.vscode/
-.idea/
-*.swp

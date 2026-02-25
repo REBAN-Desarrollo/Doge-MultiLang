@@ -1,0 +1,5564 @@
+00:00:42,700 --> 00:00:46,240 [Andrea]
+Pueden ir con calma, tenemos chavos.
+
+00:01:45,360 --> 00:01:46,060 [Andrea]
+Hola.
+
+00:03:00,300 --> 00:03:01,890 [Andrea]
+Con Gemini y con chat.
+
+00:03:02,580 --> 00:03:05,840 [Andrea]
+Este, bueno, esta es una-- como en resumen
+
+00:03:05,940 --> 00:03:08,020 [Andrea]
+de la investigación que hice esta semana,
+
+00:03:08,060 --> 00:03:10,200 [Andrea]
+primero, como para dar contexto de cuál
+
+00:03:10,220 --> 00:03:12,040 [Andrea]
+podría ser un protocolo para validar,
+
+00:03:12,480 --> 00:03:14,960 [Andrea]
+este, encontré que había, bueno, con ayuda
+
+00:03:14,980 --> 00:03:17,900 [Andrea]
+de chat y de Gemini, tenía dos puertas
+
+00:03:17,960 --> 00:03:21,080 [Andrea]
+que, que nos pueden servir como de filtro.
+
+00:03:21,340 --> 00:03:23,100 [Andrea]
+Claro que una vez que ya esté auditado
+
+00:03:23,140 --> 00:03:25,200 [Andrea]
+todo lo de los demás problemas que tenemos
+
+00:03:25,240 --> 00:03:26,860 [Andrea]
+con idiomas, ¿verdad? Pero en, en
+
+00:03:26,940 --> 00:03:29,040 [Andrea]
+cuestión a lo de las palabras que podrían
+
+00:03:29,100 --> 00:03:30,800 [Andrea]
+resultar con una mala traducción, es
+
+00:03:30,840 --> 00:03:32,860 [Andrea]
+primero, bueno, no mala traducción, sino
+
+00:03:32,960 --> 00:03:36,220 [Andrea]
+que contemplando el contexto social,
+
+00:03:36,240 --> 00:03:38,600 [Andrea]
+cultural, de otros países, eh, primero,
+
+00:03:38,620 --> 00:03:42,220 [Andrea]
+pues el, el, el principal responsable o el
+
+00:03:42,300 --> 00:03:44,140 [Andrea]
+primer filtro tendría que ser el
+
+00:03:44,180 --> 00:03:46,620 [Andrea]
+guionista. Tendría que verificar que sus
+
+00:03:46,680 --> 00:03:49,200 [Andrea]
+palabras tuvieran un, un, desde la-
+
+00:03:50,420 --> 00:03:50,760 [Andrea]
+Sí,
+
+00:03:51,660 --> 00:03:53,590 [Andrea]
+porque esa es la parte, sí, ¿no? Perdón,
+
+00:03:53,640 --> 00:03:54,040 [Andrea]
+perdón.
+
+00:03:54,480 --> 00:03:55,900 [Andrea]
+Nada más para contextualizar, porque si
+
+00:03:55,940 --> 00:03:57,680 [Andrea]
+no, si no se oye bastante todo.
+
+00:03:58,780 --> 00:04:01,860 [Andrea]
+Desde el humor hasta los nombres de los
+
+00:04:01,880 --> 00:04:04,980 [Andrea]
+personajes o las maneras de dirigirse a
+
+00:04:04,990 --> 00:04:06,980 [Andrea]
+algún personaje, por ejemplo, eh, la
+
+00:04:07,000 --> 00:04:09,680 [Andrea]
+ofensa esta, ¿no?， de, de simio, de, de
+
+00:04:09,760 --> 00:04:12,540 [Andrea]
+cerdo, que creo que en árabe era, era muy
+
+00:04:12,560 --> 00:04:14,540 [Andrea]
+peligroso. Como que desde la manera de
+
+00:04:14,560 --> 00:04:17,060 [Andrea]
+dirigirte a los personajes, el guionista
+
+00:04:17,079 --> 00:04:21,180 [Andrea]
+tendría que, con una lista tentativa, eh,
+
+00:04:21,220 --> 00:04:23,880 [Andrea]
+especificar o cambiar ciertos términos
+
+00:04:23,960 --> 00:04:25,120 [Andrea]
+para que fueran un poquito más
+
+00:04:25,200 --> 00:04:27,360 [Andrea]
+universales. Está muy complicado, ¿verdad?
+
+00:04:27,380 --> 00:04:29,540 [Andrea]
+Pero tendríamos esa primera puerta. La
+
+00:04:29,620 --> 00:04:31,950 [Andrea]
+segunda es que también los metadatos, eh,
+
+00:04:31,960 --> 00:04:34,550 [Andrea]
+pueden ser malinterpretados. En esa quizás
+
+00:04:34,620 --> 00:04:36,720 [Andrea]
+es donde yo me siento responsable, que no
+
+00:04:36,740 --> 00:04:40,040 [Andrea]
+he sido cien por ciento como, como
+
+00:04:40,220 --> 00:04:42,640 [Andrea]
+cuidadosa al momento de asegurarme de que
+
+00:04:42,680 --> 00:04:45,620 [Andrea]
+a lo mejor la, la, la traducción de los
+
+00:04:45,740 --> 00:04:47,820 [Andrea]
+títulos y las descripciones sí sean como
+
+00:04:47,840 --> 00:04:50,560 [Andrea]
+muy fiel al contenido del, de-
+
+00:04:51,690 --> 00:04:53,100 [Andrea]
+Del video, ¿verdad? Porque pues, bueno,
+
+00:04:53,160 --> 00:04:55,180 [Andrea]
+uno, obviamente, pues no, no dominamos
+
+00:04:55,230 --> 00:04:57,860 [Andrea]
+esos, esos idiomas. Y en segundo lugar,
+
+00:04:57,880 --> 00:04:59,940 [Andrea]
+pues como que ya uno asume que
+
+00:05:00,540 --> 00:05:03,620 [Andrea]
+la misma, eh, versión que te da de los
+
+00:05:03,680 --> 00:05:06,040 [Andrea]
+otros idiomas, la traducción de, de la
+
+00:05:06,080 --> 00:05:07,800 [Andrea]
+inteligencia, pues ya es muy fiel, pero
+
+00:05:07,820 --> 00:05:09,500 [Andrea]
+pues no sabemos ni siquiera si vienen ahí
+
+00:05:09,540 --> 00:05:09,780 [Andrea]
+como
+
+00:05:10,400 --> 00:05:12,720 [Andrea]
+cosas malinterpretadas en la historia,
+
+00:05:12,760 --> 00:05:15,100 [Andrea]
+pero aquí también es importante. Eh,
+
+00:05:15,840 --> 00:05:17,700 [Andrea]
+¿qué se puede hacer? Le comentaba Gio que
+
+00:05:17,720 --> 00:05:20,180 [Andrea]
+a lo mejor hacer un mapeo, dividir como
+
+00:05:20,280 --> 00:05:22,220 [Andrea]
+los países más... Eh, bueno, esta
+
+00:05:22,260 --> 00:05:23,840 [Andrea]
+investigación es ya basándonos creo que en
+
+00:05:23,880 --> 00:05:26,260 [Andrea]
+ocho nada más, en ocho idiomas, no en
+
+00:05:26,320 --> 00:05:29,200 [Andrea]
+todos. Primero, dividir por, por cada uno
+
+00:05:29,240 --> 00:05:31,920 [Andrea]
+de los guidelines y sobre cada uno de
+
+00:05:31,940 --> 00:05:35,080 [Andrea]
+esos, dividir por cada uno de los idiomas,
+
+00:05:35,660 --> 00:05:37,860 [Andrea]
+para que, para que primero fuera la
+
+00:05:37,900 --> 00:05:39,760 [Andrea]
+etiqueta del, del, de la
+
+00:05:40,440 --> 00:05:42,400 [Andrea]
+normativa que se podría estar violando o
+
+00:05:42,540 --> 00:05:45,440 [Andrea]
+que podría ser, este, eh, peligrosa en la
+
+00:05:45,480 --> 00:05:48,480 [Andrea]
+producción, y después el enfoque cultural
+
+00:05:48,500 --> 00:05:50,260 [Andrea]
+o el tabú que puede estar dañándose según
+
+00:05:50,420 --> 00:05:52,220 [Andrea]
+cada una de las regiones.
+
+00:05:53,220 --> 00:05:55,680 [Andrea]
+Eh, esto considerando, eh, la sensibilidad
+
+00:05:55,760 --> 00:05:57,640 [Andrea]
+por política o situaciones que estén
+
+00:05:57,660 --> 00:05:59,320 [Andrea]
+pasando en el país en el momento,
+
+00:05:59,380 --> 00:06:02,240 [Andrea]
+religión, tabús, eh, y gore y violencia.
+
+00:06:03,484 --> 00:06:05,144 [Andrea]
+[carraspeo] Ahí me desglosó cuáles son los
+
+00:06:05,204 --> 00:06:07,644 [Andrea]
+factores críticos, que esto cre-creo que
+
+00:06:07,684 --> 00:06:10,224 [Andrea]
+podría servirnos, pero creo que también
+
+00:06:10,304 --> 00:06:13,724 [Andrea]
+sería importante, no sé, eh... A lo mejor
+
+00:06:14,104 --> 00:06:16,564 [Andrea]
+podría representar algo muy costoso o muy
+
+00:06:16,764 --> 00:06:19,623 [Andrea]
+complicado, pero tener a una persona que
+
+00:06:19,644 --> 00:06:22,424 [Andrea]
+validara esto por, por idioma-
+
+00:06:22,464 --> 00:06:22,884 [Gio]
+Mhm.
+
+00:06:22,924 --> 00:06:25,204 [Andrea]
+Únicamente, este, como para-- por ejemplo,
+
+00:06:25,264 --> 00:06:27,124 [Andrea]
+en, en español, a mí no se me ocurre una
+
+00:06:27,184 --> 00:06:32,084 [Andrea]
+palabra como que sea muy, eh, mmm,
+
+00:06:32,104 --> 00:06:34,144 [Andrea]
+penalizada en el lenguaje o en
+
+00:06:34,184 --> 00:06:36,154 [Andrea]
+el slang en español. O sea, sabemos que
+
+00:06:36,184 --> 00:06:38,104 [Andrea]
+hay palabras que suenan feo o que son
+
+00:06:38,144 --> 00:06:41,204 [Andrea]
+groserías, o que son, eh, eh, maldiciones,
+
+00:06:41,264 --> 00:06:42,904 [Andrea]
+pero por ejemplo, este, la
+
+00:06:43,684 --> 00:06:46,384 [Andrea]
+niga, no sé, en, en, en, o sea, no, no, no
+
+00:06:46,424 --> 00:06:48,274 [Andrea]
+encuentro un equivalente, a lo mejor,
+
+00:06:48,324 --> 00:06:51,384 [Andrea]
+este, maricón o cosas así, pero solamente
+
+00:06:51,404 --> 00:06:54,224 [Andrea]
+una persona que habla el español, eh,
+
+00:06:54,524 --> 00:06:57,004 [Andrea]
+latino, pues podría de-decirte: "Ah, pues,
+
+00:06:57,044 --> 00:06:58,884 [Andrea]
+¿sabes qué? Están estas palabras, que no,
+
+00:06:58,924 --> 00:07:01,103 [Andrea]
+no las uses". O sea, como que tener esa-
+
+00:07:01,124 --> 00:07:01,244 [Gio]
+Mhm.
+
+00:07:01,264 --> 00:07:04,224 [Andrea]
+auditoría por una persona que nos ayude a,
+
+00:07:04,304 --> 00:07:07,604 [Andrea]
+a, a evaluar si realmente esto es
+
+00:07:08,224 --> 00:07:09,644 [Andrea]
+verídico. Por ejemplo, dice que en
+
+00:07:09,724 --> 00:07:12,124 [Andrea]
+portugués, esta palabra, que se utiliza
+
+00:07:12,184 --> 00:07:14,394 [Andrea]
+mucho, sobre todo en canciones y en,
+
+00:07:14,404 --> 00:07:16,704 [Andrea]
+bueno, letras de canciones, que puede ser
+
+00:07:16,744 --> 00:07:18,924 [Andrea]
+así como, como riesgoso, sobre todo
+
+00:07:18,984 --> 00:07:22,104 [Andrea]
+refiriéndose a menores. O sea, co-- son
+
+00:07:22,124 --> 00:07:24,124 [Andrea]
+pocas las que se encontraron así como
+
+00:07:24,184 --> 00:07:26,784 [Andrea]
+críticas por idioma, pero acá está un
+
+00:07:26,794 --> 00:07:28,484 [Andrea]
+listado mucho más extenso. Esto es como
+
+00:07:28,544 --> 00:07:30,564 [Andrea]
+que solamente temas con los que no, mejor
+
+00:07:30,584 --> 00:07:33,004 [Andrea]
+no meterse en cada uno de los, de los
+
+00:07:33,064 --> 00:07:33,744 [Andrea]
+idiomas.
+
+00:07:33,764 --> 00:07:36,824 [Daniel]
+Pero a ver, ¿tú estás a-abordando un
+
+00:07:36,864 --> 00:07:38,704 [Daniel]
+enfoque en el que se adapta
+
+00:07:40,324 --> 00:07:43,014 [Daniel]
+el guion para estandarizarlo a lo largo de
+
+00:07:43,024 --> 00:07:44,384 [Daniel]
+todos los idiomas?
+
+00:07:45,724 --> 00:07:46,494 [Daniel]
+Esa es mi duda.
+
+00:07:47,724 --> 00:07:49,884 [Andrea]
+Pues considerando solamente los factores
+
+00:07:49,924 --> 00:07:52,404 [Andrea]
+de riesgo en los idiomas más importantes,
+
+00:07:52,424 --> 00:07:53,914 [Andrea]
+porque yo pienso que también encontrar
+
+00:07:53,964 --> 00:07:56,524 [Andrea]
+algo que universalmente no ofenda, bueno,
+
+00:07:56,564 --> 00:07:58,454 [Andrea]
+no se, sea... Es que están los dos
+
+00:07:58,504 --> 00:08:00,664 [Andrea]
+factores, ¿no? Uno, no ofender,
+
+00:08:01,424 --> 00:08:02,764 [Andrea]
+no caer en, en, en
+
+00:08:03,784 --> 00:08:05,944 [Andrea]
+romper alguna de estas, eh, lineamientos,
+
+00:08:05,984 --> 00:08:07,504 [Andrea]
+y la otra, la satisfacción de la
+
+00:08:07,544 --> 00:08:08,384 [Andrea]
+audiencia.
+
+00:08:08,464 --> 00:08:10,824 [Daniel]
+Sí, que creo que el enfoque es primero de
+
+00:08:10,864 --> 00:08:12,424 [Daniel]
+la audiencia. Bueno, si quieres saberte te
+
+00:08:12,464 --> 00:08:13,364 [Daniel]
+lo muy rápido, luego nos-
+
+00:08:13,383 --> 00:08:15,264 [Andrea]
+Bueno, sí, sí, lo bueno, que lo veo.
+
+00:08:15,284 --> 00:08:17,704 [Daniel]
+Perdón, para, para luego regresarnos-
+
+00:08:17,724 --> 00:08:17,733 [Andrea]
+Mhm.
+
+00:08:17,733 --> 00:08:19,744 [Daniel]
+Porque creo que hay un detalle ahí, eh,
+
+00:08:19,804 --> 00:08:21,744 [Daniel]
+al, a lo específico dentro de cada uno de
+
+00:08:21,784 --> 00:08:23,744 [Daniel]
+los puntos, ¿okey?
+
+00:08:23,764 --> 00:08:26,354 [Andrea]
+Mhm. Bueno, entonces, estos puntos de--
+
+00:08:26,384 --> 00:08:28,304 [Andrea]
+obviamente, les digo, la revisión con, de
+
+00:08:28,344 --> 00:08:30,384 [Andrea]
+regionalismos, tecnicismos, eufemismos,
+
+00:08:30,424 --> 00:08:32,624 [Andrea]
+todo esto con un auditor nativo nos
+
+00:08:32,684 --> 00:08:35,364 [Andrea]
+ayudaría mucho, solamente para tener un
+
+00:08:35,384 --> 00:08:37,384 [Andrea]
+panorama y poder estructurar esa
+
+00:08:37,524 --> 00:08:41,344 [Andrea]
+blacklist. Eh, le metí aquí los,
+
+00:08:42,404 --> 00:08:45,204 [Andrea]
+eh... cuatro, y tenemos cuatro historias,
+
+00:08:45,244 --> 00:08:46,884 [Andrea]
+bueno, cuatro guiones con monetización
+
+00:08:46,904 --> 00:08:47,604 [Andrea]
+limitada.
+
+00:08:48,404 --> 00:08:50,584 [Andrea]
+Entonces, los metí para identificar
+
+00:08:50,684 --> 00:08:53,484 [Andrea]
+expresiones, frases que podrían haber sido
+
+00:08:53,524 --> 00:08:56,344 [Andrea]
+la causa, y aquí me los desglosó. Es una
+
+00:08:56,404 --> 00:08:59,784 [Andrea]
+lista muy larga, la verdad, pero... aquí
+
+00:08:59,864 --> 00:09:02,184 [Andrea]
+puse, eh, bueno, es que la, una de las
+
+00:09:02,224 --> 00:09:04,024 [Andrea]
+tareas que nos, que nos diste era las
+
+00:09:04,084 --> 00:09:05,584 [Andrea]
+expresiones o modismos que no están bien
+
+00:09:05,624 --> 00:09:08,164 [Andrea]
+traducidos. Pero como el, el campo es muy
+
+00:09:08,264 --> 00:09:11,124 [Andrea]
+amplio, elegí de esos cuatro guiones, de
+
+00:09:11,144 --> 00:09:12,184 [Andrea]
+las cuatro, de los cuatro guiones que
+
+00:09:12,224 --> 00:09:12,464 [Andrea]
+están,
+
+00:09:13,184 --> 00:09:15,764 [Andrea]
+eh, desmonetizados, bueno, que tienen el,
+
+00:09:15,844 --> 00:09:18,304 [Andrea]
+la monetización limitada, y esas fueron
+
+00:09:18,364 --> 00:09:21,644 [Andrea]
+las diez que nos dio. Eh, pero sí, siento
+
+00:09:21,704 --> 00:09:23,934 [Andrea]
+que son cosas que, pues están muy--
+
+00:09:24,184 --> 00:09:26,184 [Andrea]
+tendrían que estar muy sacadas de contexto
+
+00:09:26,224 --> 00:09:28,173 [Andrea]
+y otras que sí son muy obvias, que desde
+
+00:09:28,184 --> 00:09:29,494 [Andrea]
+el guion en español
+
+00:09:30,124 --> 00:09:32,284 [Andrea]
+estuvo mal el, el uso de ese término. Por
+
+00:09:32,304 --> 00:09:33,824 [Andrea]
+ejemplo, creo que hay una que parece
+
+00:09:33,944 --> 00:09:35,934 [Andrea]
+prostituta [risas] en una historia.
+
+00:09:35,984 --> 00:09:37,744 [Andrea]
+Obviamente, pues eso, desde ahí, desde
+
+00:09:37,764 --> 00:09:38,364 [Andrea]
+español-
+
+00:09:38,404 --> 00:09:38,844 [Gio]
+Mhm.
+
+00:09:38,854 --> 00:09:40,513 [Andrea]
+pues ya estamos metiendo en un terreno,
+
+00:09:40,564 --> 00:09:41,704 [Andrea]
+eh, complicado-
+
+00:09:41,724 --> 00:09:41,733 [Gio]
+Claro.
+
+00:09:41,744 --> 00:09:44,144 [Andrea]
+en cualquier idioma. Hay otras que no,
+
+00:09:44,204 --> 00:09:45,704 [Andrea]
+como por ejemplo, este, señor es con
+
+00:09:45,744 --> 00:09:48,784 [Andrea]
+vestida, porque para algunos, eh, para
+
+00:09:48,804 --> 00:09:50,964 [Andrea]
+algunos idiomas podría ser como una
+
+00:09:51,004 --> 00:09:53,944 [Andrea]
+ofensa. Eh, todo esto, vete al infierno,
+
+00:09:53,984 --> 00:09:56,044 [Andrea]
+pecadora, eh, pues todos los temas
+
+00:09:56,084 --> 00:09:58,704 [Andrea]
+religiosos, sobre todo en árabe, eh, pues
+
+00:09:58,744 --> 00:10:02,424 [Andrea]
+sí, lo saca de contexto. Entonces, eh,
+
+00:10:02,444 --> 00:10:04,244 [Andrea]
+pues sí, estas serían diez expresiones,
+
+00:10:04,264 --> 00:10:06,354 [Andrea]
+no, no palabras, sino expresiones que,
+
+00:10:07,104 --> 00:10:09,774 [Andrea]
+eh, no se traducen bien o que no nos están
+
+00:10:09,804 --> 00:10:11,604 [Andrea]
+dando esa satisfacción de la audiencia
+
+00:10:11,644 --> 00:10:16,614 [Andrea]
+que estaríamos buscando. Luego, acá, eh...
+
+00:10:16,644 --> 00:10:18,464 [Andrea]
+fue muy general, pero es
+
+00:10:18,504 --> 00:10:20,803 [Andrea]
+una como blacklist pro-provisional por
+
+00:10:20,863 --> 00:10:22,104 [Andrea]
+idioma en español,
+
+00:10:22,784 --> 00:10:25,784 [Andrea]
+no basándonos en los guiones, sino en la
+
+00:10:25,844 --> 00:10:28,704 [Andrea]
+idea general de qué palabras son muy como-
+
+00:10:28,724 --> 00:10:29,104 [Gio]
+Mmm.
+
+00:10:29,144 --> 00:10:32,544 [Andrea]
+ofensivas en cada idioma. Este español
+
+00:10:32,724 --> 00:10:35,464 [Andrea]
+nada más, este, lo hice basándome en los
+
+00:10:35,504 --> 00:10:37,124 [Andrea]
+ocho principales idiomas,
+
+00:10:38,264 --> 00:10:41,824 [Andrea]
+eh, que nos dan rendimiento, no en todos,
+
+00:10:41,864 --> 00:10:44,284 [Andrea]
+pero sí necesitaría tener la validación
+
+00:10:44,324 --> 00:10:47,074 [Andrea]
+de, de algún nativo para que nos dijera:
+
+00:10:47,074 --> 00:10:49,784 [Andrea]
+"Pues sí, o se puede estar, este, se les
+
+00:10:49,844 --> 00:10:53,184 [Andrea]
+puede estar pasando esta que no es grave".
+
+00:10:54,564 --> 00:10:56,464 [Andrea]
+Y luego acá, más puse-- ah, esta es la Li,
+
+00:10:56,504 --> 00:10:57,784 [Andrea]
+la lista completa
+
+00:10:58,604 --> 00:10:59,074 [Andrea]
+de los
+
+00:11:00,104 --> 00:11:00,114 [Andrea]
+...
+
+00:11:02,164 --> 00:11:03,314 [Andrea]
+Estos son los cuatro guiones-
+
+00:11:03,384 --> 00:11:03,394 [Gio]
+Okey.
+
+00:11:03,394 --> 00:11:06,724 [Andrea]
+que fueron los que están en la situación.
+
+00:11:08,484 --> 00:11:09,804 [Andrea]
+Estas cuatro historias tienen la
+
+00:11:09,884 --> 00:11:13,884 [Andrea]
+monetización limitada en el canal.
+
+00:11:16,524 --> 00:11:18,124 [Andrea]
+Y luego yo trabajo en una especie de
+
+00:11:18,164 --> 00:11:19,584 [Andrea]
+semáforo, ¿verdad?
+
+00:11:19,624 --> 00:11:25,444 [Gio]
+Sí, pero no, no lo veo tan, que, que, que
+
+00:11:25,504 --> 00:11:28,064 [Gio]
+valga. [risas] ¿Qué
+
+00:11:28,824 --> 00:11:31,104 [Gio]
+es lo que quiere decir, David? Okey.
+
+00:11:31,264 --> 00:11:33,564 [Daniel]
+Sí, de, de lo que les envié, ¿qué, qué les
+
+00:11:33,624 --> 00:11:36,464 [Daniel]
+servía? De lo que les enviaba, de las,
+
+00:11:37,184 --> 00:11:37,504 [Daniel]
+de
+
+00:11:38,404 --> 00:11:41,524 [Daniel]
+el... Bueno, no sé si lo contextualicé.
+
+00:11:41,584 --> 00:11:43,524 [Daniel]
+Eso va en base a los levantamientos
+
+00:11:44,524 --> 00:11:47,164 [Daniel]
+y al proyecto y lo que se detecta, casi
+
+00:11:47,204 --> 00:11:49,264 [Daniel]
+todo por, no, casi todo por IA, ¿no? Entre
+
+00:11:49,284 --> 00:11:52,044 [Daniel]
+rebotes que hemos hecho. Pero ¿les había
+
+00:11:52,084 --> 00:11:53,424 [Daniel]
+enviado algo, no?
+
+00:11:53,434 --> 00:11:55,724 [Gio]
+¿Lo de las presentaciones?
+
+00:11:55,784 --> 00:11:57,084 [Daniel]
+Aparte de la presentación, ¿les envié
+
+00:11:57,094 --> 00:11:59,124 [Daniel]
+algo? No. Sí, ¿no?
+
+00:11:59,384 --> 00:12:01,404 [Gio]
+No, me enviaste la presentación y creo que
+
+00:12:01,564 --> 00:12:02,784 [Gio]
+subieron lo de,
+
+00:12:03,584 --> 00:12:04,074 [Gio]
+lo deee
+
+00:12:04,884 --> 00:12:07,364 [Gio]
+Tania y Ceci, ¿no? Pero no, no vi que
+
+00:12:07,404 --> 00:12:08,504 [Gio]
+subiera su otra cosa.
+
+00:12:08,524 --> 00:12:09,964 [Daniel]
+Ah, caray, cómo que Tania y Ceci.
+
+00:12:10,004 --> 00:12:11,104 [Gio]
+Sí, de ellos.
+
+00:12:11,114 --> 00:12:11,854 [Andrea]
+La explicación.
+
+00:12:11,864 --> 00:12:12,844 [Gio]
+Mhm.
+
+00:12:13,220 --> 00:12:14,560 [Daniel]
+... Pero ¿no les puse algo más aparte de
+
+00:12:14,580 --> 00:12:16,060 [Daniel]
+la presentación?
+
+00:12:17,900 --> 00:12:20,200 [Daniel]
+Les puse un punto MD. ¿Lo leyeron?
+
+00:12:22,200 --> 00:12:22,620 [Daniel]
+No.
+
+00:12:22,700 --> 00:12:24,490 [Andrea]
+Yo no, yo no, yo, o sea, los que mandaste,
+
+00:12:24,520 --> 00:12:26,170 [Andrea]
+que era uno para Alan, uno para Ramón,
+
+00:12:26,200 --> 00:12:28,080 [Andrea]
+uno para mí, sí, bueno, yo le pedí a la IA
+
+00:12:28,100 --> 00:12:29,580 [Andrea]
+que me lo interpretara, porque no conozco
+
+00:12:29,640 --> 00:12:33,460 [Andrea]
+mucho las redes. Pero-
+
+00:12:34,180 --> 00:12:35,780 [Daniel]
+¿Qué te llevas de ahí? ¿Qué, qué sí sirve
+
+00:12:35,860 --> 00:12:37,260 [Daniel]
+y qué no?
+
+00:12:37,380 --> 00:12:37,830 [Andrea]
+Eh...
+
+00:12:37,840 --> 00:12:39,400 [Daniel]
+De las ideas.
+
+00:12:40,700 --> 00:12:42,050 [Daniel]
+Porque eso también me va a complementar a
+
+00:12:42,080 --> 00:12:42,780 [Daniel]
+mí.
+
+00:12:45,060 --> 00:12:46,560 [Andrea]
+Decía, por ejemplo, que quién tomaba la
+
+00:12:46,580 --> 00:12:49,080 [Andrea]
+decisión final de, de
+
+00:12:50,500 --> 00:12:51,540 [Andrea]
+la legibilidad.
+
+00:12:52,140 --> 00:12:54,340 [Andrea]
+Pues eso yo creo que soy yo, por eso creo
+
+00:12:54,380 --> 00:12:56,860 [Andrea]
+que debe de haber dos puertas, como dos
+
+00:12:56,960 --> 00:13:00,260 [Andrea]
+filtros. Lo que no entendería es dónde,
+
+00:13:00,280 --> 00:13:03,680 [Andrea]
+por ejemplo, esta blacklist entraría,
+
+00:13:03,720 --> 00:13:05,200 [Andrea]
+porque nos habías dicho de que había un
+
+00:13:05,240 --> 00:13:07,090 [Andrea]
+código, que se estaba trabajando en una
+
+00:13:07,140 --> 00:13:10,360 [Andrea]
+especie de código.
+
+00:13:10,380 --> 00:13:10,870 [Daniel]
+Mhm, mhm.
+
+00:13:10,880 --> 00:13:13,240 [Andrea]
+Ahí sería ingresar como
+
+00:13:13,940 --> 00:13:15,669 [Andrea]
+esta lista para que se procesara el
+
+00:13:15,740 --> 00:13:18,160 [Andrea]
+lenguaje natural y desde Eleven Labs se
+
+00:13:18,220 --> 00:13:20,700 [Andrea]
+bloquearan las palabras, o sería desde el
+
+00:13:20,800 --> 00:13:22,580 [Andrea]
+guion tener una especie de mecanismo que
+
+00:13:22,660 --> 00:13:23,560 [Andrea]
+las bloqueara.
+
+00:13:23,600 --> 00:13:26,160 [Daniel]
+Mira, fuera de la solución, desde lo
+
+00:13:26,320 --> 00:13:28,960 [Daniel]
+técnico hasta lo micro, que, que se van
+
+00:13:28,980 --> 00:13:29,860 [Daniel]
+llevando por áreas
+
+00:13:31,540 --> 00:13:33,030 [Daniel]
+de lo que les iba mandando, porque a mí me
+
+00:13:33,080 --> 00:13:36,560 [Daniel]
+nutre, ¿no? Y, y, y mi, mi solicitud
+
+00:13:36,620 --> 00:13:38,720 [Daniel]
+sería que les facilito yo-
+
+00:13:38,740 --> 00:13:39,040 [Andrea]
+Mhm.
+
+00:13:39,090 --> 00:13:41,000 [Daniel]
+También. Yo me quise llevar a esta
+
+00:13:41,100 --> 00:13:43,820 [Daniel]
+reunión. Yo, yo decía, hay como cuatro o
+
+00:13:43,840 --> 00:13:46,700 [Daniel]
+diez research, ¿no? Que veían. De lo que
+
+00:13:46,720 --> 00:13:48,940 [Daniel]
+les enviaron, ¿qué les sirvió? A nivel
+
+00:13:48,980 --> 00:13:49,560 [Daniel]
+macro.
+
+00:13:49,580 --> 00:13:50,380 [Andrea]
+Mhm.
+
+00:13:50,400 --> 00:13:51,820 [Daniel]
+Para luego pensar en lo micro.
+
+00:13:53,960 --> 00:13:56,720 [Daniel]
+Por ejemplo, ese .md, que no sé si yo te
+
+00:13:56,740 --> 00:13:58,710 [Daniel]
+puedo enseñar, hay, hay viewers, este,
+
+00:13:59,420 --> 00:14:01,520 [Daniel]
+hay como que algunos con los que veas qué
+
+00:14:01,540 --> 00:14:03,980 [Daniel]
+sirve ahí, qué sí tiene sentido, qué no
+
+00:14:04,040 --> 00:14:10,540 [Daniel]
+tiene sentido.
+
+00:14:19,500 --> 00:14:19,880 [Andrea]
+Mhm.
+
+00:14:28,520 --> 00:14:29,840 [Daniel]
+Porque si no, me están poniendo a trabajar
+
+00:14:29,860 --> 00:14:35,590 [Daniel]
+media...
+
+00:14:35,600 --> 00:14:37,980 [Daniel]
+ustedes. Bueno-
+
+00:14:38,320 --> 00:14:39,880 [Andrea]
+Ah, yo, ah, por ejemplo, eso sí, de lo
+
+00:14:39,920 --> 00:14:41,480 [Andrea]
+del-- también estuve monitoreando los
+
+00:14:41,740 --> 00:14:46,100 [Andrea]
+comentarios, eh, y no había quejas de la
+
+00:14:46,120 --> 00:14:48,560 [Andrea]
+audiencia en-- bueno, no hay muchos
+
+00:14:48,600 --> 00:14:49,970 [Andrea]
+comentarios, que sabemos que también es
+
+00:14:50,020 --> 00:14:50,600 [Andrea]
+un, es un
+
+00:14:52,340 --> 00:14:54,760 [Andrea]
+camino muy corto ponernos a recorrer los,
+
+00:14:54,800 --> 00:14:56,540 [Andrea]
+los comentarios sobre-
+
+00:14:56,940 --> 00:14:56,950 [Daniel]
+Claro.
+
+00:14:56,950 --> 00:14:59,900 [Andrea]
+La audiencia. Es un volumen chiquito, pero
+
+00:14:59,960 --> 00:15:01,700 [Andrea]
+en los comentarios que encontraba en los
+
+00:15:01,760 --> 00:15:05,069 [Andrea]
+videos, eh, de otro idioma, no eran quejas
+
+00:15:05,180 --> 00:15:05,960 [Andrea]
+sobre la,
+
+00:15:06,960 --> 00:15:09,320 [Andrea]
+sobre el, sobre palabras en específico o
+
+00:15:09,420 --> 00:15:12,840 [Andrea]
+sobre el entendimiento o sobre el contexto
+
+00:15:12,900 --> 00:15:15,080 [Andrea]
+de las historias. Creo que sí ha, sí está
+
+00:15:15,100 --> 00:15:17,800 [Andrea]
+habiendo un, un buen [ruido] rebote de
+
+00:15:17,900 --> 00:15:19,560 [Andrea]
+recepción de los mensajes.
+
+00:15:20,880 --> 00:15:24,240 [Daniel]
+Pero a ver, fuera del tamico.
+
+00:15:24,280 --> 00:15:25,460 [Andrea]
+Hasta el punto.
+
+00:15:25,500 --> 00:15:27,280 [Daniel]
+Hay, hay uno que es André Gio.
+
+00:15:29,140 --> 00:15:29,510 [Daniel]
+Achis.
+
+00:15:29,720 --> 00:15:31,200 [Andrea]
+Sí, es el de atrás.
+
+00:15:31,700 --> 00:15:32,360 [Daniel]
+¿Ese es él?
+
+00:15:34,380 --> 00:15:36,110 [Andrea]
+Mhm, las black-
+
+00:15:36,260 --> 00:15:40,000 [Daniel]
+Tengo ciento noventa y un líneas, en ese.
+
+00:15:40,020 --> 00:15:42,000 [Andrea]
+Mmm.
+
+00:15:47,460 --> 00:15:49,580 [Daniel]
+Si puedes ponerle control A, a borrar,
+
+00:15:49,720 --> 00:15:52,620 [Daniel]
+porque tú tienes doscientas líneas más. No
+
+00:15:52,680 --> 00:15:54,310 [Daniel]
+s-, no sé de dónde.
+
+00:15:56,060 --> 00:15:59,700 [Daniel]
+No, seleccionas el texto, copiar y pegar.
+
+00:16:03,940 --> 00:16:04,360 [Daniel]
+Control A,
+
+00:16:06,220 --> 00:16:08,280 [Daniel]
+control V.
+
+00:16:09,780 --> 00:16:10,870 [Daniel]
+Esto no es pregunta.
+
+00:16:15,400 --> 00:16:24,560 [Andrea]
+Ah,
+
+00:16:24,620 --> 00:16:26,860 [Andrea]
+de eso, eso. Yo creo que a, a nosotros
+
+00:16:26,920 --> 00:16:27,750 [Andrea]
+nos serviría mucho
+
+00:16:28,380 --> 00:16:30,800 [Andrea]
+validar con un nativo de cada uno de los
+
+00:16:30,860 --> 00:16:32,800 [Andrea]
+idiomas que más nos interesa o que más
+
+00:16:32,820 --> 00:16:36,960 [Andrea]
+están teniendo, eh, recepción, más fuerza
+
+00:16:37,000 --> 00:16:39,700 [Andrea]
+tiene en las pistas, que nos, que nos
+
+00:16:39,780 --> 00:16:42,120 [Andrea]
+ayuden a validar, eh,
+
+00:16:44,360 --> 00:16:46,560 [Andrea]
+si toda esta información es real, qué
+
+00:16:46,620 --> 00:16:48,780 [Andrea]
+palabras podríamos o qué expresiones
+
+00:16:48,840 --> 00:16:49,619 [Andrea]
+podríamos, como
+
+00:16:50,360 --> 00:16:52,320 [Andrea]
+desde el guion en español, tratar de
+
+00:16:52,330 --> 00:16:56,780 [Andrea]
+modificar. Ehm, en los comentarios no
+
+00:16:56,800 --> 00:17:00,130 [Andrea]
+encuentro información como muy... no, no
+
+00:17:00,300 --> 00:17:03,600 [Andrea]
+encuentro como que no haya satisfacción,
+
+00:17:03,640 --> 00:17:05,760 [Andrea]
+no encuentro quejas de la audiencia por
+
+00:17:05,800 --> 00:17:08,520 [Andrea]
+contenido inapropiado. Te digo, los, los
+
+00:17:08,580 --> 00:17:11,300 [Andrea]
+guiones que metí a revisión para ver si de
+
+00:17:11,360 --> 00:17:13,820 [Andrea]
+ahí podría haber algo ofensivo para otra
+
+00:17:13,860 --> 00:17:17,180 [Andrea]
+de las pistas, eh, pues sí, habían algunos
+
+00:17:17,240 --> 00:17:18,710 [Andrea]
+elementos, pero también en español.
+
+00:17:18,760 --> 00:17:21,740 [Andrea]
+Entonces, no creo que la limitación de la
+
+00:17:21,760 --> 00:17:23,540 [Andrea]
+monetización de esos videos sea a
+
+00:17:23,620 --> 00:17:26,240 [Andrea]
+consecuencia de, de quejas en otros
+
+00:17:26,260 --> 00:17:28,080 [Andrea]
+países, más bien desde la base, en
+
+00:17:28,120 --> 00:17:34,070 [Andrea]
+español, eh, tener cuidados, ehm...
+
+00:17:34,080 --> 00:17:35,020 [Daniel]
+Pero, por ejemplo, esto es de
+
+00:17:35,080 --> 00:17:37,950 [Daniel]
+juego en, en la lista a nivel general,
+
+00:17:38,220 --> 00:17:38,230 [Daniel]
+este.
+
+00:17:38,260 --> 00:17:41,380 [Andrea]
+Está muy difícil, está muy difícil dar,
+
+00:17:41,420 --> 00:17:43,760 [Andrea]
+darle gusto a, a toda la audiencia de
+
+00:17:43,820 --> 00:17:47,480 [Andrea]
+todos los países, pero, eh, creo que
+
+00:17:47,540 --> 00:17:48,120 [Andrea]
+podríamos
+
+00:17:48,720 --> 00:17:51,660 [Andrea]
+tomar puntos de referencia como divididos.
+
+00:17:51,680 --> 00:17:54,160 [Andrea]
+Por eso yo pensaba en trabajar un lexicon
+
+00:17:54,180 --> 00:17:55,740 [Andrea]
+por cada uno de las guidelines
+
+00:17:56,520 --> 00:17:58,740 [Andrea]
+y luego bajarlo a cada uno de los países,
+
+00:17:58,760 --> 00:18:01,180 [Andrea]
+de los idiomas, pero no considerarlo mejor
+
+00:18:01,260 --> 00:18:02,540 [Andrea]
+todos, porque creo que, por ejemplo, en
+
+00:18:02,600 --> 00:18:05,320 [Andrea]
+tamil no tenemos todavía ningún rebote,
+
+00:18:05,340 --> 00:18:06,500 [Andrea]
+¿no?
+
+00:18:06,540 --> 00:18:07,940 [Daniel]
+Mira, creo que tenemos que cambiar
+
+00:18:08,000 --> 00:18:11,800 [Daniel]
+completamente el enfoque. Uno, porque
+
+00:18:11,820 --> 00:18:14,820 [Daniel]
+está, se, se estarían sobrecomplicando, al
+
+00:18:14,840 --> 00:18:17,740 [Daniel]
+menos de parte de ella misma, este, cómo
+
+00:18:17,800 --> 00:18:19,988 [Daniel]
+se aborda.... Uno, pues la definición de
+
+00:18:20,028 --> 00:18:20,208 [Daniel]
+los
+
+00:18:20,828 --> 00:18:22,928 [Daniel]
+también, ¿no? Es un mecánico, pero también
+
+00:18:22,968 --> 00:18:24,728 [Daniel]
+no lo vamos a hablar en este momento. Se
+
+00:18:24,768 --> 00:18:26,868 [Daniel]
+tendrá que español e inglés,
+
+00:18:26,908 --> 00:18:28,148 [Daniel]
+definitivamente sí.
+
+00:18:29,048 --> 00:18:31,648 [Daniel]
+Tiene que tener un tratamiento.
+
+00:18:31,668 --> 00:18:34,748 [Daniel]
+[carraspeo] Ruso, portugués y no me
+
+00:18:34,758 --> 00:18:37,048 [Daniel]
+acuerdo cuál otro era, alemán y francés,
+
+00:18:37,068 --> 00:18:39,168 [Daniel]
+por decir así, o italiano,
+
+00:18:39,788 --> 00:18:40,708 [Daniel]
+con una prioridad dos
+
+00:18:41,748 --> 00:18:46,188 [Daniel]
+o tres, o uno, no sé. Pero parte de se
+
+00:18:46,268 --> 00:18:48,238 [Daniel]
+requiere, así de manera muy estructurada,
+
+00:18:48,268 --> 00:18:48,928 [Daniel]
+hematomic,
+
+00:18:49,608 --> 00:18:51,188 [Daniel]
+se requiere una blacklist o no se
+
+00:18:51,268 --> 00:18:54,048 [Daniel]
+requiere, se requiere, este, algún tema
+
+00:18:54,088 --> 00:18:56,928 [Daniel]
+para bono cultural, no se requiere. De lo
+
+00:18:56,988 --> 00:18:59,728 [Daniel]
+mío nos queda una pregunta que facilita el
+
+00:18:59,768 --> 00:19:06,408 [Daniel]
+organismo a Alan, a Ramón. Este, ah,
+
+00:19:06,428 --> 00:19:06,668 [Daniel]
+porque eso
+
+00:19:06,688 --> 00:19:08,588 [Daniel]
+es lo que me quise llevar, porque yo de mi
+
+00:19:08,648 --> 00:19:10,808 [Daniel]
+parte, pues qué, qué voy a facilitar y el
+
+00:19:10,848 --> 00:19:12,488 [Daniel]
+otro no, no que teorizo, sino que voy a
+
+00:19:12,498 --> 00:19:15,638 [Daniel]
+aterrizar también. Este, uno es como el,
+
+00:19:15,668 --> 00:19:18,908 [Daniel]
+el que teorizo, que está bien, eh, pero
+
+00:19:18,968 --> 00:19:22,628 [Daniel]
+que, que aterrizo. Yo no creo, y eso
+
+00:19:22,688 --> 00:19:24,278 [Daniel]
+ya entra en el tema técnico, que ustedes
+
+00:19:24,388 --> 00:19:27,408 [Daniel]
+puedan-- sí está bien el que decimos vamos
+
+00:19:27,448 --> 00:19:29,368 [Daniel]
+a definir como un objetivo smart,
+
+00:19:29,388 --> 00:19:33,028 [Daniel]
+conseguir un validador, este, nativo, pero
+
+00:19:33,048 --> 00:19:35,688 [Daniel]
+¿para qué? Todavía no tenemos el qué
+
+00:19:35,728 --> 00:19:36,688 [Daniel]
+exactamente.
+
+00:19:36,728 --> 00:19:38,788 [Andrea]
+Para la blacklist, ¿no? No para los
+
+00:19:38,828 --> 00:19:39,428 [Andrea]
+guiones.
+
+00:19:39,488 --> 00:19:41,768 [Daniel]
+Será nada más la blacklist, el tema
+
+00:19:41,848 --> 00:19:43,168 [Daniel]
+cultural.
+
+00:19:43,908 --> 00:19:47,068 [Daniel]
+O sea, yo, yo un porque cultural decía,
+
+00:19:47,088 --> 00:19:50,028 [Daniel]
+les pasaba una documentación. Yo no estoy
+
+00:19:50,048 --> 00:19:51,298 [Daniel]
+casado con eso, pero creo que es
+
+00:19:51,328 --> 00:19:52,008 [Daniel]
+importante
+
+00:19:52,948 --> 00:19:56,398 [Daniel]
+que sean para los méritos, ¿no? Si es, eh,
+
+00:19:56,488 --> 00:19:58,748 [Daniel]
+si la audiencia en Estados Unidos no es
+
+00:19:58,788 --> 00:20:01,188 [Daniel]
+latino, pues tiene que con tono latino,
+
+00:20:01,198 --> 00:20:05,368 [Daniel]
+¿no? Eh, o, o más, no sé, no sé si pocho
+
+00:20:05,548 --> 00:20:08,908 [Daniel]
+o qué. Este,
+
+00:20:10,188 --> 00:20:11,868 [Daniel]
+pero pues es la definición de qué vamos a
+
+00:20:11,928 --> 00:20:14,288 [Daniel]
+atacar. Eh, ¿va a haber una lista negra o
+
+00:20:14,308 --> 00:20:17,228 [Daniel]
+no va a haber? Y luego, probablemente, se
+
+00:20:17,288 --> 00:20:19,208 [Daniel]
+canaliza o no se generaliza esa lista
+
+00:20:19,268 --> 00:20:22,308 [Daniel]
+negra. Este, ¿de dónde va a salir? Ahí sí
+
+00:20:22,348 --> 00:20:23,888 [Daniel]
+ya definimos, necesitamos un traductor
+
+00:20:23,948 --> 00:20:26,168 [Daniel]
+para tal cosa. Si no lo necesitamos, pues
+
+00:20:26,208 --> 00:20:27,748 [Daniel]
+no necesitamos un traductor para lo
+
+00:20:27,788 --> 00:20:30,328 [Daniel]
+cultural. ¿Hay otro pilar que se tendría
+
+00:20:30,368 --> 00:20:32,068 [Daniel]
+que atacar o no?
+
+00:20:32,088 --> 00:20:35,568 [Andrea]
+Pues el de la selección de temas. Eso ya
+
+00:20:35,648 --> 00:20:37,288 [Andrea]
+en cuanto a la satisfacción de la
+
+00:20:37,348 --> 00:20:38,308 [Andrea]
+audiencia-
+
+00:20:38,408 --> 00:20:38,668 [Daniel]
+Sí.
+
+00:20:38,748 --> 00:20:40,368 [Andrea]
+Eh, la,
+
+00:20:41,268 --> 00:20:42,588 [Andrea]
+los rasgos culturales
+
+00:20:43,268 --> 00:20:44,808 [Andrea]
+que tomar en cuenta, como por ejemplo,
+
+00:20:44,848 --> 00:20:47,528 [Andrea]
+cuando empezamos con Dark Story, empezamos
+
+00:20:47,568 --> 00:20:49,608 [Andrea]
+a descartar temas que fueran muy
+
+00:20:49,888 --> 00:20:52,448 [Andrea]
+tropicalizados o que incluyeran cosas que
+
+00:20:52,548 --> 00:20:54,748 [Andrea]
+podrían ser ofensivas, como todos los
+
+00:20:54,788 --> 00:20:56,138 [Andrea]
+temas de los cholos, ¿te acuerdas? Esos
+
+00:20:56,288 --> 00:20:58,548 [Andrea]
+temas ya los descartábamos, porque ahí
+
+00:20:58,608 --> 00:21:00,337 [Andrea]
+entrábamos en ese conflicto de decir: ah,
+
+00:21:00,348 --> 00:21:01,828 [Andrea]
+ok, pero si le estamos tirando a una
+
+00:21:01,848 --> 00:21:03,648 [Andrea]
+audiencia más amplia, a lo mejor este tipo
+
+00:21:03,688 --> 00:21:05,828 [Andrea]
+de ilusiones o pueden ser ofensivos, o
+
+00:21:05,948 --> 00:21:07,528 [Andrea]
+pueden no ser de interés, o pueden no
+
+00:21:07,608 --> 00:21:09,818 [Andrea]
+tener identificación con estos temas.
+
+00:21:09,828 --> 00:21:11,448 [Andrea]
+Entonces vamos a buscar historias más
+
+00:21:11,588 --> 00:21:15,928 [Andrea]
+globales. A lo mejor podría ser ahí.
+
+00:21:15,988 --> 00:21:17,518 [Daniel]
+Mmm, pero por ejemplo,
+
+00:21:19,488 --> 00:21:23,548 [Daniel]
+diría en este momento, definamos nada más
+
+00:21:23,648 --> 00:21:24,428 [Daniel]
+español e inglés,
+
+00:21:26,528 --> 00:21:28,608 [Daniel]
+o los seis, o nada más español e inglés,
+
+00:21:29,568 --> 00:21:31,768 [Daniel]
+o por tener una prueba que no conocemos.
+
+00:21:33,048 --> 00:21:35,128 [Daniel]
+No hay que me case, ¿no? Ruso, español,
+
+00:21:35,188 --> 00:21:36,148 [Daniel]
+inglés, ruso.
+
+00:21:36,168 --> 00:21:36,448 [Andrea]
+Mhm.
+
+00:21:36,688 --> 00:21:39,308 [Daniel]
+Que en ruso ya perdimos como que esta
+
+00:21:39,348 --> 00:21:39,788 [Daniel]
+noción
+
+00:21:40,588 --> 00:21:42,668 [Daniel]
+o tangibilidad de si está bien o mal
+
+00:21:43,548 --> 00:21:45,708 [Daniel]
+traducido.
+
+00:21:47,628 --> 00:21:48,188 [Daniel]
+El ruso
+
+00:21:48,888 --> 00:21:49,278 [Daniel]
+creo que,
+
+00:21:51,308 --> 00:21:52,988 [Daniel]
+al menos para cubrir el grueso, que es el
+
+00:21:52,998 --> 00:21:55,288 [Daniel]
+español e inglés, pues está bien, ahí se
+
+00:21:55,328 --> 00:21:58,108 [Daniel]
+tiene que pensar muy bien la,
+
+00:21:59,388 --> 00:22:01,928 [Daniel]
+la satisfacción, al menos para eso, ¿no?
+
+00:22:02,008 --> 00:22:05,108 [Daniel]
+Si en el ochenta por ciento que resta no
+
+00:22:05,268 --> 00:22:06,748 [Daniel]
+trae satisfacción, pues puede ser que ni
+
+00:22:06,768 --> 00:22:09,568 [Daniel]
+se traduce, [carraspeo] porque, pues si
+
+00:22:09,668 --> 00:22:10,888 [Daniel]
+trae muy buena satisfacción para los
+
+00:22:10,948 --> 00:22:14,368 [Daniel]
+primeros dos, pues ya vale la pena este...
+
+00:22:16,688 --> 00:22:18,748 [Daniel]
+No voy a descartar porque a alguien en
+
+00:22:18,808 --> 00:22:20,708 [Daniel]
+India no le gusta y es un cinco por
+
+00:22:20,768 --> 00:22:22,828 [Daniel]
+ciento, un tres por ciento. Hasta los
+
+00:22:22,908 --> 00:22:25,588 [Daniel]
+ignoraría, preferible mejor ni publicarlos
+
+00:22:25,648 --> 00:22:29,148 [Daniel]
+o nada más comercial. O si no hay
+
+00:22:29,158 --> 00:22:30,728 [Daniel]
+satisfacción, pues mejor si no lo
+
+00:22:30,748 --> 00:22:31,888 [Daniel]
+publicamos.
+
+00:22:33,248 --> 00:22:34,828 [Daniel]
+Pero mi enfoque en selección sería sobre
+
+00:22:34,867 --> 00:22:37,807 [Daniel]
+el grueso. Vamos, un ochenta, veinte,
+
+00:22:37,888 --> 00:22:39,468 [Daniel]
+este, pensando que el veinte
+
+00:22:40,307 --> 00:22:42,388 [Daniel]
+es estos-- o sea, el ochenta que les trae
+
+00:22:42,408 --> 00:22:45,408 [Daniel]
+el, el ingreso, pues serán los idiomas,
+
+00:22:47,268 --> 00:22:50,108 [Daniel]
+español, inglés, y de ahí defino mi set de
+
+00:22:50,128 --> 00:22:54,068 [Daniel]
+reglas. Pueden meterle ruso como parte de
+
+00:22:54,088 --> 00:22:56,368 [Daniel]
+lo de multiidioma, que es donde estamos
+
+00:22:56,388 --> 00:23:01,048 [Daniel]
+perdiendo o donde experimento.
+
+00:23:02,188 --> 00:23:04,848 [Daniel]
+Y yo ya la selección me baso en eso, no
+
+00:23:04,868 --> 00:23:05,648 [Daniel]
+veo problema.
+
+00:23:07,588 --> 00:23:10,368 [Daniel]
+¿Qué, qué pasa ahí? ¿Qué, qué requieres tú
+
+00:23:10,648 --> 00:23:13,288 [Daniel]
+establecer? Yo no me iría todavía a la
+
+00:23:13,348 --> 00:23:15,748 [Daniel]
+solución de la blacklist. Decir: ah, no,
+
+00:23:15,788 --> 00:23:17,668 [Daniel]
+yo me metí al tema, está bien como
+
+00:23:17,948 --> 00:23:20,128 [Daniel]
+exploración,
+
+00:23:21,268 --> 00:23:23,428 [Daniel]
+pero sería, se mete un blacklist o no se
+
+00:23:23,468 --> 00:23:26,508 [Daniel]
+mete, porque se va a hacer parte con, eh,
+
+00:23:26,528 --> 00:23:27,918 [Daniel]
+de los insumos que tienen que ponerse de
+
+00:23:27,918 --> 00:23:30,568 [Daniel]
+acuerdo y nos dicen de, de Alan y de Ramón
+
+00:23:30,608 --> 00:23:33,928 [Daniel]
+qué requieren. Este, porque ellos en su
+
+00:23:33,948 --> 00:23:35,358 [Daniel]
+traducción, ellos como traductores van a
+
+00:23:35,528 --> 00:23:35,828 [Daniel]
+requerir
+
+00:23:36,708 --> 00:23:40,038 [Daniel]
+pues el blacklist o cómo van a ajustar el
+
+00:23:40,108 --> 00:23:41,458 [Daniel]
+tema cultural,
+
+00:23:42,268 --> 00:23:43,818 [Daniel]
+o cómo le complementan ahora sí con el
+
+00:23:43,848 --> 00:23:46,268 [Daniel]
+valedor humano.
+
+00:23:47,668 --> 00:23:50,088 [Daniel]
+No sé, ahí es donde estoy confundido. ¿Qué
+
+00:23:50,168 --> 00:23:52,308 [Daniel]
+más les aporta esto? ¿Qué más les tengo
+
+00:23:52,328 --> 00:23:55,708 [Daniel]
+que aportar yo, al menos a yo mismo? ¿Y
+
+00:23:55,748 --> 00:23:57,438 [Daniel]
+qué más es crucial ahorita que sea la
+
+00:23:57,468 --> 00:24:00,088 [Daniel]
+selección de temas? Podemos definir esos
+
+00:24:00,108 --> 00:24:03,488 [Daniel]
+tres, que al menos cumpla con los dos y
+
+00:24:03,568 --> 00:24:05,808 [Daniel]
+pensando para multidioma, el ruso, ¿cómo
+
+00:24:05,928 --> 00:24:10,208 [Daniel]
+vamos a solventar si es problemática?
+
+00:24:12,808 --> 00:24:14,988 [Andrea]
+O sea, ahorita nada más nos vamos a ir por
+
+00:24:15,048 --> 00:24:17,028 [Andrea]
+buscar la satisfacción de la audiencia en
+
+00:24:17,048 --> 00:24:18,148 [Andrea]
+esos tres idiomas.
+
+00:24:18,168 --> 00:24:19,948 [Daniel]
+Pues es que es tu grueso.
+
+00:24:19,968 --> 00:24:20,488 [Andrea]
+Mhm.
+
+00:24:20,498 --> 00:24:21,668 [Daniel]
+¿Por qué me voy a complicar el
+
+00:24:21,768 --> 00:24:24,936 [Daniel]
+proyecto?... igual y quitar todos los
+
+00:24:24,976 --> 00:24:27,016 [Daniel]
+temas, queriendo cubrir la satisfacción de
+
+00:24:27,076 --> 00:24:30,926 [Daniel]
+todos. Si eso me limita el ochenta por--
+
+00:24:30,996 --> 00:24:32,876 [Daniel]
+me puede limitar un ochenta, noventa por
+
+00:24:32,916 --> 00:24:34,336 [Daniel]
+ciento de mis ingresos,
+
+00:24:35,436 --> 00:24:37,696 [Daniel]
+¿cuál sería la necesidad ahí? Sería como
+
+00:24:37,716 --> 00:24:38,536 [Daniel]
+darle satisfacción
+
+00:24:39,156 --> 00:24:39,696 [Daniel]
+a todos,
+
+00:24:40,536 --> 00:24:42,216 [Daniel]
+más o menos mal, pero es como en la
+
+00:24:42,336 --> 00:24:45,416 [Daniel]
+posada, con ochenta personas, alguien no
+
+00:24:45,436 --> 00:24:47,276 [Daniel]
+va a salir enojado. Bueno, no enojado,
+
+00:24:47,296 --> 00:24:48,966 [Daniel]
+pero insatisfecho.
+
+00:24:49,936 --> 00:24:50,266 [Andrea]
+Inconforme.
+
+00:24:50,266 --> 00:24:52,906 [Daniel]
+Inconforme, desde la comida o la música,
+
+00:24:53,256 --> 00:24:54,516 [Daniel]
+no puedes.
+
+00:24:55,315 --> 00:24:57,516 [Daniel]
+Entonces, tienes que ir por
+
+00:24:58,456 --> 00:24:59,356 [Daniel]
+un [pausa] un posible-
+
+00:25:00,876 --> 00:25:02,216 [Andrea]
+Sino delimitar.
+
+00:25:02,296 --> 00:25:04,256 [Daniel]
+Yo, yo pondré esa restricción, porque pues
+
+00:25:04,276 --> 00:25:06,976 [Daniel]
+es la más lógica.
+
+00:25:08,776 --> 00:25:09,536 [Daniel]
+¿Ustedes?
+
+00:25:10,496 --> 00:25:15,546 [Daniel]
+¿Qué vieron? ¿Qué requieren, para, para
+
+00:25:15,576 --> 00:25:15,976 [Daniel]
+definir?
+
+00:25:22,576 --> 00:25:23,136 [Daniel]
+Eh,
+
+00:25:24,496 --> 00:25:26,296 [Daniel]
+sí, el levantamiento.
+
+00:25:26,876 --> 00:25:27,655 [Daniel]
+Ya.
+
+00:25:31,056 --> 00:25:36,626 [Daniel]
+Mmm. Ya nada, estructuré, este, agregarle
+
+00:25:36,736 --> 00:25:39,336 [Daniel]
+mención de quince por ciento extra,
+
+00:25:40,476 --> 00:25:41,236 [Daniel]
+pero creo
+
+00:25:42,956 --> 00:25:44,876 [Daniel]
+que hay parte que más requieren. Ahí era
+
+00:25:44,896 --> 00:25:46,016 [Daniel]
+más, más bien el mapeo
+
+00:25:46,896 --> 00:25:48,986 [Daniel]
+para tenerlo como complemento de todos los
+
+00:25:48,996 --> 00:25:51,956 [Daniel]
+levantamientos que ya tenemos. Esto, esto
+
+00:25:51,976 --> 00:25:53,966 [Daniel]
+no he indagado a profundidad, pero sí en
+
+00:25:53,966 --> 00:25:54,916 [Daniel]
+una noche trabajé
+
+00:25:56,476 --> 00:25:57,836 [Daniel]
+junto lo que tiene Ramón
+
+00:25:59,276 --> 00:26:01,656 [Daniel]
+para lo técnico, probablemente.
+
+00:26:02,996 --> 00:26:04,036 [Daniel]
+Lo técnico en
+
+00:26:05,376 --> 00:26:07,956 [Daniel]
+su desarrollo, pero ¿qué ven ustedes las
+
+00:26:07,996 --> 00:26:11,696 [Daniel]
+necesidades? ¿Qué ves conforme lo que les
+
+00:26:11,756 --> 00:26:14,286 [Daniel]
+he mandado? Que sí, que no.
+
+00:26:37,996 --> 00:26:54,236 [Daniel]
+Tienen
+
+00:26:54,276 --> 00:26:55,836 [Daniel]
+que sentar bases, ya fuera de que nos la
+
+00:26:55,876 --> 00:26:58,296 [Daniel]
+queramos, ¿por qué no vamos a llevar una
+
+00:26:58,356 --> 00:27:00,716 [Daniel]
+solución tan en detalle desde un
+
+00:27:00,736 --> 00:27:04,816 [Daniel]
+principio? Va a limitar demasiado
+
+00:27:06,636 --> 00:27:08,696 [Daniel]
+y, y no va a ser muy robusto el proyecto,
+
+00:27:08,716 --> 00:27:09,436 [Daniel]
+de golpe.
+
+00:27:09,456 --> 00:27:11,936 [Andrea]
+¿Una blacklist crees que lo, lo limitaría
+
+00:27:11,956 --> 00:27:12,876 [Andrea]
+mucho?
+
+00:27:12,936 --> 00:27:14,036 [Daniel]
+No, irnos en todos los idiomas.
+
+00:27:14,096 --> 00:27:15,216 [Andrea]
+Ah, todos los idiomas, sí, sí.
+
+00:27:15,236 --> 00:27:18,576 [Daniel]
+Buscaron la satisfacción de toda la gente.
+
+00:27:18,596 --> 00:27:19,856 [Daniel]
+Pero no, no sé.
+
+00:27:22,236 --> 00:27:24,736 [Andrea]
+Yo creo que una auditoría con tres
+
+00:27:25,536 --> 00:27:27,576 [Andrea]
+o cuatro, bueno, depende, si elegimos
+
+00:27:27,676 --> 00:27:29,596 [Andrea]
+tres, entre español, inglés, ruso,
+
+00:27:30,636 --> 00:27:34,436 [Andrea]
+eh, o español, inglés, alemán. Eh,
+
+00:27:36,096 --> 00:27:38,816 [Andrea]
+una auditoría con tres nativos que nos dé,
+
+00:27:39,336 --> 00:27:41,676 [Andrea]
+no nada más, eh, que valide esta
+
+00:27:41,716 --> 00:27:44,456 [Andrea]
+blacklist o nos pueda añadir cosas que nos
+
+00:27:44,556 --> 00:27:46,836 [Andrea]
+puedan estar pasando, que sea, que sea
+
+00:27:46,876 --> 00:27:48,466 [Andrea]
+muy básica, obviamente, porque pues no va
+
+00:27:48,466 --> 00:27:49,816 [Andrea]
+a ser una blacklist de,
+
+00:27:50,496 --> 00:27:53,156 [Andrea]
+eh, mil términos, sino como que sea nada
+
+00:27:53,176 --> 00:27:55,976 [Andrea]
+más una base de cosas que considerar
+
+00:27:56,036 --> 00:27:56,825 [Andrea]
+desde, desde
+
+00:27:58,016 --> 00:27:59,406 [Andrea]
+el guion en español.
+
+00:28:01,436 --> 00:28:03,176 [Andrea]
+Un poco de contexto también de
+
+00:28:03,996 --> 00:28:07,236 [Andrea]
+por qué temas o qué situaciones son muy
+
+00:28:07,276 --> 00:28:09,716 [Andrea]
+delicadas en el contexto sociocultural de
+
+00:28:09,756 --> 00:28:12,736 [Andrea]
+cada región, para no abordar, para que nos
+
+00:28:12,776 --> 00:28:14,156 [Andrea]
+sirva también esa blacklist como
+
+00:28:14,236 --> 00:28:17,676 [Andrea]
+referencia para la selección de temas. Más
+
+00:28:17,736 --> 00:28:19,626 [Andrea]
+allá que solo una lista de "estas diez
+
+00:28:19,636 --> 00:28:21,876 [Andrea]
+palabras no se usan", como "estas diez
+
+00:28:21,956 --> 00:28:23,456 [Andrea]
+palabras no se usan, esas expresiones
+
+00:28:23,536 --> 00:28:25,756 [Andrea]
+pueden malinterpretarse y, aparte, estos
+
+00:28:25,796 --> 00:28:28,366 [Andrea]
+dos temas mejor evitar".
+
+00:28:29,856 --> 00:28:30,326 [Daniel]
+Está bien.
+
+00:28:31,096 --> 00:28:31,996 [Andrea]
+No sirve.
+
+00:28:32,056 --> 00:28:33,036 [Daniel]
+Ese es un punto, ¿no?
+
+00:28:33,136 --> 00:28:34,885 [Andrea]
+No sirve, no está conectado.
+
+00:28:34,936 --> 00:28:35,536 [Daniel]
+Otra vez.
+
+00:28:35,556 --> 00:28:37,676 [Andrea]
+Mhm.
+
+00:28:37,776 --> 00:28:38,866 [Daniel]
+Este...
+
+00:28:42,716 --> 00:28:45,156 [Daniel]
+. Van a tener que hacer un ejercicio vos,
+
+00:28:45,176 --> 00:28:47,976 [Daniel]
+como más a detalle.
+
+00:28:49,436 --> 00:28:54,516 [Daniel]
+O de los pasados virales, una corrida.
+
+00:28:54,525 --> 00:28:56,016 [Daniel]
+¿Qué les sirve de lo que les envié, que sí
+
+00:28:56,025 --> 00:28:58,706 [Daniel]
+han leído? O qué no les, o qué no les
+
+00:28:58,736 --> 00:29:00,496 [Daniel]
+sirve.
+
+00:29:01,256 --> 00:29:03,076 [Daniel]
+A ver qué tanto trabajo, que no trabajo,
+
+00:29:03,136 --> 00:29:06,966 [Daniel]
+si nada más a ver la licencia.
+
+00:29:07,996 --> 00:29:09,936 [Andrea]
+De lo de las preguntas que venían en-
+
+00:29:09,976 --> 00:29:10,696 [Daniel]
+Pues de toda la-
+
+00:29:10,776 --> 00:29:12,496 [Andrea]
+Pues, por ejemplo, en lo del, te digo, en
+
+00:29:12,516 --> 00:29:14,436 [Andrea]
+los comentarios yo no encuentro que haya
+
+00:29:14,496 --> 00:29:15,656 [Andrea]
+una mala recepción
+
+00:29:16,596 --> 00:29:20,436 [Andrea]
+de otros idiomas. Y, y estuve traduciendo
+
+00:29:20,476 --> 00:29:22,196 [Andrea]
+varios de los, de los comentarios, no nada
+
+00:29:22,256 --> 00:29:23,736 [Andrea]
+más de esos cuatro guiones, o sea, esos
+
+00:29:23,776 --> 00:29:25,756 [Andrea]
+los puse como ejemplo, pero de varios
+
+00:29:25,796 --> 00:29:26,416 [Andrea]
+videos.
+
+00:29:26,436 --> 00:29:26,896 [Daniel]
+Mhm.
+
+00:29:26,956 --> 00:29:30,136 [Andrea]
+Y, y en general son comentarios o
+
+00:29:30,216 --> 00:29:32,356 [Andrea]
+positivos o que comentan cosas sobre la
+
+00:29:32,376 --> 00:29:33,216 [Andrea]
+historia-
+
+00:29:33,236 --> 00:29:33,426 [Daniel]
+Mhm.
+
+00:29:33,426 --> 00:29:36,076 [Andrea]
+Pero no, no, no considero que haya una
+
+00:29:36,116 --> 00:29:39,516 [Andrea]
+malinterpretación, a pesar de, del
+
+00:29:39,576 --> 00:29:41,276 [Andrea]
+teléfono descompuesto que nosotros
+
+00:29:41,316 --> 00:29:42,896 [Andrea]
+suponemos que puede estar pasando-
+
+00:29:42,936 --> 00:29:43,066 [Daniel]
+Sí.
+
+00:29:43,336 --> 00:29:44,816 [Andrea]
+En la traducción, porque si no, pues no
+
+00:29:44,836 --> 00:29:47,036 [Andrea]
+estarían comentando, no sé, por decirte un
+
+00:29:47,076 --> 00:29:49,436 [Andrea]
+ejemplo: "Este, ¡ay, qué chistoso se cayó
+
+00:29:49,456 --> 00:29:51,346 [Andrea]
+la viejita en el minuto no sé qué tanto!"
+
+00:29:51,356 --> 00:29:53,736 [Andrea]
+Eso lo comentan en, eh, coreano.
+
+00:29:53,756 --> 00:29:54,196 [Daniel]
+Mhm.
+
+00:29:54,236 --> 00:29:56,156 [Andrea]
+Entonces, eh, sí hay una buena
+
+00:29:56,176 --> 00:29:57,836 [Andrea]
+interpretación, porque esa situación
+
+00:29:57,856 --> 00:30:00,676 [Andrea]
+específica que comentan viene hasta casi
+
+00:30:00,736 --> 00:30:02,216 [Andrea]
+al final de la historia. Entonces,
+
+00:30:02,936 --> 00:30:05,956 [Andrea]
+me habla, considero yo, que si la, el, el
+
+00:30:06,036 --> 00:30:08,016 [Andrea]
+espectador vio tantos minutos, quiere
+
+00:30:08,025 --> 00:30:09,136 [Andrea]
+decir que sí hubo
+
+00:30:09,876 --> 00:30:11,856 [Andrea]
+entendimiento de la historia. Entonces, yo
+
+00:30:11,916 --> 00:30:14,476 [Andrea]
+creo que no estamos tan alejados. No, a
+
+00:30:14,516 --> 00:30:15,936 [Andrea]
+lo mejor no es una traducción muy fiel,
+
+00:30:15,956 --> 00:30:18,216 [Andrea]
+pero no estamos tan alejados. En cuanto a
+
+00:30:18,256 --> 00:30:22,296 [Andrea]
+quejas por ofensas o temas, eh, complejos,
+
+00:30:22,316 --> 00:30:23,596 [Andrea]
+pues tampoco encontré.
+
+00:30:23,636 --> 00:30:25,166 [Daniel]
+O sea, una retroalimentación negativa al
+
+00:30:25,296 --> 00:30:25,896 [Daniel]
+final del día.
+
+00:30:25,916 --> 00:30:28,036 [Andrea]
+En los comentarios, no. En español hay una
+
+00:30:28,176 --> 00:30:30,196 [Andrea]
+retro-- retroalimentación, este, pues
+
+00:30:30,256 --> 00:30:32,106 [Andrea]
+mucho más vasta, ¿verdad? Y sí, positiva y
+
+00:30:32,136 --> 00:30:33,406 [Andrea]
+negativa, porque pues es nuestro
+
+00:30:33,406 --> 00:30:36,768 [Andrea]
+progreso.... pero, pero no de
+
+00:30:37,488 --> 00:30:40,508 [Andrea]
+errores de traducción. No he encontrado.
+
+00:30:40,568 --> 00:30:42,028 [Andrea]
+Estuve echando el clavo en varios
+
+00:30:42,088 --> 00:30:43,588 [Andrea]
+comentarios de varios videos, no he
+
+00:30:43,628 --> 00:30:44,338 [Andrea]
+encontrado.
+
+00:30:45,028 --> 00:30:46,128 [Andrea]
+En cuanto a-
+
+00:30:46,888 --> 00:30:48,748 [Gio]
+Por ejemplo, yo tengo duda, porque, bueno,
+
+00:30:48,788 --> 00:30:50,567 [Gio]
+ya sé que ahí es, ahí estoy yo en muchas
+
+00:30:50,648 --> 00:30:51,108 [Gio]
+cosas-
+
+00:30:51,228 --> 00:30:51,808 [Daniel]
+Mhm.
+
+00:30:51,828 --> 00:30:54,588 [Gio]
+Que no entiendo. Por ejemplo, eso de-
+
+00:30:54,658 --> 00:30:55,208 [Daniel]
+¿Qué cosa?
+
+00:30:55,228 --> 00:30:56,708 [Gio]
+Mira, eso de unificar
+
+00:30:57,668 --> 00:30:59,748 [Gio]
+trece, el checklist de audio en las trece
+
+00:30:59,868 --> 00:31:02,788 [Gio]
+pistas. No entiendo.
+
+00:31:04,008 --> 00:31:08,438 [Daniel]
+Unificar checklist de audio... Mmm,
+
+00:31:10,108 --> 00:31:12,188 [Daniel]
+tampoco, por lo menos. A ver, todo lo que
+
+00:31:12,208 --> 00:31:13,008 [Daniel]
+les estoy pasando-
+
+00:31:13,108 --> 00:31:13,648 [Gio]
+Ajá.
+
+00:31:13,668 --> 00:31:14,648 [Daniel]
+Viene de ella.
+
+00:31:14,668 --> 00:31:14,788 [Gio]
+Mhm.
+
+00:31:14,808 --> 00:31:16,728 [Daniel]
+Entonces, ustedes me tienen que subsidiar.
+
+00:31:16,768 --> 00:31:17,628 [Daniel]
+No, no todo-
+
+00:31:17,668 --> 00:31:17,728 [Gio]
+Eh.
+
+00:31:17,748 --> 00:31:19,888 [Daniel]
+Ni entrar un chorro. De entrada, pues se
+
+00:31:19,928 --> 00:31:20,968 [Daniel]
+lo tienen que consumir.
+
+00:31:20,978 --> 00:31:20,978 [Gio]
+Sí.
+
+00:31:20,988 --> 00:31:23,488 [Daniel]
+O decirme: ¿sabes qué? No me mandes nada y
+
+00:31:23,548 --> 00:31:25,048 [Daniel]
+yo me aviento el proyecto y no necesito
+
+00:31:25,068 --> 00:31:25,928 [Daniel]
+soporte.
+
+00:31:25,938 --> 00:31:26,108 [Gio]
+Mhm.
+
+00:31:26,128 --> 00:31:28,308 [Daniel]
+Está muy bien tu reto, pero pues gran
+
+00:31:28,348 --> 00:31:30,688 [Daniel]
+parte se la estoy pasando como lo otro.
+
+00:31:30,708 --> 00:31:33,088 [Daniel]
+Estoy interagando, estoy ingestando, estoy
+
+00:31:33,128 --> 00:31:34,128 [Daniel]
+cruzando información-
+
+00:31:34,408 --> 00:31:34,668 [Gio]
+Mhm.
+
+00:31:34,678 --> 00:31:36,048 [Daniel]
+Entonces, necesitan consumirlo, decirme
+
+00:31:36,068 --> 00:31:37,238 [Daniel]
+no, mejor no, entonces,
+
+00:31:38,048 --> 00:31:40,268 [Daniel]
+por otro lado, se me hace superbién eso.
+
+00:31:41,128 --> 00:31:42,627 [Daniel]
+Eso tampoco lo entiendo, y va a haber
+
+00:31:42,668 --> 00:31:43,968 [Daniel]
+muchas cosas que hace sentido, otras que
+
+00:31:44,028 --> 00:31:46,068 [Daniel]
+no. Bueno, tú más que nadie lo está
+
+00:31:46,088 --> 00:31:47,278 [Daniel]
+viendo, ¿no? En otros proyectos que
+
+00:31:47,328 --> 00:31:50,868 [Daniel]
+estamos haciendo. Este... pues entrar a
+
+00:31:50,908 --> 00:31:53,808 [Daniel]
+consumir, que miran esto, si funciona esto
+
+00:31:53,818 --> 00:31:55,868 [Daniel]
+o no. Yo tengo pendientes cuatro deep
+
+00:31:55,928 --> 00:31:57,688 [Daniel]
+research, pero pues nadie me ha demandado
+
+00:31:57,768 --> 00:31:58,728 [Daniel]
+ninguno.
+
+00:31:58,768 --> 00:31:59,578 [Gio]
+Mmm.
+
+00:31:59,588 --> 00:32:01,338 [Daniel]
+Que quisiera que me dijeran saliendo de
+
+00:32:01,348 --> 00:32:02,888 [Daniel]
+esta, que se lo llevaran de tarea
+
+00:32:03,728 --> 00:32:05,328 [Daniel]
+y que si lo pongamos bajo Smart, y yo me
+
+00:32:05,368 --> 00:32:07,548 [Daniel]
+lo aviento con gusto. Ahí tengo cuatro.
+
+00:32:07,588 --> 00:32:10,068 [Gio]
+Es que no, es que en la junta pasada,
+
+00:32:10,128 --> 00:32:12,088 [Gio]
+este, preguntamos que si se iba a hacer
+
+00:32:12,128 --> 00:32:15,208 [Gio]
+con deep research, tú dijiste que no.
+
+00:32:15,248 --> 00:32:17,288 [Gio]
+[risas] Entonces, por eso me confundí.
+
+00:32:17,348 --> 00:32:20,128 [Daniel]
+Sí les dije que, que, que entre mis tareas
+
+00:32:20,448 --> 00:32:21,378 [Daniel]
+era ponerme los cuatro deep research.
+
+00:32:21,388 --> 00:32:23,428 [Gio]
+Sí, porque luego dije, pues-
+
+00:32:23,438 --> 00:32:24,548 [Daniel]
+Pero no demanda.
+
+00:32:24,588 --> 00:32:26,108 [Gio]
+Hasta, hasta le dije, bueno, fue un
+
+00:32:26,128 --> 00:32:27,908 [Gio]
+comentario que le dije, y dije: es que no,
+
+00:32:27,928 --> 00:32:30,208 [Gio]
+no creo que investigaciones por fuera que
+
+00:32:30,248 --> 00:32:32,748 [Gio]
+hagamos nosotros vayan a servir mucho,
+
+00:32:32,808 --> 00:32:34,148 [Gio]
+más que el deep research, porque no
+
+00:32:34,228 --> 00:32:34,788 [Gio]
+sabemos
+
+00:32:35,528 --> 00:32:37,348 [Gio]
+los idiomas, vaya, si supiéramos-
+
+00:32:37,368 --> 00:32:38,628 [Daniel]
+Pero es que fuera del idioma, es la
+
+00:32:38,768 --> 00:32:39,398 [Daniel]
+técnica.
+
+00:32:39,408 --> 00:32:39,668 [Gio]
+Mhm.
+
+00:32:39,688 --> 00:32:41,348 [Daniel]
+¿Qué voy a hacer cada una de las áreas?
+
+00:32:41,728 --> 00:32:42,188 [Gio]
+Mhm.
+
+00:32:42,208 --> 00:32:44,568 [Daniel]
+Ya no tanto, sí, lo de los idiomas te
+
+00:32:44,608 --> 00:32:45,448 [Daniel]
+puede servir-
+
+00:32:45,468 --> 00:32:45,898 [Gio]
+Mhm.
+
+00:32:45,908 --> 00:32:47,997 [Daniel]
+Pero ¿qué necesita cada área? Ahí te va,
+
+00:32:48,028 --> 00:32:48,128 [Daniel]
+¿no?
+
+00:32:48,308 --> 00:32:48,508 [Gio]
+Mhm.
+
+00:32:48,548 --> 00:32:49,148 [Daniel]
+Sí me he metido
+
+00:32:49,868 --> 00:32:50,888 [Daniel]
+en lo de,
+
+00:32:51,908 --> 00:32:52,988 [Daniel]
+en lo de desarrollo.
+
+00:32:53,008 --> 00:32:54,188 [Gio]
+Mhm.
+
+00:32:54,198 --> 00:32:56,988 [Daniel]
+¿Ahí qué sirvo para el deep research?
+
+00:32:57,028 --> 00:32:57,728 [Daniel]
+Métodos que hacen
+
+00:32:58,588 --> 00:33:00,968 [Daniel]
+organizaciones grandes, ¿no? Con IA.
+
+00:33:01,008 --> 00:33:01,468 [Gio]
+Mhm.
+
+00:33:01,788 --> 00:33:05,348 [Daniel]
+O métodos alternos, modelos. Pero eso me
+
+00:33:05,388 --> 00:33:07,308 [Daniel]
+ayuda mucho en la búsqueda profunda
+
+00:33:08,128 --> 00:33:09,808 [Daniel]
+de ciertos métodos que hacen
+
+00:33:10,288 --> 00:33:12,568 [Daniel]
+organizaciones con un lado técnico, cosas
+
+00:33:12,628 --> 00:33:16,708 [Daniel]
+así. En guionismo, este,
+
+00:33:17,948 --> 00:33:19,788 [Daniel]
+conflictos que pueden presentar otros
+
+00:33:19,828 --> 00:33:21,648 [Daniel]
+canales, que ese no lo, no lo vi viable,
+
+00:33:21,658 --> 00:33:22,408 [Daniel]
+¿no? Ahí venía,
+
+00:33:23,048 --> 00:33:25,188 [Daniel]
+no sé si era Cocomelon o alguno, ¿no?
+
+00:33:25,268 --> 00:33:26,128 [Daniel]
+Venía de ejemplos.
+
+00:33:26,148 --> 00:33:27,608 [Andrea]
+No, porque aparte eso es para YouTube
+
+00:33:27,728 --> 00:33:28,408 [Andrea]
+Kids, ¿no?
+
+00:33:28,448 --> 00:33:30,508 [Daniel]
+Eh, pues algo sí venía, este, de uno, uno
+
+00:33:30,568 --> 00:33:32,708 [Daniel]
+de ellos, ¿no? Pero de todas maneras, no
+
+00:33:32,788 --> 00:33:35,848 [Daniel]
+creo que haya mucha información pública.
+
+00:33:35,908 --> 00:33:37,608 [Daniel]
+Aparte, ¿no? Son dos cosas, ¿no? Puede ser
+
+00:33:37,648 --> 00:33:38,758 [Daniel]
+lo que dices y otra-
+
+00:33:38,928 --> 00:33:39,988 [Andrea]
+Temas legales.
+
+00:33:40,088 --> 00:33:43,488 [Daniel]
+Eh, pues deja tú que realmente esté
+
+00:33:43,508 --> 00:33:45,088 [Daniel]
+documentado en línea,
+
+00:33:46,068 --> 00:33:48,168 [Daniel]
+cuál es su método de trabajo en algo tan
+
+00:33:48,188 --> 00:33:48,988 [Daniel]
+específico.
+
+00:33:49,028 --> 00:33:50,988 [Andrea]
+Sí, no hay, no hay ni una blacklist
+
+00:33:51,048 --> 00:33:51,948 [Andrea]
+oficial.
+
+00:33:51,968 --> 00:33:54,688 [Daniel]
+No, fuera de la blacklist, yo como canal,
+
+00:33:54,748 --> 00:33:58,528 [Daniel]
+estoy de manera pública, dando
+
+00:33:58,568 --> 00:34:00,608 [Daniel]
+documentación de cómo llevo mi proceso
+
+00:34:01,228 --> 00:34:04,688 [Daniel]
+para estructurar si lo tropicalizo, cómo
+
+00:34:04,768 --> 00:34:08,208 [Daniel]
+lo hago cultural, si va a ser... Creo
+
+00:34:08,268 --> 00:34:11,508 [Daniel]
+que no va a existir, pero probablemente
+
+00:34:11,548 --> 00:34:13,968 [Daniel]
+existe. Había uno de ejemplos, ¿no? Que
+
+00:34:14,008 --> 00:34:15,728 [Daniel]
+Netflix invierte no sé cuántos cientos de
+
+00:34:15,788 --> 00:34:17,348 [Daniel]
+millones de dólares en traducción.
+
+00:34:17,358 --> 00:34:17,808 [Andrea]
+Mhm.
+
+00:34:17,848 --> 00:34:19,168 [Daniel]
+Y ahí entra el tema de
+
+00:34:20,088 --> 00:34:22,837 [Daniel]
+cómo nutre al guionista, cómo nutre el
+
+00:34:22,868 --> 00:34:26,508 [Daniel]
+lado técnico, de cómo lo hacen. Este, en
+
+00:34:26,528 --> 00:34:28,288 [Daniel]
+algún momento vimos lo de portadas.
+
+00:34:28,328 --> 00:34:29,008 [Daniel]
+Netflix hace
+
+00:34:29,688 --> 00:34:31,478 [Daniel]
+portadas dependiendo de la región,
+
+00:34:31,488 --> 00:34:32,868 [Daniel]
+dependiendo de la persona. Tiene un
+
+00:34:32,908 --> 00:34:33,468 [Daniel]
+algoritmo
+
+00:34:34,188 --> 00:34:34,848 [Daniel]
+para no sé si
+
+00:34:35,588 --> 00:34:37,648 [Daniel]
+toman frames, hacen ya con IA también
+
+00:34:37,688 --> 00:34:38,568 [Daniel]
+manipulaciones
+
+00:34:39,188 --> 00:34:41,168 [Daniel]
+y le van mostrando la mejor portada según
+
+00:34:41,408 --> 00:34:42,588 [Daniel]
+región y personas.
+
+00:34:43,028 --> 00:34:43,448 [Andrea]
+Mhm.
+
+00:34:43,458 --> 00:34:45,288 [Daniel]
+Pero ahí entran ciertas cosas, ¿no?
+
+00:34:45,488 --> 00:34:47,208 [Daniel]
+Interesante entrar más en lo técnico de
+
+00:34:47,248 --> 00:34:49,488 [Daniel]
+mostrarte la portada. Y eso lo vimos
+
+00:34:49,508 --> 00:34:50,948 [Daniel]
+alguna vez en el tema de portadas.
+
+00:34:51,008 --> 00:34:51,268 [Andrea]
+Sí.
+
+00:34:52,008 --> 00:34:53,208 [Daniel]
+Entonces, de mi lado, yo me puedo llevar
+
+00:34:53,217 --> 00:34:55,488 [Daniel]
+ese compromiso, pero ¿qué requieren? ¿Qué
+
+00:34:55,498 --> 00:34:57,028 [Daniel]
+herramienta requieren? Porque si no, eso
+
+00:34:57,048 --> 00:34:59,008 [Daniel]
+que está haciendo de chamba de, de esa
+
+00:34:59,028 --> 00:35:00,848 [Daniel]
+investigación, de yo como un proveedor,
+
+00:35:00,868 --> 00:35:02,488 [Daniel]
+puede ser que yo contigo, pero no te sirvo
+
+00:35:02,498 --> 00:35:03,748 [Daniel]
+esa información.
+
+00:35:03,768 --> 00:35:05,928 [Andrea]
+Pero es que mi duda es: el guion
+
+00:35:06,568 --> 00:35:09,258 [Andrea]
+se realiza y antes de que empiece a
+
+00:35:09,288 --> 00:35:11,588 [Andrea]
+ejecutar Eleven Labs-
+
+00:35:11,628 --> 00:35:12,148 [Gio]
+Mmm.
+
+00:35:12,168 --> 00:35:13,768 [Andrea]
+La inteligencia con la que están
+
+00:35:13,828 --> 00:35:16,128 [Andrea]
+procesando el texto para convertirlo a
+
+00:35:16,208 --> 00:35:18,668 [Andrea]
+cada uno de los idiomas, ¿en qué parte de
+
+00:35:18,688 --> 00:35:20,248 [Andrea]
+este proceso iría,
+
+00:35:20,908 --> 00:35:22,628 [Andrea]
+o, o el código que estén armando, en qué
+
+00:35:22,668 --> 00:35:24,418 [Andrea]
+pa- parte de ese proceso iría
+
+00:35:25,048 --> 00:35:25,768 [Andrea]
+ese filtro
+
+00:35:26,528 --> 00:35:28,748 [Andrea]
+o esa blacklist?
+
+00:35:30,488 --> 00:35:32,068 [Andrea]
+Porque si ya la tenemos, pues podría ser
+
+00:35:32,108 --> 00:35:34,008 [Andrea]
+una herramienta y podría ser como que lo
+
+00:35:34,108 --> 00:35:36,808 [Andrea]
+que sacamos de aquí, no irnos por todos,
+
+00:35:36,848 --> 00:35:40,648 [Andrea]
+abordar dos, tres idiomas y de ahí, este,
+
+00:35:40,668 --> 00:35:42,828 [Andrea]
+con, con, con los
+
+00:35:43,468 --> 00:35:45,938 [Andrea]
+tres, este, consultores o quienes nos
+
+00:35:46,008 --> 00:35:46,928 [Andrea]
+ayuden a auditar,
+
+00:35:47,568 --> 00:35:50,648 [Andrea]
+pues ya tener una mejor, un mejor, eh,
+
+00:35:50,728 --> 00:35:52,088 [Andrea]
+rango de precisión, de
+
+00:35:53,628 --> 00:35:57,028 [Andrea]
+cómo mejorar o, o en qué vicios no caer.
+
+00:35:57,608 --> 00:36:00,228 [Daniel]
+Mira, la solución, yo no veo el problema.
+
+00:36:00,288 --> 00:36:02,048 [Daniel]
+Ahí tenemos cierto,
+
+00:36:02,708 --> 00:36:07,258 [Daniel]
+hay un objetivo de... a ver cómo se, ah,
+
+00:36:07,468 --> 00:36:09,308 [Daniel]
+se... Creo que la pregunta es:
+
+00:36:09,318 --> 00:36:09,928 [Daniel]
+¿necesitamos un
+
+00:36:10,668 --> 00:36:12,688 [Daniel]
+blacklist sí o no? Y creo que lo más
+
+00:36:12,708 --> 00:36:13,688 [Daniel]
+probable es que sí.
+
+00:36:13,708 --> 00:36:13,898 [Andrea]
+Mhm.
+
+00:36:13,988 --> 00:36:16,848 [Daniel]
+O al menos probar si lo necesitamos o no,
+
+00:36:16,908 --> 00:36:17,988 [Daniel]
+o al menos validar.
+
+00:36:19,108 --> 00:36:21,208 [Daniel]
+El, el cómo es parte de la chamba, de la
+
+00:36:21,268 --> 00:36:23,468 [Daniel]
+tarea, con una fecha de compromiso y un
+
+00:36:23,488 --> 00:36:26,288 [Daniel]
+entregable, este, que pueda pedir
+
+00:36:26,328 --> 00:36:28,208 [Daniel]
+recursos, ¿no? O no sé quién, quiénes son
+
+00:36:28,248 --> 00:36:32,038 [Daniel]
+los jugadores ahí. Otra es, creo que el
+
+00:36:32,068 --> 00:36:33,628 [Daniel]
+mejor modo de pensar es
+
+00:36:34,248 --> 00:36:36,908 [Daniel]
+una investigación de cómo lo hacen otras
+
+00:36:36,948 --> 00:36:38,508 [Daniel]
+organizaciones, porque estamos cubriendo
+
+00:36:38,628 --> 00:36:41,608 [Daniel]
+el, el hilo negro. De ahí, lo, lo de la
+
+00:36:41,648 --> 00:36:44,436 [Daniel]
+oferta...... un deep research, ¿cuál será
+
+00:36:44,476 --> 00:36:47,716 [Daniel]
+la necesidad? El objetivo específico. Para
+
+00:36:47,726 --> 00:36:49,956 [Daniel]
+el objetivo específico, si soy alguien
+
+00:36:49,976 --> 00:36:50,876 [Daniel]
+que se va a adentrar en eso,
+
+00:36:51,536 --> 00:36:53,376 [Daniel]
+pues sería ver quién más lo hace y cómo lo
+
+00:36:53,396 --> 00:36:54,046 [Daniel]
+hace.
+
+00:36:56,336 --> 00:36:58,796 [Daniel]
+Y de ahí se hace un deep research. ¿Cómo
+
+00:36:58,896 --> 00:37:01,436 [Daniel]
+podemos agilizar mediante un deep research
+
+00:37:01,496 --> 00:37:04,196 [Daniel]
+muy avanzado, varios, quién más lo hace y
+
+00:37:04,276 --> 00:37:05,136 [Daniel]
+cómo lo hace?
+
+00:37:06,816 --> 00:37:08,686 [Daniel]
+O cómo se podría hacer, cómo podemos
+
+00:37:08,736 --> 00:37:10,096 [Daniel]
+teorizar que se puede hacer.
+
+00:37:10,106 --> 00:37:12,136 [Andrea]
+¿Aunque no haya información pública sobre
+
+00:37:12,176 --> 00:37:13,056 [Andrea]
+eso?
+
+00:37:13,076 --> 00:37:16,056 [Daniel]
+Es que no sabemos, pero... ahí puedes
+
+00:37:16,116 --> 00:37:17,596 [Daniel]
+teorizar quién más lo está haciendo, cómo
+
+00:37:17,636 --> 00:37:19,376 [Daniel]
+lo está haciendo, cómo te lo que dice.
+
+00:37:19,416 --> 00:37:21,356 [Daniel]
+Estructurar la idea central detrás de
+
+00:37:21,365 --> 00:37:24,416 [Daniel]
+esto. Yo soy un creador de contenido,
+
+00:37:24,456 --> 00:37:28,076 [Daniel]
+este, quiero traducir, pero me da miedo y
+
+00:37:28,196 --> 00:37:30,216 [Daniel]
+mencionamos todas las problemáticas, ¿no?
+
+00:37:30,256 --> 00:37:32,376 [Daniel]
+Uno, que puede ser que estoy, este,
+
+00:37:32,396 --> 00:37:33,376 [Daniel]
+adentrándome
+
+00:37:33,996 --> 00:37:36,636 [Daniel]
+en temas, este-
+
+00:37:36,696 --> 00:37:37,576 [Andrea]
+Religiosos.
+
+00:37:37,596 --> 00:37:40,236 [Daniel]
+Religiosos, que en otro tono, contexto
+
+00:37:40,256 --> 00:37:43,916 [Daniel]
+cultural, está violando no sé qué cosa,
+
+00:37:44,616 --> 00:37:47,416 [Daniel]
+o palabras que no deben herdir, o del otro
+
+00:37:47,456 --> 00:37:50,316 [Daniel]
+lado, el chiste no se entiende y no le da
+
+00:37:50,476 --> 00:37:52,156 [Daniel]
+satisfacción al usuario. ¿Cómo lo están
+
+00:37:52,176 --> 00:37:54,176 [Daniel]
+solventando otros? Cómo lo solventa
+
+00:37:54,336 --> 00:37:56,576 [Daniel]
+Netflix, cómo lo solventa, eh, los
+
+00:37:56,616 --> 00:37:59,576 [Daniel]
+sitcoms, como yo qué sé.
+
+00:38:00,196 --> 00:38:02,666 [Daniel]
+[risas]
+
+00:38:04,796 --> 00:38:08,576 [Daniel]
+Que ahí creo, ahí es donde yo no sé si tú
+
+00:38:08,616 --> 00:38:11,556 [Daniel]
+eres la dueña o si es Alan, o el
+
+00:38:11,576 --> 00:38:17,426 [Daniel]
+equipo de traductores. ¿Hablar de esto?
+
+00:38:18,256 --> 00:38:19,936 [Alan]
+Creo que, bueno, creo que se están
+
+00:38:19,956 --> 00:38:21,796 [Alan]
+planteando dos blacklists, la
+
+00:38:23,256 --> 00:38:25,616 [Alan]
+que el periodista va a hacer, que lo van,
+
+00:38:25,656 --> 00:38:27,736 [Alan]
+lo van a forzar, por decir, no, esta
+
+00:38:27,796 --> 00:38:31,536 [Alan]
+palabra no, y la, la, la que nosotros, los
+
+00:38:31,576 --> 00:38:33,176 [Alan]
+innovadores, a la hora que estén
+
+00:38:33,186 --> 00:38:36,276 [Alan]
+hablando, van a forzar en lo que sí,
+
+00:38:36,376 --> 00:38:39,326 [Alan]
+bueno, el código se lo van a forzar, ¿no?
+
+00:38:39,326 --> 00:38:42,576 [Alan]
+Yo más o menos... Pero el código se
+
+00:38:42,616 --> 00:38:43,316 [Alan]
+encargaría como de
+
+00:38:43,976 --> 00:38:47,456 [Alan]
+modificar esas, esas cuestiones. O sea,
+
+00:38:47,516 --> 00:38:49,796 [Alan]
+si, ¿tan necesario es una blacklist si el
+
+00:38:49,816 --> 00:38:50,616 [Alan]
+código lo va a hacer?
+
+00:38:52,456 --> 00:38:55,456 [Alan]
+Pues, justo para el código lo haga con
+
+00:38:55,756 --> 00:38:56,316 [Alan]
+palabras.
+
+00:38:58,676 --> 00:39:01,156 [Alan]
+Pero acá sería, o sea, acá.
+
+00:39:01,176 --> 00:39:03,936 [Daniel]
+Y establecer criterios, claro, ¿de qué?
+
+00:39:05,176 --> 00:39:08,816 [Daniel]
+Es que si uno dice, no, pues este, ¿qué
+
+00:39:08,896 --> 00:39:09,896 [Daniel]
+sigue de aquí?
+
+00:39:10,856 --> 00:39:13,236 [Daniel]
+Pues el código, ¿cómo, cómo le hace?
+
+00:39:13,246 --> 00:39:15,916 [Daniel]
+¿Quién la define? O ya deja ante el
+
+00:39:15,936 --> 00:39:18,736 [Daniel]
+código. Si vamos a depender mucho de la
+
+00:39:18,796 --> 00:39:20,516 [Daniel]
+IA, ¿cuál es el set de instrucciones
+
+00:39:21,296 --> 00:39:23,836 [Daniel]
+para la IA? ¿Cuál es el objetivo bien
+
+00:39:23,856 --> 00:39:24,216 [Daniel]
+claro
+
+00:39:25,356 --> 00:39:27,356 [Daniel]
+y qué espero yo a cambio, no? ¿Cuál es mi
+
+00:39:27,396 --> 00:39:30,216 [Daniel]
+entrada y cuál es mi salida?
+
+00:39:34,196 --> 00:39:36,216 [Daniel]
+Entonces, pero parte de la necesidad de
+
+00:39:36,236 --> 00:39:39,156 [Daniel]
+cada una de las partes.
+
+00:39:47,476 --> 00:39:51,396 [Alan]
+Yo creo, de los deep research, yo soy de
+
+00:39:51,496 --> 00:39:53,096 [Alan]
+los... son cuatro, son cuatro.
+
+00:39:54,676 --> 00:39:59,196 [Alan]
+Yo creo que el primero, el que sí sería,
+
+00:39:59,216 --> 00:40:00,876 [Alan]
+porque uno, o sea, el de qué tan bien
+
+00:40:00,916 --> 00:40:02,266 [Alan]
+suenan las voces en-
+
+00:40:03,296 --> 00:40:05,096 [Alan]
+Bueno, ¿qué va a ser? ¿Vas a crear
+
+00:40:05,116 --> 00:40:06,796 [Alan]
+comentarios en Reddit en segundo lugar?
+
+00:40:06,836 --> 00:40:08,316 [Daniel]
+No, va a ser un complejo ese.
+
+00:40:08,376 --> 00:40:08,956 [Alan]
+Okey.
+
+00:40:09,136 --> 00:40:11,036 [Daniel]
+Bueno, ahí tienen que ustedes definir si
+
+00:40:11,045 --> 00:40:12,616 [Daniel]
+sirve o no sirve, o qué otra cosa
+
+00:40:12,626 --> 00:40:13,036 [Daniel]
+utilizar.
+
+00:40:13,056 --> 00:40:15,296 [Andrea]
+Que yo, que yo, bueno, perdón, eh, que yo
+
+00:40:15,336 --> 00:40:17,056 [Andrea]
+ahí también tenía la duda, se me olvidé
+
+00:40:17,076 --> 00:40:20,066 [Andrea]
+decir la sesión pasada, es la...
+
+00:40:20,776 --> 00:40:25,516 [Andrea]
+estilo de loquendo, qué tan satisfactorio
+
+00:40:25,576 --> 00:40:27,126 [Andrea]
+es para los otros
+
+00:40:27,216 --> 00:40:29,575 [Andrea]
+idiomas. Porque en español, o sea, me
+
+00:40:29,636 --> 00:40:31,596 [Andrea]
+queda claro que es uno de los factores
+
+00:40:31,636 --> 00:40:33,796 [Andrea]
+determinantes del estilo de identidad de
+
+00:40:33,836 --> 00:40:36,576 [Andrea]
+Qué Perrilo, pero no sé qué tan...
+
+00:40:37,356 --> 00:40:39,756 [Andrea]
+o sea, si hay un cambio en, en, cuando se
+
+00:40:39,836 --> 00:40:41,436 [Andrea]
+hace la traducción.
+
+00:40:41,446 --> 00:40:44,056 [Alan]
+¿Cuánto es lo que-
+
+00:40:44,116 --> 00:40:46,736 [Daniel]
+Ya, ah, okey, ya, okey. Y yo te diría que
+
+00:40:46,746 --> 00:40:48,596 [Daniel]
+eso sí es parte de la búsqueda.
+
+00:40:48,616 --> 00:40:49,006 [Andrea]
+Mhm.
+
+00:40:49,496 --> 00:40:51,566 [Daniel]
+Y eso se, se investigó en algún momento,
+
+00:40:51,596 --> 00:40:53,516 [Daniel]
+dónde era loquendo y creo que sí hay-
+
+00:40:54,256 --> 00:40:56,276 [Daniel]
+en Italia,
+
+00:40:57,236 --> 00:40:58,616 [Daniel]
+y creo que en
+
+00:40:59,596 --> 00:41:02,556 [Daniel]
+italiano y portugués sí daba, al menos
+
+00:41:02,616 --> 00:41:06,136 [Daniel]
+antes, satisfacción.
+
+00:41:07,656 --> 00:41:09,376 [Daniel]
+Pero eso sí sería parte de una de las
+
+00:41:09,396 --> 00:41:11,836 [Daniel]
+búsquedas. Pues tienen que definir al
+
+00:41:11,896 --> 00:41:15,736 [Daniel]
+menos qué quieren y qué les ayudo yo.
+
+00:41:15,836 --> 00:41:16,296 [Andrea]
+Perdón.
+
+00:41:16,316 --> 00:41:18,476 [Daniel]
+Pero yo como participante del proyecto,
+
+00:41:19,736 --> 00:41:20,396 [Daniel]
+de ahí más,
+
+00:41:22,096 --> 00:41:23,796 [Daniel]
+pues qué se lleva cada quien, o qué trae,
+
+00:41:23,876 --> 00:41:26,316 [Daniel]
+empezar a comprometer, qué necesita cada
+
+00:41:26,356 --> 00:41:28,036 [Daniel]
+una de sus áreas.
+
+00:41:28,976 --> 00:41:31,836 [Daniel]
+Eso es lo crucial. Si me quedase ahí, pues
+
+00:41:31,896 --> 00:41:33,456 [Daniel]
+eso es parte, una de las búsquedas
+
+00:41:33,516 --> 00:41:36,316 [Daniel]
+profundas y le estás haciendo un bien. Eh,
+
+00:41:36,336 --> 00:41:39,556 [Daniel]
+yo teorizo que esto, hay información,
+
+00:41:39,596 --> 00:41:42,356 [Daniel]
+este, pública y, y, ya me puede traer como
+
+00:41:42,396 --> 00:41:44,056 [Daniel]
+que un resumen sueltel y me ahorra ese
+
+00:41:44,116 --> 00:41:44,556 [Daniel]
+tiempo.
+
+00:41:46,596 --> 00:41:48,776 [Daniel]
+Este, otra sería cómo lo hacen, ¿no? Que
+
+00:41:48,836 --> 00:41:49,836 [Daniel]
+ahí no sé si eres tú
+
+00:41:50,636 --> 00:41:51,816 [Daniel]
+o es Alan.
+
+00:41:57,786 --> 00:42:01,996 [Daniel]
+Y ya lo técnico, pues qué amor.
+
+00:42:03,896 --> 00:42:05,995 [Alan]
+Échame cómo le hacen, Chanty también cae,
+
+00:42:06,036 --> 00:42:07,076 [Alan]
+cae acá, ¿no? Porque
+
+00:42:07,716 --> 00:42:09,496 [Alan]
+cómo, bueno, cómo hacen las entrevistas,
+
+00:42:09,936 --> 00:42:11,316 [Alan]
+con partes de validación
+
+00:42:12,336 --> 00:42:12,776 [Alan]
+y todo
+
+00:42:13,836 --> 00:42:18,806 [Alan]
+eso, también me queda acá. Eh, la de, de-
+
+00:42:21,476 --> 00:42:23,516 [Daniel]
+Pero va, va desde el tema, el cómo lo
+
+00:42:23,536 --> 00:42:24,936 [Daniel]
+hacen, perdón.
+
+00:42:25,636 --> 00:42:27,756 [Daniel]
+Yo me refiero al de cómo le da
+
+00:42:27,776 --> 00:42:31,176 [Daniel]
+satisfacción. No sé si ven, mmm, cuáles
+
+00:42:31,236 --> 00:42:33,336 [Daniel]
+son muy famosos. Bueno, la que está
+
+00:42:33,356 --> 00:42:36,996 [Daniel]
+ahorita, ¿no? Eh, no sé, Merlina o las de
+
+00:42:37,796 --> 00:42:38,616 [Daniel]
+Ukraine, ¿no?
+
+00:42:39,276 --> 00:42:41,096 [Daniel]
+¿Cómo le da satisfacción al, a la
+
+00:42:41,116 --> 00:42:43,376 [Daniel]
+audiencia? Eh-
+
+00:42:43,616 --> 00:42:45,596 [Gio]
+Es, por ejemplo, [risas] esas son hasta
+
+00:42:45,636 --> 00:42:47,756 [Gio]
+dos cosas, que es donde se me hace a mí
+
+00:42:47,796 --> 00:42:49,196 [Gio]
+difícil, porque, por ejemplo, lo que se
+
+00:42:49,216 --> 00:42:50,976 [Gio]
+puede hacer con la blacklist, lo, lo que
+
+00:42:50,996 --> 00:42:53,435 [Gio]
+haríamos es como atacar...
+
+00:42:53,636 --> 00:42:57,836 [Gio]
+... no incurrir en cosas mmm turbias. Pero
+
+00:42:57,896 --> 00:42:59,916 [Gio]
+la satisfacción es donde hay como
+
+00:42:59,996 --> 00:43:02,736 [Gio]
+equipos, por esos dos equipos de doblaje.
+
+00:43:02,756 --> 00:43:04,146 [Gio]
+Por eso cuando te lo doblan ahí
+
+00:43:04,236 --> 00:43:06,636 [Gio]
+automáticamente no está tan chido, porque
+
+00:43:06,716 --> 00:43:09,076 [Gio]
+por ejemplo, este, en los equipos de
+
+00:43:09,096 --> 00:43:11,796 [Gio]
+doblaje tienen su propio productor y, y la
+
+00:43:11,856 --> 00:43:13,836 [Gio]
+gente que traduce y los que hablan, y
+
+00:43:13,856 --> 00:43:15,996 [Gio]
+muchas veces lo que le dio satisfacción al
+
+00:43:16,076 --> 00:43:17,796 [Gio]
+público, no se piensa en Shrek.
+
+00:43:18,696 --> 00:43:21,376 [Gio]
+No fue traducir las cosas y eliminar nada
+
+00:43:21,436 --> 00:43:22,236 [Gio]
+más las cosas-
+
+00:43:22,256 --> 00:43:22,396 [Daniel]
+Sí.
+
+00:43:22,416 --> 00:43:25,376 [Gio]
+Sino darle lo, lo gracioso.
+
+00:43:25,396 --> 00:43:25,976 [Daniel]
+Ahí va,
+
+00:43:27,376 --> 00:43:29,896 [Daniel]
+y ahí es donde voy con lo que pienso,
+
+00:43:29,936 --> 00:43:31,916 [Daniel]
+doña, de la definición de eso,
+
+00:43:31,926 --> 00:43:36,086 [Daniel]
+¿va? Andrea, Alan, en el de--
+
+00:43:37,256 --> 00:43:40,356 [Daniel]
+mira, ahorita muchos, el que mencionas,
+
+00:43:40,416 --> 00:43:41,645 [Daniel]
+eso es por diseño, o sea,
+
+00:43:42,256 --> 00:43:42,896 [Daniel]
+hay todo, porque
+
+00:43:43,616 --> 00:43:45,256 [Daniel]
+la traducción ahorita actual pues no está
+
+00:43:45,266 --> 00:43:45,986 [Daniel]
+tan padre.
+
+00:43:46,016 --> 00:43:46,476 [Gio]
+Mhm.
+
+00:43:47,056 --> 00:43:48,816 [Daniel]
+Porque por diseño tienen que hacer una
+
+00:43:48,836 --> 00:43:50,176 [Daniel]
+traducción muy general.
+
+00:43:50,196 --> 00:43:51,236 [Gio]
+Mhm.
+
+00:43:51,276 --> 00:43:52,836 [Daniel]
+No van a adaptar a
+
+00:43:53,536 --> 00:43:54,556 [Daniel]
+según la audiencia-
+
+00:43:54,596 --> 00:43:54,986 [Gio]
+Mhm.
+
+00:43:54,996 --> 00:43:57,216 [Daniel]
+Hasta esto que quieren resolver.
+
+00:43:57,226 --> 00:43:57,226 [Gio]
+Sí.
+
+00:43:57,256 --> 00:44:00,296 [Daniel]
+Apenas tanto. Si tú ya ves deficiencias-
+
+00:44:00,316 --> 00:44:00,676 [Gio]
+Mhm.
+
+00:44:00,696 --> 00:44:02,636 [Daniel]
+En una traducción como en Eleven Labs o la
+
+00:44:02,676 --> 00:44:03,756 [Daniel]
+automática de YouTube-
+
+00:44:03,796 --> 00:44:04,256 [Gio]
+Mhm.
+
+00:44:04,276 --> 00:44:06,136 [Daniel]
+Pues eso va mucho más adelante, ¿no? Que
+
+00:44:06,296 --> 00:44:09,176 [Daniel]
+será tener un niño, en este caso. Todavía
+
+00:44:09,216 --> 00:44:10,036 [Daniel]
+no han solventado
+
+00:44:11,256 --> 00:44:14,246 [Daniel]
+el problema general, ¿no? un poco de, de,
+
+00:44:14,256 --> 00:44:16,536 [Daniel]
+de esta traducción como general, ¿no? Que,
+
+00:44:16,956 --> 00:44:19,016 [Daniel]
+que, que ya al menos se entiende, ya, ya
+
+00:44:19,036 --> 00:44:21,536 [Daniel]
+está mucho más adelantado. Aquí estarían
+
+00:44:22,096 --> 00:44:24,196 [Daniel]
+yendo un paso más adelante, porque pues le
+
+00:44:24,216 --> 00:44:25,796 [Daniel]
+está invirtiendo, pues esto, en un
+
+00:44:25,836 --> 00:44:28,026 [Daniel]
+equipo, la gente tiene que tropicalizarlo
+
+00:44:28,036 --> 00:44:28,916 [Daniel]
+en lo positivo.
+
+00:44:28,956 --> 00:44:29,266 [Gio]
+Mhm.
+
+00:44:29,496 --> 00:44:31,496 [Daniel]
+Sería como le tiran los españoles, ¿no?
+
+00:44:31,536 --> 00:44:33,136 [Daniel]
+Que los títulos, los latinos.
+
+00:44:33,156 --> 00:44:33,586 [Gio]
+Mhm.
+
+00:44:34,296 --> 00:44:36,686 [Daniel]
+Pues es mucho mejor que te lo...
+
+00:44:36,876 --> 00:44:38,756 [Daniel]
+obviamente, le tiran, porque están padre
+
+00:44:38,796 --> 00:44:40,536 [Daniel]
+para un latino, escuchar como español de
+
+00:44:40,556 --> 00:44:41,056 [Daniel]
+España, ¿no?
+
+00:44:41,076 --> 00:44:43,006 [Gio]
+Mhm.
+
+00:44:43,036 --> 00:44:44,256 [Daniel]
+Pero ya tenemos esa teoría
+
+00:44:45,916 --> 00:44:48,496 [Daniel]
+de cómo, en qué se basan, eh, porque
+
+00:44:48,516 --> 00:44:50,436 [Daniel]
+estamos descubriéndole el medio,
+
+00:44:51,416 --> 00:44:54,416 [Daniel]
+¿no? ¿Qué factores son para cada jugador a
+
+00:44:54,476 --> 00:44:55,456 [Daniel]
+resolver ahorita?
+
+00:44:56,636 --> 00:44:58,486 [Gio]
+Por ejemplo, yo de cuando he visto como
+
+00:44:59,656 --> 00:45:00,856 [Gio]
+[risita] cuando he visto los documentales
+
+00:45:00,896 --> 00:45:03,415 [Gio]
+sobre cómo se hacen las películas, casi
+
+00:45:03,476 --> 00:45:05,636 [Gio]
+siempre lo que, lo, o sea, cuan-- como te
+
+00:45:05,656 --> 00:45:08,136 [Gio]
+digo, lo, no, no, o sea, lo, no lo malo,
+
+00:45:08,196 --> 00:45:10,516 [Gio]
+sino lo, lo que te, lo que, por lo que uno
+
+00:45:10,556 --> 00:45:14,596 [Gio]
+recuerda las cosas, como Shrek o así. Los
+
+00:45:14,676 --> 00:45:17,236 [Gio]
+mismos, hasta los mismos, este, que
+
+00:45:17,276 --> 00:45:19,496 [Gio]
+doblan, son los que inventaban los
+
+00:45:19,516 --> 00:45:21,156 [Gio]
+chistes.
+
+00:45:21,176 --> 00:45:23,416 [Daniel]
+Pero si tú ya estuviste con Ramón, ¿cuál
+
+00:45:23,476 --> 00:45:24,456 [Daniel]
+sería tu requerimiento?
+
+00:45:24,496 --> 00:45:25,876 [Gio]
+Es que es lo que te digo, que no sé,
+
+00:45:25,896 --> 00:45:27,236 [Gio]
+porque aquí nos-- o sea, ahorita que
+
+00:45:27,256 --> 00:45:29,096 [Gio]
+dices: ¿qué son los requerimientos de cada
+
+00:45:29,136 --> 00:45:30,616 [Gio]
+quien? O sea, es que ni siquiera los
+
+00:45:31,096 --> 00:45:33,396 [Gio]
+distingo, por ejemplo. [risita] O sea,
+
+00:45:33,436 --> 00:45:36,136 [Gio]
+digo, yo en mí, en mí, digo: ah, pues
+
+00:45:36,216 --> 00:45:38,796 [Gio]
+Andrea es la dueña de, de eso, porque es
+
+00:45:38,836 --> 00:45:40,716 [Gio]
+la dueña del producto, pero realmente
+
+00:45:41,776 --> 00:45:44,126 [Gio]
+no sé, porque no... Sinceramente, yo va,
+
+00:45:44,156 --> 00:45:45,416 [Gio]
+no veo como a los
+
+00:45:46,336 --> 00:45:48,436 [Gio]
+animadores en cuanto a doblaje como algo
+
+00:45:48,516 --> 00:45:51,756 [Gio]
+creativo, sino a los guionistas.
+
+00:45:51,816 --> 00:45:53,636 [Andrea]
+Sí, porque los mo-- los cambios que le
+
+00:45:53,676 --> 00:45:55,776 [Andrea]
+hacen, por ejemplo, eh, cuando mueven
+
+00:45:55,796 --> 00:45:58,436 [Andrea]
+cosas en inglés, es porque pues conocen el
+
+00:45:58,496 --> 00:46:00,576 [Andrea]
+inglés y dicen: «Ah, esto suena raro». Y
+
+00:46:00,636 --> 00:46:02,316 [Andrea]
+ahí hacen esos cambios manuales, ¿verdad?
+
+00:46:02,356 --> 00:46:04,056 [Andrea]
+Pero no tenemos la capacidad de cambiarlo
+
+00:46:04,076 --> 00:46:06,396 [Andrea]
+a todos los idiomas y hacer como esa
+
+00:46:06,416 --> 00:46:07,556 [Andrea]
+customización-
+
+00:46:07,616 --> 00:46:08,036 [Gio]
+Mhm.
+
+00:46:08,056 --> 00:46:10,576 [Andrea]
+Por, por idioma, por animador. Pero yo
+
+00:46:10,656 --> 00:46:11,676 [Andrea]
+también, por ejemplo, el caso que
+
+00:46:11,696 --> 00:46:13,856 [Andrea]
+mencionan de Merlín, Shrek, todos estos
+
+00:46:13,916 --> 00:46:15,756 [Andrea]
+como grandes proyectos que son conocidos
+
+00:46:15,796 --> 00:46:18,456 [Andrea]
+mundialmente, también creo que no van
+
+00:46:18,516 --> 00:46:20,336 [Andrea]
+solamente, eh, de la mano, o la
+
+00:46:20,356 --> 00:46:22,196 [Andrea]
+satisfacción o la importancia que han
+
+00:46:22,276 --> 00:46:24,936 [Andrea]
+tenido con el entendimiento
+
+00:46:25,636 --> 00:46:27,516 [Andrea]
+del mensaje, porque si no, no habría
+
+00:46:27,556 --> 00:46:29,896 [Andrea]
+muchas personas que consumen anime en el
+
+00:46:29,956 --> 00:46:31,316 [Andrea]
+idioma original.
+
+00:46:31,336 --> 00:46:32,036 [Gio]
+Mhm.
+
+00:46:32,076 --> 00:46:33,176 [Andrea]
+Yo creo que más bien es
+
+00:46:33,956 --> 00:46:37,456 [Andrea]
+desde la selección de tema, podría ser. O
+
+00:46:37,536 --> 00:46:37,686 [Andrea]
+sea-
+
+00:46:37,796 --> 00:46:40,076 [Gio]
+Depende, porque yo he tratado de ver
+
+00:46:40,096 --> 00:46:42,016 [Gio]
+Shrek, la he visto en el idioma original y
+
+00:46:42,036 --> 00:46:42,966 [Gio]
+no me da risa.
+
+00:46:43,476 --> 00:46:45,566 [Daniel]
+No, no vas a poder darle gusto a todos, si
+
+00:46:45,566 --> 00:46:47,656 [Daniel]
+es que español, obviamente, a ver,
+
+00:46:47,676 --> 00:46:48,546 [Daniel]
+español ya saben,
+
+00:46:49,316 --> 00:46:50,946 [Daniel]
+y por inglés, obviamente.
+
+00:46:51,676 --> 00:46:53,156 [Daniel]
+Pero déjenme, les digo una cosa, porque
+
+00:46:53,196 --> 00:46:56,936 [Daniel]
+estamos dándole muchas vueltas. Todos
+
+00:46:56,956 --> 00:46:58,276 [Daniel]
+estamos suponiendo, ¿no?
+
+00:46:59,036 --> 00:47:01,136 [Daniel]
+¿Qué podemos sacar ahorita? Y les digo,
+
+00:47:01,296 --> 00:47:04,516 [Daniel]
+iniciamos así. Me quedé pensando, ¿no?
+
+00:47:05,506 --> 00:47:07,156 [Daniel]
+Entonces, guionista debe ser el que se
+
+00:47:07,236 --> 00:47:08,556 [Daniel]
+mete en la traducción mejor
+
+00:47:09,236 --> 00:47:10,936 [Daniel]
+o es ani-- porque ahorita están ellos
+
+00:47:11,536 --> 00:47:14,366 [Daniel]
+solventando todo eso. Tienen que definir
+
+00:47:14,396 --> 00:47:16,236 [Daniel]
+esa problemática, aparte, ¿no?
+
+00:47:16,256 --> 00:47:18,996 [Daniel]
+Independiente, porque si lo técnico
+
+00:47:19,676 --> 00:47:22,496 [Daniel]
+no se automatiza, ¿quién define este
+
+00:47:22,556 --> 00:47:24,076 [Daniel]
+requerimiento? Si llegan conmigo hoy, soy
+
+00:47:24,116 --> 00:47:24,766 [Daniel]
+un traductor,
+
+00:47:26,096 --> 00:47:27,316 [Daniel]
+pues me pueden decir: «Oye, tradúceme
+
+00:47:27,356 --> 00:47:29,676 [Daniel]
+esto, ¿no? A ruso».
+
+00:47:30,376 --> 00:47:34,136 [Daniel]
+Pero bajo industria, ¿cuál es el criterio?
+
+00:47:34,216 --> 00:47:35,556 [Daniel]
+Es dependiendo de la audiencia,
+
+00:47:35,576 --> 00:47:39,316 [Daniel]
+obviamente, la edad, el chiste, cómo se,
+
+00:47:39,536 --> 00:47:41,756 [Daniel]
+se cambia, yo qué sé. Pero estoy
+
+00:47:41,796 --> 00:47:44,256 [Daniel]
+suponiendo una demanda hacia mí, Daniel.
+
+00:47:44,276 --> 00:47:46,836 [Daniel]
+Daniel proveedor, eh, resultados de un
+
+00:47:46,856 --> 00:47:50,356 [Daniel]
+research. Pues va, desde lo técnico hasta
+
+00:47:50,636 --> 00:47:51,816 [Daniel]
+reglas de cómo lo hacen
+
+00:47:52,416 --> 00:47:54,556 [Daniel]
+algunos, ¿no? ¿Qué criterio va en tu mano?
+
+00:47:54,576 --> 00:47:56,416 [Gio]
+No, yo, yo hice uno que te digo. O sea, yo
+
+00:47:56,476 --> 00:47:58,276 [Gio]
+sé que no con todas las corridas que tú
+
+00:47:58,296 --> 00:48:00,176 [Gio]
+haces y así, va. Pero por ejemplo, aquí
+
+00:48:00,276 --> 00:48:03,856 [Gio]
+decía como que tienen un ref por, por el
+
+00:48:03,996 --> 00:48:04,636 [Gio]
+mapa-
+
+00:48:04,646 --> 00:48:05,006 [Daniel]
+¿Pero esto es?
+
+00:48:05,016 --> 00:48:07,036 [Gio]
+La matriz de riesgo. Sí.
+
+00:48:07,096 --> 00:48:08,356 [Daniel]
+A ver, lo subes, porfa.
+
+00:48:08,516 --> 00:48:10,686 [Gio]
+Eh...
+
+00:48:10,696 --> 00:48:11,996 [Daniel]
+Ah, espera a ver.
+
+00:48:12,556 --> 00:48:14,486 [Gio]
+Sí, no, pero si quieres, mira, si quieres,
+
+00:48:14,516 --> 00:48:16,296 [Gio]
+o sea, esto no, te digo que tú lo vas a
+
+00:48:16,316 --> 00:48:18,206 [Gio]
+hacer mejor, nada más es para después.
+
+00:48:18,206 --> 00:48:19,096 [Daniel]
+No es por mejor, nada más quiero ver
+
+00:48:19,796 --> 00:48:21,086 [Daniel]
+qué objetivo pusiste.
+
+00:48:21,116 --> 00:48:22,956 [Gio]
+Es que, por ejemplo, ese fue el que no, no
+
+00:48:23,056 --> 00:48:25,025 [Gio]
+me encantó y hice otro después, pero
+
+00:48:25,036 --> 00:48:26,536 [Gio]
+ahorita que estabas diciendo, para ver
+
+00:48:26,556 --> 00:48:30,136 [Gio]
+cómo lo hacen las demás em-empresas y así.
+
+00:48:30,156 --> 00:48:30,606 [Daniel]
+Esto sí,
+
+00:48:31,676 --> 00:48:34,136 [Daniel]
+además, para entender lo que es una
+
+00:48:34,176 --> 00:48:34,956 [Daniel]
+traducción,
+
+00:48:35,776 --> 00:48:39,336 [Daniel]
+ahorita pensé un énfasis.
+
+00:48:40,016 --> 00:48:42,016 [Daniel]
+Mantener lo positivo, ¿no?
+
+00:48:42,056 --> 00:48:43,276 [Gio]
+Sí, es que te digo, yo no estaba
+
+00:48:43,396 --> 00:48:45,436 [Gio]
+considerando lo positivo, porque como
+
+00:48:45,496 --> 00:48:47,916 [Gio]
+dijiste, lista negra, pero yo pienso que
+
+00:48:47,956 --> 00:48:49,916 [Gio]
+la satisfacción de una audiencia va más
+
+00:48:49,996 --> 00:48:51,636 [Gio]
+hacia lo positivo.
+
+00:48:51,646 --> 00:48:51,646 [Daniel]
+Ajá.
+
+00:48:51,756 --> 00:48:55,256 [Gio]
+Y... lo negativo se me hace que es más
+
+00:48:55,316 --> 00:48:58,288 [Gio]
+como para-... para ciertas culturas, como,
+
+00:48:58,628 --> 00:49:01,988 [Gio]
+[risita] como la árabe o así. Este, lo,
+
+00:49:02,008 --> 00:49:03,898 [Gio]
+lo positivo, yo la verdad se me hace como
+
+00:49:04,028 --> 00:49:05,908 [Gio]
+en este momento, todos tenemos
+
+00:49:06,928 --> 00:49:09,928 [Gio]
+conocimiento de idiomas, muy difícil, de
+
+00:49:09,948 --> 00:49:12,347 [Gio]
+verdad, muy, muy difícil, porque como
+
+00:49:12,368 --> 00:49:14,588 [Gio]
+decía Andrea, ni siquiera en español a lo
+
+00:49:14,608 --> 00:49:16,708 [Gio]
+mejor podemos decir, saber, por ejemplo,
+
+00:49:16,748 --> 00:49:19,768 [Gio]
+lo que están, cómo hablan los,
+
+00:49:20,468 --> 00:49:22,208 [Gio]
+los chavitos, ¿si sabes? O sea, hasta se
+
+00:49:22,228 --> 00:49:23,448 [Gio]
+nos hace difícil.
+
+00:49:23,468 --> 00:49:25,748 [Daniel]
+Pero lo que me preocupa aquí es cuáles son
+
+00:49:25,768 --> 00:49:27,428 [Daniel]
+los ejes centrales de lo que tenemos que
+
+00:49:27,468 --> 00:49:29,868 [Daniel]
+resolver. Que uno es lo negativo, luego lo
+
+00:49:29,948 --> 00:49:32,348 [Daniel]
+positivo, ¿qué más? Dentro de lo
+
+00:49:32,388 --> 00:49:33,768 [Daniel]
+positivo, que dentro de lo negativo, ¿qué
+
+00:49:33,808 --> 00:49:35,917 [Daniel]
+más? Dices, pues en los árabes, pero
+
+00:49:35,948 --> 00:49:37,688 [Daniel]
+ahorita ustedes mencionaron en lo español,
+
+00:49:37,728 --> 00:49:38,208 [Daniel]
+en lo--
+
+00:49:39,008 --> 00:49:40,808 [Daniel]
+incluso en lo latino, pues ustedes estaban
+
+00:49:40,868 --> 00:49:42,557 [Daniel]
+evitando, ¿qué era? ¿Los cholos?
+
+00:49:42,848 --> 00:49:43,438 [Gio]
+Cholos.
+
+00:49:43,748 --> 00:49:45,668 [Daniel]
+Eh, los cholos, ¿no? Sí, hay cosas que
+
+00:49:45,688 --> 00:49:46,748 [Daniel]
+tenemos que evitar, ¿no?
+
+00:49:46,868 --> 00:49:47,308 [Gio]
+Mhm.
+
+00:49:47,328 --> 00:49:49,028 [Daniel]
+O al menos contextualizar de manera
+
+00:49:49,068 --> 00:49:50,768 [Daniel]
+distinta. A lo largo de todos-
+
+00:49:50,808 --> 00:49:52,138 [Andrea]
+Evadir la tropicalización.
+
+00:49:52,168 --> 00:49:54,578 [Daniel]
+Ahorita decía, ¿no? en inglés, eh, nigger.
+
+00:49:54,588 --> 00:49:54,908 [Gio]
+Mhm.
+
+00:49:54,958 --> 00:49:57,028 [Daniel]
+Pues no, hombre, pues es, eh, sacrilegio
+
+00:49:57,048 --> 00:49:58,588 [Daniel]
+cuando normalmente en negritos y
+
+00:49:59,228 --> 00:50:01,518 [Daniel]
+deja tú, pues en, en medio, no, que se nos
+
+00:50:01,568 --> 00:50:04,748 [Daniel]
+fuera algo así, no lo sabemos. Pero, y
+
+00:50:04,868 --> 00:50:07,268 [Daniel]
+no, no vamos a profundizar todavía en eso.
+
+00:50:07,288 --> 00:50:09,768 [Daniel]
+Tenemos que definir como que el, eh, nos
+
+00:50:09,788 --> 00:50:12,848 [Daniel]
+vamos a lo fundamental, qué problemas
+
+00:50:12,868 --> 00:50:15,808 [Daniel]
+tenemos que resolver y lo-- algo que ayuda
+
+00:50:15,828 --> 00:50:18,988 [Daniel]
+es esto, definir, ¿no? Lo positivo, lo
+
+00:50:19,028 --> 00:50:21,827 [Daniel]
+negativo, que se nos está escapando
+
+00:50:23,068 --> 00:50:23,078 [Daniel]
+.
+
+00:50:24,028 --> 00:50:26,268 [Daniel]
+¿Quién se adueña? Y ya de ahí resolver
+
+00:50:26,288 --> 00:50:28,858 [Daniel]
+punto por punto. No se va a resolver todo
+
+00:50:28,858 --> 00:50:30,988 [Daniel]
+de una vuelta, y vamos a estar en un
+
+00:50:31,008 --> 00:50:33,298 [Daniel]
+proceso iterativo, ¿no? A lo mejor bien
+
+00:50:33,298 --> 00:50:35,748 [Daniel]
+salió esto mal y ¡pum! Siguiente semana,
+
+00:50:35,768 --> 00:50:37,368 [Daniel]
+siguiente semana.
+
+00:50:39,228 --> 00:50:40,728 [Gio]
+Entonces, a mí, a mí se me ocurrió hacer
+
+00:50:40,748 --> 00:50:44,268 [Gio]
+algo como así, podría ser como el GPT que
+
+00:50:44,308 --> 00:50:48,468 [Gio]
+se tiene, nada más para lo negativo, como
+
+00:50:48,568 --> 00:50:51,308 [Gio]
+tipo de qué términos hay, este,
+
+00:50:51,368 --> 00:50:54,048 [Gio]
+qué severidad tiene, en qué riesgo cae,
+
+00:50:54,848 --> 00:50:56,768 [Gio]
+y a lo mejor se podría poner algo, una
+
+00:50:56,788 --> 00:50:59,888 [Gio]
+alternativa. Podría ser, y algo así como,
+
+00:50:59,928 --> 00:51:01,908 [Gio]
+pero es como, como si, como el GPT que
+
+00:51:01,968 --> 00:51:04,908 [Gio]
+tenemos para lo de, para lo de ver qué
+
+00:51:04,968 --> 00:51:05,547 [Gio]
+norma
+
+00:51:06,267 --> 00:51:08,768 [Gio]
+infringi-infringimos, pero como en cuanto
+
+00:51:08,848 --> 00:51:12,897 [Gio]
+a términos o palabras o algo así. Pero no,
+
+00:51:12,928 --> 00:51:14,738 [Gio]
+no sé. O sea, la verdad es que no sé,
+
+00:51:14,748 --> 00:51:17,448 [Gio]
+porque [risita] como tú dices, no sé quién
+
+00:51:17,928 --> 00:51:19,708 [Gio]
+se adueñaría de esto. Yo, por ejemplo, yo
+
+00:51:19,768 --> 00:51:21,518 [Gio]
+pensaba que eran los guionistas, pero no
+
+00:51:21,518 --> 00:51:21,518 [Gio]
+sé.
+
+00:51:21,518 --> 00:51:22,998 [Andrea]
+Pero eso sería, por ejemplo, un filtro
+
+00:51:23,208 --> 00:51:24,438 [Andrea]
+antes de, de-
+
+00:51:24,548 --> 00:51:29,728 [Gio]
+Antes de producir. Ajá, pero no sé. O sea,
+
+00:51:29,738 --> 00:51:31,988 [Gio]
+antes de empezar a que hagan los dobles.
+
+00:51:31,998 --> 00:51:33,057 [Andrea]
+Las traducciones, los dobles.
+
+00:51:33,068 --> 00:51:36,208 [Gio]
+O sea, como en Eleven Labs. Pero, o sea,
+
+00:51:36,248 --> 00:51:38,148 [Gio]
+las hacen directo ahí en Eleven Labs, la
+
+00:51:38,208 --> 00:51:39,128 [Gio]
+traducción, pues.
+
+00:51:39,168 --> 00:51:42,108 [Andrea]
+Sí, antes hacíamos nosotros el guion en
+
+00:51:42,168 --> 00:51:43,777 [Andrea]
+español y se hacía la traducción en
+
+00:51:43,788 --> 00:51:46,308 [Andrea]
+inglés, y luego ya se le pasaba a los
+
+00:51:46,348 --> 00:51:47,748 [Andrea]
+animadores cuando teníamos una master
+
+00:51:47,848 --> 00:51:50,008 [Andrea]
+story. Pero creo que sí nos mencionaba que
+
+00:51:50,048 --> 00:51:52,308 [Andrea]
+como que quitaba tiempo, ¿no? Entonces,
+
+00:51:52,348 --> 00:51:55,388 [Andrea]
+como para, por fines prácticos, ya nada
+
+00:51:55,408 --> 00:51:56,928 [Andrea]
+más se hace el guion en español y la
+
+00:51:57,008 --> 00:51:59,308 [Andrea]
+traducción queda a cargo de, de animación.
+
+00:51:59,328 --> 00:52:01,048 [Daniel]
+Puede permanecer igual, ese no es el
+
+00:52:01,068 --> 00:52:02,668 [Daniel]
+problema, nada más es definir el dueño de
+
+00:52:02,708 --> 00:52:02,948 [Daniel]
+eso
+
+00:52:04,128 --> 00:52:05,418 [Daniel]
+y qué se va a hacer y qué no se va a
+
+00:52:05,418 --> 00:52:08,128 [Daniel]
+hacer. Eh, eh, quién lleva en este momento
+
+00:52:08,148 --> 00:52:10,028 [Daniel]
+no me preocupa, sino el qué vamos a
+
+00:52:10,048 --> 00:52:11,548 [Daniel]
+hacer.
+
+00:52:13,508 --> 00:52:16,148 [Andrea]
+Pues si no, la blacklist, a mí esta opción
+
+00:52:16,188 --> 00:52:18,768 [Andrea]
+que menciona Gio se me hace que no, que
+
+00:52:18,868 --> 00:52:19,268 [Andrea]
+no
+
+00:52:20,108 --> 00:52:20,448 [Andrea]
+quita
+
+00:52:21,528 --> 00:52:23,548 [Andrea]
+nada de tiempo, es nada más correrlo
+
+00:52:24,428 --> 00:52:25,188 [Andrea]
+para que
+
+00:52:26,168 --> 00:52:28,308 [Andrea]
+cada guionista sea el propio auditor de su
+
+00:52:28,388 --> 00:52:31,408 [Andrea]
+guion y pueda te, tener al alcance como
+
+00:52:31,868 --> 00:52:34,008 [Andrea]
+opciones para cambiar palabras que puedan
+
+00:52:34,048 --> 00:52:34,868 [Andrea]
+representar.
+
+00:52:34,888 --> 00:52:36,808 [Daniel]
+¿Pero qué harían con esto? ¿Cómo lo
+
+00:52:36,818 --> 00:52:37,568 [Daniel]
+usarían?
+
+00:52:37,588 --> 00:52:39,568 [Gio]
+Por ejemplo, que subas un guion, es que,
+
+00:52:39,628 --> 00:52:40,968 [Gio]
+eh, subas un guion,
+
+00:52:41,668 --> 00:52:43,328 [Gio]
+pero es que esto se me hace bien, como si
+
+00:52:43,388 --> 00:52:45,348 [Gio]
+fuera como en inglés, no sé. O sea, que
+
+00:52:45,428 --> 00:52:47,368 [Gio]
+cuando lo traduces automáticamente, porque
+
+00:52:47,428 --> 00:52:48,208 [Gio]
+uno no sabe.
+
+00:52:48,228 --> 00:52:50,688 [Daniel]
+Pero ahí va, yo necesitaría tener esa
+
+00:52:50,728 --> 00:52:53,248 [Daniel]
+lista de todas maneras, para la edad, para
+
+00:52:53,348 --> 00:52:56,248 [Daniel]
+la ubicación, para...
+
+00:52:56,548 --> 00:52:58,428 [Gio]
+Sí, o sea, pero digo, o sea, se tendría
+
+00:52:58,488 --> 00:52:59,568 [Gio]
+que hacer-- o pero lo que te digo,
+
+00:52:59,608 --> 00:53:01,668 [Gio]
+obviamente esto es un ejemplo, porque no
+
+00:53:01,708 --> 00:53:04,528 [Gio]
+está completa y no me, y no me, no me
+
+00:53:04,628 --> 00:53:06,818 [Gio]
+preocupé como por ver si estaba completo o
+
+00:53:06,888 --> 00:53:09,448 [Gio]
+no, nada más. Esto es como una idea, pero
+
+00:53:09,488 --> 00:53:11,028 [Gio]
+digo, por ejemplo, a lo mejor, porque
+
+00:53:11,088 --> 00:53:13,687 [Gio]
+también decía de, de la edad, porque dije:
+
+00:53:13,708 --> 00:53:15,288 [Gio]
+considera que tienes menos de dieciséis
+
+00:53:15,348 --> 00:53:19,748 [Gio]
+años. Este, entonces hay ciertas cosas que
+
+00:53:20,068 --> 00:53:22,348 [Gio]
+tienen que ver como con, no sé,
+
+00:53:22,388 --> 00:53:24,688 [Gio]
+rock o cosas que están relacionadas con
+
+00:53:24,728 --> 00:53:27,828 [Gio]
+sexo, que a lo mejor,
+
+00:53:28,508 --> 00:53:32,028 [Gio]
+en un contexto de adultos, no puede, puede
+
+00:53:32,248 --> 00:53:35,208 [Gio]
+no ser tan ofensivo, pero a lo mejor a
+
+00:53:35,248 --> 00:53:37,588 [Gio]
+nosotros, como, como se ve mucho en tele,
+
+00:53:37,648 --> 00:53:40,168 [Gio]
+yo creo que sí puede ser que lo quite
+
+00:53:41,008 --> 00:53:42,348 [Gio]
+los adultos si ven
+
+00:53:43,028 --> 00:53:48,328 [Gio]
+algo demasiado salido. Este... y cierta,
+
+00:53:48,748 --> 00:53:49,568 [Gio]
+como dar
+
+00:53:49,628 --> 00:53:52,128 [Gio]
+cierto, como, como otras palabras que
+
+00:53:52,168 --> 00:53:53,948 [Gio]
+puedes usar en lugar de
+
+00:53:55,028 --> 00:53:57,568 [Gio]
+esa, ¿no? Este, pero creo que sí sería
+
+00:53:57,578 --> 00:53:59,988 [Gio]
+algo que tendría que hacer el guionista,
+
+00:54:00,048 --> 00:54:01,888 [Gio]
+porque es en el guion,
+
+00:54:02,968 --> 00:54:03,668 [Gio]
+pero no sé.
+
+00:54:04,128 --> 00:54:05,778 [Andrea]
+Y sabes que yo, o sea, por ejemplo, este
+
+00:54:05,808 --> 00:54:07,838 [Andrea]
+es para identificar aspectos negativos,
+
+00:54:07,848 --> 00:54:10,028 [Andrea]
+como dices, pero no hay nada de
+
+00:54:10,068 --> 00:54:14,268 [Andrea]
+alternativas a palabras que empaten con la
+
+00:54:14,568 --> 00:54:15,648 [Andrea]
+au, con la audiencia.
+
+00:54:15,668 --> 00:54:17,348 [Gio]
+No, no sé, pero eso es lo que se me haría
+
+00:54:17,388 --> 00:54:19,128 [Gio]
+más difícil, porque ¿cómo lo busca
+
+00:54:20,208 --> 00:54:20,448 [Gio]
+uno?
+
+00:54:21,068 --> 00:54:23,488 [Gio]
+[risas] No sé, pero, o sea, se podría
+
+00:54:23,508 --> 00:54:24,928 [Gio]
+hacer, pero te digo, o sea, hasta ahorita
+
+00:54:24,988 --> 00:54:27,208 [Gio]
+yo no había pensado en nada como positivo,
+
+00:54:27,308 --> 00:54:30,148 [Gio]
+eh. Era, por ejemplo, yo digo, hasta he
+
+00:54:30,168 --> 00:54:31,888 [Gio]
+vis-- lo, de lo que te digo que, que
+
+00:54:31,968 --> 00:54:35,378 [Gio]
+muchas veces, este, lo hacen, o sea, como
+
+00:54:35,488 --> 00:54:37,328 [Gio]
+que ese error se va dando cuenta como
+
+00:54:37,368 --> 00:54:39,108 [Gio]
+hasta cuando llega el equipo de traductor
+
+00:54:39,168 --> 00:54:42,458 [Gio]
+mexicano. Por ejemplo, en, creo que en,
+
+00:54:42,528 --> 00:54:44,728 [Gio]
+en, en Disney ya ha pasado varias veces,
+
+00:54:44,808 --> 00:54:47,228 [Gio]
+que a lo mejor dicen: «No, se llama, este,
+
+00:54:48,048 --> 00:54:49,958 [Gio]
+tal cosa», y luego le cambian porque el
+
+00:54:49,988 --> 00:54:51,598 [Gio]
+equipo de traducción dijo: «Ah, ¿sabes
+
+00:54:51,668 --> 00:54:54,368 [Gio]
+qué? Así, eso es ofensivo». Por ejemplo,
+
+00:54:54,408 --> 00:54:57,590 [Gio]
+la palabra papaya o la palabra concha....
+
+00:54:57,620 --> 00:55:00,000 [Gio]
+O sea, es, son mismas palabras en español
+
+00:55:00,040 --> 00:55:03,320 [Gio]
+que tienen un, una connotación sexual. O
+
+00:55:03,360 --> 00:55:06,280 [Gio]
+la palabra coger o así, o sea que-
+
+00:55:07,240 --> 00:55:09,660 [Gio]
+Ajá, que aquí es como, ay, se ve muy de
+
+00:55:09,700 --> 00:55:11,680 [Gio]
+doble sentido y en España creo que lo
+
+00:55:11,920 --> 00:55:16,400 [Gio]
+dicen muy, mucho así. No idea.
+
+00:55:16,420 --> 00:55:18,770 [Daniel]
+Decían acento y tono, ¿no? Yo
+
+00:55:19,080 --> 00:55:21,040 [Daniel]
+les voy a poner el ejemplo, ¿no? Esos,
+
+00:55:21,620 --> 00:55:23,590 [Daniel]
+este, españoles, ¿no? Le tienen mucho en
+
+00:55:23,620 --> 00:55:25,990 [Daniel]
+gran bolzeta, que se unen los memes. Pues
+
+00:55:26,040 --> 00:55:28,360 [Daniel]
+no es lo mismo el kamehameha que la onda
+
+00:55:28,380 --> 00:55:29,580 [Daniel]
+vital, ¿no?
+
+00:55:29,620 --> 00:55:30,880 [Daniel]
+Que ahí habla, no sé,
+
+00:55:32,200 --> 00:55:35,640 [Daniel]
+qué sería el, la palabra, el tono, la
+
+00:55:35,700 --> 00:55:36,520 [Daniel]
+tropicalización
+
+00:55:37,360 --> 00:55:38,820 [Daniel]
+y luego el acento, ¿no? Ahorita hablabas
+
+00:55:38,880 --> 00:55:41,650 [Daniel]
+de Loquendo. Eso sí sería una necesidad de
+
+00:55:41,680 --> 00:55:42,440 [Daniel]
+investigar.
+
+00:55:43,760 --> 00:55:45,820 [Daniel]
+No sé si es de Loquendo, no sé la
+
+00:55:45,860 --> 00:55:48,920 [Daniel]
+definición de esto, si es el acento, si es
+
+00:55:48,960 --> 00:55:51,520 [Daniel]
+el tono, si es el, el estilo,
+
+00:55:52,860 --> 00:55:55,020 [Daniel]
+cómo solventan.
+
+00:55:55,820 --> 00:55:57,860 [Daniel]
+Los, las blacklist o las palabras
+
+00:55:57,920 --> 00:55:59,480 [Daniel]
+negativas o positivas, porque lo pueden
+
+00:55:59,520 --> 00:55:59,880 [Daniel]
+lograr dentro
+
+00:56:00,840 --> 00:56:02,740 [Daniel]
+y volviendo a esto mismo, pues no es lo
+
+00:56:02,780 --> 00:56:04,820 [Daniel]
+mismo uno neutro a cuando le agregas algo
+
+00:56:04,880 --> 00:56:07,920 [Daniel]
+que le da positivo, o sea, un swag, y lo
+
+00:56:07,940 --> 00:56:10,240 [Daniel]
+hace, este, al perder, es el gusto.
+
+00:56:10,320 --> 00:56:11,620 [Gio]
+Mhm.
+
+00:56:12,400 --> 00:56:14,080 [Daniel]
+Y pues de, de dejar algo neutral da
+
+00:56:14,120 --> 00:56:14,840 [Daniel]
+satisfacción
+
+00:56:15,560 --> 00:56:18,480 [Daniel]
+con esa jiribilla, ¿no? Esas palabras. O
+
+00:56:18,580 --> 00:56:20,250 [Daniel]
+lo podrían volver, y vuelvo con los
+
+00:56:20,280 --> 00:56:23,140 [Daniel]
+españoles, perdón, algo negativo, ¿no? Que
+
+00:56:23,160 --> 00:56:26,960 [Daniel]
+incluso molesta. No, no necesariamente la
+
+00:56:27,040 --> 00:56:29,280 [Daniel]
+blacklist, sería algo como que, como le
+
+00:56:29,300 --> 00:56:32,240 [Daniel]
+das la vuelta, ¿no? De algo general a lo
+
+00:56:32,280 --> 00:56:33,780 [Daniel]
+que te mencionaba, que está ahorita por
+
+00:56:33,800 --> 00:56:34,860 [Daniel]
+diseño, tiene que ser
+
+00:56:35,480 --> 00:56:36,880 [Daniel]
+general esa traducción.
+
+00:56:37,640 --> 00:56:39,800 [Daniel]
+Este, como recubrir una masa
+
+00:56:40,840 --> 00:56:43,140 [Daniel]
+general en este momento, dado la
+
+00:56:43,200 --> 00:56:44,540 [Daniel]
+tecnología actual.
+
+00:56:44,580 --> 00:56:47,040 [Gio]
+Aunque, bueno, eso ya es como algo, una
+
+00:56:47,340 --> 00:56:49,350 [Gio]
+apreciación a lo mejor como,
+
+00:56:50,060 --> 00:56:52,400 [Gio]
+este, [se ríe] equis, ¿no? Pero las voces
+
+00:56:52,460 --> 00:56:54,180 [Gio]
+medio robóticas creo que a la, a la vez
+
+00:56:54,620 --> 00:56:55,620 [Gio]
+concuerdan con
+
+00:56:56,260 --> 00:56:57,640 [Gio]
+el producto, ¿no? O sea-
+
+00:56:58,260 --> 00:57:00,080 [Andrea]
+Sí, pero siento que-
+
+00:57:00,100 --> 00:57:00,440 [Gio]
+¿No?
+
+00:57:00,500 --> 00:57:03,400 [Andrea]
+No... si nos vamos ya por contenido más
+
+00:57:03,440 --> 00:57:05,580 [Andrea]
+largo, no sé, quizá puede ser algo
+
+00:57:05,640 --> 00:57:07,179 [Andrea]
+cansado. Porque
+
+00:57:07,980 --> 00:57:10,640 [Andrea]
+creo, no sé si estoy mal, que esto
+
+00:57:11,400 --> 00:57:13,740 [Andrea]
+cuando explotó era por los, porque también
+
+00:57:14,060 --> 00:57:15,980 [Andrea]
+empezaron a ex-- a explotar los videos
+
+00:57:16,020 --> 00:57:18,770 [Andrea]
+cortos. Si es un video corto, como ahorita
+
+00:57:18,800 --> 00:57:20,700 [Andrea]
+los filtros que hay en TikTok, que hay
+
+00:57:21,460 --> 00:57:24,440 [Andrea]
+voces muy específicas, te lo aguantas
+
+00:57:24,460 --> 00:57:25,980 [Andrea]
+porque es un short, porque es un video
+
+00:57:26,000 --> 00:57:28,600 [Andrea]
+corto y dices: ah, okey, y está chistoso,
+
+00:57:28,640 --> 00:57:30,640 [Andrea]
+pero ya, ahorita que le estamos tirando
+
+00:57:30,740 --> 00:57:33,440 [Andrea]
+videos más largos, no sé qué tan cansado y
+
+00:57:33,520 --> 00:57:35,080 [Andrea]
+tan monótono puede ser.
+
+00:57:36,040 --> 00:57:37,100 [Andrea]
+Pero pues es una,
+
+00:57:37,880 --> 00:57:40,000 [Andrea]
+es una suposición, no, no,
+
+00:57:40,720 --> 00:57:42,230 [Andrea]
+no tengo como que la verdad absoluta de:
+
+00:57:42,300 --> 00:57:44,370 [Andrea]
+ah, no, es que tiene que ser. Pero, por
+
+00:57:44,400 --> 00:57:46,220 [Andrea]
+ejemplo, si en, si en otros idiomas no se
+
+00:57:46,240 --> 00:57:48,340 [Andrea]
+utiliza la voz de Loquendo, yo creo que lo
+
+00:57:48,420 --> 00:57:49,940 [Andrea]
+podamos dejar para experimentación
+
+00:57:49,960 --> 00:57:52,400 [Andrea]
+únicamente en español. Esto, en
+
+00:57:52,420 --> 00:57:55,560 [Andrea]
+específico. Como híbrido, como lo hemos
+
+00:57:55,620 --> 00:57:58,100 [Andrea]
+estado haciendo hasta ahora, que la voz de
+
+00:57:58,140 --> 00:57:59,880 [Andrea]
+los personajes principales son las que se
+
+00:57:59,940 --> 00:58:01,860 [Andrea]
+utilizan con Loquendo y las demás se
+
+00:58:01,880 --> 00:58:04,219 [Andrea]
+utilizan con voces normales. No habría un
+
+00:58:04,260 --> 00:58:05,320 [Andrea]
+gran cambio en las demás
+
+00:58:05,400 --> 00:58:08,960 [Andrea]
+pistas.
+
+00:58:11,500 --> 00:58:12,620 [Daniel]
+Les voy a asignar tareas,
+
+00:58:14,000 --> 00:58:17,410 [Daniel]
+porque me sale una... platico con ellos y
+
+00:58:17,480 --> 00:58:19,780 [Daniel]
+me pasa alguien del transcript. Después me
+
+00:58:19,800 --> 00:58:21,940 [Daniel]
+quitaré, que es más facilito también así.
+
+00:58:23,280 --> 00:58:25,600 [Daniel]
+Porque creo que desde la definición, la
+
+00:58:25,640 --> 00:58:26,700 [Daniel]
+investigación,
+
+00:58:27,580 --> 00:58:28,940 [Daniel]
+dado lo que les mandé, sí me esperaría que
+
+00:58:28,980 --> 00:58:29,120 [Daniel]
+lo
+
+00:58:29,980 --> 00:58:31,860 [Daniel]
+leyeran completo. Bueno, sería un
+
+00:58:31,900 --> 00:58:34,780 [Daniel]
+requerimiento, ¿no? Y que hicieran
+
+00:58:34,820 --> 00:58:36,020 [Daniel]
+crítica, qué se entiende, qué no se
+
+00:58:36,080 --> 00:58:37,260 [Daniel]
+entiende, qué parte, qué es la que se
+
+00:58:37,270 --> 00:58:39,860 [Daniel]
+entiende. Este, yo lo que me apoyo es en
+
+00:58:39,900 --> 00:58:43,600 [Daniel]
+eso, ¿no? Corro como... entonces, deep
+
+00:58:43,680 --> 00:58:46,700 [Daniel]
+research y se destila y, pero si está
+
+00:58:46,760 --> 00:58:50,060 [Daniel]
+bien, bien claro el objetivo, ahí sí nota.
+
+00:58:50,100 --> 00:58:51,800 [Daniel]
+Este,
+
+00:58:52,880 --> 00:58:54,680 [Daniel]
+¿qué necesidades ven del lado de ustedes
+
+00:58:54,700 --> 00:58:58,980 [Daniel]
+dos? Vamos, por ejemplo, de ustedes.
+
+00:59:01,280 --> 00:59:04,910 [Daniel]
+Ahora que hicieron un levantamiento, ¿en
+
+00:59:04,980 --> 00:59:07,060 [Daniel]
+qué podría ayudar?
+
+00:59:08,260 --> 00:59:11,640 [Daniel]
+¿O qué problemáticas se encuentran?
+
+00:59:12,700 --> 00:59:16,120 [Daniel]
+Problemáticas, no. O sea, no se me ocurre-
+
+00:59:16,680 --> 00:59:19,120 [Daniel]
+Pero de áreas de oportunidad, entonces.
+
+00:59:19,140 --> 00:59:20,240 [Daniel]
+O sea, de oportunidad, pues hay
+
+00:59:20,360 --> 00:59:22,220 [Daniel]
+muchísimas, ¿no? Porque o sea-
+
+00:59:22,260 --> 00:59:24,800 [Daniel]
+No, sí, sí, sí, pero casi todas se reducen
+
+00:59:24,840 --> 00:59:25,800 [Daniel]
+a lo técnico, ¿no?
+
+00:59:25,860 --> 00:59:26,500 [Daniel]
+Sí.
+
+00:59:26,540 --> 00:59:30,560 [Daniel]
+A lo técnico en la automatización y, eh,
+
+00:59:30,600 --> 00:59:32,400 [Daniel]
+mecanizarlo, no sé, no sé cómo se dice,
+
+00:59:32,420 --> 00:59:36,090 [Daniel]
+¿no? Quitar lo repetitivo. [risas]
+
+00:59:36,100 --> 00:59:38,300 [Daniel]
+Pero por ejemplo, en lo de satisfacción
+
+00:59:38,380 --> 00:59:41,230 [Daniel]
+al, al... porque ese sería más como
+
+00:59:41,360 --> 00:59:44,240 [Daniel]
+productividad, ¿no? Este, eficientar el
+
+00:59:44,300 --> 00:59:46,560 [Daniel]
+proceso, pero del lado de darle valor
+
+00:59:46,580 --> 00:59:47,360 [Daniel]
+agregado.
+
+00:59:48,360 --> 00:59:49,889 [Daniel]
+Valor agregado, pues no...
+
+00:59:51,240 --> 00:59:53,540 [Daniel]
+Creo que los, los que están encargando de
+
+00:59:53,560 --> 00:59:56,240 [Daniel]
+eso, están muy despegados del, de la
+
+00:59:56,300 --> 00:59:59,020 [Daniel]
+satisfac-satisfacción del, de los que-
+
+00:59:59,380 --> 01:00:01,020 [Daniel]
+Sí, creo que ya más bien el lado ya es
+
+01:00:01,030 --> 01:00:01,880 [Daniel]
+técnico de-
+
+01:00:02,200 --> 01:00:02,720 [Daniel]
+Sí.
+
+01:00:03,360 --> 01:00:04,370 [Andrea]
+Lo analítico, sí.
+
+01:00:05,280 --> 01:00:07,020 [Gio]
+Sí, es lo que usted decía. Yo pensaba que
+
+01:00:07,060 --> 01:00:08,740 [Gio]
+todo lo que tenga que ver con esto, yo
+
+01:00:08,820 --> 01:00:10,680 [Gio]
+pienso que es de iodismo.
+
+01:00:10,700 --> 01:00:13,120 [Daniel]
+Sí, yo te puedo decir que, este, ellos se
+
+01:00:13,140 --> 01:00:15,100 [Daniel]
+encargan de escuchar que-- o sea, no saben
+
+01:00:15,140 --> 01:00:16,940 [Daniel]
+qué están, qué están escuchando, pero por
+
+01:00:16,960 --> 01:00:18,740 [Daniel]
+lo menos es, eh, de escuchar, que se está
+
+01:00:18,760 --> 01:00:20,780 [Daniel]
+escuchando bien y todo eso. Pero pues al
+
+01:00:20,820 --> 01:00:22,820 [Daniel]
+fin de cuentas, no, o sea, no sabemos si
+
+01:00:22,860 --> 01:00:24,420 [Daniel]
+realmente le está agregando valor eso que
+
+01:00:24,440 --> 01:00:24,730 [Daniel]
+hace.
+
+01:00:25,500 --> 01:00:28,880 [Daniel]
+Okey.
+
+01:00:29,480 --> 01:00:32,370 [Daniel]
+Por eso, o sea, de, de técnico a mí sí me
+
+01:00:32,380 --> 01:00:35,990 [Daniel]
+gustaría, eh, de, definir con un
+
+01:00:36,620 --> 01:00:38,980 [Daniel]
+deep research si las demás,
+
+01:00:39,620 --> 01:00:43,170 [Daniel]
+eh, traducciones... ¿Inglés parte del
+
+01:00:43,170 --> 01:00:46,270 [Daniel]
+español? ¿Todas parten del español o hay
+
+01:00:46,270 --> 01:00:47,640 [Daniel]
+alguna de ellas?
+
+01:00:48,360 --> 01:00:49,080 [Daniel]
+¿Cómo, perdón?
+
+01:00:49,880 --> 01:00:53,100 [Daniel]
+O sea, si el, el input de todas las
+
+01:00:53,140 --> 01:00:55,460 [Daniel]
+traducciones sigue siendo español o, por
+
+01:00:55,500 --> 01:00:57,970 [Daniel]
+ejemplo, en ruso mejor usamos inglés.
+
+01:00:57,980 --> 01:00:59,400 [Andrea]
+Inglés. ¿Cuál es la base para todos?
+
+01:00:59,460 --> 01:01:01,080 [Daniel]
+Sí, ¿cuál es la raíz, no? Lo que, lo que
+
+01:01:01,220 --> 01:01:03,290 [Daniel]
+platicábamos, ¿no? Que si es como las
+
+01:01:03,360 --> 01:01:04,370 [Daniel]
+monedas y eso.
+
+01:01:04,840 --> 01:01:07,100 [Daniel]
+Sí, sí, sí. Eso yo creo que sí sería-
+
+01:01:07,370 --> 01:01:11,219 [Ramon]
+... eh, necesario tenerlo a lo posible,
+
+01:01:11,250 --> 01:01:11,590 [Ramon]
+porque
+
+01:01:12,430 --> 01:01:14,590 [Ramon]
+construyendo las-
+
+01:01:14,610 --> 01:01:16,670 [Daniel]
+Ahí va, ahí por anotar y ver qué modelo es
+
+01:01:16,710 --> 01:01:18,000 [Daniel]
+el que traduce mejor.
+
+01:01:18,000 --> 01:01:18,850 [Ramon]
+Okey.
+
+01:01:18,870 --> 01:01:20,650 [Daniel]
+Complementario en ElevenLabs. Na-nada más
+
+01:01:20,690 --> 01:01:22,950 [Daniel]
+por mencionarlo y dejarlo anotado, porque
+
+01:01:22,970 --> 01:01:24,350 [Daniel]
+eso es parte de la investigación, ver
+
+01:01:24,430 --> 01:01:26,030 [Daniel]
+cuáles son los modelos. Creo que ya se
+
+01:01:26,040 --> 01:01:28,190 [Daniel]
+había mencionado, ¿no? Cuáles son los, los
+
+01:01:28,230 --> 01:01:29,650 [Daniel]
+mejores modelos, porque sí cambia
+
+01:01:29,670 --> 01:01:30,430 [Daniel]
+rotundamente
+
+01:01:31,110 --> 01:01:34,630 [Daniel]
+entreee, entre laboratorios, que es quien
+
+01:01:34,670 --> 01:01:36,430 [Daniel]
+tiene que cargarlos, no son laboratorios,
+
+01:01:36,470 --> 01:01:38,389 [Daniel]
+son corporaciones, [risas] ¿no? Lo
+
+01:01:38,470 --> 01:01:40,960 [Daniel]
+romantici-- lo romantizan para el usuario,
+
+01:01:40,960 --> 01:01:43,650 [Daniel]
+¿no? Pero entre las corporaciones, ¿cuál
+
+01:01:43,670 --> 01:01:46,230 [Daniel]
+tiene el mejor modelo? O los mejores
+
+01:01:46,270 --> 01:01:48,090 [Daniel]
+modelos, porque no, no dependeríamos nada,
+
+01:01:48,650 --> 01:01:51,210 [Daniel]
+nada más de uno para las traducciones,
+
+01:01:51,590 --> 01:01:53,790 [Daniel]
+que también puede cambiar entre idiomas.
+
+01:01:53,810 --> 01:01:55,350 [Daniel]
+Yo digo para dejarlo documentado, ¿no?
+
+01:01:55,370 --> 01:01:56,170 [Ramon]
+Sí.
+
+01:01:56,210 --> 01:01:58,609 [Daniel]
+Este, tus teorías también de qué, de qué
+
+01:01:59,730 --> 01:02:03,410 [Daniel]
+lenguaje par, o qué idioma, perdón, ¿y qué
+
+01:02:03,450 --> 01:02:05,010 [Daniel]
+más?
+
+01:02:05,030 --> 01:02:08,410 [Ramon]
+Pues nada más, lo del modelo. Yo creo el,
+
+01:02:08,470 --> 01:02:09,980 [Ramon]
+el, el punto en el que está ahorita el
+
+01:02:10,050 --> 01:02:12,750 [Ramon]
+desarrollo, este, es importantísimo.
+
+01:02:12,770 --> 01:02:16,070 [Daniel]
+Eso sería para la conversión, ¿verdad? La
+
+01:02:16,110 --> 01:02:17,870 [Daniel]
+detección y conversión.
+
+01:02:18,570 --> 01:02:18,580 [Ramon]
+Sí.
+
+01:02:18,580 --> 01:02:19,230 [Daniel]
+¿Y la detección
+
+01:02:20,290 --> 01:02:22,490 [Daniel]
+ya la tienen solventado con lo del CSV?
+
+01:02:23,210 --> 01:02:25,610 [Ramon]
+Eh, sí, con lo del CSV.
+
+01:02:25,770 --> 01:02:26,090 [Daniel]
+¿Sí?
+
+01:02:26,110 --> 01:02:27,130 [Ramon]
+Con lo del CSV sí.
+
+01:02:27,150 --> 01:02:27,910 [Daniel]
+Detección pro.
+
+01:02:27,930 --> 01:02:31,870 [Ramon]
+Ahí se ve, eh... sí, con ElevenLabs se le
+
+01:02:31,930 --> 01:02:32,250 [Ramon]
+puede decir
+
+01:02:32,950 --> 01:02:33,780 [Ramon]
+quién dice qué.
+
+01:02:34,610 --> 01:02:34,780 [Daniel]
+Okey.
+
+01:02:34,780 --> 01:02:37,110 [Ramon]
+Ya nada más con el-- eso con el CSV, el
+
+01:02:37,130 --> 01:02:40,430 [Ramon]
+guion. Y luego con el MP4 o MP3 del video
+
+01:02:40,470 --> 01:02:43,910 [Ramon]
+final, ya es quién dice qué, cuándo.
+
+01:02:43,930 --> 01:02:44,490 [Daniel]
+Bueno.
+
+01:02:44,530 --> 01:02:45,830 [Ramon]
+Y ahí vamos empatando.
+
+01:02:45,910 --> 01:02:50,410 [Daniel]
+Okey, okey. O sea, hicieran ustedes dos
+
+01:02:50,530 --> 01:02:52,750 [Daniel]
+entonces, que se mete más. Y harían
+
+01:02:52,770 --> 01:02:56,150 [Daniel]
+pruebas. Hagan sus pruebas de lo que sea.
+
+01:02:59,370 --> 01:03:00,570 [Daniel]
+Porque ya están solventando, están
+
+01:03:00,580 --> 01:03:02,750 [Daniel]
+haciendo pruebas. O sea, traduciéndola
+
+01:03:03,430 --> 01:03:04,870 [Daniel]
+a inglés y yo, pues ustedes ya están
+
+01:03:04,890 --> 01:03:06,750 [Daniel]
+haciendo pruebas de cómo solventar.
+
+01:03:07,110 --> 01:03:07,550 [Ramon]
+Sí.
+
+01:03:07,590 --> 01:03:10,770 [Daniel]
+O reducen gran parte del trabajo.
+
+01:03:13,230 --> 01:03:15,469 [Daniel]
+Y lo otro se agregaría calidad o
+
+01:03:15,510 --> 01:03:18,210 [Daniel]
+satisfacción al usuario. Lo del modelo que
+
+01:03:18,219 --> 01:03:21,890 [Daniel]
+esté al menos evaluando, ¿no? Del lado de
+
+01:03:21,930 --> 01:03:22,550 [Daniel]
+ellos, bueno,
+
+01:03:23,950 --> 01:03:26,710 [Daniel]
+del lado de ellos, ese sí agrega valor
+
+01:03:27,730 --> 01:03:31,350 [Daniel]
+de lo dado. Bueno, uno, para lo-- bajo lo
+
+01:03:31,370 --> 01:03:33,550 [Daniel]
+actual, ¿no? Bajo el estatus actual.
+
+01:03:35,830 --> 01:03:37,020 [Daniel]
+Porque un mejor modelo, pues iba a
+
+01:03:37,030 --> 01:03:40,110 [Daniel]
+traducir mejor, pensando que ElevenLabs no
+
+01:03:40,130 --> 01:03:41,870 [Daniel]
+está traduciendo al cien que otro nuevo
+
+01:03:41,950 --> 01:03:42,330 [Daniel]
+modelo,
+
+01:03:43,850 --> 01:03:45,270 [Daniel]
+que a lo que entiendo, sí tiene esa
+
+01:03:45,990 --> 01:03:48,610 [Daniel]
+limitación, ¿no? Este, es más económico,
+
+01:03:48,630 --> 01:03:50,670 [Daniel]
+eso sí, por mucho, pero tiene ciertas
+
+01:03:50,710 --> 01:03:53,170 [Daniel]
+limitaciones en traducción. A cierto
+
+01:03:53,210 --> 01:03:55,110 [Daniel]
+nivel, no, no así horrible,
+
+01:03:56,070 --> 01:03:57,470 [Daniel]
+que aunque no te diga la audiencia, pues
+
+01:03:57,510 --> 01:04:00,539 [Daniel]
+probablemente sí. Vamos a verlo, ¿no?
+
+01:04:00,539 --> 01:04:00,800 [Ramon]
+Mhm.
+
+01:04:00,850 --> 01:04:02,620 [Daniel]
+Hay que, hay que detectarlo también con un
+
+01:04:02,630 --> 01:04:07,080 [Daniel]
+traductor. Este...
+
+01:04:07,080 --> 01:04:09,070 [Andrea]
+¿Y se pueden hacer fórmulas como para ver
+
+01:04:09,130 --> 01:04:11,510 [Andrea]
+cuál resultado es mejor, si, si el español
+
+01:04:11,550 --> 01:04:14,010 [Andrea]
+es el idioma base o el inglés,
+
+01:04:15,170 --> 01:04:16,700 [Andrea]
+dependiendo de cuál idioma?
+
+01:04:16,700 --> 01:04:19,330 [Daniel]
+Tenemos otros para ver eso. Lo que sí te
+
+01:04:19,350 --> 01:04:20,710 [Daniel]
+diría es que de alguna manera contigo
+
+01:04:20,770 --> 01:04:22,630 [Daniel]
+tenemos que ver un traductor humano-
+
+01:04:23,290 --> 01:04:23,680 [Andrea]
+Mhm.
+
+01:04:23,690 --> 01:04:25,700 [Daniel]
+O no sé con quién, también quién se vaya a
+
+01:04:25,730 --> 01:04:26,210 [Daniel]
+ver eso.
+
+01:04:26,300 --> 01:04:27,270 [Andrea]
+Ah,
+
+01:04:28,410 --> 01:04:29,270 [Andrea]
+inglés.
+
+01:04:29,310 --> 01:04:30,090 [Daniel]
+Y ruso.
+
+01:04:30,110 --> 01:04:31,230 [Andrea]
+Ah, inglés y ruso.
+
+01:04:31,410 --> 01:04:34,470 [Daniel]
+Al menos inglés, al menos inglés. Y si no
+
+01:04:34,510 --> 01:04:36,330 [Daniel]
+se consigue aquí en Durango, pues vamos a
+
+01:04:36,450 --> 01:04:40,060 [Daniel]
+servicios en línea, pelas.com o yo qué sé.
+
+01:04:40,060 --> 01:04:41,810 [Andrea]
+¿Pero sería para cada guion?
+
+01:04:41,870 --> 01:04:45,690 [Daniel]
+Sí. Que por las redes, que no tienen una
+
+01:04:45,730 --> 01:04:45,970 [Daniel]
+carga
+
+01:04:46,770 --> 01:04:48,330 [Daniel]
+tremenda, ¿no? Esa gente está
+
+01:04:48,340 --> 01:04:49,970 [Daniel]
+acostumbrada. Yo he tenido-
+
+01:04:49,990 --> 01:04:51,190 [Andrea]
+Lecturas de estas.
+
+01:04:51,230 --> 01:04:54,170 [Daniel]
+Ocho años, trabajé con un proyecto y
+
+01:04:54,330 --> 01:04:56,220 [Daniel]
+traducían, pero artículos, como nosotros
+
+01:04:56,220 --> 01:04:59,390 [Daniel]
+todavía estamos en artículos, este,
+
+01:04:59,470 --> 01:05:02,390 [Daniel]
+traducían una cantidad abrumadora de, de
+
+01:05:02,430 --> 01:05:05,550 [Daniel]
+artículos al día. Es una chamba, o
+
+01:05:05,590 --> 01:05:08,690 [Daniel]
+sea, es como un traductor. Bueno, muchos
+
+01:05:08,730 --> 01:05:11,050 [Daniel]
+son certificados.
+
+01:05:13,350 --> 01:05:16,070 [Daniel]
+Lo que buscaría, es decir, pero que se
+
+01:05:16,110 --> 01:05:20,230 [Daniel]
+ajuste ya fuera de la certificación a, al
+
+01:05:20,790 --> 01:05:24,070 [Daniel]
+estilo, tono, no sé cómo llamarlo. Pues
+
+01:05:24,130 --> 01:05:27,150 [Daniel]
+no sé, diría una nota común de función.
+
+01:05:28,550 --> 01:05:30,270 [Daniel]
+¿Qué más para pasar las tareas? Mejor no
+
+01:05:30,370 --> 01:05:32,650 [Daniel]
+decir con compromisos.
+
+01:05:34,830 --> 01:05:36,520 [Andrea]
+Pues yo, yo sí hice lo de las diez,
+
+01:05:36,590 --> 01:05:39,330 [Andrea]
+este... No me acuerdo si te lo mandé, pero
+
+01:05:39,350 --> 01:05:41,510 [Andrea]
+ahí está lo de los diez términos que no
+
+01:05:41,610 --> 01:05:44,590 [Andrea]
+se traducen bien.
+
+01:05:44,650 --> 01:05:44,750 [Daniel]
+Sí.
+
+01:05:44,770 --> 01:05:47,080 [Andrea]
+Pero me queda la duda de entonces, eh,
+
+01:05:47,930 --> 01:05:49,650 [Andrea]
+ya que definimos que a lo mejor hay que
+
+01:05:49,670 --> 01:05:52,770 [Andrea]
+pegarle a español, inglés y ruso nada más,
+
+01:05:52,870 --> 01:05:57,070 [Andrea]
+eh, que entonces la, la blacklist no, no
+
+01:05:57,150 --> 01:05:59,570 [Andrea]
+se queda ni provisional, la pausamos por
+
+01:05:59,590 --> 01:06:02,650 [Andrea]
+el momento, aporta para, para este proceso
+
+01:06:02,670 --> 01:06:05,770 [Andrea]
+en el que van de, de lo de la publicación
+
+01:06:05,810 --> 01:06:06,720 [Andrea]
+del código...
+
+01:06:06,730 --> 01:06:08,230 [Daniel]
+Es que contigo yo creo que el problema
+
+01:06:08,270 --> 01:06:10,820 [Daniel]
+principal es, eh, vuelvo a esa palabra,
+
+01:06:10,820 --> 01:06:13,230 [Daniel]
+¿no? Volviendo a lo fundamental, ¿qué
+
+01:06:13,270 --> 01:06:14,830 [Daniel]
+problema tratamos de resolver
+
+01:06:16,010 --> 01:06:17,860 [Daniel]
+y cuáles son los pilares para resolver ese
+
+01:06:17,970 --> 01:06:19,850 [Daniel]
+problema? La blacklist puede ser uno,
+
+01:06:19,860 --> 01:06:22,210 [Daniel]
+¿no? O cómo de algo neutral o
+
+01:06:22,850 --> 01:06:26,270 [Daniel]
+positivo, potencializas lo positivo. ¿Qué
+
+01:06:26,350 --> 01:06:27,590 [Daniel]
+podría estar sucediendo?
+
+01:06:28,410 --> 01:06:29,530 [Daniel]
+¿Qué es lo fundamental
+
+01:06:30,450 --> 01:06:32,710 [Daniel]
+que tenemos que estar resolviendo? Que
+
+01:06:32,770 --> 01:06:34,640 [Daniel]
+puedes decir: «Oye, no, estamos bien, la
+
+01:06:34,750 --> 01:06:36,570 [Daniel]
+audiencia nos dice que estamos superbién».
+
+01:06:36,890 --> 01:06:38,340 [Daniel]
+Pero ya mencionaste estas cosas, ¿no?,
+
+01:06:38,350 --> 01:06:40,590 [Daniel]
+que tenemos que revisar. Yo uno, que sí me
+
+01:06:40,610 --> 01:06:42,470 [Daniel]
+da mucha inquietud, es ver cómo le hacen
+
+01:06:42,570 --> 01:06:45,670 [Daniel]
+o lo que también pusieron allí, ¿no? Cómo
+
+01:06:45,710 --> 01:06:48,390 [Daniel]
+lo hacen terceros, qué hacen, qué hacen,
+
+01:06:48,470 --> 01:06:53,450 [Daniel]
+por qué. Se licitan o se licita, cómo
+
+01:06:53,510 --> 01:06:58,210 [Daniel]
+solventan. Eso es algo que pues ya ahorró
+
+01:06:58,250 --> 01:06:59,700 [Daniel]
+muchísimo trabajo, ¿no? Pero hay que
+
+01:06:59,710 --> 01:07:01,550 [Daniel]
+definir el qué.
+
+01:07:01,590 --> 01:07:02,020 [Andrea]
+Mhm.
+
+01:07:02,090 --> 01:07:04,850 [Daniel]
+O sea, el qué.
+
+01:07:06,550 --> 01:07:06,580 [Daniel]
+Como
+
+01:07:07,670 --> 01:07:07,870 [Daniel]
+en...
+
+01:07:08,162 --> 01:07:09,822 [Andrea]
+... Yo pienso que sí nos serviría la
+
+01:07:09,862 --> 01:07:12,612 [Andrea]
+blacklist para, sobre todo para lo de los,
+
+01:07:12,842 --> 01:07:15,472 [Andrea]
+este, metadatos, que en título y en
+
+01:07:15,522 --> 01:07:17,362 [Andrea]
+descripción es muy importante
+
+01:07:18,382 --> 01:07:19,682 [Andrea]
+tener cuidado.
+
+01:07:19,702 --> 01:07:19,972 [Daniel]
+Mhm.
+
+01:07:20,382 --> 01:07:21,862 [Andrea]
+Eh, si estamos tratando de hacer una
+
+01:07:21,902 --> 01:07:25,181 [Andrea]
+mejora continua en títulos, a veces nos es
+
+01:07:25,242 --> 01:07:27,462 [Andrea]
+muy complicado vender una buena historia
+
+01:07:27,522 --> 01:07:29,922 [Andrea]
+o vender una historia, eh, de manera
+
+01:07:29,942 --> 01:07:30,762 [Andrea]
+atractiva-
+
+01:07:30,862 --> 01:07:30,902 [Daniel]
+Ajá.
+
+01:07:30,942 --> 01:07:33,262 [Andrea]
+Si tenemos muchas limitaciones, que nos ha
+
+01:07:33,282 --> 01:07:34,802 [Andrea]
+pasado mucho, ¿verdad? Yo de que ay, es
+
+01:07:34,842 --> 01:07:36,982 [Andrea]
+que si le ponemos este título, pues puede
+
+01:07:37,142 --> 01:07:40,362 [Andrea]
+infringir. Entonces, el también tener una
+
+01:07:40,422 --> 01:07:40,922 [Andrea]
+idea de
+
+01:07:41,962 --> 01:07:44,442 [Andrea]
+qué se puede y qué no se puede, nos
+
+01:07:44,502 --> 01:07:47,442 [Andrea]
+ayudaría un montón a mejorar títulos. Pero
+
+01:07:47,522 --> 01:07:49,102 [Andrea]
+respecto a lo que dices, pues sí, una
+
+01:07:49,122 --> 01:07:51,602 [Andrea]
+investigación de qué es lo que hacen otros
+
+01:07:51,642 --> 01:07:53,882 [Andrea]
+creadores que, que
+
+01:07:54,562 --> 01:07:55,522 [Andrea]
+venden contenido
+
+01:07:56,522 --> 01:07:56,982 [Andrea]
+global,
+
+01:07:58,102 --> 01:07:59,922 [Andrea]
+qué es lo que hacen para unificar la
+
+01:07:59,942 --> 01:08:00,862 [Andrea]
+satisfacción.
+
+01:08:00,902 --> 01:08:03,122 [Daniel]
+Mira, eso me lo llevo yo ahorita. Nada más
+
+01:08:03,142 --> 01:08:04,642 [Daniel]
+voy a anotar. Si alguien me puede pasar
+
+01:08:04,662 --> 01:08:10,092 [Daniel]
+esta traducción, luego, entonces, con las,
+
+01:08:10,092 --> 01:08:10,522 [Daniel]
+con las
+
+01:08:10,562 --> 01:08:13,242 [Daniel]
+etiquetas. Este,
+
+01:08:14,762 --> 01:08:17,102 [Daniel]
+¿sabes qué vamos a necesitar? Que quede en
+
+01:08:17,162 --> 01:08:19,422 [Daniel]
+repositorio, platicamos Inés y yo, que
+
+01:08:19,442 --> 01:08:21,482 [Daniel]
+creo que ustedes ya tienen, y con cierta
+
+01:08:21,522 --> 01:08:24,302 [Daniel]
+nomenclatura para clasificar qué es esto,
+
+01:08:24,342 --> 01:08:25,922 [Daniel]
+que se está bajando en documento y que no
+
+01:08:25,982 --> 01:08:27,742 [Daniel]
+se pierda, porque algo que se va a
+
+01:08:27,762 --> 01:08:30,242 [Daniel]
+requerir, que me está pidiendo ahorita y
+
+01:08:30,262 --> 01:08:32,782 [Daniel]
+volvemos, es quién es su audiencia, si
+
+01:08:32,802 --> 01:08:35,622 [Daniel]
+está bien actualizado. O sea, digo, si lo
+
+01:08:35,642 --> 01:08:36,652 [Daniel]
+vas a depender, por ejemplo, para
+
+01:08:36,722 --> 01:08:38,722 [Daniel]
+descripciones y todo eso, te va a dar
+
+01:08:38,762 --> 01:08:41,832 [Daniel]
+mucho mejor con el contexto, ¿no? Y luego
+
+01:08:41,862 --> 01:08:43,702 [Daniel]
+ir puliéndolo. O sea, es un proceso, como
+
+01:08:43,762 --> 01:08:45,502 [Daniel]
+les digo, iterativo, en el que vuelves a
+
+01:08:45,522 --> 01:08:48,022 [Daniel]
+validar. ¿Y sabes qué? Como dependemos de
+
+01:08:48,042 --> 01:08:50,622 [Daniel]
+la IA, realmente vamos a tener cosas más,
+
+01:08:50,662 --> 01:08:53,152 [Daniel]
+y se va a poner mejor cada vez. Tienes que
+
+01:08:53,202 --> 01:08:55,042 [Daniel]
+darle más contexto y hacer este proceso
+
+01:08:55,062 --> 01:08:57,542 [Daniel]
+de reglas, ¿no? Hoy esto no, esto sí, esto
+
+01:08:57,562 --> 01:08:59,902 [Daniel]
+no. Y se establece un, un, un set de
+
+01:08:59,942 --> 01:09:03,502 [Daniel]
+criterios en cada parte del proceso. Uno
+
+01:09:03,582 --> 01:09:05,582 [Daniel]
+que sí se va a necesitar es hacia quién va
+
+01:09:05,602 --> 01:09:09,502 [Daniel]
+dirigido, obviamente, estas restricciones
+
+01:09:09,542 --> 01:09:12,362 [Daniel]
+o cosas que, que no debe ir, que sí debe
+
+01:09:12,422 --> 01:09:15,382 [Daniel]
+ir. Este,
+
+01:09:16,662 --> 01:09:18,971 [Daniel]
+pues casi lo fundamental, ¿no? Ahorita,
+
+01:09:19,022 --> 01:09:19,502 [Daniel]
+otra vez,
+
+01:09:20,262 --> 01:09:21,802 [Daniel]
+van a ir a lo del prompt. Tú ya tienes con
+
+01:09:21,822 --> 01:09:23,202 [Daniel]
+los seis pilares, ¿no?
+
+01:09:23,262 --> 01:09:24,462 [Gio]
+Sí.
+
+01:09:24,502 --> 01:09:26,722 [Daniel]
+Entonces, si le puedes mostrar a-- va muy
+
+01:09:26,802 --> 01:09:30,542 [Daniel]
+de la mano. Y pues casi va a ser eso, esa
+
+01:09:30,582 --> 01:09:32,042 [Daniel]
+va a ser la recetita de nuestras opciones,
+
+01:09:32,082 --> 01:09:33,802 [Daniel]
+casi, casi.
+
+01:09:34,762 --> 01:09:36,182 [Daniel]
+No sé si... ¿Tú lo has visto ese
+
+01:09:36,222 --> 01:09:36,962 [Daniel]
+documento?
+
+01:09:37,602 --> 01:09:37,782 [Gio]
+No.
+
+01:09:37,802 --> 01:09:39,302 [Daniel]
+¿No? Que te lo mostrara alguien.
+
+01:09:41,322 --> 01:09:42,872 [Daniel]
+Porque te,
+
+01:09:45,342 --> 01:09:46,452 [Daniel]
+te, te,
+
+01:09:48,382 --> 01:09:49,952 [Daniel]
+es lo que vas a solicitar, esta tal
+
+01:09:50,022 --> 01:09:52,252 [Daniel]
+entrada, que va a ser tu guion y esta será
+
+01:09:52,362 --> 01:09:54,822 [Daniel]
+tu salida, ¿no? Es obligatorio que, que
+
+01:09:54,882 --> 01:09:56,812 [Daniel]
+se restrinque, ¿qué más? Formato de
+
+01:09:56,822 --> 01:10:01,162 [Daniel]
+salida, alcance, criterios.
+
+01:10:03,482 --> 01:10:06,462 [Gio]
+Sí, por ejemplo, o sea, eh, ahorita para,
+
+01:10:06,762 --> 01:10:08,922 [Gio]
+para todas juntas, ¿no? Que, que creo que
+
+01:10:08,942 --> 01:10:11,222 [Gio]
+es una de las cosas en las que [risas] por
+
+01:10:11,262 --> 01:10:12,482 [Gio]
+eso no avanzamos. [risas]
+
+01:10:13,182 --> 01:10:14,782 [Gio]
+Es, es precisamente lo que tú dices,
+
+01:10:14,802 --> 01:10:18,022 [Gio]
+quiénes son los jugadores, porque es como,
+
+01:10:18,042 --> 01:10:20,762 [Gio]
+mmm, de a lo mejor de no saber
+
+01:10:21,422 --> 01:10:22,122 [Gio]
+cuál es tu
+
+01:10:22,902 --> 01:10:23,222 [Gio]
+rol
+
+01:10:24,022 --> 01:10:28,082 [Gio]
+en el... o sea, en esto, en, en cualquier
+
+01:10:28,122 --> 01:10:28,782 [Gio]
+proyecto.
+
+01:10:28,802 --> 01:10:30,082 [Daniel]
+Y el objetivo de la sesión.
+
+01:10:30,442 --> 01:10:33,522 [Gio]
+Mhm. Sí, porque, por ejemplo, este, la
+
+01:10:33,562 --> 01:10:36,202 [Gio]
+sesión pasada, lo que yo sí entendí era
+
+01:10:36,302 --> 01:10:38,802 [Gio]
+que se tenían que hacer como la, la
+
+01:10:38,942 --> 01:10:41,202 [Gio]
+blacklist, o al menos para, para Andrea,
+
+01:10:41,322 --> 01:10:43,442 [Gio]
+que era hacer la blacklist, pero ahorita
+
+01:10:43,482 --> 01:10:45,602 [Gio]
+ya como que ya no me quedó claro
+
+01:10:47,382 --> 01:10:48,812 [Gio]
+que--
+
+01:10:49,702 --> 01:10:52,442 [Gio]
+o sea, sé, sé que se queda como lo de, lo
+
+01:10:52,522 --> 01:10:53,822 [Gio]
+que vas a hacer tú, de
+
+01:10:54,542 --> 01:10:56,222 [Gio]
+hacer la investigación, de cómo dan
+
+01:10:56,262 --> 01:10:59,822 [Gio]
+satisfacción los demás, este, eh,
+
+01:10:59,842 --> 01:11:02,562 [Gio]
+competidores grandes, pero no me queda
+
+01:11:02,602 --> 01:11:03,102 [Gio]
+claro
+
+01:11:04,462 --> 01:11:04,622 [Gio]
+ya
+
+01:11:05,262 --> 01:11:07,902 [Gio]
+qué. O sea, como un qué aterrizado, porque
+
+01:11:07,962 --> 01:11:10,702 [Gio]
+sí sé que, que dar satisfacción, pero
+
+01:11:11,322 --> 01:11:12,902 [Gio]
+[risas] lo que te decía, por ejemplo, eh,
+
+01:11:12,922 --> 01:11:14,622 [Gio]
+por una parte, está como a lo mejor no
+
+01:11:14,642 --> 01:11:18,102 [Gio]
+infringir, en no insultarlos, pero ya en
+
+01:11:18,142 --> 01:11:21,022 [Gio]
+cómo dar satisfacción positiva, no, no me
+
+01:11:21,102 --> 01:11:21,882 [Gio]
+queda claro como
+
+01:11:22,822 --> 01:11:23,782 [Gio]
+qué.
+
+01:11:26,242 --> 01:11:28,272 [Daniel]
+Hay que definir, ¿no? Eso será parte del
+
+01:11:28,302 --> 01:11:30,182 [Daniel]
+objetivo, ¿no? A ver, creo que el, el
+
+01:11:30,242 --> 01:11:32,202 [Daniel]
+objetivo de la sesión pasada ya quedó
+
+01:11:32,282 --> 01:11:34,902 [Daniel]
+claro, ¿no? Hay un área de oportunidad que
+
+01:11:34,922 --> 01:11:35,742 [Daniel]
+tenemos que cubrir.
+
+01:11:35,762 --> 01:11:36,212 [Gio]
+Mhm.
+
+01:11:36,242 --> 01:11:39,162 [Daniel]
+O bueno, teorizo, pero
+
+01:11:39,842 --> 01:11:41,782 [Daniel]
+pues casi, casi sabemos qué hacer, ¿no?
+
+01:11:41,802 --> 01:11:42,902 [Daniel]
+Porque la traducción es
+
+01:11:43,862 --> 01:11:45,982 [Daniel]
+entre neutral, puede estar distorsionada y
+
+01:11:46,062 --> 01:11:46,622 [Daniel]
+todo, ¿no?
+
+01:11:46,642 --> 01:11:47,232 [Gio]
+Mhm.
+
+01:11:47,242 --> 01:11:49,132 [Daniel]
+Tenemos que potencializar esa área de
+
+01:11:49,142 --> 01:11:51,462 [Daniel]
+oportunidad que debemos de tener ahí. Ese
+
+01:11:51,482 --> 01:11:54,202 [Daniel]
+es el objetivo final, ¿no? Mencionar, ¿no?
+
+01:11:54,222 --> 01:11:56,642 [Daniel]
+Dar satisfacción al usuario, o una mayor
+
+01:11:56,682 --> 01:11:58,462 [Daniel]
+satisfacción, que eso es lo que percibe.
+
+01:11:59,162 --> 01:12:01,152 [Daniel]
+Vámonos a cual-- cualquier plataforma, eso
+
+01:12:01,162 --> 01:12:03,942 [Daniel]
+es lo que percibe. Este, Watchtime, lo
+
+01:12:04,002 --> 01:12:05,902 [Daniel]
+traducen muchos a Watchtime, interacciones
+
+01:12:05,962 --> 01:12:08,262 [Daniel]
+compartidas, etcétera, ¿no?
+
+01:12:08,282 --> 01:12:08,662 [Gio]
+Mhm.
+
+01:12:08,682 --> 01:12:10,102 [Daniel]
+Pero el objetivo va a ser dar mayor
+
+01:12:10,162 --> 01:12:13,062 [Daniel]
+satisfacción, este,
+
+01:12:14,482 --> 01:12:17,762 [Daniel]
+a cual, pues, o sea, los idiomas
+
+01:12:17,802 --> 01:12:19,442 [Daniel]
+disponibles, ¿no? Que nos podamos ir a N
+
+01:12:20,702 --> 01:12:22,842 [Daniel]
+sin que te limite, obviamente,
+
+01:12:23,962 --> 01:12:27,222 [Daniel]
+este, el grueso, ¿no? O intentando que no
+
+01:12:27,282 --> 01:12:29,192 [Daniel]
+nos limite el grueso de los usuarios.
+
+01:12:30,762 --> 01:12:32,782 [Daniel]
+Nos tenemos que ir con los que pagan,
+
+01:12:32,842 --> 01:12:34,252 [Daniel]
+ellos son los que pagan al final todas las
+
+01:12:34,262 --> 01:12:38,912 [Daniel]
+cuentas, al menos que... Este,
+
+01:12:39,922 --> 01:12:42,182 [Daniel]
+también el objetivo es definir, ¿no? Como
+
+01:12:42,262 --> 01:12:43,162 [Daniel]
+dices, los jugadores
+
+01:12:43,862 --> 01:12:45,722 [Daniel]
+que en esta ranking.
+
+01:12:47,082 --> 01:12:48,542 [Gio]
+Creo que también, por ejemplo, bueno, o
+
+01:12:48,582 --> 01:12:51,422 [Gio]
+sea, no en esta, pero en general, porque,
+
+01:12:52,162 --> 01:12:55,902 [Gio]
+este, como de quién es, como el,
+
+01:12:56,602 --> 01:12:58,862 [Gio]
+sí, el que va a definir esos objetivos,
+
+01:12:58,882 --> 01:13:00,422 [Gio]
+porque a veces creo que se le pregunta
+
+01:13:00,462 --> 01:13:02,392 [Gio]
+como Andrea, pero creo que Andrea no,
+
+01:13:02,392 --> 01:13:04,362 [Gio]
+[risas] no es por ofenderte, pero creo que
+
+01:13:04,422 --> 01:13:07,042 [Gio]
+no sabe, y el que sabe a lo mejor eres
+
+01:13:07,062 --> 01:13:07,762 [Gio]
+tú.
+
+01:13:07,782 --> 01:13:08,742 [Daniel]
+Todos los jugadores.
+
+01:13:09,582 --> 01:13:11,522 [Gio]
+... pero no sé si Andrea sea-
+
+01:13:11,531 --> 01:13:12,642 [Daniel]
+¿El objetivo principal?
+
+01:13:12,682 --> 01:13:14,422 [Gio]
+O sea, en general, los objetivos de la
+
+01:13:14,502 --> 01:13:16,762 [Gio]
+reunión, o sea, como para ver cómo
+
+01:13:17,402 --> 01:13:20,582 [Gio]
+organizarnos. Y como tú dices, lo de las
+
+01:13:20,642 --> 01:13:21,842 [Gio]
+tareas, ¿las vas a definir
+
+01:13:22,462 --> 01:13:22,642 [Gio]
+tú?
+
+01:13:22,742 --> 01:13:24,242 [Daniel]
+Yo en esta ocasión sí.
+
+01:13:24,262 --> 01:13:25,862 [Gio]
+¿Y después quién, Andrea?
+
+01:13:25,881 --> 01:13:26,722 [Daniel]
+No tengo la-
+
+01:13:26,742 --> 01:13:27,872 [Gio]
+Después no sé.
+
+01:13:28,982 --> 01:13:31,682 [Daniel]
+No sé. O si eso es de ustedes, no sé.
+
+01:13:32,422 --> 01:13:33,902 [Daniel]
+Es que es a qué me comprometo también,
+
+01:13:33,912 --> 01:13:35,702 [Daniel]
+¿no? Depende de los objetivos.
+
+01:13:35,802 --> 01:13:36,872 [Gio]
+Es que, por ejemplo, creo que todos
+
+01:13:36,942 --> 01:13:39,062 [Gio]
+estamos igual, porque como era de ayudarle
+
+01:13:39,082 --> 01:13:40,632 [Gio]
+a Andrea, yo le pasé a Andrea como mi
+
+01:13:40,682 --> 01:13:43,862 [Gio]
+idea, pero no, no, no tengo idea como de,
+
+01:13:44,242 --> 01:13:45,902 [Gio]
+de si Andrea luego va a decir: "Ah, ¿saben
+
+01:13:45,962 --> 01:13:49,082 [Gio]
+qué, chicos? Quiero esto y esto", o, o-
+
+01:13:49,142 --> 01:13:49,372 [Andrea]
+Sí, yo
+
+01:13:50,382 --> 01:13:52,162 [Andrea]
+ya había hecho como que la playlist,
+
+01:13:52,202 --> 01:13:55,062 [Andrea]
+[risas] la blacklist. Ya, ya había yo
+
+01:13:55,082 --> 01:13:55,782 [Andrea]
+armado como
+
+01:13:56,462 --> 01:14:00,442 [Andrea]
+que adelantándome un poco, quizá.
+
+01:14:00,482 --> 01:14:02,262 [Gio]
+Mmm.
+
+01:14:04,182 --> 01:14:05,052 [Daniel]
+Yo creo que igual eso yo
+
+01:14:06,122 --> 01:14:06,132 [Daniel]
+...
+
+01:14:07,062 --> 01:14:09,202 [Daniel]
+sí,
+
+01:14:10,262 --> 01:14:12,042 [Daniel]
+sí. Ah, no, sí, claro que sí.
+
+01:14:12,782 --> 01:14:15,462 [Daniel]
+Nos vamos a estructurar, que va a ser
+
+01:14:15,522 --> 01:14:17,842 [Daniel]
+parte de lo que vamos a estar viendo, cómo
+
+01:14:17,882 --> 01:14:21,402 [Daniel]
+salir mucho mejor las cosas. De muy alto
+
+01:14:21,422 --> 01:14:24,742 [Daniel]
+nivel. Para rendirle
+
+01:14:25,862 --> 01:14:30,882 [Daniel]
+un documento que es Brown, que se le quitó
+
+01:14:30,922 --> 01:14:32,702 [Daniel]
+mucho tiempo.
+
+01:14:32,922 --> 01:14:35,002 [Daniel]
+Ahí el grueso de que así le dieron ellos.
+
+01:14:35,022 --> 01:14:37,222 [Daniel]
+Ademas es una empresa de altísimo nivel,
+
+01:14:37,402 --> 01:14:38,672 [Daniel]
+porque le dedican mucho tiempo nomás a un
+
+01:14:38,702 --> 01:14:41,202 [Daniel]
+documento escrito de una página. Le
+
+01:14:41,212 --> 01:14:42,842 [Daniel]
+dedican bastante tiempo, pero es clarísimo
+
+01:14:42,882 --> 01:14:44,922 [Daniel]
+para todos. No lo haremos en este
+
+01:14:44,942 --> 01:14:45,322 [Daniel]
+momento, pero
+
+01:14:46,162 --> 01:14:48,962 [Daniel]
+así le dieron ellos, de alto nivel.
+
+01:14:50,782 --> 01:14:53,012 [Daniel]
+Cada jugador de ese documento ya lo sabe,
+
+01:14:53,062 --> 01:14:55,402 [Daniel]
+ya lo vi el martes, pero ahora con todos.
+
+01:14:58,102 --> 01:14:58,862 [Daniel]
+Este,
+
+01:15:00,102 --> 01:15:01,822 [Daniel]
+bien, aquí les vamos a asignar. Bueno, yo
+
+01:15:01,862 --> 01:15:03,082 [Daniel]
+les voy a asignar,
+
+01:15:04,362 --> 01:15:06,882 [Daniel]
+pero definan también qué necesitan, qué
+
+01:15:06,902 --> 01:15:10,712 [Daniel]
+necesitan cómo.
+
+01:15:13,062 --> 01:15:13,562 [Daniel]
+Ahí podemos
+
+01:15:14,162 --> 01:15:16,202 [Daniel]
+ayudarnos a ayudarlos,
+
+01:15:17,522 --> 01:15:18,372 [Daniel]
+¿sale?
+
+01:15:20,261 --> 01:15:22,102 [Daniel]
+De todas maneras, con esta sacamos también
+
+01:15:22,182 --> 01:15:23,002 [Daniel]
+rebotes de ideas
+
+01:15:23,842 --> 01:15:26,502 [Daniel]
+con el transcript, ¿no? Nos lo comparte
+
+01:15:26,742 --> 01:15:29,242 [Daniel]
+Alan y no todos. Ahí rebota, ¿no? Lo pasó
+
+01:15:29,882 --> 01:15:31,622 [Daniel]
+ya, ya en el tres punto uno, está muy
+
+01:15:31,642 --> 01:15:35,542 [Daniel]
+bueno. Repite el Chrome, el que guste.
+
+01:15:36,382 --> 01:15:39,122 [Daniel]
+Y ahí también resolvemos entre ideas,
+
+01:15:39,202 --> 01:15:41,182 [Daniel]
+rebotes, ¿no? Con el cambio. Me ayuda
+
+01:15:41,222 --> 01:15:42,862 [Daniel]
+muchísimo. Va.
+
+01:15:43,042 --> 01:15:43,802 [Andrea]
+Okey.
+
+01:15:43,842 --> 01:15:45,312 [Daniel]
+Ese nos mandamos. Intento mañana en la
+
+01:15:45,322 --> 01:15:49,162 [Daniel]
+mañana, ¿no? Que me ve. Pero si me lo
+
+01:15:49,182 --> 01:15:53,082 [Daniel]
+puedes mandar, sí, oye, bueno.
+
+01:15:54,562 --> 01:15:54,991 [Gio]
+Entre
+
+01:15:56,722 --> 01:15:56,962 [Gio]
+dos.
+
+01:15:56,972 --> 01:15:59,342 [Daniel]
+Iris, nos quedamos con ustedes dos,
+
+01:15:59,352 --> 01:16:01,242 [Daniel]
+¿verdad? ¿Les digo, Iris?
+
+01:16:01,262 --> 01:16:02,762 [Gio]
+Mmm, ¿con quién, con nosotros?
+
+01:16:02,802 --> 01:16:04,962 [Andrea]
+Con Alan y Romano.
+
+01:16:05,042 --> 01:16:09,282 [Gio]
+Ah, el, le, pero... ¡ah! Está tu compu, si
+
+01:16:09,322 --> 01:16:09,502 [Gio]
+quieres.
+
+01:16:10,322 --> 01:16:12,242 [Daniel]
+No, nos envías otra vez, Iris.
+
+01:16:12,302 --> 01:16:12,502 [Andrea]
+Sí.
+
+01:16:14,402 --> 01:16:17,081 [Daniel]
+Cierra uno, porfa.

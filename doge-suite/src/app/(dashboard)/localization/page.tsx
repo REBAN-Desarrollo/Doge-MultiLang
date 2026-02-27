@@ -1,77 +1,37 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
     Globe,
-    Filter,
-    BarChart3,
-    CheckCircle2,
+    Rocket,
     AlertTriangle,
     Clock,
-    XCircle,
+    CheckCircle2,
     Loader2,
-    Rocket,
+    XCircle,
+    ArrowRight,
+    RefreshCw,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { LanguageGrid } from "@/components/language-grid";
 import { FileUpload } from "@/components/file-upload";
-import { LANGUAGES } from "@/lib/mock-languages";
 import { createDubbingProject } from "@/lib/elevenlabs";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
-// Calcular KPIs desde los datos
-function computeKpis() {
-    const total = LANGUAGES.filter(
-        (l) => l.family !== "source"
-    ).length;
+// ── Tipos ──
 
-    const translated = LANGUAGES.filter(
-        (l) =>
-            l.family !== "source" && l.translation === "done"
-    ).length;
-
-    const dubbed = LANGUAGES.filter(
-        (l) =>
-            l.family !== "source" && l.dubbing === "done"
-    ).length;
-
-    const qaPass = LANGUAGES.filter(
-        (l) =>
-            l.family !== "source" && l.qaAuto === "pass"
-    ).length;
-
-    const qaFail = LANGUAGES.filter(
-        (l) =>
-            l.family !== "source" && l.qaAuto === "fail"
-    ).length;
-
-    const inProgress = LANGUAGES.filter(
-        (l) =>
-            l.family !== "source" &&
-            ["translating", "generating", "queued"].includes(
-                l.translation
-            )
-    ).length;
-
-    return {
-        total,
-        translated,
-        dubbed,
-        qaPass,
-        qaFail,
-        inProgress,
-    };
+interface DubbingProject {
+    dubbing_id: string;
+    name: string;
+    status: string;
+    source_language?: string;
+    target_languages: string[];
+    created_at: string;
+    error?: string;
 }
-
-const TIER_FILTERS = [
-    { label: "Todos", value: null },
-    { label: "Tier 1", value: 1 },
-    { label: "Tier 2", value: 2 },
-    { label: "Tier 3", value: 3 },
-] as const;
 
 const TARGET_LANG_OPTIONS = [
     { code: "en", label: "🇺🇸 English" },
@@ -83,11 +43,76 @@ const TARGET_LANG_OPTIONS = [
     { code: "ko", label: "🇰🇷 한국어" },
 ] as const;
 
+const STATUS_CONFIG: Record<
+    string,
+    {
+        label: string;
+        icon: React.ElementType;
+        color: string;
+        bg: string;
+    }
+> = {
+    dubbed: {
+        label: "Listo",
+        icon: CheckCircle2,
+        color: "text-emerald-400",
+        bg: "border-emerald-500/20 bg-emerald-500/10",
+    },
+    dubbing: {
+        label: "Procesando",
+        icon: Clock,
+        color: "text-amber-400",
+        bg: "border-amber-500/20 bg-amber-500/10",
+    },
+    transcribing: {
+        label: "Transcribiendo",
+        icon: Clock,
+        color: "text-blue-400",
+        bg: "border-blue-500/20 bg-blue-500/10",
+    },
+    translating: {
+        label: "Traduciendo",
+        icon: Clock,
+        color: "text-violet-400",
+        bg: "border-violet-500/20 bg-violet-500/10",
+    },
+    failed: {
+        label: "Error",
+        icon: XCircle,
+        color: "text-red-400",
+        bg: "border-red-500/20 bg-red-500/10",
+    },
+};
+
+function getStatusConfig(status: string) {
+    return (
+        STATUS_CONFIG[status] || {
+            label: status,
+            icon: Clock,
+            color: "text-zinc-400",
+            bg: "border-zinc-500/20 bg-zinc-500/10",
+        }
+    );
+}
+
+function timeAgo(dateStr: string): string {
+    const diff =
+        Date.now() - new Date(dateStr).getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 1) return "ahora";
+    if (mins < 60) return `hace ${mins}m`;
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return `hace ${hrs}h`;
+    const days = Math.floor(hrs / 24);
+    return `hace ${days}d`;
+}
+
+// ── Componente Principal ──
+
 export default function LocalizationPage() {
     const router = useRouter();
-    const [activeTier, setActiveTier] = useState<
-        number | null
-    >(null);
+
+    // Formulario nuevo proyecto
     const [file, setFile] = useState<File | null>(null);
     const [targetLangs, setTargetLangs] =
         useState<string[]>(["en"]);
@@ -96,7 +121,15 @@ export default function LocalizationPage() {
         string | null
     >(null);
 
-    const kpis = computeKpis();
+    // Lista de proyectos
+    const [projects, setProjects] = useState<
+        DubbingProject[]
+    >([]);
+    const [loadingProjects, setLoadingProjects] =
+        useState(true);
+    const [projectsError, setProjectsError] = useState<
+        string | null
+    >(null);
 
     const handleFileSelect = useCallback(
         (f: File) => setFile(f),
@@ -111,6 +144,37 @@ export default function LocalizationPage() {
         );
     };
 
+    // ── Cargar proyectos ──
+    const loadProjects = useCallback(async () => {
+        setLoadingProjects(true);
+        setProjectsError(null);
+        try {
+            const res = await fetch("/api/dubbing");
+            if (!res.ok)
+                throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            // ElevenLabs devuelve { dubbing: [...] }
+            // o un array directo
+            const list = Array.isArray(data)
+                ? data
+                : data.dubbing || data.results || [];
+            setProjects(list);
+        } catch (err) {
+            setProjectsError(
+                err instanceof Error
+                    ? err.message
+                    : "Error al cargar proyectos"
+            );
+        } finally {
+            setLoadingProjects(false);
+        }
+    }, []);
+
+    useEffect(() => {
+        loadProjects();
+    }, [loadProjects]);
+
+    // ── Crear proyecto ──
     const handleCreateProject = async () => {
         if (!file || targetLangs.length === 0) return;
         setUploading(true);
@@ -122,7 +186,6 @@ export default function LocalizationPage() {
                 "es",
                 targetLangs.join(",")
             );
-            // Navegar a la página de detalle
             router.push(
                 `/localization/${result.dubbing_id}`
             );
@@ -146,38 +209,41 @@ export default function LocalizationPage() {
                         <div
                             className={
                                 "flex h-10 w-10 items-center " +
-                                "justify-center rounded-lg gradient-purple"
+                                "justify-center rounded-lg " +
+                                "gradient-purple"
                             }
                         >
                             <Globe className="h-5 w-5 text-violet-400" />
                         </div>
                         <div>
-                            <h1
-                                className={
-                                    "text-2xl font-bold tracking-tight"
-                                }
-                            >
+                            <h1 className="text-2xl font-bold tracking-tight">
                                 Localización
                             </h1>
                             <p className="text-sm text-muted-foreground">
-                                Pipeline multi-idioma — traducción,
-                                dubbing, QA
+                                Dubbing multi-idioma con
+                                ElevenLabs
                             </p>
                         </div>
                     </div>
                 </div>
-                <Badge
-                    variant="outline"
-                    className={
-                        "border-violet-500/20 bg-violet-500/10 " +
-                        "text-violet-300"
-                    }
+                <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={loadProjects}
+                    className="h-8 w-8 p-0"
+                    title="Refrescar proyectos"
                 >
-                    {kpis.total} idiomas
-                </Badge>
+                    <RefreshCw
+                        className={cn(
+                            "h-4 w-4",
+                            loadingProjects &&
+                            "animate-spin"
+                        )}
+                    />
+                </Button>
             </div>
 
-            {/* ── Crear nuevo proyecto de dubbing ────── */}
+            {/* ── Nuevo Proyecto de Dubbing ── */}
             <div className="glass-card space-y-4 p-5">
                 <div className="flex items-center gap-2">
                     <Rocket className="h-4 w-4 text-violet-400" />
@@ -203,8 +269,10 @@ export default function LocalizationPage() {
                             <div
                                 className={
                                     "flex h-10 items-center " +
-                                    "rounded-md border border-border " +
-                                    "bg-background px-3 text-sm"
+                                    "rounded-md border " +
+                                    "border-border " +
+                                    "bg-background px-3 " +
+                                    "text-sm"
                                 }
                             >
                                 🇲🇽 Español (ES)
@@ -214,41 +282,60 @@ export default function LocalizationPage() {
                             <label className="mb-1.5 block text-xs font-medium text-muted-foreground">
                                 Idiomas target
                                 <span className="ml-2 text-[10px] text-violet-400">
-                                    {targetLangs.length} seleccionado{targetLangs.length !== 1 ? "s" : ""}
+                                    {targetLangs.length}{" "}
+                                    seleccionado
+                                    {targetLangs.length !==
+                                        1
+                                        ? "s"
+                                        : ""}
                                 </span>
                             </label>
                             <div className="flex flex-wrap gap-2">
-                                {TARGET_LANG_OPTIONS.map((o) => {
-                                    const active = targetLangs.includes(o.code);
-                                    return (
-                                        <button
-                                            key={o.code}
-                                            type="button"
-                                            onClick={() => toggleLang(o.code)}
-                                            className={cn(
-                                                "rounded-lg border px-3 py-1.5 text-xs font-medium transition-all",
-                                                active
-                                                    ? "border-violet-500/50 bg-violet-500/20 text-violet-200"
-                                                    : "border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10"
-                                            )}
-                                        >
-                                            {o.label}
-                                        </button>
-                                    );
-                                })}
+                                {TARGET_LANG_OPTIONS.map(
+                                    (o) => {
+                                        const active =
+                                            targetLangs.includes(
+                                                o.code
+                                            );
+                                        return (
+                                            <button
+                                                key={
+                                                    o.code
+                                                }
+                                                type="button"
+                                                onClick={() =>
+                                                    toggleLang(
+                                                        o.code
+                                                    )
+                                                }
+                                                className={cn(
+                                                    "rounded-lg border px-3 py-1.5 text-xs font-medium transition-all",
+                                                    active
+                                                        ? "border-violet-500/50 bg-violet-500/20 text-violet-200"
+                                                        : "border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10"
+                                                )}
+                                            >
+                                                {o.label}
+                                            </button>
+                                        );
+                                    }
+                                )}
                             </div>
                         </div>
                         <Button
                             onClick={handleCreateProject}
-                            disabled={!file || uploading || targetLangs.length === 0}
+                            disabled={
+                                !file ||
+                                uploading ||
+                                targetLangs.length === 0
+                            }
                             className="w-full gap-2"
                         >
                             {uploading ? (
                                 <>
-                                    <Loader2
-                                        className="h-4 w-4 animate-spin"
-                                    />
-                                    Subiendo a ElevenLabs...
+                                    <Loader2 className="h-4 w-4 animate-spin" />
+                                    Subiendo a
+                                    ElevenLabs...
                                 </>
                             ) : (
                                 <>
@@ -267,214 +354,182 @@ export default function LocalizationPage() {
                 </div>
             </div>
 
-            {/* KPIs */}
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-                <KpiCard
-                    icon={CheckCircle2}
-                    iconColor="text-emerald-400"
-                    label="Traducidos"
-                    value={kpis.translated}
-                    total={kpis.total}
-                    gradient="gradient-teal"
-                />
-                <KpiCard
-                    icon={BarChart3}
-                    iconColor="text-blue-400"
-                    label="Doblados"
-                    value={kpis.dubbed}
-                    total={kpis.total}
-                    gradient="gradient-teal"
-                />
-                <KpiCard
-                    icon={CheckCircle2}
-                    iconColor="text-emerald-400"
-                    label="QA Pass"
-                    value={kpis.qaPass}
-                    total={kpis.total}
-                    gradient="gradient-teal"
-                />
-                <KpiCard
-                    icon={XCircle}
-                    iconColor="text-red-400"
-                    label="QA Fail"
-                    value={kpis.qaFail}
-                    total={kpis.total}
-                    gradient="gradient-amber"
-                />
-                <KpiCard
-                    icon={Clock}
-                    iconColor="text-amber-400"
-                    label="En proceso"
-                    value={kpis.inProgress}
-                    total={kpis.total}
-                    gradient="gradient-amber"
-                />
-            </div>
+            <Separator className="opacity-30" />
 
-            <Separator className="opacity-50" />
-
-            {/* Filtros de Tier */}
-            <div className="flex items-center gap-2">
-                <Filter className="h-4 w-4 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">
-                    Filtrar:
-                </span>
-                {TIER_FILTERS.map((f) => (
-                    <Button
-                        key={f.label}
-                        variant={
-                            activeTier === f.value ? "default" : "ghost"
-                        }
-                        size="sm"
-                        onClick={() => setActiveTier(f.value)}
-                        className={cn(
-                            "h-7 rounded-full px-3 text-xs",
-                            activeTier === f.value &&
-                            "bg-primary text-primary-foreground"
-                        )}
-                    >
-                        {f.label}
-                    </Button>
-                ))}
-            </div>
-
-            {/* Grid de idiomas */}
-            <div className="glass-card overflow-hidden p-0">
-                <LanguageGrid
-                    languages={LANGUAGES}
-                    activeTier={activeTier}
-                />
-            </div>
-
-            {/* Leyenda */}
-            <div
-                className={
-                    "flex flex-wrap gap-x-6 gap-y-2 text-xs " +
-                    "text-muted-foreground"
-                }
-            >
-                <span className="flex items-center gap-1.5">
-                    <span
-                        className={
-                            "inline-block h-2 w-2 rounded-full " +
-                            "bg-emerald-400"
-                        }
-                    />
-                    Completado
-                </span>
-                <span className="flex items-center gap-1.5">
-                    <span
-                        className={
-                            "inline-block h-2 w-2 rounded-full " +
-                            "bg-amber-400"
-                        }
-                    />
-                    En proceso
-                </span>
-                <span className="flex items-center gap-1.5">
-                    <span
-                        className={
-                            "inline-block h-2 w-2 rounded-full " +
-                            "bg-red-400"
-                        }
-                    />
-                    Fallo
-                </span>
-                <span className="flex items-center gap-1.5">
-                    <span
-                        className={
-                            "inline-block h-2 w-2 rounded-full " +
-                            "bg-zinc-600"
-                        }
-                    />
-                    No iniciado
-                </span>
-                <Separator
-                    orientation="vertical"
-                    className="h-4 opacity-30"
-                />
-                <span>
-                    <strong className="text-violet-300">T1</strong>
-                    {" "}Humano + Auto
-                </span>
-                <span>
-                    <strong className="text-blue-300">T2</strong>
-                    {" "}Sample 30%
-                </span>
-                <span>
-                    <strong className="text-zinc-400">T3</strong>
-                    {" "}Auto-only
-                </span>
-            </div>
-        </div>
-    );
-}
-
-/** Tarjeta de KPI compacta */
-function KpiCard({
-    icon: Icon,
-    iconColor,
-    label,
-    value,
-    total,
-    gradient,
-}: {
-    icon: React.ElementType;
-    iconColor: string;
-    label: string;
-    value: number;
-    total: number;
-    gradient: string;
-}) {
-    const pct =
-        total > 0 ? Math.round((value / total) * 100) : 0;
-
-    return (
-        <div className="glass-card flex items-center gap-3 px-4 py-3">
-            <div
-                className={cn(
-                    "flex h-9 w-9 shrink-0 items-center",
-                    "justify-center rounded-lg",
-                    gradient
-                )}
-            >
-                <Icon className={cn("h-4 w-4", iconColor)} />
-            </div>
-            <div className="min-w-0">
-                <p
-                    className={
-                        "text-xs font-medium uppercase " +
-                        "tracking-wider text-muted-foreground"
-                    }
-                >
-                    {label}
-                </p>
-                <p className="text-lg font-bold leading-tight">
-                    {value}
-                    <span className="text-sm text-muted-foreground">
-                        /{total}
-                    </span>
-                </p>
-                {/* Barra de progreso */}
-                <div
-                    className={
-                        "mt-1 h-1 w-full overflow-hidden " +
-                        "rounded-full bg-white/5"
-                    }
-                >
-                    <div
-                        className={cn(
-                            "h-full rounded-full transition-all " +
-                            "duration-700 ease-out",
-                            pct >= 80
-                                ? "bg-emerald-400"
-                                : pct >= 40
-                                    ? "bg-amber-400"
-                                    : "bg-red-400"
-                        )}
-                        style={{ width: `${pct}%` }}
-                    />
+            {/* ── Lista de Proyectos ── */}
+            <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                    <Globe className="h-4 w-4 text-violet-400" />
+                    <h2 className="text-sm font-semibold">
+                        Proyectos
+                    </h2>
+                    {!loadingProjects && (
+                        <Badge
+                            variant="outline"
+                            className="text-[10px]"
+                        >
+                            {projects.length}
+                        </Badge>
+                    )}
                 </div>
+
+                {/* Loading */}
+                {loadingProjects && (
+                    <div className="glass-card flex items-center justify-center py-12">
+                        <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
+                    </div>
+                )}
+
+                {/* Error */}
+                {projectsError && !loadingProjects && (
+                    <div className="glass-card flex flex-col items-center gap-3 py-12">
+                        <p className="text-sm text-red-400">
+                            ⚠️ {projectsError}
+                        </p>
+                        <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={loadProjects}
+                        >
+                            Reintentar
+                        </Button>
+                    </div>
+                )}
+
+                {/* Vacío */}
+                {!loadingProjects &&
+                    !projectsError &&
+                    projects.length === 0 && (
+                        <div className="glass-card flex flex-col items-center gap-2 py-12 text-center">
+                            <Globe className="h-8 w-8 text-muted-foreground/50" />
+                            <p className="text-sm text-muted-foreground">
+                                No hay proyectos todavía
+                            </p>
+                            <p className="text-xs text-muted-foreground/70">
+                                Sube un archivo arriba
+                                para crear tu primer
+                                proyecto de dubbing
+                            </p>
+                        </div>
+                    )}
+
+                {/* Lista */}
+                {!loadingProjects &&
+                    !projectsError &&
+                    projects.length > 0 && (
+                        <div className="space-y-2">
+                            {projects.map((project) => {
+                                const cfg =
+                                    getStatusConfig(
+                                        project.status
+                                    );
+                                const StatusIcon =
+                                    cfg.icon;
+
+                                return (
+                                    <Link
+                                        key={
+                                            project.dubbing_id
+                                        }
+                                        href={`/localization/${project.dubbing_id}`}
+                                        className={cn(
+                                            "glass-card group flex items-center gap-4",
+                                            "p-4 transition-all duration-200",
+                                            "hover:border-primary/30",
+                                            "hover:shadow-lg",
+                                            "hover:shadow-primary/5"
+                                        )}
+                                    >
+                                        {/* Icono status */}
+                                        <div
+                                            className={cn(
+                                                "flex h-10 w-10 shrink-0",
+                                                "items-center justify-center",
+                                                "rounded-lg",
+                                                project.status ===
+                                                    "dubbed"
+                                                    ? "gradient-teal"
+                                                    : project.status ===
+                                                        "failed"
+                                                        ? "gradient-amber"
+                                                        : "gradient-purple"
+                                            )}
+                                        >
+                                            <StatusIcon
+                                                className={cn(
+                                                    "h-4 w-4",
+                                                    cfg.color
+                                                )}
+                                            />
+                                        </div>
+
+                                        {/* Info */}
+                                        <div className="min-w-0 flex-1">
+                                            <div className="flex items-center gap-2">
+                                                <h3 className="truncate font-semibold">
+                                                    {project.name ||
+                                                        "Sin nombre"}
+                                                </h3>
+                                                <Badge
+                                                    variant="outline"
+                                                    className={cn(
+                                                        "shrink-0 text-[10px]",
+                                                        cfg.bg,
+                                                        cfg.color
+                                                    )}
+                                                >
+                                                    {
+                                                        cfg.label
+                                                    }
+                                                </Badge>
+                                            </div>
+                                            <div className="mt-1 flex items-center gap-3 text-xs text-muted-foreground">
+                                                <span>
+                                                    {project.target_languages
+                                                        ?.map(
+                                                            (
+                                                                l
+                                                            ) =>
+                                                                l.toUpperCase()
+                                                        )
+                                                        .join(
+                                                            ", "
+                                                        ) ||
+                                                        "—"}
+                                                </span>
+                                                <span>
+                                                    •
+                                                </span>
+                                                <span>
+                                                    {timeAgo(
+                                                        project.created_at
+                                                    )}
+                                                </span>
+                                                <span className="hidden font-mono text-[10px] sm:inline">
+                                                    {project.dubbing_id.slice(
+                                                        0,
+                                                        8
+                                                    )}
+                                                    …
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        {/* Flecha */}
+                                        <ArrowRight
+                                            className={cn(
+                                                "h-4 w-4 shrink-0",
+                                                "text-muted-foreground",
+                                                "transition-transform",
+                                                "group-hover:translate-x-1",
+                                                "group-hover:text-foreground"
+                                            )}
+                                        />
+                                    </Link>
+                                );
+                            })}
+                        </div>
+                    )}
             </div>
         </div>
     );

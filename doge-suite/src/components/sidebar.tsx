@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
     FileText,
-    Image,
+    Image as ImageIcon,
     Mic,
     Globe,
     LayoutDashboard,
-    Dog,
     ChevronLeft,
     ChevronRight,
 } from "lucide-react";
+import NextImage from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import {
@@ -37,7 +37,7 @@ const NAV_ITEMS = [
     {
         label: "Assets",
         href: "/assets",
-        icon: Image,
+        icon: ImageIcon,
         color: "text-emerald-400",
     },
     {
@@ -69,14 +69,13 @@ export function Sidebar() {
         >
             {/* Logo */}
             <div className="flex h-16 items-center gap-3 border-b border-sidebar-border px-4">
-                <div
-                    className={cn(
-                        "flex h-9 w-9 shrink-0 items-center justify-center",
-                        "rounded-lg bg-primary/10"
-                    )}
-                >
-                    <Dog className="h-5 w-5 text-primary" />
-                </div>
+                <NextImage
+                    src="/logo.png"
+                    alt="DOGE Suite"
+                    width={36}
+                    height={36}
+                    className="shrink-0 rounded-lg"
+                />
                 {!collapsed && (
                     <div className="animate-fade-in overflow-hidden">
                         <h1 className="text-sm font-bold tracking-tight">

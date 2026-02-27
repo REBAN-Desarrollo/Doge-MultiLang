@@ -153,11 +153,13 @@ export default function LocalizationPage() {
             if (!res.ok)
                 throw new Error(`HTTP ${res.status}`);
             const data = await res.json();
-            // ElevenLabs devuelve { dubbing: [...] }
-            // o un array directo
+            // ElevenLabs devuelve { dubs: [...] }
             const list = Array.isArray(data)
                 ? data
-                : data.dubbing || data.results || [];
+                : data.dubs ||
+                data.dubbing ||
+                data.results ||
+                [];
             setProjects(list);
         } catch (err) {
             setProjectsError(

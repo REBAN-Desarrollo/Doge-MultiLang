@@ -1,0 +1,16 @@
+[build]
+builder = "nixpacks"
+# Instala Doppler CLI + dependencias de Next.js
+buildCommand = """
+(curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sh && \
+npm install && \
+npm run build
+"""
+
+[deploy]
+# Doppler inyecta TODAS las variables de entorno en runtime
+# La única variable que necesitas en Railway es DOPPLER_TOKEN
+startCommand = "doppler run -- npm run start"
+healthcheckPath = "/"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3

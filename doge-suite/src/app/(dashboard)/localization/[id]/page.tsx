@@ -5,6 +5,7 @@ import {
     useState,
     useCallback,
     useRef,
+    useMemo,
     use,
 } from "react";
 import {
@@ -21,6 +22,7 @@ import {
     Upload,
     X,
     Pencil,
+    Languages,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -38,6 +40,13 @@ import {
     type ParsedScript,
     type DialogLine,
 } from "@/lib/docx-parser";
+import { QAStepper } from "@/components/qa-stepper";
+import {
+    runGate1PreFlight,
+    runGate2ENMaster,
+    runGate3MultiLang,
+    executeGate,
+} from "@/lib/gate-validators";
 
 // ── Tipos ──
 
@@ -62,6 +71,8 @@ interface SrtCue {
     text: string;
     startSec: number;
     endSec: number;
+    /** Personaje (del DOCX) */
+    speaker?: string;
 }
 
 
@@ -104,6 +115,20 @@ function fmtTime(s: number): string {
     return `${m}:${sec.toString().padStart(2, "0")}`;
 }
 
+/** Formato SRT: HH:MM:SS,mmm */
+function fmtTimeSrt(s: number): string {
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    const sec = Math.floor(s % 60);
+    const ms = Math.round((s % 1) * 1000);
+    return (
+        `${String(h).padStart(2, "0")}:` +
+        `${String(m).padStart(2, "0")}:` +
+        `${String(sec).padStart(2, "0")},` +
+        `${String(ms).padStart(3, "0")}`
+    );
+}
+
 // ── Componente Principal ──
 
 export default function DubbingDetailPage(props: { params: Params }) {
@@ -139,7 +164,53 @@ export default function DubbingDetailPage(props: { params: Params }) {
     const [selectedSegment, setSelectedSegment] = useState<TimelineSegment | null>(null);
     const [textOverrides, setTextOverrides] = useState<Record<string, string>>({});
 
+    // LLM Translations
+    const [translations, setTranslations] =
+        useState<Record<number, string>>({});
+    const [translating, setTranslating] =
+        useState(false);
+
     const pollRef = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+    // Restaurar traducciones de localStorage
+    // (solo si el count matchea con diálogos)
+    useEffect(() => {
+        const saved = localStorage.getItem(
+            `translations_${dubbingId}`
+        );
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                const dialogCount = script
+                    ? flattenDialogues(script)
+                        .length
+                    : 0;
+                if (
+                    parsed._count &&
+                    dialogCount > 0 &&
+                    parsed._count !== dialogCount
+                ) {
+                    localStorage.removeItem(
+                        `translations_${dubbingId}`
+                    );
+                    return;
+                }
+                const tx: Record<number, string> =
+                    {};
+                for (const [k, v] of Object.entries(
+                    parsed
+                )) {
+                    if (k !== "_count")
+                        tx[Number(k)] =
+                            v as string;
+                }
+                if (Object.keys(tx).length > 0)
+                    setTranslations(tx);
+            } catch {
+                /* ignorar */
+            }
+        }
+    }, [dubbingId, script]);
 
     // ── Cargar status ──
     const loadStatus = useCallback(async () => {
@@ -204,9 +275,44 @@ export default function DubbingDetailPage(props: { params: Params }) {
     };
 
     // ── Audio controls ──
-    const audioUrl = status?.status === "dubbed"
-        ? `/api/dubbing/${dubbingId}/audio?lang=${status.target_languages[0] || "en"}`
-        : null;
+    const [audioUrl, setAudioUrl] = useState<
+        string | null
+    >(null);
+
+    // Descargar audio como blob URL para
+    // que el browser pueda seekear libremente
+    useEffect(() => {
+        if (
+            status?.status !== "dubbed" ||
+            !status.target_languages.length
+        )
+            return;
+
+        let cancelled = false;
+        const lang =
+            status.target_languages[0] || "en";
+
+        fetch(
+            `/api/dubbing/${dubbingId}/audio` +
+            `?lang=${lang}`
+        )
+            .then((r) => r.blob())
+            .then((blob) => {
+                if (cancelled) return;
+                const url =
+                    URL.createObjectURL(blob);
+                setAudioUrl(url);
+            })
+            .catch(console.error);
+
+        return () => {
+            cancelled = true;
+        };
+    }, [
+        dubbingId,
+        status?.status,
+        status?.target_languages,
+    ]);
 
     const togglePlay = () => {
         const el = audioRef.current;
@@ -215,6 +321,32 @@ export default function DubbingDetailPage(props: { params: Params }) {
         setPlaying(!playing);
     };
 
+    // Spacebar → play/pause (si no hay input activo)
+    useEffect(() => {
+        const onKey = (e: KeyboardEvent) => {
+            if (e.code !== "Space") return;
+            const tag =
+                (e.target as HTMLElement)
+                    ?.tagName;
+            if (
+                tag === "INPUT" ||
+                tag === "TEXTAREA" ||
+                tag === "SELECT" ||
+                (e.target as HTMLElement)
+                    ?.isContentEditable
+            )
+                return;
+
+            e.preventDefault();
+            togglePlay();
+        };
+        window.addEventListener("keydown", onKey);
+        return () =>
+            window.removeEventListener(
+                "keydown", onKey
+            );
+    });
+
     const seekTo = (sec: number) => {
         const el = audioRef.current;
         if (!el) return;
@@ -222,42 +354,29 @@ export default function DubbingDetailPage(props: { params: Params }) {
         // Actualizar UI inmediatamente
         setCurrentTime(sec);
 
-        // Si no cargó metadata, esperar a que cargue
-        if (el.readyState < 1) {
-            const onLoaded = () => {
+        try {
+            el.currentTime = sec;
+        } catch {
+            // Si falla (audio no listo),
+            // esperar a que cargue
+            const onCanPlay = () => {
                 el.removeEventListener(
-                    "loadedmetadata", onLoaded
+                    "canplay", onCanPlay
                 );
                 el.currentTime = sec;
-                const onSeeked = () => {
-                    el.removeEventListener(
-                        "seeked", onSeeked
-                    );
-                    el.play();
-                    setPlaying(true);
-                };
-                el.addEventListener(
-                    "seeked", onSeeked
-                );
             };
             el.addEventListener(
-                "loadedmetadata", onLoaded
+                "canplay", onCanPlay
             );
-            el.load();
             return;
         }
 
-        // Audio ya cargado: seek y esperar
-        // confirmación antes de reproducir
-        el.currentTime = sec;
-        const onSeeked = () => {
-            el.removeEventListener(
-                "seeked", onSeeked
-            );
-            el.play();
+        // Reproducir desde la posición nueva
+        el.play().then(() => {
             setPlaying(true);
-        };
-        el.addEventListener("seeked", onSeeked);
+        }).catch(() => {
+            // Autoplay bloqueado, no pasa nada
+        });
     };
 
     // ── TTS por diálogo ──
@@ -302,6 +421,107 @@ export default function DubbingDetailPage(props: { params: Params }) {
     };
 
     const duration = status?.media_metadata?.duration ?? 0;
+
+    // ── DOCX → cues enriquecidos ──
+    // Cuando hay DOCX, crear cues con speaker +
+    // timestamps proporcionales
+    const docxCues: SrtCue[] = useMemo(() => {
+        if (!script || duration <= 0) return [];
+        const flat = flattenDialogues(script);
+        if (flat.length === 0) return [];
+
+        return flat.map((d, i) => {
+            const ratio = i / flat.length;
+            const nextRatio =
+                (i + 1) / flat.length;
+            const startSec = ratio * duration;
+            const endSec = nextRatio * duration;
+            const startStr = fmtTimeSrt(startSec);
+            const endStr = fmtTimeSrt(endSec);
+
+            return {
+                index: i + 1,
+                start: startStr,
+                end: endStr,
+                text: d.text,
+                startSec,
+                endSec,
+                speaker: d.character,
+            };
+        });
+    }, [script, duration]);
+
+    // ── Alinear dub cues con DOCX ──
+    // Cada DOCX dialogue → los dub cues que
+    // caen en su rango de tiempo, fusionados
+    const alignedDubCues: SrtCue[] = useMemo(
+        () => {
+            if (
+                docxCues.length === 0 ||
+                dubCues.length === 0
+            )
+                return [];
+
+            return docxCues.map(
+                (docx, idx) => {
+                    const matched =
+                        dubCues.filter(
+                            (d) =>
+                                d.startSec <
+                                docx.endSec &&
+                                d.endSec >
+                                docx.startSec
+                        );
+                    const text = matched
+                        .map((m) => m.text)
+                        .join(" ");
+                    const first = matched[0];
+                    return {
+                        index: idx + 1,
+                        start:
+                            first?.start ??
+                            docx.start,
+                        end:
+                            matched.at(-1)
+                                ?.end ??
+                            docx.end,
+                        text:
+                            text ||
+                            "(sin traducción)",
+                        startSec:
+                            first?.startSec ??
+                            docx.startSec,
+                        endSec:
+                            matched.at(-1)
+                                ?.endSec ??
+                            docx.endSec,
+                    };
+                }
+            );
+        },
+        [docxCues, dubCues]
+    );
+
+    // ── Traducciones LLM → cues EN ──
+    // Cuando hay traducciones, crear cues
+    // alineados con docxCues pero texto EN
+    const translatedDocxCues: SrtCue[] =
+        useMemo(() => {
+            if (
+                docxCues.length === 0 ||
+                Object.keys(translations)
+                    .length === 0
+            )
+                return [];
+
+            return docxCues.map((cue, i) => ({
+                ...cue,
+                text:
+                    translations[i] ??
+                    "(sin traducción)",
+                speaker: cue.speaker,
+            }));
+        }, [docxCues, translations]);
 
     // ── Timeline segments (desde SRT cues) ──
     const timelineSegments: TimelineSegment[] = srcCues.map((cue, i) => {
@@ -390,6 +610,11 @@ export default function DubbingDetailPage(props: { params: Params }) {
     const targetLang = status?.target_languages[0] || "en";
     const activeSrcIdx = srcCues.findIndex((c) => currentTime >= c.startSec && currentTime < c.endSec);
     const activeDubIdx = dubCues.findIndex((c) => currentTime >= c.startSec && currentTime < c.endSec);
+    const activeDocxIdx = docxCues.findIndex(
+        (c) =>
+            currentTime >= c.startSec &&
+            currentTime < c.endSec
+    );
 
     // Personajes del DOCX o del timeline
     const allCharacters = script
@@ -420,47 +645,185 @@ export default function DubbingDetailPage(props: { params: Params }) {
                 </div>
             </div>
 
-            {/* Audio player */}
-            <div className="glass-card space-y-4 p-5">
-                <div className="flex items-center gap-2">
-                    <Volume2Icon />
-                    <h2 className="text-sm font-semibold">Audio Doblado — {targetLang.toUpperCase()}</h2>
-                    <span className="ml-auto font-mono text-xs text-muted-foreground">{fmtTime(duration)}</span>
-                </div>
+            {/* QA Pipeline — arriba */}
+            {status?.status === "dubbed" && status.target_languages.length > 0 && (
+                <QAStepper
+                    projectId={dubbingId}
+                    languages={status.target_languages}
+                    onRunGate={(gate, lang) => {
+                        if (gate === "preflight") {
+                            if (!script) {
+                                alert(
+                                    "Sube el DOCX primero " +
+                                    "para ejecutar Pre-Flight"
+                                );
+                                return;
+                            }
+                            const result =
+                                runGate1PreFlight(script);
+                            executeGate(
+                                dubbingId,
+                                lang,
+                                gate,
+                                result
+                            );
+                        } else if (
+                            gate === "en_master"
+                        ) {
+                            const srcTexts =
+                                timelineSegments.map(
+                                    (s) => s.text
+                                );
+                            const dubTexts =
+                                dubCues.map(
+                                    (c) => c.text
+                                );
+                            const result =
+                                runGate2ENMaster(
+                                    srcTexts,
+                                    dubTexts
+                                );
+                            executeGate(
+                                dubbingId,
+                                lang,
+                                gate,
+                                result
+                            );
+                        } else if (
+                            gate === "multi_lang"
+                        ) {
+                            const result =
+                                runGate3MultiLang(
+                                    lang,
+                                    dubCues.length,
+                                    srcCues.length
+                                );
+                            executeGate(
+                                dubbingId,
+                                lang,
+                                gate,
+                                result
+                            );
+                        } else {
+                            alert(
+                                "Gate 4 requiere STT." +
+                                " Próximamente."
+                            );
+                        }
+                    }}
+                    onErrorClick={(lineId) => {
+                        if (lineId.startsWith("L")) {
+                            // Gate 1: L{lineNum}
+                            // Mapeo proporcional:
+                            // posición en DOCX → posición
+                            // equivalente en srcCues
+                            const lineNum = parseInt(
+                                lineId.slice(1), 10
+                            );
+                            if (
+                                script &&
+                                srcCues.length > 0
+                            ) {
+                                const flat =
+                                    script.scenes
+                                        .flatMap(
+                                            (s) =>
+                                                s.dialogues
+                                        );
+                                const dialogIdx =
+                                    flat.findIndex(
+                                        (d) =>
+                                            d.lineNumber ===
+                                            lineNum
+                                    );
+                                if (dialogIdx < 0)
+                                    return;
 
-                {audioUrl && (
-                    <>
-                        <audio ref={audioRef} src={audioUrl} preload="auto"
-                            onTimeUpdate={(e) => setCurrentTime((e.target as HTMLAudioElement).currentTime)}
-                            onEnded={() => setPlaying(false)}
-                        />
-                        <div className="flex items-center gap-3">
-                            <Button size="sm" variant="outline" onClick={togglePlay} className="h-10 w-10 rounded-full p-0">
-                                {playing ? <Pause className="h-4 w-4" /> : <Play className="ml-0.5 h-4 w-4" />}
-                            </Button>
-                            <div className="flex-1">
-                                <div className="group relative h-2 cursor-pointer overflow-hidden rounded-full bg-white/5"
-                                    onClick={(e) => {
-                                        const rect = e.currentTarget.getBoundingClientRect();
-                                        seekTo(((e.clientX - rect.left) / rect.width) * duration);
-                                    }}>
-                                    <div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-100"
-                                        style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }} />
-                                </div>
-                                <div className="mt-1 flex justify-between font-mono text-[10px] text-muted-foreground">
-                                    <span>{fmtTime(currentTime)}</span>
-                                    <span>{fmtTime(duration)}</span>
-                                </div>
-                            </div>
-                            <a href={audioUrl} download={`dub_${targetLang}.mp3`} className="shrink-0">
-                                <Button size="sm" variant="outline" className="gap-1.5">
-                                    <Download className="h-3.5 w-3.5" /> MP3
-                                </Button>
-                            </a>
-                        </div>
-                    </>
-                )}
-            </div>
+                                // Mapear proporción
+                                const ratio =
+                                    dialogIdx /
+                                    flat.length;
+                                const cueIdx =
+                                    Math.min(
+                                        Math.floor(
+                                            ratio *
+                                            srcCues.length
+                                        ),
+                                        srcCues.length -
+                                        1
+                                    );
+                                seekTo(
+                                    srcCues[cueIdx]
+                                        .startSec
+                                );
+                                const el =
+                                    document
+                                        .querySelector(
+                                            `[data-cue-idx="${cueIdx}"]`
+                                        );
+                                el?.scrollIntoView({
+                                    behavior:
+                                        "smooth",
+                                    block:
+                                        "center",
+                                });
+                            } else if (
+                                duration > 0 &&
+                                script
+                            ) {
+                                // Sin srcCues: usar
+                                // duración total
+                                const flat =
+                                    script.scenes
+                                        .flatMap(
+                                            (s) =>
+                                                s.dialogues
+                                        );
+                                const dialogIdx =
+                                    flat.findIndex(
+                                        (d) =>
+                                            d.lineNumber ===
+                                            lineNum
+                                    );
+                                if (dialogIdx < 0)
+                                    return;
+                                const ratio =
+                                    dialogIdx /
+                                    flat.length;
+                                seekTo(
+                                    ratio * duration
+                                );
+                            }
+                        } else if (
+                            lineId.startsWith("seg-")
+                        ) {
+                            // Gate 2/3: seg-{i}
+                            // mapea a srcCues
+                            const idx = parseInt(
+                                lineId.slice(4), 10
+                            );
+                            if (srcCues[idx]) {
+                                seekTo(
+                                    srcCues[idx]
+                                        .startSec
+                                );
+                                const el =
+                                    document
+                                        .querySelector(
+                                            `[data-cue-idx="${idx}"]`
+                                        );
+                                el?.scrollIntoView({
+                                    behavior:
+                                        "smooth",
+                                    block:
+                                        "center",
+                                });
+                            }
+                        }
+                    }}
+                />
+            )}
+
 
             {/* DOCX Upload (si no hay script cargado) */}
             {!script && (
@@ -501,29 +864,151 @@ export default function DubbingDetailPage(props: { params: Params }) {
                         <FileText className="h-4 w-4 text-violet-400" />
                         <h2 className="text-sm font-semibold">Transcripción</h2>
                         {loadingTx && <Loader2 className="h-3.5 w-3.5 animate-spin text-muted-foreground" />}
+                        {/* Botón Traducir con IA */}
+                        {script && docxCues.length > 0 && (
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                className="ml-auto gap-1.5 text-xs"
+                                disabled={translating}
+                                onClick={async () => {
+                                    setTranslating(true);
+                                    try {
+                                        const flat = flattenDialogues(script);
+                                        const BATCH = 50;
+                                        const result: Record<number, string> = {};
+                                        for (let b = 0; b < flat.length; b += BATCH) {
+                                            const batch = flat.slice(b, b + BATCH);
+                                            const res = await fetch("/api/llm/translate", {
+                                                method: "POST",
+                                                headers: { "Content-Type": "application/json" },
+                                                body: JSON.stringify({
+                                                    dialogues: batch.map((d) => ({
+                                                        character: d.character,
+                                                        text: d.text,
+                                                    })),
+                                                    targetLang: targetLang,
+                                                    context: `Animated children's show: "${status?.name || 'Escuela de Rock'}". Characters: ${script.characters.join(', ')}.`,
+                                                }),
+                                            });
+                                            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                                            const data = await res.json();
+                                            data.translations.forEach((t: string, i: number) => {
+                                                result[b + i] = t;
+                                            });
+                                        }
+                                        setTranslations(result);
+                                        // Persistir con _count para validación
+                                        localStorage.setItem(
+                                            `translations_${dubbingId}`,
+                                            JSON.stringify({
+                                                ...result,
+                                                _count: flat.length,
+                                            })
+                                        );
+                                    } catch (err) {
+                                        console.error("Translation error:", err);
+                                    } finally {
+                                        setTranslating(false);
+                                    }
+                                }}
+                            >
+                                {translating ? (
+                                    <Loader2 className="h-3 w-3 animate-spin" />
+                                ) : (
+                                    <Languages className="h-3 w-3" />
+                                )}
+                                {translating ? "Traduciendo..." : Object.keys(translations).length > 0 ? "Re-traducir" : "Traducir con IA"}
+                            </Button>
+                        )}
                     </div>
 
                     {srcCues.length === 0 && dubCues.length === 0 && !loadingTx && (
                         <p className="flex-1 flex items-center justify-center text-sm text-muted-foreground">No hay transcripciones disponibles.</p>
                     )}
 
-                    {(srcCues.length > 0 || dubCues.length > 0) && (
-                        <div className="flex-1 min-h-0 grid grid-cols-2 gap-4 overflow-y-auto pr-1">
-                            <TranscriptColumn
-                                label="🇲🇽 Fuente (ES)"
-                                cues={srcCues}
-                                activeIdx={activeSrcIdx}
-                                onSeek={seekTo}
-                                accentColor="violet"
-                            />
-                            <TranscriptColumn
-                                label={`${targetLang === "en" ? "🇺🇸" : "🌍"} Dub (${targetLang.toUpperCase()})`}
-                                cues={dubCues}
-                                activeIdx={activeDubIdx}
-                                onSeek={seekTo}
-                                accentColor="blue"
-                            />
-                        </div>
+                    {(srcCues.length > 0 || dubCues.length > 0 || (script && duration > 0)) && (
+                        docxCues.length > 0 ? (
+                            /* ── Layout pareado: cada fila = ES + EN ── */
+                            <div className="flex-1 min-h-0 overflow-y-auto pr-1">
+                                {/* Headers */}
+                                <div className="grid grid-cols-2 gap-4 mb-2 sticky top-0 bg-card/90 backdrop-blur-sm z-10 pb-1">
+                                    <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                                        🇲🇽 Guión (ES)
+                                    </p>
+                                    <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                                        {Object.keys(translations).length > 0
+                                            ? `${targetLang === "en" ? "🇺🇸" : "🌍"} Traducción IA (${targetLang.toUpperCase()})`
+                                            : `${targetLang === "en" ? "🇺🇸" : "🌍"} Dub (${targetLang.toUpperCase()})`}
+                                    </p>
+                                </div>
+                                {/* Filas pareadas */}
+                                {docxCues.map((esCue, i) => {
+                                    const enCue = translatedDocxCues[i] ?? alignedDubCues[i];
+                                    const isActive = i === activeDocxIdx;
+                                    return (
+                                        <div
+                                            key={i}
+                                            data-cue-idx={i}
+                                            className={cn(
+                                                "grid grid-cols-2 gap-4 py-2 px-2 rounded-lg cursor-pointer transition-colors",
+                                                isActive
+                                                    ? "bg-violet-500/10 ring-1 ring-violet-500/30"
+                                                    : "hover:bg-white/5"
+                                            )}
+                                            onClick={() => seekTo(esCue.startSec)}
+                                        >
+                                            {/* ES */}
+                                            <div>
+                                                <p className="text-[10px] text-muted-foreground mb-0.5">
+                                                    {esCue.start}
+                                                    {esCue.speaker && (
+                                                        <span className="ml-1 text-violet-400 font-medium">
+                                                            {esCue.speaker}
+                                                        </span>
+                                                    )}
+                                                </p>
+                                                <p className="text-sm leading-relaxed">
+                                                    {esCue.text}
+                                                </p>
+                                            </div>
+                                            {/* EN */}
+                                            <div>
+                                                <p className="text-[10px] text-muted-foreground mb-0.5">
+                                                    {enCue?.start ?? esCue.start}
+                                                    {esCue.speaker && (
+                                                        <span className="ml-1 text-blue-400 font-medium">
+                                                            {esCue.speaker}
+                                                        </span>
+                                                    )}
+                                                </p>
+                                                <p className="text-sm leading-relaxed">
+                                                    {enCue?.text ?? "(sin traducción)"}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        ) : (
+                            /* ── Fallback: columnas separadas sin DOCX ── */
+                            <div className="flex-1 min-h-0 grid grid-cols-2 gap-4 overflow-y-auto pr-1">
+                                <TranscriptColumn
+                                    label="🇲🇽 Fuente (ES)"
+                                    cues={srcCues}
+                                    activeIdx={activeSrcIdx}
+                                    onSeek={seekTo}
+                                    accentColor="violet"
+                                />
+                                <TranscriptColumn
+                                    label={`${targetLang === "en" ? "🇺🇸" : "🌍"} Dub (${targetLang.toUpperCase()})`}
+                                    cues={dubCues}
+                                    activeIdx={activeDubIdx}
+                                    onSeek={seekTo}
+                                    accentColor="blue"
+                                />
+                            </div>
+                        )
                     )}
                 </div>
 
@@ -720,6 +1205,7 @@ export default function DubbingDetailPage(props: { params: Params }) {
                 </div>
             )}
 
+
             {/* Info footer */}
             <Separator className="opacity-30" />
             <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
@@ -727,6 +1213,43 @@ export default function DubbingDetailPage(props: { params: Params }) {
                 <span>Duración: {fmtTime(duration)}</span>
                 <span>Idiomas: {status?.target_languages.map((l) => l.toUpperCase()).join(", ")}</span>
             </div>
+
+            {/* Audio player — sticky abajo */}
+            {audioUrl && (
+                <div className="sticky bottom-0 z-50 -mx-8 -mb-8 border-t border-border/50 bg-background/95 backdrop-blur-lg">
+                    <div className="flex items-center gap-3 px-8 py-3">
+                        <audio ref={audioRef} src={audioUrl} preload="auto"
+                            onTimeUpdate={(e) => setCurrentTime((e.target as HTMLAudioElement).currentTime)}
+                            onEnded={() => setPlaying(false)}
+                        />
+                        <Button size="sm" variant="outline" onClick={togglePlay} className="h-9 w-9 shrink-0 rounded-full p-0">
+                            {playing ? <Pause className="h-4 w-4" /> : <Play className="ml-0.5 h-4 w-4" />}
+                        </Button>
+                        <div className="flex-1">
+                            <div className="group relative h-1.5 cursor-pointer overflow-hidden rounded-full bg-white/5"
+                                onClick={(e) => {
+                                    const rect = e.currentTarget.getBoundingClientRect();
+                                    seekTo(((e.clientX - rect.left) / rect.width) * duration);
+                                }}>
+                                <div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-100"
+                                    style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }} />
+                            </div>
+                            <div className="mt-0.5 flex justify-between font-mono text-[10px] text-muted-foreground">
+                                <span>{fmtTime(currentTime)}</span>
+                                <span>{fmtTime(duration)}</span>
+                            </div>
+                        </div>
+                        <span className="shrink-0 text-xs text-muted-foreground">
+                            {targetLang.toUpperCase()}
+                        </span>
+                        <a href={audioUrl} download={`dub_${targetLang}.mp3`} className="shrink-0">
+                            <Button size="sm" variant="outline" className="gap-1.5 h-8">
+                                <Download className="h-3 w-3" /> MP3
+                            </Button>
+                        </a>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
@@ -741,17 +1264,7 @@ function BackLink() {
     );
 }
 
-function Volume2Icon() {
-    return (
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-500/10">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-violet-400">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-            </svg>
-        </div>
-    );
-}
+
 
 function TranscriptColumn({ label, cues, activeIdx, onSeek, accentColor }: {
     label: string;
@@ -784,10 +1297,14 @@ function TranscriptColumn({ label, cues, activeIdx, onSeek, accentColor }: {
                     <button
                         key={i}
                         ref={(el) => { itemRefs.current[i] = el; }}
+                        data-cue-idx={i}
                         onClick={() => onSeek(cue.startSec)}
                         className={cn("w-full rounded-lg px-3 py-2 text-left transition-all", i === activeIdx ? ringClass : "hover:bg-accent/30")}
                     >
                         <span className="font-mono text-[10px] text-muted-foreground">{cue.start}</span>
+                        {cue.speaker && (
+                            <span className="text-[10px] font-semibold text-violet-400/80">{cue.speaker}</span>
+                        )}
                         <p className="text-sm leading-relaxed">{cue.text}</p>
                     </button>
                 ))}

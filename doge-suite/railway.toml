@@ -10,7 +10,7 @@ npm run build
 [deploy]
 # Doppler inyecta TODAS las variables de entorno en runtime
 # La única variable que necesitas en Railway es DOPPLER_TOKEN
-startCommand = "doppler run -- npm run start"
+startCommand = "doppler run -- node .next/standalone/server.js"
 healthcheckPath = "/"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3

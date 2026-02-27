@@ -170,6 +170,15 @@ export default function DubbingDetailPage(props: { params: Params }) {
     const [translating, setTranslating] =
         useState(false);
 
+    // Inline editor
+    const [editingIdx, setEditingIdx] =
+        useState<number | null>(null);
+    const [editedSet, setEditedSet] =
+        useState<Set<number>>(new Set());
+    const editRef = useRef<HTMLTextAreaElement>(
+        null
+    );
+
     const pollRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
     // Restaurar traducciones de localStorage
@@ -972,19 +981,154 @@ export default function DubbingDetailPage(props: { params: Params }) {
                                                     {esCue.text}
                                                 </p>
                                             </div>
-                                            {/* EN */}
-                                            <div>
-                                                <p className="text-[10px] text-muted-foreground mb-0.5">
+                                            {/* EN — editable */}
+                                            <div
+                                                onDoubleClick={(e) => {
+                                                    e.stopPropagation();
+                                                    setEditingIdx(i);
+                                                }}
+                                            >
+                                                <p className="text-[10px] text-muted-foreground mb-0.5 flex items-center gap-1">
                                                     {enCue?.start ?? esCue.start}
                                                     {esCue.speaker && (
                                                         <span className="ml-1 text-blue-400 font-medium">
                                                             {esCue.speaker}
                                                         </span>
                                                     )}
+                                                    {translations[i] && (
+                                                        <span className={cn(
+                                                            "ml-auto text-[9px] px-1.5 py-0.5 rounded-full",
+                                                            editedSet.has(i)
+                                                                ? "bg-amber-500/20 text-amber-400"
+                                                                : "bg-blue-500/20 text-blue-400"
+                                                        )}>
+                                                            {editedSet.has(i) ? "editada" : "auto"}
+                                                        </span>
+                                                    )}
                                                 </p>
-                                                <p className="text-sm leading-relaxed">
-                                                    {enCue?.text ?? "(sin traducción)"}
-                                                </p>
+                                                {editingIdx === i ? (
+                                                    <textarea
+                                                        ref={editRef}
+                                                        className="w-full text-sm bg-white/5 border border-violet-500/30 rounded px-2 py-1 resize-none focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                                        defaultValue={
+                                                            translations[i] ??
+                                                            enCue?.text ??
+                                                            ""
+                                                        }
+                                                        rows={2}
+                                                        autoFocus
+                                                        onClick={(e) =>
+                                                            e.stopPropagation()
+                                                        }
+                                                        onKeyDown={(e) => {
+                                                            if (
+                                                                e.key ===
+                                                                "Escape"
+                                                            ) {
+                                                                setEditingIdx(
+                                                                    null
+                                                                );
+                                                            }
+                                                            if (
+                                                                e.key ===
+                                                                "Enter" &&
+                                                                !e.shiftKey
+                                                            ) {
+                                                                e.preventDefault();
+                                                                const val =
+                                                                    e.currentTarget
+                                                                        .value
+                                                                        .trim();
+                                                                if (val) {
+                                                                    const next =
+                                                                    {
+                                                                        ...translations,
+                                                                        [i]: val,
+                                                                    };
+                                                                    setTranslations(
+                                                                        next
+                                                                    );
+                                                                    setEditedSet(
+                                                                        (
+                                                                            prev
+                                                                        ) =>
+                                                                            new Set(
+                                                                                [
+                                                                                    ...prev,
+                                                                                    i,
+                                                                                ]
+                                                                            )
+                                                                    );
+                                                                    localStorage.setItem(
+                                                                        `translations_${dubbingId}`,
+                                                                        JSON.stringify(
+                                                                            {
+                                                                                ...next,
+                                                                                _count:
+                                                                                    docxCues.length,
+                                                                            }
+                                                                        )
+                                                                    );
+                                                                }
+                                                                setEditingIdx(
+                                                                    null
+                                                                );
+                                                            }
+                                                        }}
+                                                        onBlur={(e) => {
+                                                            const val =
+                                                                e.currentTarget
+                                                                    .value
+                                                                    .trim();
+                                                            if (
+                                                                val &&
+                                                                val !==
+                                                                (translations[
+                                                                    i
+                                                                ] ??
+                                                                    enCue?.text ??
+                                                                    "")
+                                                            ) {
+                                                                const next =
+                                                                {
+                                                                    ...translations,
+                                                                    [i]: val,
+                                                                };
+                                                                setTranslations(
+                                                                    next
+                                                                );
+                                                                setEditedSet(
+                                                                    (
+                                                                        prev
+                                                                    ) =>
+                                                                        new Set(
+                                                                            [
+                                                                                ...prev,
+                                                                                i,
+                                                                            ]
+                                                                        )
+                                                                );
+                                                                localStorage.setItem(
+                                                                    `translations_${dubbingId}`,
+                                                                    JSON.stringify(
+                                                                        {
+                                                                            ...next,
+                                                                            _count:
+                                                                                docxCues.length,
+                                                                        }
+                                                                    )
+                                                                );
+                                                            }
+                                                            setEditingIdx(
+                                                                null
+                                                            );
+                                                        }}
+                                                    />
+                                                ) : (
+                                                    <p className="text-sm leading-relaxed">
+                                                        {enCue?.text ?? "(sin traducción)"}
+                                                    </p>
+                                                )}
                                             </div>
                                         </div>
                                     );
